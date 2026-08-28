@@ -219,6 +219,27 @@ function toast(msg, ms) {
 }
 
 // ---------- verdict sync (optional, needs token) ----------
+function b64(s) { return btoa(unescape(encodeURIComponent(s))); }
+let REPO_STATE = null, stTimer = null;
+function scheduleState() { clearTimeout(stTimer); stTimer = setTimeout(pushState, 2000); }
+async function pushState() {
+  if (!state.token) return;
+  const payload = JSON.stringify({ updated: new Date().toISOString(), jobs: state.jobs }, null, 1);
+  if (REPO_STATE !== null && JSON.stringify(JSON.parse(REPO_STATE).jobs || {}) === JSON.stringify(state.jobs)) return;
+  const url = "https://api.github.com/repos/" + REPO + "/contents/data/state.json";
+  try {
+    let sha;
+    const r = await fetch(url, { headers: ghHeaders() });
+    if (r.ok) sha = (await r.json()).sha;
+    else if (r.status !== 404) throw new Error("GET " + r.status);
+    const body = { message: "triage state from dashboard", content: b64(payload) };
+    if (sha) body.sha = sha;
+    const put = await fetch(url, { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
+    if (!put.ok) throw new Error("PUT " + put.status);
+    REPO_STATE = payload;
+    setSyncMsg("triage synced " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }));
+  } catch (e) { setSyncMsg("triage sync failed: " + e.message); }
+}
 function ghHeaders() {
   return { "Authorization": "Bearer " + state.token, "Accept": "application/vnd.github+json" };
 }
@@ -355,9 +376,9 @@ function card(j, opts) {
         : '<button class="applied">applied</button><button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
-  on(".applied", () => { state.jobs[j.id] = "applied"; save(); render(); });
-  on(".discard", () => { state.jobs[j.id] = "discarded"; save(); render(); });
-  on(".restore", () => { delete state.jobs[j.id]; save(); render(); });
+  on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
+  on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
+  on(".restore", () => { delete state.jobs[j.id]; save(); scheduleState(); render(); });
   return el;
 }
 
@@ -438,6 +459,18 @@ document.getElementById("savetok").onclick = () => {
 };
 if (state.token) document.getElementById("tok").value = state.token;
 
+fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(t => {
+  REPO_STATE = t;
+  if (t) {
+    try {
+      const repo = JSON.parse(t).jobs || {};
+      let changed = false;
+      for (const id in repo) if (!(id in state.jobs)) { state.jobs[id] = repo[id]; changed = true; }
+      if (changed) { save(); if (DATA) render(); }
+    } catch (e) {}
+  }
+  scheduleState();
+}).catch(() => {});
 fetch("data/facts.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(f => {
   FACTS = f || {}; if (DATA) render();
 }).catch(() => {});

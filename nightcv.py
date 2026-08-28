@@ -66,8 +66,13 @@ def main():
             facts = json.loads(facts_file.read_text())
         except Exception:
             facts = {}
+    triage = {}
+    try:
+        triage = json.loads((HERE / "data" / "state.json").read_text()).get("jobs", {})
+    except Exception:
+        pass
     todo = {k: v for k, v in jobs.items()
-            if k not in done and v.get("fresh")}
+            if k not in done and v.get("fresh") and not triage.get(k)}
     to_parse = {k: v for k, v in jobs.items() if k not in facts}
     if not todo and not to_parse:
         log(f"nothing to do ({len(jobs)} active, all handled)")

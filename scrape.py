@@ -558,6 +558,111 @@ def hunt_web(company, title):
             return u, "careers", stale_hit
     return None, None, stale_hit
 
+# --- original-posting reader: the source page is the authority ----------
+
+def _ldjson_jobposting(html):
+    for m in re.finditer(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
+        try:
+            d = json.loads(m.group(1).strip())
+        except Exception:
+            continue
+        for it in (d if isinstance(d, list) else [d]):
+            if isinstance(it, dict) and it.get("@type") == "JobPosting":
+                return it
+    return None
+
+def fetch_original(url, company, title):
+    """Read the original posting. Structured ATS APIs first, page scrape last.
+    Returns {"loc","salary","xp","text","dead"}; any field may be None."""
+    out = {"loc": None, "salary": None, "xp": None, "text": None, "dead": False}
+    t = norm(title)
+    ok_title = lambda bt: not bt or not t or t in bt or bt in t
+
+    m = re.search(r"jobs\.ashbyhq\.com/([^/]+)/([0-9a-f-]{36})", url)
+    if m:
+        jobs = board_jobs("ashby", m.group(1))
+        for bj in jobs:
+            if m.group(2) in (bj.get("url") or ""):
+                if not ok_title(norm(bj.get("title"))):
+                    return out
+                out.update(loc=bj.get("location"), salary=bj.get("salary"),
+                           text=bj.get("desc") or None)
+                return out
+        out["dead"] = bool(jobs)  # board alive, posting gone
+        return out
+
+    m = re.search(r"jobs(?:\.eu)?\.lever\.co/([^/]+)/([0-9a-f-]{36})", url)
+    if m:
+        try:
+            j = fetch_json(f"https://api.lever.co/v0/postings/{m.group(1)}/{m.group(2)}")
+            if not ok_title(norm(j.get("text"))):
+                return out
+            cats = j.get("categories") or {}
+            out.update(loc=cats.get("location"),
+                       text=strip_html(j.get("description"), 20000) or None)
+            return out
+        except urllib.error.HTTPError as e:
+            out["dead"] = e.code in (404, 410)
+            return out
+        except Exception:
+            return out
+
+    gid = re.search(r"greenhouse\.io/[^/]+/jobs/(\d+)", url) or re.search(r"gh_jid=(\d+)", url)
+    if gid:
+        slugs = []
+        m = re.search(r"(?:job-boards|boards)\.greenhouse\.io/([^/?#]+)", url)
+        if m:
+            slugs.append(m.group(1))
+        ent = ATS_CACHE.get(norm(company)) or {}
+        if ent.get("kind") == "greenhouse":
+            slugs.append(ent["slug"])
+        slugs += slug_candidates(company)
+        for slug in dict.fromkeys(slugs):
+            try:
+                j = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs/{gid.group(1)}")
+            except Exception:
+                continue
+            if not ok_title(norm(j.get("title"))):
+                return out
+            out.update(loc=(j.get("location") or {}).get("name"),
+                       text=strip_html(unescape(j.get("content") or ""), 20000) or None)
+            return out
+
+    # Generic page read.
+    try:
+        html = fetch(url, timeout=25)
+    except urllib.error.HTTPError as e:
+        out["dead"] = e.code in (404, 410)
+        return out
+    except Exception:
+        return out
+    ld = _ldjson_jobposting(html)
+    if ld:
+        if not ok_title(norm(ld.get("title"))):
+            return out
+        locs = ld.get("applicantLocationRequirements") or []
+        locs = locs if isinstance(locs, list) else [locs]
+        names = [l.get("name", "") for l in locs if isinstance(l, dict)]
+        jl = ld.get("jobLocation") or {}
+        jl = jl[0] if isinstance(jl, list) and jl else jl
+        if isinstance(jl, dict):
+            addr = jl.get("address") or {}
+            names += [addr.get("addressCountry", ""), addr.get("addressLocality", "")]
+        if ld.get("jobLocationType") == "TELECOMMUTE":
+            names.append("Remote")
+        out["loc"] = ", ".join(filter(None, names)) or None
+        sal = (ld.get("baseSalary") or {}).get("value") or {}
+        if isinstance(sal, dict) and (sal.get("minValue") or sal.get("maxValue")):
+            out["salary"] = fmt_range(sal.get("minValue"), sal.get("maxValue"),
+                                      (ld.get("baseSalary") or {}).get("currency", ""))
+        out["text"] = strip_html(unescape(ld.get("description") or ""), 20000) or None
+        return out
+    m = re.search(r'"location":\s*\{\s*"name":\s*"([^"]+)"', html)
+    if m:
+        out["loc"] = m.group(1)
+    out["text"] = strip_html(unescape(html), 30000)
+    return out
+
 # ---------------------------------------------------------------- pipeline
 
 SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "landingjobs", "remotive",
@@ -684,6 +789,7 @@ def run():
         rawdesc = j.pop("_raw", "")
         j["market"] = j.get("market") or market_label(j["bucket"], j.get("location"))
         if j["source"].split("/")[0] not in AGGREGATORS:
+            j["direct"] = True   # straight off the company's own board
             continue
         link = desc_ats_link(rawdesc) or find_direct(j["company"], j["title"])
         kind = "direct" if link else None
@@ -713,6 +819,34 @@ def run():
             j["apply_url"] = link
             j["apply_kind"] = kind or "direct"
             resolved += 1
+        if j.get("apply_kind") == "direct":
+            orig = fetch_original(j["apply_url"], j["company"], j["title"])
+            if orig["dead"]:
+                stale_ids.append(j["id"])
+                continue
+            if orig["text"] and len(orig["text"]) >= 200:
+                j["_jd"] = orig["text"]
+                j["xp"] = find_xp(orig["text"]) or j.get("xp")
+                new_sal = orig["salary"] or find_salary(orig["text"])
+                ranged = lambda s: bool(s and re.search(r"[–—-]|\bto\b", s))
+                if new_sal and (not j["salary"] or ranged(new_sal) or not ranged(j["salary"])):
+                    j["salary"] = new_sal
+            if orig["loc"] and j["bucket"] != "ok":
+                cls = classify(orig["loc"])
+                if cls is None:
+                    print(f"dropped (original says '{orig['loc']}'): "
+                          f"{j['company']} - {j['title']}")
+                    stale_ids.append(j["id"])
+                    continue
+                # a bare "Remote" upstream is weaker, not contradicting - keep
+                # the aggregator's signal in that case
+                if cls != "tiebreak" or j["bucket"] == "tiebreak":
+                    j["bucket"] = cls
+                    j["location"] = orig["loc"]
+                    j["market"] = market_label(cls, orig["loc"])
+    for j in kept.values():
+        if "direct" not in j:
+            j["direct"] = j.get("apply_kind") == "direct"
     for sid in stale_ids:
         kept.pop(sid, None)
     if stale_ids:

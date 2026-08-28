@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-08-28T16:10:27Z",
- "run_id": "2026-08-28T16:10:27Z",
+ "generated_at": "2026-08-28T16:12:00Z",
+ "run_id": "2026-08-28T16:12:00Z",
  "counts": {
   "active": 37,
   "new": 0
@@ -35,8 +35,8 @@
    "fetched": 63
   },
   "landingjobs": {
-   "ok": true,
-   "fetched": 50
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "greenhouse/gitlab": {
    "ok": true,
@@ -260,7 +260,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -279,7 +279,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -298,7 +298,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -319,7 +319,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -340,7 +340,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -361,7 +361,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -382,7 +382,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -403,7 +403,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -422,7 +422,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -443,7 +443,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -464,7 +464,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -485,7 +485,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -506,7 +506,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -525,7 +525,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -544,7 +544,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -563,7 +563,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -582,7 +582,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -601,7 +601,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -620,7 +620,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -639,7 +639,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -658,7 +658,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -677,7 +677,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -696,7 +696,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -715,7 +715,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -734,7 +734,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -753,7 +753,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -772,26 +772,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
-   "active": true
-  },
-  {
-   "id": "43f97e85c25349ac",
-   "title": "Product Designer",
-   "company": "Bounce",
-   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
-   "source": "landingjobs",
-   "location": "Lisbon",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-07-22T10:57:46.241Z",
-   "xp": null,
-   "market": "Lisbon",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -810,7 +791,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -829,7 +810,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -848,7 +829,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -867,7 +848,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -886,7 +867,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -905,7 +886,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -924,7 +905,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -943,7 +924,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
+   "last_seen": "2026-08-28T16:12:00Z",
    "active": true
   },
   {
@@ -958,6 +939,25 @@
    "posted": "2026-06-26T16:32:25.973+00:00",
    "xp": "8+y",
    "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T16:12:00Z",
+   "active": true
+  },
+  {
+   "id": "43f97e85c25349ac",
+   "title": "Product Designer",
+   "company": "Bounce",
+   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
+   "source": "landingjobs",
+   "location": "Lisbon",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-07-22T10:57:46.241Z",
+   "xp": null,
+   "market": "Lisbon",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",

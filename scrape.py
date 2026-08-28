@@ -685,6 +685,11 @@ def fetch_original(url, company, title):
     t = norm(title)
     ok_title = lambda bt: not bt or not t or t in bt or bt in t
 
+    def learn_board(kind, slug):
+        ck = norm(company)
+        if ck and not (ATS_CACHE.get(ck) or {}).get("kind"):
+            ATS_CACHE[ck] = {"kind": kind, "slug": slug, "checked": RUN_ID}
+
     m = re.search(r"jobs\.ashbyhq\.com/([^/]+)/([0-9a-f-]{36})", url)
     if m:
         jobs = board_jobs("ashby", m.group(1))
@@ -692,6 +697,7 @@ def fetch_original(url, company, title):
             if m.group(2) in (bj.get("url") or ""):
                 if not ok_title(norm(bj.get("title"))):
                     return out
+                learn_board("ashby", m.group(1))
                 out.update(loc=bj.get("location"), salary=bj.get("salary"),
                            text=bj.get("desc") or None)
                 return out
@@ -705,6 +711,7 @@ def fetch_original(url, company, title):
             if not ok_title(norm(j.get("text"))):
                 return out
             cats = j.get("categories") or {}
+            learn_board("lever", m.group(1))
             out.update(loc=cats.get("location"),
                        text=strip_html(j.get("description"), 20000) or None)
             return out
@@ -721,6 +728,7 @@ def fetch_original(url, company, title):
             if m.group(2) in (bj.get("url") or ""):
                 if not ok_title(norm(bj.get("title"))):
                     return out
+                learn_board("recruitee", m.group(1))
                 out.update(loc=bj.get("location"), text=bj.get("desc") or None)
                 return out
         out["dead"] = bool(jobs)
@@ -743,6 +751,7 @@ def fetch_original(url, company, title):
                 continue
             if not ok_title(norm(j.get("title"))):
                 return out
+            learn_board("greenhouse", slug)
             out.update(loc=(j.get("location") or {}).get("name"),
                        text=strip_html(unescape(j.get("content") or ""), 20000) or None)
             return out

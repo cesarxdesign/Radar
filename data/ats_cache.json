@@ -28,8 +28,9 @@
   "kind": null
  },
  "fueled": {
-  "checked": "2026-08-28T10:55:55Z",
-  "kind": null
+  "checked": "2026-08-28T23:02:18Z",
+  "kind": "greenhouse",
+  "slug": "fueledcareers"
  },
  "garden3d": {
   "checked": "2026-08-28T10:55:55Z",

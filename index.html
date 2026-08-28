@@ -165,6 +165,7 @@ footer .bad { color: var(--danger); }
     <button class="tab on" data-tab="direct">Direct<span class="n" id="c-direct"></span></button>
     <button class="tab" data-tab="indirect">Indirect<span class="n" id="c-indirect"></span></button>
     <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
+    <button class="tab" data-tab="appliedEmail">appliedEMAIL<span class="n" id="c-appliedEmail"></span></button>
     <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
   </nav>
   <main id="listcol"><div id="sections"></div></main>
@@ -183,7 +184,7 @@ footer .bad { color: var(--danger); }
 "use strict";
 const REPO = "cesarxdesign/jobradar";
 const LS = "jobradar-v2";
-let state = { jobs: {}, verdicts: {}, token: "" };
+let state = { jobs: {}, verdicts: {}, emails: {}, token: "" };
 try {
   const v2 = JSON.parse(localStorage.getItem(LS));
   if (v2) state = Object.assign(state, v2);
@@ -198,7 +199,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, FACTS = {}, JDS = null, tab = "direct";
+let DATA = null, FACTS = {}, JDS = null, EMAILS = null, CVS = {}, tab = "direct";
 let SEL = null, PV = null;
 
 // ---------- helpers ----------
@@ -207,8 +208,16 @@ function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
 function norm(s) { return (s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
 function when(j) { const t = new Date(j.posted || j.first_seen).getTime(); return isNaN(t) ? 0 : t; }
 function days(j) {
-  const t = when(j); if (!t) return null;
+  // posted only - first_seen is when WE first saw it, not when it was published
+  const t = new Date(j.posted || 0).getTime();
+  if (!j.posted || isNaN(t)) return null;
   return Math.max(0, Math.floor((Date.now() - t) / 864e5));
+}
+function daysCell(dd, j) {
+  return cell(dd === 1 ? "day" : "days",
+    dd === null ? "?" : String(dd),
+    dd === null ? "dim" : (dd === 0 ? "today" : ""),
+    dd === null ? "publish date unknown — first seen by the radar " + (j.first_seen || "").slice(0, 10) : "");
 }
 function bucketOf(j) {
   const v = state.verdicts[j.id];
@@ -298,6 +307,7 @@ function goToJob(id) {
   render();
 }
 function renderPreview() {
+  if (SEL && String(SEL).startsWith("em:")) { renderEmailPreview(); return; }
   const j = SEL && DATA.jobs.find(x => x.id === SEL);
   if (!j || PV === j.id) return;
   PV = j.id;
@@ -336,7 +346,7 @@ function renderPreview() {
       cell("remote", esc(f.remote || ""), "") +
       cell("portugal", esc(pt[0]), pt[1]) +
       cell("years", esc(f.years_experience || (j.xp || "").replace(/y$/, "")), "") +
-      cell(dd === 1 ? "day" : "days", dd === null ? "" : String(dd), "") +
+      daysCell(dd, j) +
     "</div>";
   if (j.board_roles && j.board_roles.length)
     h += "<h3>Live on their board right now</h3><ul>" + j.board_roles.map(r =>
@@ -356,8 +366,9 @@ function renderPreview() {
   h += "</div>";
   body.innerHTML = h;
 }
-function cell(label, value, cls) {
-  return '<span class="cell"><i>' + label + "</i><b" + (cls ? ' class="' + cls + '"' : "") + ">" +
+function cell(label, value, cls, tip) {
+  return '<span class="cell"><i>' + label + "</i><b" + (cls ? ' class="' + cls + '"' : "") +
+         (tip ? ' title="' + esc(tip) + '"' : "") + ">" +
          (value || "—") + "</b></span>";
 }
 function ptSituation(j, f) {
@@ -394,14 +405,15 @@ function card(j, opts) {
         (salary ? '<span class="sal">' + esc(salary) + "</span>" : "") +
       "</div>" +
       '<div class="jrow2">' +
-        cell(dd === 1 ? "day" : "days", dd === null ? "" : String(dd), dd === 0 ? "today" : "") +
+        daysCell(dd, j) +
         cell("remote", esc(remote), "") +
         cell("portugal", esc(pt[0]), pt[1]) +
         cell("years", esc(years), years ? "" : "dim") +
         cell("via", esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : ""), "dim") +
       "</div>" +
     "</div>" +
-    '<div class="jacts">' + (
+    '<div class="jacts">' +
+      (CVS[j.id] ? '<button class="cv" title="' + esc(CVS[j.id].label || "reveal the tailored CV in Finder") + '">CV</button>' : "") + (
       opts.done
         ? '<button class="restore">restore</button>'
         : '<button class="applied">applied</button><button class="discard">discard</button>'
@@ -410,7 +422,102 @@ function card(j, opts) {
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
   on(".restore", () => { delete state.jobs[j.id]; save(); scheduleState(); render(); });
+  on(".cv", () => {
+    fetch("http://127.0.0.1:8765/api/reveal", { method: "POST", mode: "no-cors",
+      body: JSON.stringify({ path: CVS[j.id].path }) })
+      .then(() => toast("Revealed in Finder"))
+      .catch(() => toast("TCV isn't running — double-click TCV.command first"));
+  });
   return el;
+}
+
+// ---------- appliedEMAIL (one-time Gmail sweep, data stays local) ----------
+function emailMatches() { return (EMAILS && EMAILS.matches) || []; }
+function emailPending() {
+  return emailMatches().filter(m => m.radar_id && !(state.emails || {})[m.key]
+    && !state.jobs[m.radar_id]
+    && DATA.jobs.some(j => j.id === m.radar_id && j.active));
+}
+function emailRest() {
+  const p = new Set(emailPending().map(m => m.key));
+  return emailMatches().filter(m => !p.has(m.key));
+}
+function emailCard(m, pending) {
+  const j = m.radar_id && DATA.jobs.find(x => x.id === m.radar_id);
+  const el = document.createElement("div");
+  el.className = "job" + (SEL === "em:" + m.key ? " sel" : "");
+  el.onclick = e => { if (!e.target.closest("a,button")) { SEL = "em:" + m.key; render(); } };
+  el.innerHTML =
+    '<div class="jmain">' +
+      '<div class="jrow1">' +
+        '<span class="jtitle">' + esc(m.title || "?") + "</span>" +
+        (j ? ' <span class="badge b-ok">on radar</span>' : ' <span class="badge b-new">email only</span>') +
+        '<span class="co">' + esc(m.company || "?") + "</span>" +
+        '<span class="hq" title="' + esc(m.subject || "") + '">' + esc(m.subject || "") + "</span>" +
+      "</div>" +
+      '<div class="jrow2">' +
+        cell("applied", esc((m.date || "").split(",").slice(0, 2).join(",")), "") +
+        cell("via", esc(m.platform || ""), "dim") +
+        cell("match", esc(m.confidence || (j ? "paired" : "none")), j ? "yes" : "dim") +
+        (j ? cell("radar", esc((j.title || "").slice(0, 30)), "") : "") +
+      "</div>" +
+    "</div>" +
+    '<div class="jacts">' + (pending
+      ? '<button class="applied">applied</button><button class="todirect">move to direct</button>'
+      : ((state.emails || {})[m.key] ? '<button class="restore">undo</button>' : "")) + "</div>";
+  const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
+  on(".applied", () => {
+    state.jobs[m.radar_id] = "applied"; state.emails[m.key] = "confirmed";
+    save(); scheduleState(); render();
+  });
+  on(".todirect", () => { state.emails[m.key] = "direct"; save(); render(); });
+  on(".restore", () => {
+    if (state.emails[m.key] === "confirmed" && state.jobs[m.radar_id] === "applied")
+      delete state.jobs[m.radar_id];
+    delete state.emails[m.key]; save(); scheduleState(); render();
+  });
+  return el;
+}
+function renderEmailTab(root) {
+  if (!EMAILS) {
+    root.innerHTML = '<div class="empty">data/applied_email.json not found — run the email sweep first.</div>';
+    return;
+  }
+  const pending = emailPending(), rest = emailRest();
+  if (pending.length) {
+    const h = document.createElement("h2");
+    h.innerHTML = 'Paired with radar — confirm <span class="n">' + pending.length + "</span>";
+    root.appendChild(h);
+    pending.forEach(m => root.appendChild(emailCard(m, true)));
+  }
+  if (rest.length) {
+    const h = document.createElement("h2");
+    h.innerHTML = 'The rest of the sweep <span class="n">' + rest.length + "</span>";
+    root.appendChild(h);
+    rest.forEach(m => root.appendChild(emailCard(m, false)));
+  }
+  if (!pending.length && !rest.length)
+    root.innerHTML = '<div class="empty">Sweep loaded, nothing in it.</div>';
+}
+function renderEmailPreview() {
+  if (PV === SEL) return;
+  PV = SEL;
+  const m = emailMatches().find(x => "em:" + x.key === SEL);
+  const body = document.getElementById("pv-body");
+  document.getElementById("pv-orig").style.display = "none";
+  document.getElementById("pv-src").style.display = "none";
+  if (!m) {
+    body.innerHTML = '<div class="brief"><span class="empty">Select an email on the left.</span></div>';
+    return;
+  }
+  document.getElementById("pv-title").textContent = m.subject || m.title || "—";
+  document.getElementById("pv-co").textContent = (m.from || "") + " · " + (m.date || "").split(",").slice(0, 2).join(",");
+  const j = m.radar_id && DATA.jobs.find(x => x.id === m.radar_id);
+  body.innerHTML = '<div class="brief">' +
+    (j ? '<div class="noframe">paired with radar: ' + esc(j.company) + " — " + esc(j.title) +
+         " (" + esc(j.source) + ")</div>"
+       : '<div class="noframe">no radar pairing — role likely gone from the internet</div>') +
+    "<h3>Email</h3><div class='jd'>" + esc(m.body || "(no body captured)") + "</div></div>";
 }
 
 // ---------- render ----------
@@ -442,11 +549,18 @@ function render() {
   document.getElementById("c-indirect").textContent = I.fresh.length + I.rest.length || "";
   document.getElementById("c-applied").textContent = applied.length || "";
   document.getElementById("c-discarded").textContent = discarded.length || "";
+  document.getElementById("c-appliedEmail").textContent = EMAILS ? (emailPending().length || "") : "";
 
   const visible = (tab === "direct" ? [...D.fresh, ...D.rest]
                   : tab === "indirect" ? [...I.fresh, ...I.rest]
-                  : tab === "applied" ? applied : discarded);
-  if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
+                  : tab === "applied" ? applied
+                  : tab === "discarded" ? discarded : []);
+  if (tab === "appliedEmail") {
+    const keys = emailPending().concat(emailRest()).map(m => "em:" + m.key);
+    if (!keys.includes(SEL)) SEL = keys.length ? keys[0] : null;
+  } else if (!visible.some(j => j.id === SEL)) {
+    SEL = visible.length ? visible[0].id : null;
+  }
   if (tab === "direct" || tab === "indirect") {
     const S = tab === "direct" ? D : I;
     section(root, "New overnight", S.fresh, {});
@@ -457,6 +571,8 @@ function render() {
   } else if (tab === "applied") {
     section(root, "Applied", applied, { done: true });
     if (!applied.length) root.innerHTML = '<div class="empty">Nothing applied yet.</div>';
+  } else if (tab === "appliedEmail") {
+    renderEmailTab(root);
   } else {
     section(root, "Discarded", discarded, { done: true });
     if (!discarded.length) root.innerHTML = '<div class="empty">Nothing discarded.</div>';
@@ -504,6 +620,12 @@ fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(
 }).catch(() => {});
 fetch("data/facts.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(f => {
   FACTS = f || {}; if (DATA) render();
+}).catch(() => {});
+fetch("data/applied_email.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => {
+  EMAILS = d; if (DATA) render();
+}).catch(() => {});
+fetch("data/cvs.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(d => {
+  CVS = d || {}; if (DATA) render();
 }).catch(() => {});
 fetch("data/jobs.json?t=" + Date.now()).then(r => r.json()).then(d => {
   DATA = d; stamp(); render();

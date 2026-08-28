@@ -77,6 +77,26 @@
    "company": "WeTravel",
    "slug": "wetravel",
    "via": "rrs-census"
+  },
+  {
+   "company": "Primer",
+   "slug": "primer",
+   "via": "email"
+  },
+  {
+   "company": "Wayflyer",
+   "slug": "wayflyer",
+   "via": "email"
+  },
+  {
+   "company": "Volta",
+   "slug": "volta",
+   "via": "email"
+  },
+  {
+   "company": "ZOE",
+   "slug": "zoe",
+   "via": "email"
   }
  ],
  "bamboohr": [
@@ -249,6 +269,13 @@
    "company": "Intermedia Cloud Communications",
    "slug": "intermedia",
    "via": "rrs-census"
+  }
+ ],
+ "recruitee": [
+  {
+   "company": "Hostaway",
+   "slug": "hostaway",
+   "via": "email"
   }
  ],
  "smartrecruiters": [

@@ -4,3 +4,5 @@ __pycache__/
 nightcv.log
 launchd.log
 tcv-server.log
+data/email_raw.json
+data/applied_email.json

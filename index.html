@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JobRadar</title>
+<style>
+:root {
+  --bg: #fafaf8; --card: #ffffff; --ink: #1a1a18; --mut: #8a8a84;
+  --line: #e8e8e4; --acc: #0a6b48; --amber: #b45309; --amber-bg: #fef3e2;
+  --chip: #f1f1ee; --danger: #a33;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131312; --card: #1c1c1a; --ink: #ecece8; --mut: #8f8f88;
+    --line: #2a2a27; --acc: #4ade80; --amber: #fbbf24; --amber-bg: #3a2c10;
+    --chip: #262623; --danger: #f87171;
+  }
+}
+* { box-sizing: border-box; margin: 0; }
+html { overflow-x: clip; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 40px 20px 120px;
+}
+.wrap { max-width: 880px; margin: 0 auto; }
+header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; flex-wrap: wrap; }
+h1 { font-size: 22px; letter-spacing: -0.02em; }
+.stamp { color: var(--mut); font-size: 13px; }
+.controls { display: flex; gap: 8px; margin: 18px 0 26px; flex-wrap: wrap; align-items: center; }
+input[type=search] {
+  flex: 1; min-width: 180px; background: var(--card); color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font: inherit;
+}
+input[type=search]:focus { outline: 2px solid var(--acc); outline-offset: -1px; }
+.tgl {
+  background: var(--chip); border: 1px solid var(--line); color: var(--mut);
+  border-radius: 999px; padding: 7px 14px; font: 13px/1 inherit; cursor: pointer;
+}
+.tgl.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+h2 {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--mut); margin: 34px 0 10px; display: flex; gap: 8px; align-items: center;
+}
+h2 .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 11px; }
+.job {
+  display: flex; gap: 14px; align-items: center; background: var(--card);
+  border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; margin-bottom: 8px;
+}
+.job.done { opacity: 0.45; }
+.jmain { flex: 1; min-width: 0; }
+.jtitle { font-weight: 600; text-decoration: none; color: var(--ink); }
+.jtitle:hover { color: var(--acc); }
+.jmeta { color: var(--mut); font-size: 13px; margin-top: 3px; display: flex; gap: 10px; flex-wrap: wrap; }
+.jmeta .co { color: var(--ink); font-weight: 500; }
+.sal { color: var(--acc); font-weight: 600; font-size: 13px; white-space: nowrap; }
+.badge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em; border-radius: 5px;
+  padding: 3px 7px; text-transform: uppercase; white-space: nowrap;
+}
+.b-new { background: var(--amber-bg); color: var(--amber); }
+.b-pt { background: var(--acc); color: var(--bg); }
+.jacts { display: flex; gap: 6px; }
+.jacts button {
+  background: none; border: 1px solid var(--line); color: var(--mut);
+  border-radius: 7px; padding: 5px 10px; font: 12px/1 inherit; cursor: pointer; white-space: nowrap;
+}
+.jacts button:hover { color: var(--ink); border-color: var(--mut); }
+.jacts .applied.on { color: var(--acc); border-color: var(--acc); }
+.empty { color: var(--mut); padding: 8px 2px 20px; font-size: 14px; }
+details { margin-top: 40px; }
+summary { cursor: pointer; color: var(--mut); font-size: 13px; }
+footer { margin-top: 50px; color: var(--mut); font-size: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
+footer .bad { color: var(--danger); }
+@media (max-width: 640px) {
+  .job { flex-wrap: wrap; }
+  .jacts { width: 100%; justify-content: flex-end; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>JobRadar</h1>
+    <span class="stamp" id="stamp">loading…</span>
+  </header>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Filter by title, company, location…">
+    <button class="tgl" data-bucket="pt">Portugal</button>
+    <button class="tgl" data-bucket="eu">Europe</button>
+    <button class="tgl" data-bucket="ww">Worldwide</button>
+    <button class="tgl" id="salonly">€ only</button>
+  </div>
+  <div id="sections"></div>
+  <details id="hiddenbox">
+    <summary>Applied &amp; hidden (<span id="hidcount">0</span>)</summary>
+    <div id="hiddenlist" style="margin-top:10px"></div>
+  </details>
+  <footer id="foot"></footer>
+</div>
+<script>
+const LS = "jobradar-state";
+let state = {};
+try { state = JSON.parse(localStorage.getItem(LS)) || {}; } catch (e) { state = {}; }
+function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
+
+const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", tiebreak: "Check eligibility" };
+let DATA = null, buckets = new Set(), salOnly = false, q = "";
+
+function age(iso) {
+  if (!iso) return "";
+  const d = (Date.now() - new Date(iso).getTime()) / 864e5;
+  if (isNaN(d)) return "";
+  if (d < 1) return "today";
+  if (d < 30) return Math.round(d) + "d";
+  return Math.round(d / 30) + "mo";
+}
+function esc(s) { return (s || "").replace(/[&<>"]/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c])); }
+
+function card(j, isNew) {
+  const st = state[j.id] || "";
+  const el = document.createElement("div");
+  el.className = "job" + (st ? " done" : "");
+  el.innerHTML =
+    '<div class="jmain">' +
+      '<a class="jtitle" href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
+      (isNew ? ' <span class="badge b-new">new</span>' : "") +
+      (j.bucket === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
+      '<div class="jmeta"><span class="co">' + esc(j.company) + "</span>" +
+      "<span>" + esc(j.location || BUCKET[j.bucket]) + "</span>" +
+      "<span>" + esc(j.source.split("/")[0]) + "</span>" +
+      "<span>" + age(j.posted || j.first_seen) + "</span></div>" +
+    "</div>" +
+    (j.salary ? '<span class="sal">' + esc(j.salary) + "</span>" : "") +
+    '<div class="jacts">' +
+      '<button class="applied' + (st === "applied" ? " on" : "") + '">' + (st === "applied" ? "✓ applied" : "applied") + "</button>" +
+      '<button class="hide">' + (st === "hidden" ? "unhide" : "hide") + "</button>" +
+    "</div>";
+  el.querySelector(".applied").onclick = () => { state[j.id] = st === "applied" ? "" : "applied"; save(); render(); };
+  el.querySelector(".hide").onclick = () => { state[j.id] = st === "hidden" ? "" : "hidden"; save(); render(); };
+  return el;
+}
+
+function matches(j) {
+  if (buckets.size && !buckets.has(j.bucket)) return false;
+  if (salOnly && !j.salary) return false;
+  if (q) {
+    const hay = (j.title + " " + j.company + " " + j.location + " " + j.source).toLowerCase();
+    if (!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function section(root, label, jobs, runId) {
+  if (!jobs.length) return;
+  const h = document.createElement("h2");
+  h.innerHTML = esc(label) + ' <span class="n">' + jobs.length + "</span>";
+  root.appendChild(h);
+  jobs.forEach(j => root.appendChild(card(j, j.first_run === runId)));
+}
+
+function render() {
+  const root = document.getElementById("sections");
+  root.innerHTML = "";
+  const runId = DATA.run_id;
+  const act = DATA.jobs.filter(j => j.active && !state[j.id] && matches(j));
+  const fresh = act.filter(j => j.first_run === runId);
+  const tie = act.filter(j => j.first_run !== runId && j.bucket === "tiebreak");
+  const rest = act.filter(j => j.first_run !== runId && j.bucket !== "tiebreak");
+  section(root, "New overnight", fresh, runId);
+  section(root, "Check eligibility — your call", tie, runId);
+  section(root, "Active", rest, runId);
+  if (!act.length) root.innerHTML = '<div class="empty">Nothing matches.</div>';
+
+  const hid = DATA.jobs.filter(j => j.active && state[j.id]);
+  document.getElementById("hidcount").textContent = hid.length;
+  const hl = document.getElementById("hiddenlist");
+  hl.innerHTML = "";
+  hid.forEach(j => hl.appendChild(card(j, false)));
+
+  const s = DATA.sources || {};
+  const bad = Object.keys(s).filter(k => !s[k].ok);
+  document.getElementById("foot").innerHTML =
+    Object.keys(s).length + " sources · " + DATA.counts.active + " active roles · " +
+    DATA.counts.new + " new this run" +
+    (bad.length ? ' · <span class="bad">down: ' + bad.map(esc).join(", ") + "</span>" : "");
+}
+
+document.getElementById("q").oninput = e => { q = e.target.value.toLowerCase(); render(); };
+document.querySelectorAll(".tgl[data-bucket]").forEach(b => b.onclick = () => {
+  const k = b.dataset.bucket;
+  buckets.has(k) ? buckets.delete(k) : buckets.add(k);
+  b.classList.toggle("on"); render();
+});
+document.getElementById("salonly").onclick = e => { salOnly = !salOnly; e.target.classList.toggle("on"); render(); };
+
+fetch("data/jobs.json").then(r => r.json()).then(d => {
+  DATA = d;
+  const t = new Date(d.generated_at);
+  document.getElementById("stamp").textContent =
+    "updated " + t.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  render();
+}).catch(() => {
+  document.getElementById("stamp").textContent = "couldn't load data/jobs.json — run scrape.py first";
+});
+</script>
+</body>
+</html>

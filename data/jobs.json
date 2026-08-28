@@ -1,0 +1,859 @@
+{
+ "generated_at": "2026-08-28T10:22:12Z",
+ "run_id": "2026-08-28T10:22:12Z",
+ "counts": {
+  "active": 41,
+  "new": 41
+ },
+ "sources": {
+  "remotive": {
+   "ok": true,
+   "fetched": 18
+  },
+  "himalayas": {
+   "ok": true,
+   "fetched": 100
+  },
+  "jobicy": {
+   "ok": true,
+   "fetched": 100
+  },
+  "workingnomads": {
+   "ok": true,
+   "fetched": 0
+  },
+  "remoteok": {
+   "ok": true,
+   "fetched": 19
+  },
+  "arbeitnow": {
+   "ok": true,
+   "fetched": 175
+  },
+  "weworkremotely": {
+   "ok": true,
+   "fetched": 62
+  },
+  "landingjobs": {
+   "ok": true,
+   "fetched": 50
+  },
+  "greenhouse/gitlab": {
+   "ok": true,
+   "fetched": 217
+  },
+  "greenhouse/cloudflare": {
+   "ok": true,
+   "fetched": 312
+  },
+  "greenhouse/figma": {
+   "ok": true,
+   "fetched": 160
+  },
+  "greenhouse/stripe": {
+   "ok": true,
+   "fetched": 578
+  },
+  "greenhouse/duolingo": {
+   "ok": true,
+   "fetched": 83
+  },
+  "greenhouse/dropbox": {
+   "ok": true,
+   "fetched": 40
+  },
+  "greenhouse/monzo": {
+   "ok": true,
+   "fetched": 66
+  },
+  "greenhouse/wise": {
+   "ok": true,
+   "fetched": 21
+  },
+  "greenhouse/feedzai": {
+   "ok": true,
+   "fetched": 39
+  },
+  "greenhouse/swordhealth": {
+   "ok": true,
+   "fetched": 0
+  },
+  "greenhouse/remotecom": {
+   "ok": true,
+   "fetched": 203
+  },
+  "greenhouse/vercel": {
+   "ok": true,
+   "fetched": 90
+  },
+  "greenhouse/webflow": {
+   "ok": true,
+   "fetched": 27
+  },
+  "greenhouse/intercom": {
+   "ok": true,
+   "fetched": 120
+  },
+  "greenhouse/datadog": {
+   "ok": true,
+   "fetched": 453
+  },
+  "greenhouse/elastic": {
+   "ok": true,
+   "fetched": 335
+  },
+  "greenhouse/grafanalabs": {
+   "ok": true,
+   "fetched": 145
+  },
+  "greenhouse/anthropic": {
+   "ok": true,
+   "fetched": 562
+  },
+  "greenhouse/mozilla": {
+   "ok": true,
+   "fetched": 89
+  },
+  "greenhouse/typeform": {
+   "ok": true,
+   "fetched": 12
+  },
+  "greenhouse/contentful": {
+   "ok": true,
+   "fetched": 3
+  },
+  "greenhouse/doctolib": {
+   "ok": true,
+   "fetched": 125
+  },
+  "greenhouse/getyourguide": {
+   "ok": true,
+   "fetched": 56
+  },
+  "greenhouse/n26": {
+   "ok": true,
+   "fetched": 63
+  },
+  "greenhouse/automatticcareers": {
+   "ok": true,
+   "fetched": 18
+  },
+  "lever/aircall": {
+   "ok": true,
+   "fetched": 77
+  },
+  "lever/qonto": {
+   "ok": true,
+   "fetched": 33
+  },
+  "lever/blablacar": {
+   "ok": true,
+   "fetched": 11
+  },
+  "lever/pipedrive": {
+   "ok": true,
+   "fetched": 16
+  },
+  "ashby/linear": {
+   "ok": true,
+   "fetched": 29
+  },
+  "ashby/posthog": {
+   "ok": true,
+   "fetched": 13
+  },
+  "ashby/raycast": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/supabase": {
+   "ok": true,
+   "fetched": 58
+  },
+  "ashby/deel": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/ramp": {
+   "ok": true,
+   "fetched": 137
+  },
+  "ashby/openai": {
+   "ok": true,
+   "fetched": 749
+  },
+  "ashby/attio": {
+   "ok": true,
+   "fetched": 47
+  },
+  "ashby/ashby": {
+   "ok": true,
+   "fetched": 65
+  },
+  "ashby/plaid": {
+   "ok": true,
+   "fetched": 100
+  },
+  "ashby/lovable": {
+   "ok": true,
+   "fetched": 78
+  },
+  "ashby/cursor": {
+   "ok": true,
+   "fetched": 121
+  },
+  "ashby/zapier": {
+   "ok": true,
+   "fetched": 9
+  },
+  "ashby/notion": {
+   "ok": true,
+   "fetched": 135
+  },
+  "ashby/miro": {
+   "ok": true,
+   "fetched": 37
+  },
+  "ashby/oyster": {
+   "ok": true,
+   "fetched": 28
+  },
+  "ashby/1password": {
+   "ok": true,
+   "fetched": 63
+  },
+  "ashby/alan": {
+   "ok": true,
+   "fetched": 94
+  },
+  "ashby/backmarket": {
+   "ok": true,
+   "fetched": 15
+  },
+  "ashby/bolt": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/spendesk": {
+   "ok": true,
+   "fetched": 0
+  }
+ },
+ "jobs": [
+  {
+   "id": "11462c77466b8960",
+   "title": "Senior Graphic Designer",
+   "company": "Lemon.io",
+   "url": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
+   "source": "remotive",
+   "location": "Americas, Europe, Asia, Africa, Oceania",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-07-28T14:23:05",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "471d129097fa5781",
+   "title": "Senior Design Engineer - MetaMask",
+   "company": "Consensys",
+   "url": "https://jobicy.com/jobs/151757-senior-design-engineer-metamask",
+   "source": "jobicy",
+   "location": "EMEA,  USA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-26T12:35:28+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "5ffa0ba9139dca8f",
+   "title": "Lead UX Designer | EMEA | Contract",
+   "company": "Fueled",
+   "url": "https://jobicy.com/jobs/151561-lead-ux-designer-emea-contract",
+   "source": "jobicy",
+   "location": "EMEA,  Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-25T13:22:56+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "928c4747e90ce3b4",
+   "title": "Designer, Brand and Marketing (Part-Time)",
+   "company": "Worldly",
+   "url": "https://jobicy.com/jobs/151138-designer-brand-and-marketing-part-time",
+   "source": "jobicy",
+   "location": "France,  Italy,  Portugal,  Sweden,  UK,  USA",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-08-19T18:34:12+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "26cf82c7a0e99243",
+   "title": "Staff Design Engineer",
+   "company": "Miro",
+   "url": "https://jobicy.com/jobs/147065-staff-design-engineer",
+   "source": "jobicy",
+   "location": "Denmark,  Europe,  UK",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-19T02:00:03+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "afb2d6cf9576639d",
+   "title": "Staff Product Designer",
+   "company": "OpenSea",
+   "url": "https://jobicy.com/jobs/150773-staff-product-designer-5",
+   "source": "jobicy",
+   "location": "Europe,  USA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-15T14:07:19+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "5204a6f5b2e81ba9",
+   "title": "Product Designer",
+   "company": "Maze",
+   "url": "https://jobicy.com/jobs/150739-product-designer",
+   "source": "jobicy",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-15T10:58:25+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "307f6605876e54e0",
+   "title": "Senior Product Designer",
+   "company": "Remote",
+   "url": "https://job-boards.greenhouse.io/remotecom/jobs/7762220003",
+   "source": "greenhouse/remotecom",
+   "location": "EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-06-08T03:58:40-04:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "74c44fcebaa771da",
+   "title": "Senior Design Manager (Infrastructure)",
+   "company": "Canonical",
+   "url": "https://jobicy.com/jobs/149997-senior-design-manager-infrastructure",
+   "source": "jobicy",
+   "location": "EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-01T03:04:29+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "7ce9498a6d0bd642",
+   "title": "Design Manager (Visual)",
+   "company": "Canonical",
+   "url": "https://jobicy.com/jobs/149983-design-manager-visual",
+   "source": "jobicy",
+   "location": "EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-01T03:04:08+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "72b3758ef50fafc9",
+   "title": "Senior Product Designer",
+   "company": "Ingenious.build",
+   "url": "https://weworkremotely.com/remote-jobs/ingenious-build-senior-product-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Wed, 19 Aug 2026 20:37:27 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "6b19e78d6eb4aafd",
+   "title": "Product Designer",
+   "company": "Thatch",
+   "url": "https://weworkremotely.com/remote-jobs/thatch-product-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 18 Aug 2026 20:33:40 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "fd4f6739cc33a6a1",
+   "title": "Staff Brand Designer",
+   "company": "Webflow",
+   "url": "https://weworkremotely.com/remote-jobs/webflow-staff-brand-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": "$ 162,500 - $195,000",
+   "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "fb5eaddc8b57c919",
+   "title": "Senior Visual designer",
+   "company": "Pixel One",
+   "url": "https://weworkremotely.com/remote-jobs/pixel-one-senior-visual-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 11 Aug 2026 03:24:55 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "482159f62ed1b872",
+   "title": "Senior Product Designer",
+   "company": "Pixel One",
+   "url": "https://weworkremotely.com/remote-jobs/pixel-one-senior-product-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 11 Aug 2026 02:51:33 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "8ed603c4645c0b4f",
+   "title": "Brand & Creative Designer (Freelance, 100% Remote)",
+   "company": "Kazaar Fragrances",
+   "url": "https://weworkremotely.com/remote-jobs/kazaar-fragrances-brand-creative-designer-freelance-100-remote",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Fri, 07 Aug 2026 09:59:18 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "d087698ecc500d36",
+   "title": "Art Director Performance Creatives (m/w/d)",
+   "company": "Performancepixel GmbH",
+   "url": "https://weworkremotely.com/remote-jobs/performancepixel-gmbh-art-director-performance-creatives-m-w-d",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Thu, 06 Aug 2026 09:16:25 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "caf0b09dab896695",
+   "title": "UX Designer",
+   "company": "PressW",
+   "url": "https://weworkremotely.com/remote-jobs/pressw-ux-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:58 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "4999834a0de25100",
+   "title": "Design System Designer",
+   "company": "Mayflower",
+   "url": "https://weworkremotely.com/remote-jobs/mayflower-design-system-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "e6eda6f6289c850b",
+   "title": "Product Designer - UX/UI & Design Systems (Remote)",
+   "company": "Pavago",
+   "url": "https://weworkremotely.com/remote-jobs/pavago-product-designer-ux-ui-design-systems-remote",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "b3a23f9a545dd781",
+   "title": "Consultancy for the Design and Production of Four Animated Videos Showcasing SUNCASA’s Achievements and Inspiring Youth Engagement in Sustaining Project Results",
+   "company": "IISD",
+   "url": "https://weworkremotely.com/remote-jobs/iisd-consultancy-for-the-design-and-production-of-four-animated-videos-showcasing-suncasa-s-achievements-and",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "ae79450bb0506d99",
+   "title": "Graphic Design Executive",
+   "company": "Koin Limited",
+   "url": "https://weworkremotely.com/remote-jobs/koin-limited-graphic-design-executive",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "ea5983a17978b9a3",
+   "title": "Creative Designer",
+   "company": "Air Apps",
+   "url": "https://weworkremotely.com/remote-jobs/air-apps-creative-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 20:13:15 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "bb3982f41ae83108",
+   "title": "Freelance Graphic Designer / Signage Designer",
+   "company": "Jobgether",
+   "url": "https://weworkremotely.com/remote-jobs/jobgether-freelance-graphic-designer-signage-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "867dbef8c87fc4bc",
+   "title": "Design Project Manager (Estonia)",
+   "company": "Ehvert Engineering a Salas O'Brien company",
+   "url": "https://weworkremotely.com/remote-jobs/ehvert-engineering-a-salas-o-brien-company-design-project-manager-estonia",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "8f40814433e34361",
+   "title": "Product Designer - UX/UI & Design Systems (Remote)",
+   "company": "WALTER",
+   "url": "https://weworkremotely.com/remote-jobs/walter-product-designer-ux-ui-design-systems-remote",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "6a49978c27dcb0f4",
+   "title": "Solutions Design Analyst",
+   "company": "Clario",
+   "url": "https://weworkremotely.com/remote-jobs/clario-solutions-design-analyst",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "b80c222d5cf55922",
+   "title": "Syntropy Sculptor - B2B SaaS Brand Design",
+   "company": "Kalungi Inc.",
+   "url": "https://weworkremotely.com/remote-jobs/kalungi-inc-syntropy-sculptor-b2b-saas-brand-design",
+   "source": "weworkremotely",
+   "location": "Pichincha",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:18:57 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "5adf7d538745975c",
+   "title": "Design Lead, Consumer",
+   "company": "Maven Clinic",
+   "url": "https://weworkremotely.com/remote-jobs/maven-clinic-design-lead-consumer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Thu, 30 Jul 2026 07:31:03 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "6fde40f2305fd74d",
+   "title": "Head of Design",
+   "company": "garden3d",
+   "url": "https://weworkremotely.com/remote-jobs/garden3d-head-of-design",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Fri, 17 Jul 2026 16:43:01 +0000",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "43f97e85c25349ac",
+   "title": "Product Designer",
+   "company": "Bounce",
+   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
+   "source": "landingjobs",
+   "location": "Lisbon",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-07-22T10:57:46.241Z",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "7c8c199a4f1a96c4",
+   "title": "Senior Design Engineer",
+   "company": "Cloudflare",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/6998777?gh_jid=6998777",
+   "source": "greenhouse/cloudflare",
+   "location": "Hybrid",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2025-06-20T12:34:51-04:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "b6e4ed87ece3d831",
+   "title": "Staff Designer, Rapid Prototyping",
+   "company": "Mozilla",
+   "url": "https://job-boards.greenhouse.io/mozilla/jobs/8092842",
+   "source": "greenhouse/mozilla",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-08-06T10:41:01-04:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "75cd7b02053e4ba3",
+   "title": "Principal Product Designer",
+   "company": "Linear",
+   "url": "https://jobs.ashbyhq.com/linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
+   "source": "ashby/linear",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-04-29T18:16:36.164+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "672a1d1b86736368",
+   "title": "Production Designer",
+   "company": "Linear",
+   "url": "https://jobs.ashbyhq.com/linear/5b9997fd-7507-4437-8fd7-14178c99ab5d",
+   "source": "ashby/linear",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-06T19:59:06.175+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "24d78a4ad38ebeb9",
+   "title": "Brand Designer",
+   "company": "Supabase",
+   "url": "https://jobs.ashbyhq.com/supabase/4a85c92b-1d0d-43ee-8dbc-0e45a58be208",
+   "source": "ashby/supabase",
+   "location": "Remote, Global",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-06-23T14:51:39.758+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "33e857d59bb70576",
+   "title": "Product Designer",
+   "company": "Supabase",
+   "url": "https://jobs.ashbyhq.com/supabase/97fe8e68-28c5-42db-a763-60113f0b31fd",
+   "source": "ashby/supabase",
+   "location": "Remote, Global",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-07-22T11:01:14.397+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "04d1112669f07330",
+   "title": "Senior Design Engineer",
+   "company": "Attio",
+   "url": "https://jobs.ashbyhq.com/attio/22a3d38e-69f1-44a8-a7b5-10f109820518",
+   "source": "ashby/attio",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-04T10:30:17.424+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "aa901be0cc985037",
+   "title": "Staff Design Engineer - EU",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/87b96eef-edc1-4de4-adb6-d460126d02f8",
+   "source": "ashby/ashby",
+   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
+   "bucket": "pt",
+   "salary": "€154K – €250K • Offers Equity • Multiple Ranges",
+   "posted": "2025-11-13T23:43:02.608+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "f62eb5a97ddb4d3e",
+   "title": "Design Engineer - EU",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
+   "source": "ashby/ashby",
+   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
+   "bucket": "pt",
+   "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T20:19:00.233+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  },
+  {
+   "id": "18768b72ac0595be",
+   "title": "Senior Manager, Product Design",
+   "company": "Oyster",
+   "url": "https://jobs.ashbyhq.com/oyster/53aa1176-ceb5-4518-a8f5-fd7a9f9ea26d",
+   "source": "ashby/oyster",
+   "location": "The Americas, Portugal, United Kingdom, Spain",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-06-26T16:32:25.973+00:00",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T10:22:12Z",
+   "active": true
+  }
+ ]
+}

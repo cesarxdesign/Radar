@@ -1,0 +1,24 @@
+name: nightly scrape
+on:
+  schedule:
+    - cron: "30 4 * * *"   # 05:30 Lisbon (summer) / 04:30 (winter)
+  workflow_dispatch:
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scrape
+        run: python scrape.py
+      - name: Commit results
+        run: |
+          git config user.name "Cesar Garcia"
+          git config user.email "cesarxdesign@gmail.com"
+          git add data/jobs.json
+          git diff --cached --quiet || git commit -m "nightly scrape $(date -u +%F)"
+          git push

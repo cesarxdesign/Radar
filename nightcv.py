@@ -242,6 +242,19 @@ def main():
     finally:
         if started:
             started.terminate()
+    # manifest for the dashboard's CV button (id -> local pdf path)
+    try:
+        manifest = {k: {"path": e["path"], "label": e.get("label", ""),
+                        "at": e.get("at", "")}
+                    for k, e in done.items() if e.get("path")}
+        (HERE / "data" / "cvs.json").write_text(json.dumps(manifest, indent=1))
+        if ok:
+            git("add", "data/cvs.json")
+            git("commit", "-m", "cv manifest: %d ready" % len(manifest))
+            git("pull", "--rebase", "--autostash", "origin", "main")
+            git("push", "origin", "main")
+    except Exception as e:
+        log(f"cv manifest FAIL: {e}")
     log(f"run complete: {ok} CVs ready, {fail} failed, {len(jobs)} fresh openings")
     return 0 if fail == 0 else 1
 

@@ -59,9 +59,18 @@ def main():
             done = json.loads(DONE_FILE.read_text())
         except Exception:
             done = {}
-    todo = {k: v for k, v in jobs.items() if k not in done}
-    if not todo:
-        log(f"nothing to do ({len(jobs)} fresh, all handled)")
+    facts_file = HERE / "data" / "facts.json"
+    facts = {}
+    if facts_file.exists():
+        try:
+            facts = json.loads(facts_file.read_text())
+        except Exception:
+            facts = {}
+    todo = {k: v for k, v in jobs.items()
+            if k not in done and v.get("fresh")}
+    to_parse = {k: v for k, v in jobs.items() if k not in facts}
+    if not todo and not to_parse:
+        log(f"nothing to do ({len(jobs)} active, all handled)")
         return 0
 
     started = None
@@ -94,6 +103,39 @@ def main():
             log("FAIL TCV server never answered health check")
             started.kill()
             return 1
+
+    # --- facts: TCV's fast parse of each JD, pushed back to the repo ------
+    parsed = 0
+    for jid, j in to_parse.items():
+        if parsed >= int(os.environ.get("NIGHTCV_PARSE_MAX", "40")):
+            log(f"parse cap reached - {len(to_parse) - parsed} left for later")
+            break
+        try:
+            p = http(TCV + "/api/parse", {"jd": f"{j['title']}\n{j['company']}\n{j['jd']}"}, timeout=180)
+            facts[jid] = {k: p.get(k, "") for k in
+                          ("salary", "remote", "country", "portugal", "europe",
+                           "years_experience", "seniority", "must_haves")}
+            facts[jid]["at"] = time.strftime("%Y-%m-%dT%H:%M")
+            parsed += 1
+            facts_file.parent.mkdir(exist_ok=True)
+            facts_file.write_text(json.dumps(facts, indent=1, ensure_ascii=False))
+        except Exception as e:
+            log(f"parse FAIL {j['company']} - {j['title']}: {e}")
+    if parsed:
+        log(f"parsed facts for {parsed} roles")
+        try:
+            def git(*a):
+                subprocess.run(["git", "-C", str(HERE),
+                                "-c", "user.email=cesarxdesign@gmail.com",
+                                "-c", "user.name=Cesar Garcia"] + list(a),
+                               check=True, capture_output=True, timeout=120)
+            git("pull", "--rebase", "origin", "main")
+            git("add", "data/facts.json")
+            git("commit", "-m", "facts: TCV parse of %d roles" % parsed)
+            git("push", "origin", "main")
+            log("facts pushed to the radar")
+        except Exception as e:
+            log(f"facts push FAIL (kept locally): {e}")
 
     ok = fail = 0
     try:

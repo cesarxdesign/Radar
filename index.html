@@ -63,11 +63,22 @@ h2 .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-si
   border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; margin-bottom: 8px;
 }
 .job.unsure { border-left: 3px solid var(--amber); }
-.day { width: 40px; flex: none; text-align: center; color: var(--mut); }
-.day b { display: block; font-size: 19px; line-height: 1; color: var(--ink); font-weight: 700; letter-spacing: -0.02em; }
-.day i { font-style: normal; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
-.day.today b { color: var(--amber); }
-.jmeta .xp { color: var(--ink); }
+.job { padding: 15px 18px; }
+.jrow1 { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.jrow1 .co { font-weight: 600; }
+.jrow1 .hq { color: var(--mut); font-size: 13px; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jrow1 .sal { margin-left: auto; }
+.jrow2 { display: flex; gap: 26px; margin-top: 10px; flex-wrap: wrap; }
+.cell { min-width: 52px; }
+.cell i {
+  display: block; font-style: normal; font-size: 9px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin-bottom: 2px;
+}
+.cell b { font-size: 13px; font-weight: 600; color: var(--ink); }
+.cell b.dim { color: var(--mut); font-weight: 400; }
+.cell b.yes { color: var(--acc); }
+.cell b.no { color: var(--danger); }
+.cell b.today { color: var(--amber); }
 .jmain { flex: 1; min-width: 0; }
 .jtitle { font-weight: 600; text-decoration: none; color: var(--ink); }
 .jtitle:hover { color: var(--acc); }
@@ -170,7 +181,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, tab = "direct", buckets = new Set(), salOnly = false, q = "";
+let DATA = null, FACTS = {}, tab = "direct", buckets = new Set(), salOnly = false, q = "";
 
 // ---------- helpers ----------
 function esc(s) { return (s || "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c])); }
@@ -259,27 +270,50 @@ async function scrapeNow() {
 }
 
 // ---------- cards ----------
+function cell(label, value, cls) {
+  return '<span class="cell"><i>' + label + "</i><b" + (cls ? ' class="' + cls + '"' : "") + ">" +
+         (value || "—") + "</b></span>";
+}
+function ptSituation(j, f) {
+  if ((f.portugal || "").toLowerCase() === "yes") return ["Yes", "yes"];
+  if ((f.portugal || "").toLowerCase() === "no") return ["No", "no"];
+  const b = bucketOf(j);
+  if (b === "pt") return ["Yes — named", "yes"];
+  if (b === "ok") return ["Yes — you OK’d", "yes"];
+  if (b === "eu") return ["Likely — " + (j.market || "Europe"), "yes"];
+  if (b === "ww") return ["Likely — worldwide", "yes"];
+  return ["Unclear", "dim"];
+}
 function card(j, opts) {
   const st = state.jobs[j.id] || "";
   const b = bucketOf(j);
+  const f = (FACTS && FACTS[j.id]) || {};
   const el = document.createElement("div");
   el.className = "job" + (opts.unsure ? " unsure" : "");
   const dd = days(j);
+  const remote = f.remote || (/hybrid/i.test(j.location) ? "Hybrid" : (j.direct === false || j.apply_url || /remote/i.test(j.location) || j.market ? "Remote" : ""));
+  const years = f.years_experience || (j.xp ? j.xp.replace(/y$/, "") : "");
+  const pt = ptSituation(j, f);
+  const salary = f.salary || j.salary;
   el.innerHTML =
-    '<div class="day' + (dd === 0 ? " today" : "") + '">' +
-      (dd === null ? "" : "<b>" + dd + "</b><i>" + (dd === 1 ? "day" : "days") + "</i>") +
-    "</div>" +
     '<div class="jmain">' +
-      '<a class="jtitle" href="' + esc(safeUrl(j.apply_url || j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
-      (opts.isNew ? ' <span class="badge b-new">new</span>' : "") +
-      (b === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
-      (b === "ok" ? ' <span class="badge b-ok">ok’d</span>' : "") +
-      '<div class="jmeta"><span class="co">' + esc(j.company) + "</span>" +
-      '<span title="' + esc(j.location) + '">' + esc(j.market || BUCKET[j.bucket] || "") + "</span>" +
-      (j.xp ? '<span class="xp">asks ' + esc(j.xp) + "</span>" : "") +
-      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : "") + "</span></div>" +
+      '<div class="jrow1">' +
+        '<a class="jtitle" href="' + esc(safeUrl(j.apply_url || j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
+        (opts.isNew ? ' <span class="badge b-new">new</span>' : "") +
+        (b === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
+        (b === "ok" ? ' <span class="badge b-ok">ok’d</span>' : "") +
+        '<span class="co">' + esc(j.company) + "</span>" +
+        '<span class="hq" title="' + esc(j.location) + '">' + esc(f.country || j.location || "") + "</span>" +
+        (salary ? '<span class="sal">' + esc(salary) + "</span>" : "") +
+      "</div>" +
+      '<div class="jrow2">' +
+        cell(dd === 1 ? "day" : "days", dd === null ? "" : String(dd), dd === 0 ? "today" : "") +
+        cell("remote", esc(remote), "") +
+        cell("portugal", esc(pt[0]), pt[1]) +
+        cell("years", esc(years), years ? "" : "dim") +
+        cell("via", esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : ""), "dim") +
+      "</div>" +
     "</div>" +
-    (j.salary ? '<span class="sal">' + esc(j.salary) + "</span>" : "") +
     '<div class="jacts">' + (
       opts.unsure
         ? '<button class="yes" title="Yes, they can hire me">Y</button><button class="no" title="No, they can’t">N</button>'
@@ -311,7 +345,7 @@ function verdict(j, v) {
 function matches(j) {
   const b = bucketOf(j);
   if (buckets.size && !buckets.has(b === "ok" ? "ww" : b)) return false;
-  if (salOnly && !j.salary) return false;
+  if (salOnly && !(j.salary || (FACTS[j.id] || {}).salary)) return false;
   if (q) {
     const hay = (j.title + " " + j.company + " " + j.location + " " + j.source).toLowerCase();
     if (!hay.includes(q)) return false;
@@ -399,6 +433,9 @@ document.getElementById("savetok").onclick = () => {
 };
 if (state.token) document.getElementById("tok").value = state.token;
 
+fetch("data/facts.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(f => {
+  FACTS = f || {}; if (DATA) render();
+}).catch(() => {});
 fetch("data/jobs.json?t=" + Date.now()).then(r => r.json()).then(d => {
   DATA = d; stamp(); render();
 }).catch(() => {

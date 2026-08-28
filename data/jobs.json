@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-28T12:00:07Z",
- "run_id": "2026-08-28T12:00:07Z",
+ "generated_at": "2026-08-28T15:01:40Z",
+ "run_id": "2026-08-28T15:01:40Z",
  "counts": {
-  "active": 35,
-  "new": 0
+  "active": 36,
+  "new": 1
  },
  "sources": {
   "remotive": {
@@ -24,7 +24,7 @@
   },
   "remoteok": {
    "ok": true,
-   "fetched": 19
+   "fetched": 18
   },
   "arbeitnow": {
    "ok": true,
@@ -32,7 +32,7 @@
   },
   "weworkremotely": {
    "ok": true,
-   "fetched": 62
+   "fetched": 63
   },
   "landingjobs": {
    "ok": true,
@@ -40,7 +40,7 @@
   },
   "greenhouse/gitlab": {
    "ok": true,
-   "fetched": 217
+   "fetched": 218
   },
   "greenhouse/cloudflare": {
    "ok": true,
@@ -48,23 +48,23 @@
   },
   "greenhouse/figma": {
    "ok": true,
-   "fetched": 160
+   "fetched": 161
   },
   "greenhouse/stripe": {
    "ok": true,
-   "fetched": 579
+   "fetched": 577
   },
   "greenhouse/duolingo": {
    "ok": true,
-   "fetched": 83
+   "fetched": 84
   },
   "greenhouse/dropbox": {
    "ok": true,
-   "fetched": 40
+   "fetched": 41
   },
   "greenhouse/monzo": {
    "ok": true,
-   "fetched": 66
+   "fetched": 67
   },
   "greenhouse/wise": {
    "ok": true,
@@ -72,7 +72,7 @@
   },
   "greenhouse/feedzai": {
    "ok": true,
-   "fetched": 39
+   "fetched": 38
   },
   "greenhouse/swordhealth": {
    "ok": true,
@@ -96,7 +96,7 @@
   },
   "greenhouse/datadog": {
    "ok": true,
-   "fetched": 451
+   "fetched": 452
   },
   "greenhouse/elastic": {
    "ok": true,
@@ -104,11 +104,11 @@
   },
   "greenhouse/grafanalabs": {
    "ok": true,
-   "fetched": 144
+   "fetched": 137
   },
   "greenhouse/anthropic": {
    "ok": true,
-   "fetched": 562
+   "fetched": 563
   },
   "greenhouse/mozilla": {
    "ok": true,
@@ -144,7 +144,7 @@
   },
   "lever/qonto": {
    "ok": true,
-   "fetched": 34
+   "fetched": 32
   },
   "lever/blablacar": {
    "ok": true,
@@ -180,7 +180,7 @@
   },
   "ashby/openai": {
    "ok": true,
-   "fetched": 749
+   "fetched": 751
   },
   "ashby/attio": {
    "ok": true,
@@ -196,7 +196,7 @@
   },
   "ashby/lovable": {
    "ok": true,
-   "fetched": 78
+   "fetched": 77
   },
   "ashby/cursor": {
    "ok": true,
@@ -208,7 +208,7 @@
   },
   "ashby/notion": {
    "ok": true,
-   "fetched": 135
+   "fetched": 134
   },
   "ashby/miro": {
    "ok": true,
@@ -216,7 +216,7 @@
   },
   "ashby/oyster": {
    "ok": true,
-   "fetched": 28
+   "fetched": 29
   },
   "ashby/1password": {
    "ok": true,
@@ -224,7 +224,7 @@
   },
   "ashby/alan": {
    "ok": true,
-   "fetched": 94
+   "fetched": 95
   },
   "ashby/backmarket": {
    "ok": true,
@@ -245,6 +245,24 @@
  },
  "jobs": [
   {
+   "id": "3168d564c3ad0633",
+   "title": "iGaming UI/UX Designer",
+   "company": "Ondeckglobal",
+   "url": "https://weworkremotely.com/remote-jobs/ondeckglobal-igaming-ui-ux-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Fri, 28 Aug 2026 13:26:53 +0000",
+   "xp": "7+y",
+   "market": "Worldwide",
+   "direct": false,
+   "first_seen": "2026-08-28T15:01:40Z",
+   "first_run": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:01:40Z",
+   "active": true
+  },
+  {
    "id": "11462c77466b8960",
    "title": "Senior Graphic Designer",
    "company": "Lemon.io",
@@ -259,7 +277,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -279,7 +297,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -299,7 +317,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -319,7 +337,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -339,7 +357,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -359,7 +377,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -377,7 +395,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -397,7 +415,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -417,7 +435,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -437,7 +455,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -455,7 +473,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -473,7 +491,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -491,7 +509,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -509,7 +527,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -527,7 +545,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -545,7 +563,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -563,7 +581,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -581,7 +599,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -599,7 +617,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -617,7 +635,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -635,7 +653,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -653,7 +671,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -671,7 +689,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -689,7 +707,7 @@
    "direct": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -707,7 +725,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -725,7 +743,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -743,7 +761,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -761,7 +779,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -779,7 +797,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -797,7 +815,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -815,7 +833,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -833,7 +851,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -851,7 +869,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -869,7 +887,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {
@@ -887,7 +905,7 @@
    "direct": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T12:00:07Z",
+   "last_seen": "2026-08-28T15:01:40Z",
    "active": true
   },
   {

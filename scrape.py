@@ -884,19 +884,22 @@ def run():
         if j["last_seen"] >= cutoff:
             jobs_out.append(j)
 
-    # JDs for the overnight CV runner: fresh, non-tiebreak, with enough text.
+    # JDs for the overnight runner: every active role (facts parsing), the
+    # fresh non-tiebreak ones flagged for CV generation.
     day_ago = (NOW - timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
     jds = {}
     for j in jobs_out:
         jd = j.pop("_jd", "")
-        if (j.get("first_seen", "") >= day_ago and j["active"]
-                and j["bucket"] != "tiebreak" and len(jd) >= 200):
+        if j["active"] and len(jd) >= 200:
             jds[j["id"]] = {
                 "title": j["title"], "company": j["company"],
                 "url": j.get("apply_url") or j["url"],
                 "location": j["location"], "salary": j["salary"],
                 "market": j["market"], "xp": j.get("xp"),
-                "first_seen": j["first_seen"], "jd": jd[:20000],
+                "bucket": j["bucket"], "first_seen": j["first_seen"],
+                "fresh": (j.get("first_seen", "") >= day_ago
+                          and j["bucket"] != "tiebreak"),
+                "jd": jd[:20000],
             }
     (ROOT / "data" / "jds.json").write_text(
         json.dumps({"generated_at": RUN_ID, "jobs": jds}, indent=1, ensure_ascii=False))

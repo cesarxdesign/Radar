@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-28T23:02:18Z",
- "run_id": "2026-08-28T23:02:18Z",
+ "generated_at": "2026-08-28T23:09:39Z",
+ "run_id": "2026-08-28T23:09:39Z",
  "counts": {
-  "active": 46,
-  "new": 0
+  "active": 51,
+  "new": 2
  },
  "sources": {
   "remotive": {
@@ -88,7 +88,7 @@
   },
   "greenhouse/webflow": {
    "ok": true,
-   "fetched": 26
+   "fetched": 27
   },
   "greenhouse/intercom": {
    "ok": true,
@@ -254,6 +254,10 @@
    "ok": true,
    "fetched": 5
   },
+  "greenhouse/fueledcareers": {
+   "ok": true,
+   "fetched": 10
+  },
   "greenhouse/mavenclinic": {
    "ok": true,
    "fetched": 32
@@ -289,6 +293,110 @@
  },
  "jobs": [
   {
+   "id": "beba0887f93ebc8c",
+   "title": "Mediengestalter/Grafikdesigner (m/w/d)",
+   "company": "Bäcker Görtz GmbH",
+   "url": "https://www.arbeitnow.com/jobs/companies/backer-gortz-gmbh/mediengestalter-grafikdesigner-ludwigshafen-21185",
+   "source": "arbeitnow",
+   "location": "Ludwigshafen, Rheinland-Pfalz, Deutschland",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-08-28T20:30:22+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Ludwigshafen, Rheinland-Pf…",
+   "apply_url": "https://app.recruitee.com/",
+   "apply_kind": "direct",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:09:39Z",
+   "first_run": "2026-08-28T23:09:39Z",
+   "last_seen": "2026-08-28T23:09:39Z",
+   "active": true
+  },
+  {
+   "id": "5bdcad0422dcf96e",
+   "title": "Grafikdesigner (m/w/d) in Vollzeit",
+   "company": "Immo-Marketer",
+   "url": "https://www.arbeitnow.com/jobs/companies/immo-marketer/grafikdesigner-in-vollzeit-bochum-239365",
+   "source": "arbeitnow",
+   "location": "Bochum",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-08-28T19:20:14+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Bochum",
+   "apply_url": "https://www.arbeitnow.com/english-speaking-jobs",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:09:39Z",
+   "first_run": "2026-08-28T23:09:39Z",
+   "last_seen": "2026-08-28T23:09:39Z",
+   "active": true
+  },
+  {
+   "id": "76e37af61e56fd16",
+   "title": "Contract Senior Content Designer",
+   "company": "Fueled",
+   "url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5162182008",
+   "source": "greenhouse/fueledcareers",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-03-25T16:29:26-04:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Remote",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:08:04Z",
+   "first_run": "2026-08-28T23:08:04Z",
+   "last_seen": "2026-08-28T23:09:39Z",
+   "active": true
+  },
+  {
+   "id": "22f361e0072154f4",
+   "title": "Lead UX Designer",
+   "company": "Fueled",
+   "url": "https://job-boards.greenhouse.io/fueledcareers/jobs/4038306008",
+   "source": "greenhouse/fueledcareers",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-02-06T17:26:08-05:00",
+   "xp": "6+y",
+   "derived_from": null,
+   "market": "Remote",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:08:04Z",
+   "first_run": "2026-08-28T23:08:04Z",
+   "last_seen": "2026-08-28T23:09:39Z",
+   "active": true
+  },
+  {
+   "id": "248167df6229910a",
+   "title": "Product Designer – Content Solutions",
+   "company": "Fueled",
+   "url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5173502008",
+   "source": "greenhouse/fueledcareers",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-04-21T12:55:28-04:00",
+   "xp": "3+y",
+   "derived_from": null,
+   "market": "Remote",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:08:04Z",
+   "first_run": "2026-08-28T23:08:04Z",
+   "last_seen": "2026-08-28T23:09:39Z",
+   "active": true
+  },
+  {
    "id": "2792f23ccb9703a5",
    "title": "Product Designer",
    "company": "Airapps",
@@ -299,12 +407,13 @@
    "salary": "€36K – €46K",
    "posted": "2026-02-17T13:02:52.615+00:00",
    "xp": "3+y",
+   "derived_from": "ea5983a17978b9a3",
    "market": "Lisbon",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -318,12 +427,13 @@
    "salary": "€44K – €55K",
    "posted": "2026-02-17T12:50:39.094+00:00",
    "xp": "3+y",
+   "derived_from": "ea5983a17978b9a3",
    "market": "Lisbon",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -337,12 +447,13 @@
    "salary": "$100K – $125K",
    "posted": "2026-04-24T11:11:41.553+00:00",
    "xp": "3–5y",
+   "derived_from": "ea5983a17978b9a3",
    "market": "Lisbon",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -356,12 +467,13 @@
    "salary": null,
    "posted": "2026-01-11T11:27:41-05:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -375,12 +487,13 @@
    "salary": null,
    "posted": "2026-01-29T09:30:50-05:00",
    "xp": "8+y",
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -394,12 +507,13 @@
    "salary": null,
    "posted": "2025-07-04T03:38:19-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -413,12 +527,13 @@
    "salary": null,
    "posted": "2025-07-04T03:30:57-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -432,12 +547,13 @@
    "salary": null,
    "posted": "2025-01-28T04:50:31-05:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -451,12 +567,13 @@
    "salary": null,
    "posted": "2023-08-29T11:10:54-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -470,12 +587,13 @@
    "salary": null,
    "posted": "2026-08-14 08:56:41 UTC",
    "xp": null,
+   "derived_from": "4999834a0de25100",
    "market": "Remote job",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -584,6 +702,7 @@
    "salary": null,
    "posted": "Fri, 28 Aug 2026 13:26:53 +0000",
    "xp": "7+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://ondeckglobal.com",
    "apply_kind": "careers",
@@ -591,7 +710,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -605,12 +724,13 @@
    "salary": null,
    "posted": "2026-07-28T14:23:05",
    "xp": "5+y",
+   "derived_from": null,
    "market": "Europe",
    "direct": false,
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -624,12 +744,13 @@
    "salary": "€154K – €250K • Offers Equity • Multiple Ranges",
    "posted": "2025-11-13T23:43:02.608+00:00",
    "xp": "2+y",
+   "derived_from": null,
    "market": "Portugal",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -643,6 +764,7 @@
    "salary": "$149,000",
    "posted": "2025-10-28T10:44:54-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": false,
@@ -650,28 +772,29 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
    "id": "5ffa0ba9139dca8f",
    "title": "Lead UX Designer | EMEA | Contract",
    "company": "Fueled",
-   "url": "https://jobicy.com/jobs/151561-lead-ux-designer-emea-contract",
-   "source": "jobicy",
-   "location": "EMEA,  Europe",
+   "url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008",
+   "source": "greenhouse/fueledcareers",
+   "location": "Remote",
    "bucket": "eu",
    "salary": null,
-   "posted": "2026-08-25T13:22:56+00:00",
+   "posted": "2026-05-12T12:21:17-04:00",
    "xp": "6+y",
-   "market": "EMEA",
-   "apply_url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008",
-   "apply_kind": "direct",
+   "derived_from": null,
+   "market": "Remote",
    "direct": true,
    "frameable": true,
+   "apply_url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008",
+   "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -685,6 +808,7 @@
    "salary": "$56 – $100 per hour • Multiple Ranges",
    "posted": "2026-08-18T23:30:04.298+00:00",
    "xp": null,
+   "derived_from": null,
    "market": "Portugal",
    "direct": true,
    "frameable": false,
@@ -692,7 +816,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -706,6 +830,7 @@
    "salary": "$175,000 to $275,000",
    "posted": "2026-08-12T17:20:39.841+00:00",
    "xp": "7+y",
+   "derived_from": null,
    "market": "Europe",
    "direct": true,
    "frameable": false,
@@ -713,7 +838,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -727,6 +852,7 @@
    "salary": null,
    "posted": "2026-08-15T10:58:25+00:00",
    "xp": "4–7y",
+   "derived_from": null,
    "market": "Europe",
    "apply_url": "https://maze.co/careers/",
    "apply_kind": "careers",
@@ -734,7 +860,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -748,12 +874,13 @@
    "salary": "$60,000 to $ 140,400",
    "posted": "2026-06-08T03:58:40-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -767,6 +894,7 @@
    "salary": null,
    "posted": "2024-05-27T11:23:40-04:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
@@ -774,7 +902,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -788,6 +916,7 @@
    "salary": null,
    "posted": "2026-01-29T09:32:40-05:00",
    "xp": null,
+   "derived_from": null,
    "market": "EMEA",
    "direct": true,
    "frameable": true,
@@ -795,7 +924,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -809,6 +938,7 @@
    "salary": "$ 162,500 - $195,000",
    "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
    "xp": "8+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://job-boards.greenhouse.io/webflow/jobs/8096142",
    "apply_kind": "direct",
@@ -816,7 +946,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -830,6 +960,7 @@
    "salary": null,
    "posted": "Tue, 11 Aug 2026 03:24:55 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://www.pixelone.app/careers",
    "apply_kind": "careers",
@@ -837,7 +968,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -851,6 +982,7 @@
    "salary": null,
    "posted": "Tue, 11 Aug 2026 02:51:33 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://www.pixelone.app/careers",
    "apply_kind": "careers",
@@ -858,7 +990,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -872,6 +1004,7 @@
    "salary": "€1,000–3,500",
    "posted": "Fri, 07 Aug 2026 09:59:18 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://www.kazaarfragrances.com",
    "apply_kind": "careers",
@@ -879,7 +1012,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -893,12 +1026,13 @@
    "salary": null,
    "posted": "Thu, 06 Aug 2026 09:16:25 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -912,6 +1046,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:58 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://jobs.ashbyhq.com/pressw",
    "apply_kind": "careers",
@@ -919,7 +1054,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -933,6 +1068,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "xp": "4+y",
+   "derived_from": null,
    "market": "Worldwide",
    "board_roles": [
     {
@@ -952,7 +1088,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -966,6 +1102,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "xp": "2+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://pavago.co",
    "apply_kind": "careers",
@@ -973,7 +1110,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -987,6 +1124,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://iisd.org",
    "apply_kind": "careers",
@@ -994,7 +1132,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1008,6 +1146,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://koinlimited.co.uk",
    "apply_kind": "careers",
@@ -1015,7 +1154,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1029,6 +1168,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
    "xp": "7–10y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://ehvert.com",
    "apply_kind": "careers",
@@ -1036,7 +1176,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1050,6 +1190,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
    "xp": "2+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://gowalter.co",
    "apply_kind": "careers",
@@ -1057,7 +1198,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1071,6 +1212,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
    "xp": "3+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "http://clario.com",
    "apply_kind": "careers",
@@ -1078,7 +1220,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1092,6 +1234,7 @@
    "salary": null,
    "posted": "Tue, 04 Aug 2026 15:18:57 +0000",
    "xp": null,
+   "derived_from": null,
    "market": "Pichincha",
    "apply_url": "http://kalungi.com",
    "apply_kind": "careers",
@@ -1099,7 +1242,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1113,6 +1256,7 @@
    "salary": null,
    "posted": "Fri, 17 Jul 2026 16:43:01 +0000",
    "xp": "10+y",
+   "derived_from": null,
    "market": "Worldwide",
    "apply_url": "https://garden3d.net",
    "apply_kind": "careers",
@@ -1120,7 +1264,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1134,12 +1278,13 @@
    "salary": null,
    "posted": "2026-07-22T10:57:46.241Z",
    "xp": null,
+   "derived_from": null,
    "market": "Lisbon",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1153,12 +1298,13 @@
    "salary": null,
    "posted": "2025-06-20T12:34:51-04:00",
    "xp": "5+y",
+   "derived_from": null,
    "market": "Hybrid",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1172,12 +1318,13 @@
    "salary": "$155,000 - $175,000",
    "posted": "2026-08-06T10:41:01-04:00",
    "xp": "10+y",
+   "derived_from": null,
    "market": "Remote",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1191,12 +1338,13 @@
    "salary": null,
    "posted": "2026-04-29T18:16:36.164+00:00",
    "xp": "7+y",
+   "derived_from": null,
    "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1210,12 +1358,13 @@
    "salary": null,
    "posted": "2026-08-06T19:59:06.175+00:00",
    "xp": "2+y",
+   "derived_from": null,
    "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1229,12 +1378,13 @@
    "salary": null,
    "posted": "2026-06-23T14:51:39.758+00:00",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1248,12 +1398,13 @@
    "salary": null,
    "posted": "2026-07-22T11:01:14.397+00:00",
    "xp": null,
+   "derived_from": null,
    "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1267,12 +1418,13 @@
    "salary": null,
    "posted": "2026-08-04T10:30:17.424+00:00",
    "xp": null,
+   "derived_from": null,
    "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1286,12 +1438,13 @@
    "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
    "posted": "2026-06-12T20:19:00.233+00:00",
    "xp": "2+y",
+   "derived_from": null,
    "market": "Portugal",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {
@@ -1305,12 +1458,13 @@
    "salary": null,
    "posted": "2026-06-26T16:32:25.973+00:00",
    "xp": "8+y",
+   "derived_from": null,
    "market": "Portugal",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:02:18Z",
+   "last_seen": "2026-08-28T23:09:39Z",
    "active": true
   },
   {

@@ -287,6 +287,16 @@ function selectJob(id) {
   SEL = id;
   render();
 }
+function goToJob(id) {
+  const j = DATA.jobs.find(x => x.id === id && x.active);
+  if (!j) return;
+  const st = state.jobs[id];
+  tab = st === "applied" ? "applied" : st === "discarded" ? "discarded"
+      : j.direct ? "direct" : "indirect";
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.tab === tab));
+  SEL = id;
+  render();
+}
 function renderPreview() {
   const j = SEL && DATA.jobs.find(x => x.id === SEL);
   if (!j || PV === j.id) return;
@@ -297,10 +307,19 @@ function renderPreview() {
   const orig = document.getElementById("pv-orig");
   const srcBtn = document.getElementById("pv-src");
   orig.href = target; orig.style.display = j.apply_url ? "" : "none";
-  srcBtn.href = safeUrl(j.url);
-  srcBtn.style.display = (j.url && j.url !== (j.apply_url || j.url)) || j.apply_url ? "" : "";
-  if (!j.apply_url) { srcBtn.style.marginLeft = "auto"; } else { srcBtn.style.marginLeft = ""; }
-  if (j.apply_url === j.url) srcBtn.style.display = "none";
+  srcBtn.onclick = null;
+  const origin = j.derived_from && DATA.jobs.find(x => x.id === j.derived_from && x.active);
+  if (origin) {
+    // derived role: Source jumps to the radar job that led us to this board
+    srcBtn.href = "#"; srcBtn.textContent = "Source: " + origin.company + " ●";
+    srcBtn.style.display = "";
+    srcBtn.onclick = e => { e.preventDefault(); goToJob(origin.id); };
+  } else {
+    srcBtn.textContent = "Source ↗";
+    srcBtn.href = safeUrl(j.url);
+    srcBtn.style.display = (j.apply_url && j.apply_url !== j.url) ? "" : "none";
+  }
+  srcBtn.style.marginLeft = j.apply_url ? "" : "auto";
   const body = document.getElementById("pv-body");
   if (j.frameable) {
     body.innerHTML = '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';

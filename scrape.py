@@ -11,6 +11,7 @@ import urllib.request
 import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from html import unescape
 from pathlib import Path
@@ -42,7 +43,10 @@ def title_ok(title):
     t = title or ""
     return bool(INC.search(t)) and not EXC_JUNIOR.search(t) and not EXC_FIELD.search(t)
 
-PT_RE = re.compile(r"\b(portugal|lisbon|lisboa|porto)\b", re.I)
+PT_RE = re.compile(
+    r"\b(portugal|lisbon|lisboa|porto(?!\s*alegre)|braga|coimbra|aveiro|faro|"
+    r"set[uú]bal|oeiras|cascais|sintra|guimar[ãa]es|matosinhos|funchal|"
+    r"[ée]vora|leiria|almada|amadora|pt)\b", re.I)
 EU_RE = re.compile(r"\b(europe|european|emea|eu|eea|cet|wet|gmt|utc)\b", re.I)
 WW_RE = re.compile(r"\b(worldwide|world wide|anywhere|globally|global|international)\b", re.I)
 REMOTE_RE = re.compile(r"\bremote\b", re.I)
@@ -77,8 +81,10 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
     """Bucket a job by Portugal hireability.
 
     Returns one of: 'pt', 'eu', 'ww', 'tiebreak', or None (drop).
-    Negative evidence only ever comes from location/restriction fields,
-    never from job descriptions.
+    Filter-out policy: drop ONLY on explicit negative evidence - a stated
+    scope that excludes Portugal. Anything ambiguous survives as 'tiebreak'
+    and is surfaced in the Unsure tier. Negative evidence only ever comes
+    from location/restriction fields, never from job descriptions.
     """
     loc = (location_text or "").strip()
 
@@ -89,6 +95,8 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
             return "pt"
         if EU_RE.search(joined):
             return "eu"
+        if WW_RE.search(joined):
+            return "ww"
         return None  # explicit country list without Portugal
     if PT_RE.search(loc):
         return "pt"
@@ -98,18 +106,18 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
         return "ww"
     # Timezone restrictions: Portugal is UTC+0 (+1 in summer).
     if timezones:
-        return "ww" if (0 in timezones or 1 in timezones) else None
+        if 0 in timezones or 1 in timezones:
+            return "ww"
+        if any(isinstance(t, (int, float)) and -2 <= t <= 3 for t in timezones):
+            return "tiebreak"  # near-PT window, worth a look
+        return None  # window is explicitly far from Portugal
     if loc:
         if ELSEWHERE_RE.search(loc):
-            return None  # somewhere specific, not Portugal
-        if REMOTE_RE.search(loc) or re.search(r"\bhybrid\b", loc, re.I):
-            return "tiebreak"  # remote/hybrid with no scope stated
-        if remote:
-            return "tiebreak"  # remote but location unreadable -> surface it
-        return None  # an on-site office we can't recognize is not Portugal
+            return None  # stated scope is somewhere else, not Portugal
+        return "tiebreak"  # a place or scope we can't read - surface it
     # No location info at all.
     if remote is False:
-        return None
+        return None  # explicitly on-site, somewhere unstated
     return "tiebreak"
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -179,6 +187,31 @@ def fmt_range(lo, hi, cur=""):
         return f"{sym}{lo}–{hi}"
     if lo or hi:
         return f"{sym}{lo or hi}"
+    return None
+
+MONTHS = {m: i + 1 for i, m in enumerate(
+    ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
+
+def parse_posted(s):
+    """Posted date in any of the sources' formats -> aware datetime or None."""
+    if not s:
+        return None
+    s = str(s).strip()
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                            tzinfo=timezone.utc)
+        except ValueError:
+            return None
+    m = re.search(r"(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{4})", s)
+    if m:
+        try:
+            return datetime(int(m.group(3)), MONTHS[m.group(2)], int(m.group(1)),
+                            tzinfo=timezone.utc)
+        except ValueError:
+            return None
     return None
 
 # ---------------------------------------------------------------- sources
@@ -353,8 +386,9 @@ def src_greenhouse(slug):
         })
     return out
 
-def src_lever(slug):
-    d = fetch_json(f"https://api.lever.co/v0/postings/{slug}?mode=json")
+def src_lever(slug, eu=False):
+    api = "api.eu.lever.co" if eu else "api.lever.co"
+    d = fetch_json(f"https://{api}/v0/postings/{slug}?mode=json")
     out = []
     for j in d:
         cats = j.get("categories") or {}
@@ -387,6 +421,432 @@ def src_ashby(slug):
             "raw": j.get("descriptionPlain") or "",
         })
     return out
+
+# --- ATS platform fetchers (RemoteRocketship-class coverage) -------------
+# Every platform below serves a public, keyless feed per company. The
+# companies come from data/companies.json (the registry), which discovery
+# and the census seed keep growing.
+
+REGISTRY_FILE = ROOT / "data" / "companies.json"
+try:
+    REGISTRY = json.loads(REGISTRY_FILE.read_text())
+except Exception:
+    REGISTRY = {}
+
+def src_workday(tenant, host, site, company):
+    """Workday CXS API. Detail-fetches design roles only - boards are huge."""
+    out, seen = [], set()
+    for q in ("design", "ux"):
+        offset = 0
+        for _ in range(5):
+            body = json.dumps({"appliedFacets": {}, "limit": 20,
+                               "offset": offset, "searchText": q}).encode()
+            req = urllib.request.Request(
+                f"https://{host}/wday/cxs/{tenant}/{site}/jobs", data=body,
+                headers={"User-Agent": UA, "Content-Type": "application/json",
+                         "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.loads(r.read().decode("utf-8", "replace"))
+            for p in d.get("jobPostings") or []:
+                ep = p.get("externalPath")
+                if not ep or ep in seen or not title_ok(p.get("title")):
+                    continue
+                seen.add(ep)
+                try:
+                    det = fetch_json(f"https://{host}/wday/cxs/{tenant}/{site}{ep}").get("jobPostingInfo") or {}
+                except Exception:
+                    det = {}
+                loc = ", ".join(filter(None, [det.get("location")] +
+                                       (det.get("additionalLocations") or [])))
+                raw = det.get("jobDescription") or ""
+                out.append({
+                    "source": f"workday/{tenant}", "company": company,
+                    "title": p.get("title"),
+                    "url": det.get("externalUrl") or f"https://{host}/{site}{ep}",
+                    "location": loc,
+                    "remote": bool(re.search(r"remote", loc, re.I)) or None,
+                    "salary": None, "posted": det.get("startDate"),
+                    "desc": strip_html(raw), "raw": raw,
+                })
+            offset += 20
+            if offset >= (d.get("total") or 0):
+                break
+    return out
+
+def src_bamboohr(slug, company):
+    d = fetch_json(f"https://{slug}.bamboohr.com/careers/list")
+    out = []
+    for j in d.get("result") or []:
+        title = j.get("jobOpeningName")
+        loc = j.get("atsLocation") or j.get("location") or {}
+        loc_s = ", ".join(filter(None, [loc.get("city"), loc.get("state"),
+                                        loc.get("country")]))
+        raw = ""
+        if title_ok(title):
+            try:
+                det = fetch_json(f"https://{slug}.bamboohr.com/careers/{j['id']}/detail")
+                jo = (det.get("result") or {}).get("jobOpening") or {}
+                raw = unescape(jo.get("description") or "")
+            except Exception:
+                pass
+        remote = j.get("isRemote")
+        if remote is None:
+            remote = bool(re.search(r"remote", f"{title} {loc_s}", re.I)) or None
+        out.append({
+            "source": f"bamboohr/{slug}", "company": company,
+            "title": title,
+            "url": f"https://{slug}.bamboohr.com/careers/{j['id']}",
+            "location": loc_s, "remote": remote, "salary": None,
+            "posted": None, "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_breezy(slug, company):
+    d = fetch_json(f"https://{slug}.breezy.hr/json")
+    out = []
+    for j in d:
+        loc = j.get("location") or {}
+        raw = j.get("description") or ""
+        out.append({
+            "source": f"breezy/{slug}", "company": company,
+            "title": j.get("name"), "url": j.get("url"),
+            "location": loc.get("name") or "",
+            "remote": bool(loc.get("is_remote")) or None,
+            "salary": (j.get("salary") or "").strip() or None,
+            "posted": j.get("published_date"),
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_workable(slug, company):
+    d = fetch_json(f"https://apply.workable.com/api/v1/widget/accounts/{slug}?details=true")
+    out = []
+    for j in d.get("jobs", []):
+        locs = j.get("locations") or []
+        loc = ", ".join(dict.fromkeys(
+            ", ".join(filter(None, [l.get("city"), l.get("country")]))
+            for l in locs if isinstance(l, dict))) or \
+            ", ".join(filter(None, [j.get("city"), j.get("country")]))
+        raw = j.get("description") or ""
+        out.append({
+            "source": f"workable/{slug}", "company": d.get("name") or company,
+            "title": j.get("title"), "url": j.get("url"),
+            "location": loc, "remote": bool(j.get("telecommuting")) or None,
+            "salary": None, "posted": j.get("published_on") or j.get("created_at"),
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_smartrecruiters(slug, company):
+    """Design roles only - big consultancies list 1000+ postings."""
+    out, offset = [], 0
+    for _ in range(5):  # 500 newest postings
+        d = fetch_json(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset={offset}")
+        items = d.get("content") or []
+        for j in items:
+            title = j.get("name")
+            if not title_ok(title):
+                continue
+            loc = j.get("location") or {}
+            loc_s = loc.get("fullLocation") or ", ".join(
+                filter(None, [loc.get("city"), (loc.get("country") or "").upper()]))
+            raw = ""
+            try:
+                det = fetch_json(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings/{j['id']}")
+                secs = (det.get("jobAd") or {}).get("sections") or {}
+                raw = " ".join((secs.get(k) or {}).get("text") or "" for k in
+                               ("companyDescription", "jobDescription",
+                                "qualifications", "additionalInformation"))
+            except Exception:
+                pass
+            out.append({
+                "source": f"smartrecruiters/{slug}",
+                "company": (j.get("company") or {}).get("name") or company,
+                "title": title,
+                "url": f"https://jobs.smartrecruiters.com/{slug}/{j['id']}",
+                "location": loc_s, "remote": bool(loc.get("remote")) or None,
+                "salary": None, "posted": j.get("releasedDate"),
+                "desc": strip_html(raw), "raw": raw,
+            })
+        offset += 100
+        if not items or offset >= (d.get("totalFound") or 0):
+            break
+    return out
+
+def src_teamtailor(host, company):
+    xml = fetch(f"https://{host}/jobs.rss")
+    root = ET.fromstring(xml)
+    out = []
+    for item in root.iter("item"):
+        get = lambda tag: (item.findtext(tag) or "").strip()
+        title, link = get("title"), get("link")
+        raw = get("description")
+        loc = ", ".join(filter(None, [get("location"), get("region"), get("country")]))
+        job = {
+            "source": f"teamtailor/{host.split('.')[0]}", "company": company,
+            "title": title, "url": link, "location": loc,
+            "remote": bool(re.search(r"remote", f"{title} {loc}", re.I)) or None,
+            "salary": None, "posted": get("pubDate") or None,
+            "desc": strip_html(raw), "raw": raw,
+        }
+        if title_ok(title) and link and not loc:
+            orig = fetch_original(link, company, title)
+            if orig.get("loc"):
+                job["location"] = orig["loc"]
+            if orig.get("salary"):
+                job["salary"] = orig["salary"]
+        out.append(job)
+    return out
+
+def src_personio(host, company):
+    xml = fetch(f"https://{host}/xml")
+    root = ET.fromstring(xml)
+    out = []
+    for pos in root.iter("position"):
+        offices = [o.text.strip() for o in pos.iter("office") if o.text]
+        loc = ", ".join(dict.fromkeys(offices))
+        raw = " ".join(jd.findtext("value") or "" for jd in pos.iter("jobDescription"))
+        pid = (pos.findtext("id") or "").strip()
+        out.append({
+            "source": f"personio/{host.split('.')[0]}",
+            "company": (pos.findtext("subcompany") or "").strip() or company,
+            "title": (pos.findtext("name") or "").strip(),
+            "url": f"https://{host}/job/{pid}",
+            "location": loc,
+            "remote": bool(re.search(r"remote", loc, re.I)) or None,
+            "salary": None, "posted": None,
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_pinpoint(slug, company):
+    d = fetch_json(f"https://{slug}.pinpointhq.com/postings.json")
+    out = []
+    for j in (d.get("data") if isinstance(d, dict) else d) or []:
+        loc = j.get("location") or {}
+        loc_s = loc.get("name") if isinstance(loc, dict) else str(loc or "")
+        raw = j.get("description") or ""
+        wt = (j.get("workplace_type") or "").lower()
+        out.append({
+            "source": f"pinpoint/{slug}", "company": company,
+            "title": j.get("title"),
+            "url": j.get("url") or f"https://{slug}.pinpointhq.com/en/postings/{j.get('id')}",
+            "location": loc_s or "",
+            "remote": ("remote" in wt) or bool(re.search(r"remote", loc_s or "", re.I)) or None,
+            "salary": (j.get("compensation") or "").strip() or None,
+            "posted": j.get("published_at") or j.get("created_at"),
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_join(slug, company):
+    html = fetch(f"https://join.com/companies/{slug}")
+    m = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html, re.S)
+    if not m:
+        return []
+    def find_jobs(o):
+        if isinstance(o, dict):
+            v = o.get("jobs")
+            if isinstance(v, list) and v and isinstance(v[0], dict) and v[0].get("title"):
+                return v
+            for x in o.values():
+                r = find_jobs(x)
+                if r:
+                    return r
+        elif isinstance(o, list):
+            for x in o:
+                r = find_jobs(x)
+                if r:
+                    return r
+        return None
+    out = []
+    for j in find_jobs(json.loads(m.group(1))) or []:
+        jid = j.get("id")
+        url = f"https://join.com/companies/{slug}/{jid}-{j.get('slug') or ''}".rstrip("-") if jid else None
+        country = j.get("country")
+        country = country.get("name") if isinstance(country, dict) else (country or "")
+        job = {
+            "source": f"join/{slug}", "company": company,
+            "title": j.get("title"), "url": url,
+            "location": ", ".join(filter(None, [j.get("city") or "", country])),
+            "remote": bool(j.get("isRemote") or j.get("remote")) or None,
+            "salary": None, "posted": j.get("publishedAt") or j.get("createdAt"),
+            "desc": "", "raw": "",
+        }
+        if title_ok(job["title"]) and url:
+            orig = fetch_original(url, company, job["title"])
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+            if orig.get("loc") and not job["location"]:
+                job["location"] = orig["loc"]
+        out.append(job)
+    return out
+
+def src_manatal(slug, company):
+    base = f"https://www.careers-page.com/{slug}"
+    html = fetch(base)
+    out, seen = [], set()
+    for m in re.finditer(r'<a\b[^>]*href="([^"]*/job/[A-Za-z0-9]+)"[^>]*>(.*?)</a>', html, re.S | re.I):
+        u = urllib.parse.urljoin(base, m.group(1))
+        if u in seen:
+            continue
+        seen.add(u)
+        title = re.sub(r"\s+", " ", strip_html(m.group(2), 200)).strip()
+        job = {"source": f"manatal/{slug}", "company": company, "title": title,
+               "url": u, "location": "", "remote": None, "salary": None,
+               "posted": None, "desc": "", "raw": ""}
+        if title_ok(title):
+            orig = fetch_original(u, company, title)
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+            if orig.get("loc"):
+                job["location"] = orig["loc"]
+            if orig.get("salary"):
+                job["salary"] = orig["salary"]
+        out.append(job)
+    return out
+
+def registry_tasks():
+    """(name, fetch-callable) per registry company. Names match job sources."""
+    tasks = []
+    def label(e, default):
+        return e.get("company") or default
+    def brand(jobs, e):
+        c = e.get("company")
+        return [dict(j, company=c or j.get("company")) for j in jobs] if c else jobs
+    for e in REGISTRY.get("workday", []):
+        tasks.append((f"workday/{e['tenant']}", lambda e=e: src_workday(
+            e["tenant"], e["host"], e["site"], label(e, e["tenant"].title()))))
+    for e in REGISTRY.get("bamboohr", []):
+        tasks.append((f"bamboohr/{e['slug']}", lambda e=e: src_bamboohr(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("breezy", []):
+        tasks.append((f"breezy/{e['slug']}", lambda e=e: src_breezy(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("workable", []):
+        tasks.append((f"workable/{e['slug']}", lambda e=e: src_workable(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("smartrecruiters", []):
+        tasks.append((f"smartrecruiters/{e['slug']}", lambda e=e: src_smartrecruiters(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("teamtailor", []):
+        tasks.append((f"teamtailor/{e['host'].split('.')[0]}", lambda e=e: src_teamtailor(
+            e["host"], label(e, e["host"].split(".")[0].title()))))
+    for e in REGISTRY.get("personio", []):
+        tasks.append((f"personio/{e['host'].split('.')[0]}", lambda e=e: src_personio(
+            e["host"], label(e, e["host"].split(".")[0].title()))))
+    for e in REGISTRY.get("pinpoint", []):
+        tasks.append((f"pinpoint/{e['slug']}", lambda e=e: src_pinpoint(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("join", []):
+        tasks.append((f"join/{e['slug']}", lambda e=e: src_join(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("manatal", []):
+        tasks.append((f"manatal/{e['slug']}", lambda e=e: src_manatal(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("recruitee", []):
+        tasks.append((f"recruitee/{e['slug']}", lambda e=e: brand(src_recruitee(e["slug"]), e)))
+    for e in REGISTRY.get("greenhouse", []):
+        tasks.append((f"greenhouse/{e['slug']}", lambda e=e: src_greenhouse(e["slug"])))
+    for e in REGISTRY.get("lever", []):
+        tasks.append((f"lever/{e['slug']}", lambda e=e: brand(
+            src_lever(e["slug"], e.get("eu", False)), e)))
+    for e in REGISTRY.get("ashby", []):
+        tasks.append((f"ashby/{e['slug']}", lambda e=e: brand(src_ashby(e["slug"]), e)))
+    return tasks
+
+# --- registry discovery: search engines teach us new company boards ------
+
+DISCOVERY_SITES = [
+    ("workable", "apply.workable.com"), ("bamboohr", "bamboohr.com"),
+    ("breezy", "breezy.hr"), ("teamtailor", "teamtailor.com"),
+    ("personio", "jobs.personio.com"), ("pinpoint", "pinpointhq.com"),
+    ("smartrecruiters", "jobs.smartrecruiters.com"), ("recruitee", "recruitee.com"),
+    ("manatal", "careers-page.com"), ("join", "join.com"),
+    ("ashby", "jobs.ashbyhq.com"), ("greenhouse", "boards.greenhouse.io"),
+    ("lever", "jobs.lever.co"), ("workday", "myworkdayjobs.com"),
+]
+
+def parse_board_url(u):
+    """URL on any known ATS platform -> (platform, registry entry) or None."""
+    m = re.search(r"https?://([a-z0-9-]+)(\.wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)", u, re.I)
+    if m:
+        return "workday", {"tenant": m.group(1).lower(),
+                           "host": (m.group(1) + m.group(2)).lower() + ".myworkdayjobs.com",
+                           "site": m.group(3)}
+    for plat, pat in [
+            ("bamboohr", r"https?://([a-z0-9-]+)\.bamboohr\.com"),
+            ("breezy", r"https?://([a-z0-9-]+)\.breezy\.hr"),
+            ("pinpoint", r"https?://([a-z0-9-]+)\.pinpointhq\.com"),
+            ("recruitee", r"https?://([a-z0-9-]+)\.recruitee\.com")]:
+        m = re.search(pat, u, re.I)
+        if m and m.group(1).lower() != "www":
+            return plat, {"slug": m.group(1).lower()}
+    m = re.search(r"https?://apply\.workable\.com/([a-z0-9-]+)/", u, re.I)
+    if m and m.group(1).lower() not in ("j", "api"):
+        return "workable", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://jobs\.smartrecruiters\.com/([A-Za-z0-9]+)/", u)
+    if m:
+        return "smartrecruiters", {"slug": m.group(1)}
+    m = re.search(r"https?://([a-z0-9-]+)\.teamtailor\.com", u, re.I)
+    if m and m.group(1).lower() != "www":
+        return "teamtailor", {"host": m.group(1).lower() + ".teamtailor.com"}
+    m = re.search(r"https?://([a-z0-9-]+\.jobs\.personio\.(?:com|de))/", u, re.I)
+    if m:
+        return "personio", {"host": m.group(1).lower()}
+    m = re.search(r"https?://(?:www\.)?join\.com/companies/([a-z0-9-]+)", u, re.I)
+    if m:
+        return "join", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://(?:www\.)?careers-page\.com/([a-z0-9-]+)", u, re.I)
+    if m:
+        return "manatal", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://(?:job-boards\.|boards\.)greenhouse\.io/([A-Za-z0-9_-]+)", u)
+    if m and m.group(1) != "embed":
+        return "greenhouse", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://jobs(\.eu)?\.lever\.co/([A-Za-z0-9_-]+)", u)
+    if m:
+        ent = {"slug": m.group(2).lower()}
+        if m.group(1):
+            ent["eu"] = True
+        return "lever", ent
+    m = re.search(r"https?://jobs\.ashbyhq\.com/([A-Za-z0-9_-]+)", u)
+    if m:
+        return "ashby", {"slug": m.group(1)}
+    return None
+
+def registry_add(reg, platform, ent):
+    def key(e):
+        return tuple(sorted((k, v) for k, v in e.items()
+                            if k in ("slug", "host", "tenant", "site")))
+    lst = reg.setdefault(platform, [])
+    if key(ent) in {key(e) for e in lst}:
+        return False
+    lst.append(ent)
+    return True
+
+def discover(reg):
+    """Two site: searches a night, rotating platforms. New boards join the
+    registry and get polled from the next run on."""
+    meta = reg.setdefault("_discovery", {"next": 0})
+    i = meta.get("next", 0)
+    added = 0
+    for step in range(2):
+        plat, dom = DISCOVERY_SITES[(i + step) % len(DISCOVERY_SITES)]
+        try:
+            links = ddg_links(f'site:{dom} "product designer" OR "ux designer" remote')
+        except SearchThrottled:
+            raise
+        except Exception:
+            continue
+        finally:
+            meta["next"] = (i + step + 1) % len(DISCOVERY_SITES)
+        time.sleep(10)
+        for u in links[:20]:
+            pe = parse_board_url(u)
+            if pe and pe[0] == plat and registry_add(
+                    reg, plat, dict(pe[1], via="ddg", added=RUN_ID)):
+                added += 1
+    return added
 
 # ------------------------------------------------- direct apply-link hunting
 
@@ -889,6 +1349,8 @@ def run():
             continue
         try:
             jobs = board_jobs(kind, slug)
+            for bj in jobs:
+                bj["derived_from"] = ent.get("via")
             raw.extend(jobs)
             report[name] = {"ok": True, "fetched": len(jobs)}
         except Exception as e:
@@ -920,6 +1382,7 @@ def run():
             "bucket": bucket, "salary": salary,
             "posted": j.get("posted"),
             "xp": find_xp(j.get("desc")),
+            "derived_from": j.get("derived_from"),
             "market": market_label(bucket, j.get("location")),
             "_raw": j.get("raw") or "",
             "_jd": j.get("desc") or "",
@@ -1000,6 +1463,9 @@ def run():
                     or (board_url(ent2["kind"], ent2["slug"]) if ent2.get("kind") else None)
                     or company_url)
             kind = "careers"
+        ent_v = ATS_CACHE.get(norm(j["company"]))
+        if isinstance(ent_v, dict) and ent_v.get("kind") and not ent_v.get("via"):
+            ent_v["via"] = j["id"]
         if kind == "careers":
             # bring the board's live design roles into the brief pane -
             # the honest answer when the exact posting is gone or hidden

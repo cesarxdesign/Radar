@@ -2,12 +2,14 @@
  "addepar1": {
   "checked": "2026-08-28T17:13:31Z",
   "kind": "greenhouse",
-  "slug": "addepar1"
+  "slug": "addepar1",
+  "via": "55198b53ac149efa"
  },
  "air apps": {
   "checked": "2026-08-28T22:40:15Z",
   "kind": "ashby",
-  "slug": "airapps"
+  "slug": "airapps",
+  "via": "ea5983a17978b9a3"
  },
  "canonical": {
   "checked": "2026-08-28T10:55:55Z",
@@ -88,6 +90,10 @@
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
  },
+ "immo marketer": {
+  "checked": "2026-08-28T23:09:39Z",
+  "kind": null
+ },
  "ingenious build": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
@@ -95,7 +101,8 @@
  "jobgether": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "lever",
-  "slug": "jobgether"
+  "slug": "jobgether",
+  "via": "bb3982f41ae83108"
  },
  "kalungi inc": {
   "checked": "2026-08-28T10:55:55Z",
@@ -116,22 +123,26 @@
  "maven clinic": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
-  "slug": "mavenclinic"
+  "slug": "mavenclinic",
+  "via": "5adf7d538745975c"
  },
  "mayflower": {
   "checked": "2026-08-28T22:40:15Z",
   "kind": "recruitee",
-  "slug": "mayflower"
+  "slug": "mayflower",
+  "via": "4999834a0de25100"
  },
  "maze": {
   "checked": "2026-08-28T16:05:34Z",
   "kind": "ashby",
-  "slug": "mazedesign"
+  "slug": "mazedesign",
+  "via": "5204a6f5b2e81ba9"
  },
  "miro": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "ashby",
-  "slug": "miro"
+  "slug": "miro",
+  "via": "26cf82c7a0e99243"
  },
  "ondeckglobal": {
   "checked": "2026-08-28T15:01:40Z",
@@ -157,12 +168,14 @@
  "pressw": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "ashby",
-  "slug": "pressw"
+  "slug": "pressw",
+  "via": "caf0b09dab896695"
  },
  "thatch": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
-  "slug": "thatch"
+  "slug": "thatch",
+  "via": "6b19e78d6eb4aafd"
  },
  "walter": {
   "checked": "2026-08-28T10:55:55Z",
@@ -171,7 +184,8 @@
  "webflow": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
-  "slug": "webflow"
+  "slug": "webflow",
+  "via": "fd4f6739cc33a6a1"
  },
  "worldly": {
   "checked": "2026-08-28T10:55:55Z",

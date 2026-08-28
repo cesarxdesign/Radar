@@ -1,0 +1,55 @@
+name: probe search
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, re, base64
+          from html import unescape
+          UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+                "Accept-Language": "en-US,en;q=0.9"}
+          Q = '"Mayflower" "Design System Designer"'
+          # DDG lite
+          try:
+              req = urllib.request.Request("https://lite.duckduckgo.com/lite/?q=" + urllib.parse.quote(Q), headers=UA)
+              h = urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "replace")
+              if re.search(r"made by a human|challenge|anomaly", h, re.I):
+                  print("DDG: bot challenge")
+              else:
+                  links = []
+                  for m in re.finditer(r'href="([^"]+)"', h):
+                      u = m.group(1)
+                      if "uddg=" in u:
+                          mm = re.search(r"uddg=([^&]+)", u)
+                          u = urllib.parse.unquote(mm.group(1)) if mm else u
+                      if u.startswith("http") and "duckduckgo" not in u:
+                          links.append(u)
+                  print("DDG results:")
+                  for u in links[:6]: print("  ", u[:100])
+          except Exception as e:
+              print("DDG:", e)
+          # Bing
+          try:
+              req = urllib.request.Request("https://www.bing.com/search?q=" + urllib.parse.quote(Q) + "&count=10", headers=UA)
+              h = urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "replace")
+              out = []
+              for block in re.findall(r'<li class="b_algo".*?</li>', h, re.S):
+                  m = re.search(r'href="(https://www\.bing\.com/ck/a\?[^"]+|https?://[^"]+)"', block)
+                  if not m: continue
+                  u = m.group(1)
+                  if "bing.com/ck/a" in u:
+                      qs = urllib.parse.parse_qs(urllib.parse.urlsplit(unescape(u)).query)
+                      enc = (qs.get("u") or [""])[0]
+                      if enc.startswith("a1"):
+                          pad = enc[2:] + "=" * (-len(enc[2:]) % 4)
+                          try: u = base64.urlsafe_b64decode(pad).decode("utf-8", "replace")
+                          except Exception: continue
+                  if u.startswith("http"): out.append(u)
+              print("BING results:")
+              for u in list(dict.fromkeys(out))[:6]: print("  ", u[:100])
+          except Exception as e:
+              print("BING:", e)
+          PY

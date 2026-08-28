@@ -897,8 +897,7 @@ def run():
                 "location": j["location"], "salary": j["salary"],
                 "market": j["market"], "xp": j.get("xp"),
                 "bucket": j["bucket"], "first_seen": j["first_seen"],
-                "fresh": (j.get("first_seen", "") >= day_ago
-                          and j["bucket"] != "tiebreak"),
+                "fresh": j.get("first_seen", "") >= day_ago,
                 "jd": jd[:20000],
             }
     (ROOT / "data" / "jds.json").write_text(

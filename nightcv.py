@@ -13,6 +13,7 @@ import os
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -36,8 +37,16 @@ def http(url, data=None, timeout=30):
     req = urllib.request.Request(
         url, data=json.dumps(data).encode() if data is not None else None,
         headers={"Content-Type": "application/json", "User-Agent": "nightcv"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode("utf-8", "replace")[:400]
+        except Exception:
+            pass
+        raise RuntimeError(f"HTTP {e.code}: {body or e.reason}") from None
 
 def tcv_alive():
     try:
@@ -91,9 +100,10 @@ def main():
             env.get("PATH", "/usr/bin:/bin")])
         # CLI only - never silently fall back to the billed API key
         env.setdefault("TCV_BACKEND", "cli")
+        srvlog = open(HERE / "tcv-server.log", "ab")
         started = subprocess.Popen(
             [sys.executable, "server.py"], cwd=TCV_DIR, env=env,
-            stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+            stdout=srvlog, stderr=subprocess.STDOUT)
         for _ in range(40):
             if tcv_alive():
                 break

@@ -63,6 +63,11 @@ h2 .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-si
   border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; margin-bottom: 8px;
 }
 .job.unsure { border-left: 3px solid var(--amber); }
+.day { width: 40px; flex: none; text-align: center; color: var(--mut); }
+.day b { display: block; font-size: 19px; line-height: 1; color: var(--ink); font-weight: 700; letter-spacing: -0.02em; }
+.day i { font-style: normal; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
+.day.today b { color: var(--amber); }
+.jmeta .xp { color: var(--ink); }
 .jmain { flex: 1; min-width: 0; }
 .jtitle { font-weight: 600; text-decoration: none; color: var(--ink); }
 .jtitle:hover { color: var(--acc); }
@@ -171,12 +176,9 @@ function esc(s) { return (s || "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":
 function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
 function norm(s) { return (s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
 function when(j) { const t = new Date(j.posted || j.first_seen).getTime(); return isNaN(t) ? 0 : t; }
-function age(j) {
-  const t = when(j); if (!t) return "";
-  const d = (Date.now() - t) / 864e5;
-  if (d < 1) return "today";
-  if (d < 30) return Math.round(d) + "d";
-  return Math.round(d / 30) + "mo";
+function days(j) {
+  const t = when(j); if (!t) return null;
+  return Math.max(0, Math.floor((Date.now() - t) / 864e5));
 }
 function bucketOf(j) {
   const v = state.verdicts[j.id];
@@ -261,16 +263,20 @@ function card(j, opts) {
   const b = bucketOf(j);
   const el = document.createElement("div");
   el.className = "job" + (opts.unsure ? " unsure" : "");
+  const dd = days(j);
   el.innerHTML =
+    '<div class="day' + (dd === 0 ? " today" : "") + '">' +
+      (dd === null ? "" : "<b>" + dd + "</b><i>" + (dd === 1 ? "day" : "days") + "</i>") +
+    "</div>" +
     '<div class="jmain">' +
       '<a class="jtitle" href="' + esc(safeUrl(j.apply_url || j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
       (opts.isNew ? ' <span class="badge b-new">new</span>' : "") +
       (b === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
       (b === "ok" ? ' <span class="badge b-ok">ok’d</span>' : "") +
       '<div class="jmeta"><span class="co">' + esc(j.company) + "</span>" +
-      "<span>" + esc(j.location || BUCKET[j.bucket] || "") + "</span>" +
-      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? " → direct" : "") + "</span>" +
-      "<span>" + age(j) + "</span></div>" +
+      '<span title="' + esc(j.location) + '">' + esc(j.market || BUCKET[j.bucket] || "") + "</span>" +
+      (j.xp ? '<span class="xp">asks ' + esc(j.xp) + "</span>" : "") +
+      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? " → direct" : "") + "</span></div>" +
     "</div>" +
     (j.salary ? '<span class="sal">' + esc(j.salary) + "</span>" : "") +
     '<div class="jacts">' + (

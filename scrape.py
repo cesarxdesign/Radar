@@ -112,7 +112,7 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
 
 TAG_RE = re.compile(r"<[^>]+>")
 
-def strip_html(s, limit=3000):
+def strip_html(s, limit=12000):
     return unescape(TAG_RE.sub(" ", s or ""))[:limit]
 
 SAL_RE = re.compile(
@@ -129,6 +129,40 @@ def find_salary(*texts):
         if m:
             return m.group(0).strip()
     return None
+
+XP_RE = re.compile(
+    r"(\d{1,2})\s*(?:\+|\s*(?:-|–|—|to)\s*(\d{1,2}))?\s*\+?\s*"
+    r"(?:years?|yrs?)(?:['’]| of| in| relevant| professional| hands.on|\b)", re.I)
+XP_CTX = re.compile(r"experience|track record|working (?:in|as|with)|in (?:product|ux|design)", re.I)
+
+def find_xp(text):
+    """'5+ years of experience' -> '5+y'. Context-checked, capped at 20."""
+    best = None
+    for m in XP_RE.finditer(text or ""):
+        lo = int(m.group(1))
+        if not 1 <= lo <= 20:
+            continue
+        window = (text[max(0, m.start() - 60):m.end() + 60])
+        if not XP_CTX.search(window):
+            continue
+        hi = m.group(2)
+        val = (lo, int(hi) if hi else None)
+        if best is None or val[0] > best[0]:
+            best = val
+    if best is None:
+        return None
+    lo, hi = best
+    return f"{lo}–{hi}y" if hi else f"{lo}+y"
+
+def market_label(bucket, loc):
+    l = loc or ""
+    if bucket == "pt":
+        return "Lisbon" if re.search(r"lisbon|lisboa", l, re.I) and not re.search(r",", l) else "Portugal"
+    if bucket == "eu":
+        return "EMEA" if re.search(r"emea", l, re.I) else "Europe"
+    if bucket == "ww":
+        return "Worldwide"
+    return (l[:26] + "…" if len(l) > 27 else l) or "Unclear"
 
 def fmt_range(lo, hi, cur=""):
     def fmt(n):
@@ -302,16 +336,18 @@ def src_landingjobs():
 # --- ATS watchlist -------------------------------------------------
 
 def src_greenhouse(slug):
-    d = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs")
+    d = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true")
     out = []
     for j in d.get("jobs", []):
         loc = (j.get("location") or {}).get("name", "")
+        raw = unescape(j.get("content") or "")
         out.append({
             "source": f"greenhouse/{slug}",
             "company": j.get("company_name") or slug.title(),
             "title": j.get("title"), "url": j.get("absolute_url"),
             "location": loc, "remote": bool(REMOTE_RE.search(loc)),
-            "salary": None, "posted": j.get("first_published"), "desc": "",
+            "salary": None, "posted": j.get("first_published"),
+            "desc": strip_html(raw), "raw": raw,
         })
     return out
 
@@ -327,7 +363,7 @@ def src_lever(slug):
             "title": j.get("text"), "url": j.get("hostedUrl"),
             "location": loc, "remote": remote, "salary": None,
             "posted": datetime.fromtimestamp(j["createdAt"] / 1000, timezone.utc).isoformat() if j.get("createdAt") else None,
-            "desc": "",
+            "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
         })
     return out
 
@@ -345,7 +381,8 @@ def src_ashby(slug):
             "title": j.get("title"), "url": j.get("jobUrl"),
             "location": loc, "remote": bool(j.get("isRemote")),
             "salary": comp, "posted": j.get("publishedAt"),
-            "desc": strip_html(j.get("descriptionPlain"), 2000),
+            "desc": strip_html(j.get("descriptionPlain")),
+            "raw": j.get("descriptionPlain") or "",
         })
     return out
 
@@ -527,7 +564,10 @@ def run():
             "location": (j.get("location") or "").strip(),
             "bucket": bucket, "salary": salary,
             "posted": j.get("posted"),
+            "xp": find_xp(j.get("desc")),
+            "market": market_label(bucket, j.get("location")),
             "_raw": j.get("raw") or "",
+            "_jd": j.get("desc") or "",
         }
         if key not in kept or priority(j["source"]) < priority(kept[key]["source"]):
             prev = kept.get(key)
@@ -546,6 +586,7 @@ def run():
     resolved = 0
     for j in kept.values():
         rawdesc = j.pop("_raw", "")
+        j["market"] = j.get("market") or market_label(j["bucket"], j.get("location"))
         if j["source"].split("/")[0] not in AGGREGATORS:
             continue
         link = (desc_ats_link(rawdesc)
@@ -567,6 +608,8 @@ def run():
         prev = old.pop(key, None)
         if prev and not j.get("apply_url") and prev.get("apply_url"):
             j["apply_url"] = prev["apply_url"]
+        if prev and not j.get("xp") and prev.get("xp"):
+            j["xp"] = prev["xp"]
         j["first_seen"] = prev["first_seen"] if prev else RUN_ID
         j["first_run"] = prev.get("first_run", prev["first_seen"]) if prev else RUN_ID
         j["last_seen"] = RUN_ID
@@ -581,6 +624,23 @@ def run():
             j["active"] = False
         if j["last_seen"] >= cutoff:
             jobs_out.append(j)
+
+    # JDs for the overnight CV runner: fresh, non-tiebreak, with enough text.
+    day_ago = (NOW - timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    jds = {}
+    for j in jobs_out:
+        jd = j.pop("_jd", "")
+        if (j.get("first_seen", "") >= day_ago and j["active"]
+                and j["bucket"] != "tiebreak" and len(jd) >= 200):
+            jds[j["id"]] = {
+                "title": j["title"], "company": j["company"],
+                "url": j.get("apply_url") or j["url"],
+                "location": j["location"], "salary": j["salary"],
+                "market": j["market"], "xp": j.get("xp"),
+                "first_seen": j["first_seen"], "jd": jd[:20000],
+            }
+    (ROOT / "data" / "jds.json").write_text(
+        json.dumps({"generated_at": RUN_ID, "jobs": jds}, indent=1, ensure_ascii=False))
 
     jobs_out.sort(key=lambda j: (j.get("first_seen") or ""), reverse=True)
     out = {
@@ -599,7 +659,7 @@ def run():
     ok = sum(1 for r in report.values() if r["ok"])
     print(f"sources: {ok}/{len(report)} ok | raw {len(raw)} | kept {len(kept)} | "
           f"new {out['counts']['new']} | active {out['counts']['active']} | "
-          f"direct links {resolved}")
+          f"direct links {resolved} | jds {len(jds)}")
     for n, r in sorted(report.items()):
         if not r["ok"]:
             print(f"  FAIL {n}: {r['error']}")

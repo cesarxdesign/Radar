@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-28T11:25:20Z",
- "run_id": "2026-08-28T11:25:20Z",
+ "generated_at": "2026-08-28T11:26:34Z",
+ "run_id": "2026-08-28T11:26:34Z",
  "counts": {
-  "active": 41,
+  "active": 40,
   "new": 0
  },
  "sources": {
@@ -35,8 +35,8 @@
    "fetched": 62
   },
   "landingjobs": {
-   "ok": true,
-   "fetched": 50
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "greenhouse/gitlab": {
    "ok": true,
@@ -239,8 +239,8 @@
    "fetched": 0
   },
   "websearch": {
-   "ok": false,
-   "error": "bot challenge - hunts paused"
+   "ok": true,
+   "fetched": 6
   }
  },
  "jobs": [
@@ -258,7 +258,7 @@
    "market": "Europe",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -277,7 +277,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -292,9 +292,11 @@
    "posted": "2026-08-25T13:22:56+00:00",
    "xp": "6+y",
    "market": "EMEA",
+   "apply_url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008",
+   "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -313,7 +315,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -332,7 +334,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -351,7 +353,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -366,9 +368,11 @@
    "posted": "2026-08-15T10:58:25+00:00",
    "xp": "4–7y",
    "market": "Europe",
+   "apply_url": "https://maze.co/careers/",
+   "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -385,7 +389,7 @@
    "market": "EMEA",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -404,7 +408,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -423,24 +427,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
-   "active": true
-  },
-  {
-   "id": "72b3758ef50fafc9",
-   "title": "Senior Product Designer",
-   "company": "Ingenious.build",
-   "url": "https://weworkremotely.com/remote-jobs/ingenious-build-senior-product-designer",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "Wed, 19 Aug 2026 20:37:27 +0000",
-   "xp": "5+y",
-   "market": "Worldwide",
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -459,7 +446,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -474,11 +461,11 @@
    "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
    "xp": "8+y",
    "market": "Worldwide",
-   "apply_url": "https://webflow.com/careers#pay-zones",
+   "apply_url": "https://webflow.com/company/careers",
    "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -493,9 +480,11 @@
    "posted": "Tue, 11 Aug 2026 03:24:55 +0000",
    "xp": null,
    "market": "Worldwide",
+   "apply_url": "https://www.pixelone.app/careers",
+   "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -512,7 +501,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -529,7 +518,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -546,7 +535,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -563,7 +552,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -580,7 +569,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -597,7 +586,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -614,7 +603,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -631,7 +620,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -648,7 +637,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -667,7 +656,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -684,7 +673,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -701,7 +690,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -718,7 +707,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -735,7 +724,7 @@
    "market": "Pichincha",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -754,7 +743,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -771,24 +760,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
-   "active": true
-  },
-  {
-   "id": "43f97e85c25349ac",
-   "title": "Product Designer",
-   "company": "Bounce",
-   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
-   "source": "landingjobs",
-   "location": "Lisbon",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-07-22T10:57:46.241Z",
-   "xp": null,
-   "market": "Lisbon",
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -805,7 +777,7 @@
    "market": "Hybrid",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -822,7 +794,7 @@
    "market": "Remote",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -839,7 +811,7 @@
    "market": "Europe",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -856,7 +828,7 @@
    "market": "Europe",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -873,7 +845,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -890,7 +862,7 @@
    "market": "Worldwide",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -907,7 +879,7 @@
    "market": "Europe",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -924,7 +896,7 @@
    "market": "Portugal",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -941,7 +913,7 @@
    "market": "Portugal",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:25:20Z",
+   "last_seen": "2026-08-28T11:26:34Z",
    "active": true
   },
   {
@@ -956,6 +928,40 @@
    "posted": "2026-06-26T16:32:25.973+00:00",
    "xp": "8+y",
    "market": "Portugal",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T11:26:34Z",
+   "active": true
+  },
+  {
+   "id": "72b3758ef50fafc9",
+   "title": "Senior Product Designer",
+   "company": "Ingenious.build",
+   "url": "https://weworkremotely.com/remote-jobs/ingenious-build-senior-product-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Wed, 19 Aug 2026 20:37:27 +0000",
+   "xp": "5+y",
+   "market": "Worldwide",
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T11:25:20Z",
+   "active": false
+  },
+  {
+   "id": "43f97e85c25349ac",
+   "title": "Product Designer",
+   "company": "Bounce",
+   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
+   "source": "landingjobs",
+   "location": "Lisbon",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-07-22T10:57:46.241Z",
+   "xp": null,
+   "market": "Lisbon",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-28T11:25:20Z",

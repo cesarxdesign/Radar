@@ -276,7 +276,7 @@ function card(j, opts) {
       '<div class="jmeta"><span class="co">' + esc(j.company) + "</span>" +
       '<span title="' + esc(j.location) + '">' + esc(j.market || BUCKET[j.bucket] || "") + "</span>" +
       (j.xp ? '<span class="xp">asks ' + esc(j.xp) + "</span>" : "") +
-      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? " → direct" : "") + "</span></div>" +
+      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : "") + "</span></div>" +
     "</div>" +
     (j.salary ? '<span class="sal">' + esc(j.salary) + "</span>" : "") +
     '<div class="jacts">' + (

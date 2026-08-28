@@ -2,3 +2,4 @@
 __pycache__/
 .nightcv_done.json
 nightcv.log
+launchd.log

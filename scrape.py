@@ -6,8 +6,10 @@ Free sources only, stdlib only. Writes data/jobs.json consumed by index.html.
 import json
 import re
 import hashlib
+import time
 import urllib.request
 import urllib.error
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from html import unescape
@@ -472,6 +474,90 @@ def find_direct(company, title):
             return bj.get("url")
     return None
 
+# --- web hunt: find the posting at its source via DuckDuckGo ------------
+
+AGG_HOST_RE = re.compile(
+    r"weworkremotely|remotive|jobicy|himalayas|remoteok|workingnomads|arbeitnow|"
+    r"builtin\.com|wellfound|glassdoor|indeed|linkedin|ziprecruiter|simplyhired|"
+    r"jobera|jobshives|startup\.jobs|jogglejobs|workbenchdata|ixdf\.org|jobs-radar|"
+    r"adzuna|talent\.com|jooble|whatjobs|remote\.co|dailyremote|nodesk|remotees|"
+    r"jobgether|landing\.jobs|google\.com|bing\.com|reddit\.com|youtube", re.I)
+
+class SearchThrottled(Exception):
+    pass
+
+BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+
+def ddg_links(q):
+    url = "https://lite.duckduckgo.com/lite/?q=" + urllib.parse.quote(q)
+    req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA,
+                                               "Accept-Language": "en-US,en;q=0.9"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        html = r.read().decode("utf-8", "replace")
+    if re.search(r"made by a human|challenge|anomaly", html, re.I):
+        raise SearchThrottled("duckduckgo served a bot challenge")
+    out = []
+    for m in re.finditer(r'href="([^"]+)"', html):
+        u = m.group(1)
+        if "uddg=" in u:
+            mm = re.search(r"uddg=([^&]+)", u)
+            u = urllib.parse.unquote(mm.group(1)) if mm else u
+        if u.startswith("http") and "duckduckgo" not in u:
+            out.append(u)
+    return out
+
+def posting_alive(url, title):
+    """True if the page loads and carries the job title; False if provably not."""
+    try:
+        html = fetch(url, timeout=20)
+    except Exception:
+        return False
+    t = norm(title)
+    body = norm(strip_html(unescape(html), 40000))
+    return t in body
+
+def greenhouse_stale(url, title):
+    """A dead greenhouse posting whose board is alive without the title = closed."""
+    m = re.search(r"greenhouse\.io/([^/?#]+)", url)
+    if not m:
+        return False
+    try:
+        jobs = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{m.group(1)}/jobs")
+    except Exception:
+        return False
+    t = norm(title)
+    return not any(t == norm(j.get("title")) or t in norm(j.get("title"))
+                   for j in jobs.get("jobs", []))
+
+def hunt_web(company, title):
+    """Search for the posting at its source. Returns (url, kind, stale).
+
+    Raises SearchThrottled when the engine bot-walls us - the caller must
+    NOT cache that as a real no-result.
+    """
+    stale_hit = False
+    results = ddg_links(f'"{company}" "{title}"')
+    time.sleep(10)
+    for u in results[:8]:
+        if AGG_HOST_RE.search(u):
+            continue
+        if ATS_LINK_RE.search(u):
+            if posting_alive(u, title):
+                return u.split("?")[0], "direct", False
+            if greenhouse_stale(u, title):
+                stale_hit = True
+            continue
+    comp_token = re.sub(r"[^a-z0-9]", "", (company or "").lower())
+    results = ddg_links(f"{company} careers")
+    time.sleep(10)
+    for u in results[:5]:
+        host = re.sub(r"[^a-z0-9]", "", (urllib.parse.urlsplit(u).netloc or "").lower())
+        if AGG_HOST_RE.search(u) or comp_token not in host:
+            continue
+        if re.search(r"careers|jobs|join", u, re.I) or ATS_LINK_RE.search(u):
+            return u, "careers", stale_hit
+    return None, None, stale_hit
+
 # ---------------------------------------------------------------- pipeline
 
 SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "landingjobs", "remotive",
@@ -583,19 +669,57 @@ def run():
                 cur["bucket"] = bucket
 
     # Resolve direct apply links for aggregator finds.
-    resolved = 0
-    for j in kept.values():
+    prev_seen = {}
+    if DATA_FILE.exists():
+        try:
+            for pj in json.loads(DATA_FILE.read_text()).get("jobs", []):
+                prev_seen[pj["id"]] = pj.get("first_seen", "")
+        except Exception:
+            pass
+    resolved = hunted = 0
+    stale_ids = []
+    throttled = False
+    week_ago = (NOW - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for j in list(kept.values()):
         rawdesc = j.pop("_raw", "")
         j["market"] = j.get("market") or market_label(j["bucket"], j.get("location"))
         if j["source"].split("/")[0] not in AGGREGATORS:
             continue
-        link = (desc_ats_link(rawdesc)
-                or find_direct(j["company"], j["title"])
-                or desc_careers_link(rawdesc))
+        link = desc_ats_link(rawdesc) or find_direct(j["company"], j["title"])
+        kind = "direct" if link else None
+        if not link:
+            hk = "hunt:" + j["id"]
+            ent = ATS_CACHE.get(hk)
+            if ent and (ent.get("url") or ent.get("checked", "") >= week_ago):
+                link, kind = ent.get("url"), ent.get("kind")
+                if ent.get("stale"):
+                    stale_ids.append(j["id"])
+            elif (hunted < 6 and not throttled
+                  and prev_seen.get(j["id"], RUN_ID) >= week_ago):
+                hunted += 1
+                try:
+                    link, kind, stale = hunt_web(j["company"], j["title"])
+                    ATS_CACHE[hk] = {"url": link, "kind": kind, "stale": stale,
+                                     "checked": RUN_ID}
+                    if stale and not link:
+                        stale_ids.append(j["id"])
+                except SearchThrottled:
+                    throttled = True
+                except Exception:
+                    pass
+        if not link:
+            link, kind = desc_careers_link(rawdesc), "careers"
         if link:
             j["apply_url"] = link
+            j["apply_kind"] = kind or "direct"
             resolved += 1
+    for sid in stale_ids:
+        kept.pop(sid, None)
+    if stale_ids:
+        print(f"dropped {len(stale_ids)} listing(s) closed at the source")
     ATS_CACHE_FILE.write_text(json.dumps(ATS_CACHE, indent=1, sort_keys=True))
+    report["websearch"] = ({"ok": False, "error": "bot challenge - hunts paused"}
+                           if throttled else {"ok": True, "fetched": hunted})
 
     # Merge with existing DB.
     old = {}
@@ -608,6 +732,7 @@ def run():
         prev = old.pop(key, None)
         if prev and not j.get("apply_url") and prev.get("apply_url"):
             j["apply_url"] = prev["apply_url"]
+            j["apply_kind"] = prev.get("apply_kind", "direct")
         if prev and not j.get("xp") and prev.get("xp"):
             j["xp"] = prev["xp"]
         j["first_seen"] = prev["first_seen"] if prev else RUN_ID

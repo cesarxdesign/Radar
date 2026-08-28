@@ -21,4 +21,5 @@ jobs:
           git config user.email "cesarxdesign@gmail.com"
           git add data/jobs.json
           git diff --cached --quiet || git commit -m "nightly scrape $(date -u +%F)"
+          git pull --rebase origin main
           git push

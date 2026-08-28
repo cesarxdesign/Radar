@@ -365,6 +365,26 @@ def priority(source):
     base = source.split("/")[0]
     return SOURCE_PRIORITY.index(base) if base in SOURCE_PRIORITY else 99
 
+VERDICTS_FILE = ROOT / "data" / "verdicts.json"
+try:
+    VERDICTS = json.loads(VERDICTS_FILE.read_text()).get("jobs", {})
+except Exception:
+    VERDICTS = {}
+
+def learned(job_id, company, location):
+    """Y/N verdicts from the dashboard. Exact job first, then company+location
+    consensus, then company-wide consensus. Returns 'y', 'n', or None."""
+    if job_id in VERDICTS:
+        return VERDICTS[job_id].get("v")
+    comp, loc = norm(company), norm(location)
+    for scope in ("both", "company"):
+        vs = {e.get("v") for e in VERDICTS.values()
+              if e.get("company") == comp
+              and (scope == "company" or e.get("location") == loc)}
+        if len(vs) == 1:
+            return vs.pop()
+    return None
+
 def run():
     report = {}
     raw = []
@@ -405,6 +425,13 @@ def run():
                           j.get("restrictions"), j.get("timezones"))
         if bucket is None:
             continue
+        if bucket == "tiebreak":
+            v = learned(job_key(j.get("company"), j.get("title")),
+                        j.get("company"), j.get("location"))
+            if v == "n":
+                continue
+            if v == "y":
+                bucket = "ok"
         salary = j.get("salary") or find_salary(j.get("desc"))
         key = job_key(j.get("company"), j.get("title"))
         entry = {

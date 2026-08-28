@@ -417,6 +417,18 @@ def desc_careers_link(raw):
             return m.group(1)
     return None
 
+def desc_company_url(raw):
+    m = re.search(r'URL:\s*(?:<[^>]+>\s*)*(https?://[^\s<>"\']+)', unescape(raw or ""))
+    if m and not SOCIAL_RE.search(m.group(1)):
+        return m.group(1).rstrip("/.,")
+    return None
+
+def board_url(kind, slug):
+    return {"ashby": f"https://jobs.ashbyhq.com/{slug}",
+            "greenhouse": f"https://job-boards.greenhouse.io/{slug}",
+            "lever": f"https://jobs.lever.co/{slug}",
+            "recruitee": f"https://{slug}.recruitee.com"}[kind]
+
 def slug_candidates(company):
     low = (company or "").lower()
     stripped = re.sub(r"\b(inc|ltd|gmbh|bv|llc|co|corp|labs|hq|io|app)\b\.?", "", low)
@@ -425,11 +437,25 @@ def slug_candidates(company):
              re.sub(r"[^a-z0-9]+", "", stripped)]
     return [c for c in dict.fromkeys(cands) if len(c) >= 3]
 
+def src_recruitee(slug):
+    d = fetch_json(f"https://{slug}.recruitee.com/api/offers/")
+    out = []
+    for o in d.get("offers", []):
+        out.append({
+            "source": f"recruitee/{slug}", "company": slug.title(),
+            "title": o.get("title"), "url": o.get("careers_url") or o.get("url"),
+            "location": o.get("location") or "", "remote": bool(o.get("remote")),
+            "salary": None, "posted": o.get("published_at"),
+            "desc": strip_html(o.get("description")), "raw": o.get("description") or "",
+        })
+    return out
+
 def board_jobs(kind, slug):
     memo = _board_jobs_memo.get((kind, slug))
     if memo is not None:
         return memo
-    fn = {"greenhouse": src_greenhouse, "lever": src_lever, "ashby": src_ashby}[kind]
+    fn = {"greenhouse": src_greenhouse, "lever": src_lever, "ashby": src_ashby,
+          "recruitee": src_recruitee}[kind]
     try:
         jobs = fn(slug)
     except Exception:
@@ -439,7 +465,7 @@ def board_jobs(kind, slug):
 
 def probe_company(company):
     comp = norm(company)
-    for kind in ("greenhouse", "ashby", "lever"):
+    for kind in ("greenhouse", "ashby", "lever", "recruitee"):
         for slug in slug_candidates(company):
             try:
                 jobs = board_jobs(kind, slug)
@@ -564,7 +590,8 @@ def crawl_for_posting(url, title, depth=1, budget=None, company_key=None):
     # and teaches the slug cache for every future role at this company
     BOARD_RES = [(r"jobs\.ashbyhq\.com/([A-Za-z0-9_-]+)/?$", "ashby"),
                  (r"(?:job-boards|boards)\.greenhouse\.io/([A-Za-z0-9_-]+)/?$", "greenhouse"),
-                 (r"jobs(?:\.eu)?\.lever\.co/([A-Za-z0-9_-]+)/?$", "lever")]
+                 (r"jobs(?:\.eu)?\.lever\.co/([A-Za-z0-9_-]+)/?$", "lever"),
+                 (r"https?://([A-Za-z0-9_-]+)\.recruitee\.com", "recruitee")]
     for u, _ in anchors:
         for pat, kind in BOARD_RES:
             bm = re.search(pat, u)
@@ -686,6 +713,18 @@ def fetch_original(url, company, title):
             return out
         except Exception:
             return out
+
+    m = re.search(r"https?://([A-Za-z0-9_-]+)\.recruitee\.com/o/([^/?#]+)", url)
+    if m:
+        jobs = board_jobs("recruitee", m.group(1))
+        for bj in jobs:
+            if m.group(2) in (bj.get("url") or ""):
+                if not ok_title(norm(bj.get("title"))):
+                    return out
+                out.update(loc=bj.get("location"), text=bj.get("desc") or None)
+                return out
+        out["dead"] = bool(jobs)
+        return out
 
     gid = re.search(r"greenhouse\.io/[^/]+/jobs/(\d+)", url) or re.search(r"gh_jid=(\d+)", url)
     if gid:
@@ -893,6 +932,10 @@ def run():
             j["direct"] = True   # straight off the company's own board
             continue
         link = desc_ats_link(rawdesc) or find_direct(j["company"], j["title"])
+        company_url = desc_company_url(rawdesc)
+        if not link and company_url:
+            link = crawl_for_posting(company_url, j["title"],
+                                     company_key=norm(j["company"]))
         kind = "direct" if link else None
         if not link:
             hk = "hunt:" + j["id"]
@@ -924,7 +967,11 @@ def run():
                 except Exception:
                     pass
         if not link:
-            link, kind = desc_careers_link(rawdesc), "careers"
+            ent2 = ATS_CACHE.get(norm(j["company"])) or {}
+            link = (desc_careers_link(rawdesc)
+                    or (board_url(ent2["kind"], ent2["slug"]) if ent2.get("kind") else None)
+                    or company_url)
+            kind = "careers"
         if link:
             j["apply_url"] = link
             j["apply_kind"] = kind or "direct"

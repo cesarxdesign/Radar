@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-28T17:13:31Z",
- "run_id": "2026-08-28T17:13:31Z",
+ "generated_at": "2026-08-28T22:40:15Z",
+ "run_id": "2026-08-28T22:40:15Z",
  "counts": {
-  "active": 37,
+  "active": 36,
   "new": 0
  },
  "sources": {
@@ -35,28 +35,28 @@
    "fetched": 63
   },
   "landingjobs": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "fetched": 50
   },
   "greenhouse/gitlab": {
    "ok": true,
-   "fetched": 219
+   "fetched": 220
   },
   "greenhouse/cloudflare": {
    "ok": true,
-   "fetched": 314
+   "fetched": 309
   },
   "greenhouse/figma": {
    "ok": true,
-   "fetched": 161
+   "fetched": 163
   },
   "greenhouse/stripe": {
    "ok": true,
-   "fetched": 569
+   "fetched": 573
   },
   "greenhouse/duolingo": {
    "ok": true,
-   "fetched": 85
+   "fetched": 83
   },
   "greenhouse/dropbox": {
    "ok": true,
@@ -88,7 +88,7 @@
   },
   "greenhouse/webflow": {
    "ok": true,
-   "fetched": 27
+   "fetched": 26
   },
   "greenhouse/intercom": {
    "ok": true,
@@ -96,11 +96,11 @@
   },
   "greenhouse/datadog": {
    "ok": true,
-   "fetched": 452
+   "fetched": 454
   },
   "greenhouse/elastic": {
    "ok": true,
-   "fetched": 337
+   "fetched": 336
   },
   "greenhouse/grafanalabs": {
    "ok": true,
@@ -108,11 +108,11 @@
   },
   "greenhouse/anthropic": {
    "ok": true,
-   "fetched": 566
+   "fetched": 569
   },
   "greenhouse/mozilla": {
    "ok": true,
-   "fetched": 89
+   "fetched": 86
   },
   "greenhouse/typeform": {
    "ok": true,
@@ -148,7 +148,7 @@
   },
   "lever/blablacar": {
    "ok": true,
-   "fetched": 11
+   "fetched": 12
   },
   "lever/pipedrive": {
    "ok": true,
@@ -180,7 +180,7 @@
   },
   "ashby/openai": {
    "ok": true,
-   "fetched": 752
+   "fetched": 761
   },
   "ashby/attio": {
    "ok": true,
@@ -188,11 +188,11 @@
   },
   "ashby/ashby": {
    "ok": true,
-   "fetched": 65
+   "fetched": 66
   },
   "ashby/plaid": {
    "ok": true,
-   "fetched": 100
+   "fetched": 102
   },
   "ashby/lovable": {
    "ok": true,
@@ -208,7 +208,7 @@
   },
   "ashby/notion": {
    "ok": true,
-   "fetched": 132
+   "fetched": 133
   },
   "ashby/miro": {
    "ok": true,
@@ -220,7 +220,7 @@
   },
   "ashby/1password": {
    "ok": true,
-   "fetched": 63
+   "fetched": 62
   },
   "ashby/alan": {
    "ok": true,
@@ -256,11 +256,13 @@
    "posted": "Fri, 28 Aug 2026 13:26:53 +0000",
    "xp": "7+y",
    "market": "Worldwide",
+   "apply_url": "https://ondeckglobal.com",
+   "apply_kind": "careers",
    "direct": false,
-   "frameable": false,
+   "frameable": true,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -279,7 +281,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -298,7 +300,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -319,7 +321,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -340,7 +342,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -361,7 +363,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -382,7 +384,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -403,7 +405,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -422,7 +424,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -443,7 +445,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -464,7 +466,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -485,7 +487,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -506,7 +508,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -527,7 +529,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -542,11 +544,13 @@
    "posted": "Fri, 07 Aug 2026 09:59:18 +0000",
    "xp": null,
    "market": "Worldwide",
+   "apply_url": "http://www.kazaarfragrances.com",
+   "apply_kind": "careers",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -565,7 +569,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -580,11 +584,13 @@
    "posted": "Tue, 04 Aug 2026 20:13:58 +0000",
    "xp": null,
    "market": "Worldwide",
+   "apply_url": "https://jobs.ashbyhq.com/pressw",
+   "apply_kind": "careers",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -599,11 +605,13 @@
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "xp": "4+y",
    "market": "Worldwide",
+   "apply_url": "https://mayflower.recruitee.com",
+   "apply_kind": "careers",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -618,11 +626,13 @@
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "xp": "2+y",
    "market": "Worldwide",
+   "apply_url": "http://pavago.co",
+   "apply_kind": "careers",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -637,11 +647,13 @@
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "xp": null,
    "market": "Worldwide",
+   "apply_url": "http://iisd.org",
+   "apply_kind": "careers",
    "direct": false,
-   "frameable": false,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -656,11 +668,308 @@
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "xp": null,
    "market": "Worldwide",
+   "apply_url": "http://koinlimited.co.uk",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "867dbef8c87fc4bc",
+   "title": "Design Project Manager (Estonia)",
+   "company": "Ehvert Engineering a Salas O'Brien company",
+   "url": "https://weworkremotely.com/remote-jobs/ehvert-engineering-a-salas-o-brien-company-design-project-manager-estonia",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
+   "xp": "7–10y",
+   "market": "Worldwide",
+   "apply_url": "http://ehvert.com",
+   "apply_kind": "careers",
    "direct": false,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "8f40814433e34361",
+   "title": "Product Designer - UX/UI & Design Systems (Remote)",
+   "company": "WALTER",
+   "url": "https://weworkremotely.com/remote-jobs/walter-product-designer-ux-ui-design-systems-remote",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
+   "xp": "2+y",
+   "market": "Worldwide",
+   "apply_url": "http://gowalter.co",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "6a49978c27dcb0f4",
+   "title": "Solutions Design Analyst",
+   "company": "Clario",
+   "url": "https://weworkremotely.com/remote-jobs/clario-solutions-design-analyst",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
+   "xp": "3+y",
+   "market": "Worldwide",
+   "apply_url": "http://clario.com",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "b80c222d5cf55922",
+   "title": "Syntropy Sculptor - B2B SaaS Brand Design",
+   "company": "Kalungi Inc.",
+   "url": "https://weworkremotely.com/remote-jobs/kalungi-inc-syntropy-sculptor-b2b-saas-brand-design",
+   "source": "weworkremotely",
+   "location": "Pichincha",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "Tue, 04 Aug 2026 15:18:57 +0000",
+   "xp": null,
+   "market": "Pichincha",
+   "apply_url": "http://kalungi.com",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "6fde40f2305fd74d",
+   "title": "Head of Design",
+   "company": "garden3d",
+   "url": "https://weworkremotely.com/remote-jobs/garden3d-head-of-design",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "Fri, 17 Jul 2026 16:43:01 +0000",
+   "xp": "10+y",
+   "market": "Worldwide",
+   "apply_url": "https://garden3d.net",
+   "apply_kind": "careers",
+   "direct": false,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "43f97e85c25349ac",
+   "title": "Product Designer",
+   "company": "Bounce",
+   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
+   "source": "landingjobs",
+   "location": "Lisbon",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-07-22T10:57:46.241Z",
+   "xp": null,
+   "market": "Lisbon",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "7c8c199a4f1a96c4",
+   "title": "Senior Design Engineer",
+   "company": "Cloudflare",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/6998777?gh_jid=6998777",
+   "source": "greenhouse/cloudflare",
+   "location": "Hybrid",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2025-06-20T12:34:51-04:00",
+   "xp": "5+y",
+   "market": "Hybrid",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "b6e4ed87ece3d831",
+   "title": "Staff Designer, Rapid Prototyping",
+   "company": "Mozilla",
+   "url": "https://job-boards.greenhouse.io/mozilla/jobs/8092842",
+   "source": "greenhouse/mozilla",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": "$155,000 - $175,000",
+   "posted": "2026-08-06T10:41:01-04:00",
+   "xp": "10+y",
+   "market": "Remote",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "75cd7b02053e4ba3",
+   "title": "Principal Product Designer",
+   "company": "Linear",
+   "url": "https://jobs.ashbyhq.com/linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
+   "source": "ashby/linear",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-04-29T18:16:36.164+00:00",
+   "xp": "7+y",
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "672a1d1b86736368",
+   "title": "Production Designer",
+   "company": "Linear",
+   "url": "https://jobs.ashbyhq.com/linear/5b9997fd-7507-4437-8fd7-14178c99ab5d",
+   "source": "ashby/linear",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-06T19:59:06.175+00:00",
+   "xp": "2+y",
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "24d78a4ad38ebeb9",
+   "title": "Brand Designer",
+   "company": "Supabase",
+   "url": "https://jobs.ashbyhq.com/supabase/4a85c92b-1d0d-43ee-8dbc-0e45a58be208",
+   "source": "ashby/supabase",
+   "location": "Remote, Global",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-06-23T14:51:39.758+00:00",
+   "xp": null,
+   "market": "Worldwide",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "33e857d59bb70576",
+   "title": "Product Designer",
+   "company": "Supabase",
+   "url": "https://jobs.ashbyhq.com/supabase/97fe8e68-28c5-42db-a763-60113f0b31fd",
+   "source": "ashby/supabase",
+   "location": "Remote, Global",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-07-22T11:01:14.397+00:00",
+   "xp": null,
+   "market": "Worldwide",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "04d1112669f07330",
+   "title": "Senior Design Engineer",
+   "company": "Attio",
+   "url": "https://jobs.ashbyhq.com/attio/22a3d38e-69f1-44a8-a7b5-10f109820518",
+   "source": "ashby/attio",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-04T10:30:17.424+00:00",
+   "xp": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "f62eb5a97ddb4d3e",
+   "title": "Design Engineer - EU",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
+   "source": "ashby/ashby",
+   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
+   "bucket": "pt",
+   "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T20:19:00.233+00:00",
+   "xp": "2+y",
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
+   "active": true
+  },
+  {
+   "id": "18768b72ac0595be",
+   "title": "Senior Manager, Product Design",
+   "company": "Oyster",
+   "url": "https://jobs.ashbyhq.com/oyster/53aa1176-ceb5-4518-a8f5-fd7a9f9ea26d",
+   "source": "ashby/oyster",
+   "location": "The Americas, Portugal, United Kingdom, Spain",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-06-26T16:32:25.973+00:00",
+   "xp": "8+y",
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T22:40:15Z",
    "active": true
   },
   {
@@ -680,292 +989,7 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "867dbef8c87fc4bc",
-   "title": "Design Project Manager (Estonia)",
-   "company": "Ehvert Engineering a Salas O'Brien company",
-   "url": "https://weworkremotely.com/remote-jobs/ehvert-engineering-a-salas-o-brien-company-design-project-manager-estonia",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
-   "xp": "7–10y",
-   "market": "Worldwide",
-   "direct": false,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "8f40814433e34361",
-   "title": "Product Designer - UX/UI & Design Systems (Remote)",
-   "company": "WALTER",
-   "url": "https://weworkremotely.com/remote-jobs/walter-product-designer-ux-ui-design-systems-remote",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
-   "xp": "2+y",
-   "market": "Worldwide",
-   "direct": false,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "6a49978c27dcb0f4",
-   "title": "Solutions Design Analyst",
-   "company": "Clario",
-   "url": "https://weworkremotely.com/remote-jobs/clario-solutions-design-analyst",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
-   "xp": "3+y",
-   "market": "Worldwide",
-   "direct": false,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "b80c222d5cf55922",
-   "title": "Syntropy Sculptor - B2B SaaS Brand Design",
-   "company": "Kalungi Inc.",
-   "url": "https://weworkremotely.com/remote-jobs/kalungi-inc-syntropy-sculptor-b2b-saas-brand-design",
-   "source": "weworkremotely",
-   "location": "Pichincha",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "Tue, 04 Aug 2026 15:18:57 +0000",
-   "xp": null,
-   "market": "Pichincha",
-   "direct": false,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "6fde40f2305fd74d",
-   "title": "Head of Design",
-   "company": "garden3d",
-   "url": "https://weworkremotely.com/remote-jobs/garden3d-head-of-design",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "Fri, 17 Jul 2026 16:43:01 +0000",
-   "xp": "10+y",
-   "market": "Worldwide",
-   "direct": false,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "7c8c199a4f1a96c4",
-   "title": "Senior Design Engineer",
-   "company": "Cloudflare",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/6998777?gh_jid=6998777",
-   "source": "greenhouse/cloudflare",
-   "location": "Hybrid",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2025-06-20T12:34:51-04:00",
-   "xp": "5+y",
-   "market": "Hybrid",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "b6e4ed87ece3d831",
-   "title": "Staff Designer, Rapid Prototyping",
-   "company": "Mozilla",
-   "url": "https://job-boards.greenhouse.io/mozilla/jobs/8092842",
-   "source": "greenhouse/mozilla",
-   "location": "Remote",
-   "bucket": "tiebreak",
-   "salary": "$155,000 - $175,000",
-   "posted": "2026-08-06T10:41:01-04:00",
-   "xp": "10+y",
-   "market": "Remote",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "75cd7b02053e4ba3",
-   "title": "Principal Product Designer",
-   "company": "Linear",
-   "url": "https://jobs.ashbyhq.com/linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
-   "source": "ashby/linear",
-   "location": "Europe",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-04-29T18:16:36.164+00:00",
-   "xp": "7+y",
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "672a1d1b86736368",
-   "title": "Production Designer",
-   "company": "Linear",
-   "url": "https://jobs.ashbyhq.com/linear/5b9997fd-7507-4437-8fd7-14178c99ab5d",
-   "source": "ashby/linear",
-   "location": "Europe",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-06T19:59:06.175+00:00",
-   "xp": "2+y",
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "24d78a4ad38ebeb9",
-   "title": "Brand Designer",
-   "company": "Supabase",
-   "url": "https://jobs.ashbyhq.com/supabase/4a85c92b-1d0d-43ee-8dbc-0e45a58be208",
-   "source": "ashby/supabase",
-   "location": "Remote, Global",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-06-23T14:51:39.758+00:00",
-   "xp": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "33e857d59bb70576",
-   "title": "Product Designer",
-   "company": "Supabase",
-   "url": "https://jobs.ashbyhq.com/supabase/97fe8e68-28c5-42db-a763-60113f0b31fd",
-   "source": "ashby/supabase",
-   "location": "Remote, Global",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-07-22T11:01:14.397+00:00",
-   "xp": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "04d1112669f07330",
-   "title": "Senior Design Engineer",
-   "company": "Attio",
-   "url": "https://jobs.ashbyhq.com/attio/22a3d38e-69f1-44a8-a7b5-10f109820518",
-   "source": "ashby/attio",
-   "location": "Europe",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-04T10:30:17.424+00:00",
-   "xp": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "f62eb5a97ddb4d3e",
-   "title": "Design Engineer - EU",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
-   "source": "ashby/ashby",
-   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
-   "bucket": "pt",
-   "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
-   "posted": "2026-06-12T20:19:00.233+00:00",
-   "xp": "2+y",
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "18768b72ac0595be",
-   "title": "Senior Manager, Product Design",
-   "company": "Oyster",
-   "url": "https://jobs.ashbyhq.com/oyster/53aa1176-ceb5-4518-a8f5-fd7a9f9ea26d",
-   "source": "ashby/oyster",
-   "location": "The Americas, Portugal, United Kingdom, Spain",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-06-26T16:32:25.973+00:00",
-   "xp": "8+y",
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T17:13:31Z",
-   "active": true
-  },
-  {
-   "id": "43f97e85c25349ac",
-   "title": "Product Designer",
-   "company": "Bounce",
-   "url": "https://landing.jobs/at/bounce/product-designer-in-lisbon-2026",
-   "source": "landingjobs",
-   "location": "Lisbon",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-07-22T10:57:46.241Z",
-   "xp": null,
-   "market": "Lisbon",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T16:10:27Z",
-   "active": true
+   "active": false
   },
   {
    "id": "26cf82c7a0e99243",

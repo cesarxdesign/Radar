@@ -5,8 +5,9 @@
   "slug": "addepar1"
  },
  "air apps": {
-  "checked": "2026-08-28T10:55:55Z",
-  "kind": null
+  "checked": "2026-08-28T22:40:15Z",
+  "kind": "ashby",
+  "slug": "airapps"
  },
  "canonical": {
   "checked": "2026-08-28T10:55:55Z",
@@ -117,8 +118,9 @@
   "slug": "mavenclinic"
  },
  "mayflower": {
-  "checked": "2026-08-28T10:55:55Z",
-  "kind": null
+  "checked": "2026-08-28T22:40:15Z",
+  "kind": "recruitee",
+  "slug": "mayflower"
  },
  "maze": {
   "checked": "2026-08-28T16:05:34Z",

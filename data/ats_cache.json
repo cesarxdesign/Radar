@@ -14,7 +14,8 @@
  "canonical": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
-  "slug": "canonical"
+  "slug": "canonical",
+  "via": "74c44fcebaa771da"
  },
  "clario": {
   "checked": "2026-08-28T10:55:55Z",
@@ -23,7 +24,8 @@
  "consensys": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
-  "slug": "consensys"
+  "slug": "consensys",
+  "via": "471d129097fa5781"
  },
  "ehvert engineering a salas o brien company": {
   "checked": "2026-08-28T10:55:55Z",
@@ -32,7 +34,8 @@
  "fueled": {
   "checked": "2026-08-28T23:02:18Z",
   "kind": "greenhouse",
-  "slug": "fueledcareers"
+  "slug": "fueledcareers",
+  "via": "5ffa0ba9139dca8f"
  },
  "garden3d": {
   "checked": "2026-08-28T10:55:55Z",
@@ -170,6 +173,12 @@
   "kind": "ashby",
   "slug": "pressw",
   "via": "caf0b09dab896695"
+ },
+ "remote": {
+  "checked": "2026-08-28T23:18:18Z",
+  "kind": "greenhouse",
+  "slug": "remote",
+  "via": "307f6605876e54e0"
  },
  "thatch": {
   "checked": "2026-08-28T10:55:55Z",

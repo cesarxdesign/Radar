@@ -43,6 +43,24 @@ def title_ok(title):
     t = title or ""
     return bool(INC.search(t)) and not EXC_JUNIOR.search(t) and not EXC_FIELD.search(t)
 
+# A JD written in another language means they want that language - cut it.
+# The JD text decides, never the company's nationality.
+EN_STOP = re.compile(
+    r"\b(the|and|you|we|with|for|our|will|team|are|is|to|of|in|be|your)\b", re.I)
+NON_EN_STOP = re.compile(
+    r"\b(und|oder|für|mit|wir|der|die|das|nicht|bei|sind|werden|eine[nr]?|"
+    r"avec|pour|dans|les|des|une|vous|nous|sont|être|"
+    r"para|con|una|los|las|nuestro|equipo|"
+    r"vaga|você|nós|não|uma|dos|será|"
+    r"wij|het|een|niet|voor|met|onze)\b", re.I)
+
+def english_jd(text):
+    """False when the JD is clearly written in another language."""
+    t = (text or "")[:4000]
+    if len(t) < 120:
+        return True  # too little text to judge
+    return len(EN_STOP.findall(t)) >= len(NON_EN_STOP.findall(t))
+
 PT_RE = re.compile(
     r"\b(portugal|lisbon|lisboa|porto(?!\s*alegre)|braga|coimbra|aveiro|faro|"
     r"set[uú]bal|oeiras|cascais|sintra|guimar[ãa]es|matosinhos|funchal|"
@@ -507,7 +525,7 @@ def src_breezy(slug, company):
     for j in d:
         loc = j.get("location") or {}
         raw = j.get("description") or ""
-        out.append({
+        job = {
             "source": f"breezy/{slug}", "company": company,
             "title": j.get("name"), "url": j.get("url"),
             "location": loc.get("name") or "",
@@ -515,7 +533,13 @@ def src_breezy(slug, company):
             "salary": (j.get("salary") or "").strip() or None,
             "posted": j.get("published_date"),
             "desc": strip_html(raw), "raw": raw,
-        })
+        }
+        # the list feed carries no JD - read the posting for design roles
+        if title_ok(job["title"]) and not raw and job["url"]:
+            orig = fetch_original(job["url"], company, job["title"])
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+        out.append(job)
     return out
 
 def src_workable(slug, company):
@@ -641,44 +665,34 @@ def src_pinpoint(slug, company):
 
 def src_join(slug, company):
     html = fetch(f"https://join.com/companies/{slug}")
-    m = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html, re.S)
+    m = re.search(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
     if not m:
         return []
-    def find_jobs(o):
-        if isinstance(o, dict):
-            v = o.get("jobs")
-            if isinstance(v, list) and v and isinstance(v[0], dict) and v[0].get("title"):
-                return v
-            for x in o.values():
-                r = find_jobs(x)
-                if r:
-                    return r
-        elif isinstance(o, list):
-            for x in o:
-                r = find_jobs(x)
-                if r:
-                    return r
-        return None
+    try:
+        items = (json.loads(m.group(1))["props"]["pageProps"]
+                 ["initialState"]["jobs"]["items"])
+    except (KeyError, TypeError, ValueError):
+        return []
     out = []
-    for j in find_jobs(json.loads(m.group(1))) or []:
-        jid = j.get("id")
-        url = f"https://join.com/companies/{slug}/{jid}-{j.get('slug') or ''}".rstrip("-") if jid else None
-        country = j.get("country")
-        country = country.get("name") if isinstance(country, dict) else (country or "")
+    for j in items:
+        city = j.get("city") or {}
+        loc = ", ".join(filter(None, [city.get("cityName"), city.get("countryName")]))
+        if (j.get("remoteType") or "").upper() == "ANYWHERE":
+            loc = ", ".join(filter(None, [loc, "Worldwide"]))
+        url = (f"https://join.com/companies/{slug}/{j['idParam']}"
+               if j.get("idParam") else None)
         job = {
             "source": f"join/{slug}", "company": company,
             "title": j.get("title"), "url": url,
-            "location": ", ".join(filter(None, [j.get("city") or "", country])),
-            "remote": bool(j.get("isRemote") or j.get("remote")) or None,
-            "salary": None, "posted": j.get("publishedAt") or j.get("createdAt"),
+            "location": loc,
+            "remote": ((j.get("workplaceType") or "").upper() == "REMOTE") or None,
+            "salary": None, "posted": j.get("createdAt"),
             "desc": "", "raw": "",
         }
         if title_ok(job["title"]) and url:
             orig = fetch_original(url, company, job["title"])
             if orig.get("text"):
                 job["desc"] = job["raw"] = orig["text"]
-            if orig.get("loc") and not job["location"]:
-                job["location"] = orig["loc"]
         out.append(job)
     return out
 
@@ -835,11 +849,11 @@ def discover(reg):
         try:
             links = ddg_links(f'site:{dom} "product designer" OR "ux designer" remote')
         except SearchThrottled:
-            raise
+            raise  # IP is bot-walled - do not advance, retry this platform next run
         except Exception:
-            continue
-        finally:
             meta["next"] = (i + step + 1) % len(DISCOVERY_SITES)
+            continue
+        meta["next"] = (i + step + 1) % len(DISCOVERY_SITES)
         time.sleep(10)
         for u in links[:20]:
             pe = parse_board_url(u)
@@ -1270,9 +1284,11 @@ def frameable(url):
 
 # ---------------------------------------------------------------- pipeline
 
-SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "recruitee", "landingjobs", "remotive",
-                   "himalayas", "jobicy", "weworkremotely", "workingnomads",
-                   "arbeitnow", "remoteok"]
+SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "recruitee", "workday",
+                   "smartrecruiters", "workable", "teamtailor", "personio",
+                   "bamboohr", "breezy", "pinpoint", "join", "manatal",
+                   "landingjobs", "remotive", "himalayas", "jobicy",
+                   "weworkremotely", "workingnomads", "arbeitnow", "remoteok"]
 
 def norm(s):
     return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
@@ -1313,54 +1329,69 @@ def run():
         ("remoteok", src_remoteok), ("arbeitnow", src_arbeitnow),
         ("weworkremotely", src_wwr), ("landingjobs", src_landingjobs),
     ]
-    for name, fn in aggregators:
-        try:
-            jobs = fn()
-            raw.extend(jobs)
-            report[name] = {"ok": True, "fetched": len(jobs)}
-        except Exception as e:
-            report[name] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
     wl = CONFIG.get("watchlist", {})
-    ats = ([("greenhouse", s, src_greenhouse) for s in wl.get("greenhouse", [])] +
-           [("lever", s, src_lever) for s in wl.get("lever", [])] +
-           [("ashby", s, src_ashby) for s in wl.get("ashby", [])])
-    for kind, slug, fn in ats:
-        name = f"{kind}/{slug}"
-        try:
-            jobs = fn(slug)
-            raw.extend(jobs)
-            report[name] = {"ok": True, "fetched": len(jobs)}
-        except urllib.error.HTTPError as e:
-            report[name] = {"ok": False, "error": f"HTTP {e.code}"}
-        except Exception as e:
-            report[name] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
+    tasks = list(aggregators)
+    tasks += [(f"greenhouse/{s}", lambda s=s: src_greenhouse(s)) for s in wl.get("greenhouse", [])]
+    tasks += [(f"lever/{s}", lambda s=s: src_lever(s)) for s in wl.get("lever", [])]
+    tasks += [(f"ashby/{s}", lambda s=s: src_ashby(s)) for s in wl.get("ashby", [])]
+    names = {n for n, _ in tasks}
+    for n, fn in registry_tasks():
+        if n not in names:
+            tasks.append((n, fn))
+            names.add(n)
+
+    def run_tasks(task_list):
+        with ThreadPoolExecutor(max_workers=10) as ex:
+            futs = {ex.submit(fn): n for n, fn in task_list}
+            for fut in as_completed(futs):
+                n = futs[fut]
+                try:
+                    jobs = fut.result()
+                    raw.extend(jobs)
+                    report[n] = {"ok": True, "fetched": len(jobs)}
+                except urllib.error.HTTPError as e:
+                    report[n] = {"ok": False, "error": f"HTTP {e.code}"}
+                except Exception as e:
+                    report[n] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
+
+    run_tasks(tasks)
 
     # Boards discovered while hunting originals join the pool permanently -
     # where there's one design job, there are often more. Agency boards that
     # post other companies' roles under their own name stay out.
     AGENCY_BOARDS = {"jobgether", "lemonio", "jobgether-1"}
     configured = {(k, s) for k, slugs in wl.items() for s in slugs}
+    learned_tasks = []
     for comp, ent in list(ATS_CACHE.items()):
         if comp.startswith("hunt:") or not isinstance(ent, dict) or not ent.get("kind"):
             continue
         kind, slug = ent["kind"], ent["slug"]
         name = f"{kind}/{slug}"
-        if (kind, slug) in configured or name in report or slug in AGENCY_BOARDS:
+        if ((kind, slug) in configured or name in report or name in names
+                or slug in AGENCY_BOARDS):
             continue
-        try:
+        names.add(name)
+        def fetch_learned(kind=kind, slug=slug, via=ent.get("via")):
             jobs = board_jobs(kind, slug)
             for bj in jobs:
-                bj["derived_from"] = ent.get("via")
-            raw.extend(jobs)
-            report[name] = {"ok": True, "fetched": len(jobs)}
-        except Exception as e:
-            report[name] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
+                bj["derived_from"] = via
+            return jobs
+        learned_tasks.append((name, fetch_learned))
+    run_tasks(learned_tasks)
 
     # Filter + classify + dedupe.
+    max_age = CONFIG.get("max_age_days")
+    posted_cutoff = NOW - timedelta(days=max_age) if max_age else None
     kept = {}
     for j in raw:
         if not title_ok(j.get("title")):
             continue
+        if not english_jd(j.get("desc")):
+            continue  # JD in another language - they want that language
+        if posted_cutoff:
+            pdate = parse_posted(j.get("posted"))
+            if pdate and pdate < posted_cutoff:
+                continue  # stale listing an aggregator never cleaned up
         bucket = classify(j.get("location"), j.get("remote"),
                           j.get("restrictions"), j.get("timezones"))
         if bucket is None:
@@ -1509,9 +1540,12 @@ def run():
     for j in kept.values():
         if "direct" not in j:
             j["direct"] = j.get("apply_kind") == "direct"
+    def _frame(j):
         target = j.get("apply_url") or j["url"]
         pu, pf = prev_frame.get(j["id"], (None, None))
         j["frameable"] = pf if (pu == target and pf is not None) else frameable(target)
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        list(ex.map(_frame, kept.values()))
     for sid in stale_ids:
         kept.pop(sid, None)
     if stale_ids:
@@ -1519,6 +1553,21 @@ def run():
     ATS_CACHE_FILE.write_text(json.dumps(ATS_CACHE, indent=1, sort_keys=True))
     report["websearch"] = ({"ok": False, "error": "bot challenge - hunts paused"}
                            if throttled else {"ok": True, "fetched": hunted})
+
+    # Grow the registry: two site: searches a night, rotating platforms.
+    # Self-gates like the hunts - datacenter IPs get bot-walled and skip.
+    discovered = 0
+    if not throttled:
+        try:
+            discovered = discover(REGISTRY)
+        except SearchThrottled:
+            throttled = True
+        except Exception:
+            pass
+    REGISTRY_FILE.write_text(json.dumps(REGISTRY, indent=1, sort_keys=True,
+                                        ensure_ascii=False))
+    report["discovery"] = ({"ok": False, "error": "search throttled"} if throttled
+                           else {"ok": True, "fetched": discovered})
 
     # Merge with existing DB.
     old = {}

@@ -1,0 +1,380 @@
+{
+ "_discovery": {
+  "next": 0
+ },
+ "ashby": [
+  {
+   "company": "Flipper Devices Inc",
+   "slug": "flipper",
+   "via": "rrs-census"
+  },
+  {
+   "company": "ElevenLabs",
+   "slug": "elevenlabs",
+   "via": "rrs-census"
+  },
+  {
+   "company": "OnHires",
+   "slug": "onhires",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Omniscient Digital",
+   "slug": "omniscient",
+   "via": "rrs-census"
+  },
+  {
+   "company": "WunderGraph",
+   "slug": "wundergraph",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Scarlet",
+   "slug": "scarlet",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Canadian Journalism Foundation",
+   "slug": "walrus",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Paddle",
+   "slug": "paddle",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Resend",
+   "slug": "resend",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Secfix",
+   "slug": "secfix",
+   "via": "rrs-census"
+  },
+  {
+   "company": "AIOS",
+   "slug": "aios",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Nevis",
+   "slug": "nevis",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Maze",
+   "slug": "mazehq",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Docker, Inc",
+   "slug": "docker",
+   "via": "rrs-census"
+  },
+  {
+   "company": "WeTravel",
+   "slug": "wetravel",
+   "via": "rrs-census"
+  }
+ ],
+ "bamboohr": [
+  {
+   "company": "Malala Fund",
+   "slug": "malalafund",
+   "via": "rrs-census"
+  },
+  {
+   "company": "YLabs",
+   "slug": "ylabs",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Validity Inc.",
+   "slug": "validity",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Trusscore",
+   "slug": "trusscore",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Smile Train",
+   "slug": "smiletrain",
+   "via": "rrs-census"
+  },
+  {
+   "company": "SimpliGov",
+   "slug": "simpligov",
+   "via": "rrs-census"
+  },
+  {
+   "company": "ScalePad",
+   "slug": "scalepad",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Research Solutions",
+   "slug": "researchsol",
+   "via": "rrs-census"
+  },
+  {
+   "company": "BRND WGN",
+   "slug": "brndwgn",
+   "via": "rrs-census"
+  }
+ ],
+ "breezy": [
+  {
+   "company": "20four7VA",
+   "slug": "20four7va",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Uvation",
+   "slug": "uvation",
+   "via": "rrs-census"
+  }
+ ],
+ "greenhouse": [
+  {
+   "company": "Co–Star",
+   "slug": "costar",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Invisible Technologies",
+   "slug": "agency",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Nebius Group",
+   "slug": "nebius",
+   "via": "rrs-census"
+  },
+  {
+   "company": "GR8 Tech",
+   "slug": "gr8tech",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Fueled",
+   "slug": "fueledcareers",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Fingerprint",
+   "slug": "fingerprint",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Recast",
+   "slug": "recast",
+   "via": "rrs-census"
+  }
+ ],
+ "join": [
+  {
+   "company": "SKYVE",
+   "slug": "skyve",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Digitale Leute School",
+   "slug": "digitale-leute441",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Your Software Supplier",
+   "slug": "yoursoftwaresuppliercom",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Standard Ecom",
+   "slug": "standard-ecom",
+   "via": "rrs-census"
+  }
+ ],
+ "lever": [
+  {
+   "company": "Superside",
+   "slug": "superside",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Quadcode SaaS",
+   "eu": true,
+   "slug": "quadcode",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Jito",
+   "slug": "jito",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Cyara",
+   "slug": "cyara",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Web Summit",
+   "slug": "websummit",
+   "via": "rrs-census"
+  }
+ ],
+ "manatal": [
+  {
+   "company": "myVA360",
+   "slug": "myva360",
+   "via": "rrs-census"
+  },
+  {
+   "company": "HumanIT Digital Consulting",
+   "slug": "humanit",
+   "via": "rrs-census"
+  }
+ ],
+ "personio": [
+  {
+   "company": "Digital Growth Studio",
+   "host": "digital-growth-studio.jobs.personio.com",
+   "via": "rrs-census"
+  }
+ ],
+ "pinpoint": [
+  {
+   "company": "Intermedia Cloud Communications",
+   "slug": "intermedia",
+   "via": "rrs-census"
+  }
+ ],
+ "smartrecruiters": [
+  {
+   "company": "Inetum",
+   "slug": "inetum2",
+   "via": "rrs-census"
+  }
+ ],
+ "teamtailor": [
+  {
+   "company": "group.one",
+   "host": "saasglobal.teamtailor.com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "TryHackMe",
+   "host": "careers.tryhackme.com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "bunny.net",
+   "host": "bunnynet.teamtailor.com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Visor.ai",
+   "host": "careers.visor.ai",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Infovista",
+   "host": "careers.infovista.com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Coverflex",
+   "host": "careers.coverflex.com",
+   "via": "rrs-census"
+  }
+ ],
+ "workable": [
+  {
+   "company": "Plateful",
+   "slug": "plateful",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Huzzle.com",
+   "slug": "huzzle",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Aperture",
+   "slug": "aperture-london",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Plutus Media",
+   "slug": "astral-media-group-limited",
+   "via": "rrs-census"
+  }
+ ],
+ "workday": [
+  {
+   "company": "Marmon Holdings, Inc.",
+   "host": "marmon.wd501.myworkdayjobs.com",
+   "site": "marmon_careers_nsbe",
+   "tenant": "marmon",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Berkeley Research Group (BRG)",
+   "host": "thinkbrg.wd5.myworkdayjobs.com",
+   "site": "brg_external_career_site",
+   "tenant": "thinkbrg",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Marmon Holdings, Inc.",
+   "host": "marmon.wd501.myworkdayjobs.com",
+   "site": "marmon_careers_swe",
+   "tenant": "marmon",
+   "via": "rrs-census"
+  },
+  {
+   "company": "iRhythm Technologies, Inc.",
+   "host": "irhythmtech.wd5.myworkdayjobs.com",
+   "site": "irhythm",
+   "tenant": "irhythmtech",
+   "via": "rrs-census"
+  },
+  {
+   "company": "ModSquad",
+   "host": "modsquad.wd5.myworkdayjobs.com",
+   "site": "modsquad_contractor",
+   "tenant": "modsquad",
+   "via": "rrs-census"
+  },
+  {
+   "company": "MasterCorp, Inc.",
+   "host": "mastercorp.wd1.myworkdayjobs.com",
+   "site": "mc",
+   "tenant": "mastercorp",
+   "via": "rrs-census"
+  },
+  {
+   "company": "AMA - Alberta Motor Association",
+   "host": "albertamotorassociation.wd3.myworkdayjobs.com",
+   "site": "ama",
+   "tenant": "albertamotorassociation",
+   "via": "rrs-census"
+  },
+  {
+   "company": "OutSystems",
+   "host": "outsystems.wd503.myworkdayjobs.com",
+   "site": "outsystems",
+   "tenant": "outsystems",
+   "via": "rrs-census"
+  },
+  {
+   "company": "IQVIA",
+   "host": "iqvia.wd1.myworkdayjobs.com",
+   "site": "iqvia",
+   "tenant": "iqvia",
+   "via": "rrs-census"
+  }
+ ]
+}

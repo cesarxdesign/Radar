@@ -1463,6 +1463,11 @@ def run():
         j["market"] = j.get("market") or market_label(j["bucket"], j.get("location"))
         if j["source"].split("/")[0] not in AGGREGATORS:
             j["direct"] = True   # straight off the company's own board
+            if not j.get("posted") and j.get("url"):
+                # parse-time date fetch can fail transiently - one retry
+                orig = fetch_original(j["url"], j["company"], j["title"])
+                if orig.get("posted"):
+                    j["posted"] = orig["posted"]
             continue
         link = desc_ats_link(rawdesc) or find_direct(j["company"], j["title"])
         company_url = desc_company_url(rawdesc)
@@ -1596,6 +1601,8 @@ def run():
             j["apply_kind"] = prev.get("apply_kind", "direct")
         if prev and not j.get("xp") and prev.get("xp"):
             j["xp"] = prev["xp"]
+        if prev and not j.get("posted") and prev.get("posted"):
+            j["posted"] = prev["posted"]
         j["first_seen"] = prev["first_seen"] if prev else RUN_ID
         j["first_run"] = prev.get("first_run", prev["first_seen"]) if prev else RUN_ID
         j["last_seen"] = RUN_ID

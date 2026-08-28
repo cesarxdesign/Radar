@@ -263,13 +263,13 @@ function card(j, opts) {
   el.className = "job" + (opts.unsure ? " unsure" : "");
   el.innerHTML =
     '<div class="jmain">' +
-      '<a class="jtitle" href="' + esc(safeUrl(j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
+      '<a class="jtitle" href="' + esc(safeUrl(j.apply_url || j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
       (opts.isNew ? ' <span class="badge b-new">new</span>' : "") +
       (b === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
       (b === "ok" ? ' <span class="badge b-ok">ok’d</span>' : "") +
       '<div class="jmeta"><span class="co">' + esc(j.company) + "</span>" +
       "<span>" + esc(j.location || BUCKET[j.bucket] || "") + "</span>" +
-      "<span>" + esc(j.source.split("/")[0]) + "</span>" +
+      "<span>" + esc(j.source.split("/")[0]) + (j.apply_url ? " → direct" : "") + "</span>" +
       "<span>" + age(j) + "</span></div>" +
     "</div>" +
     (j.salary ? '<span class="sal">' + esc(j.salary) + "</span>" : "") +

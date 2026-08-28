@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-08-28T10:43:30Z",
- "run_id": "2026-08-28T10:43:30Z",
+ "generated_at": "2026-08-28T10:55:55Z",
+ "run_id": "2026-08-28T10:55:55Z",
  "counts": {
   "active": 41,
   "new": 0
@@ -96,7 +96,7 @@
   },
   "greenhouse/datadog": {
    "ok": true,
-   "fetched": 452
+   "fetched": 451
   },
   "greenhouse/elastic": {
    "ok": true,
@@ -252,7 +252,7 @@
    "posted": "2026-07-28T14:23:05",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -265,9 +265,10 @@
    "bucket": "eu",
    "salary": null,
    "posted": "2026-08-26T12:35:28+00:00",
+   "apply_url": "https://consensys.io/open-roles/7256954?gh_jid=7256954",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -282,7 +283,7 @@
    "posted": "2026-08-25T13:22:56+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -295,9 +296,10 @@
    "bucket": "pt",
    "salary": null,
    "posted": "2026-08-19T18:34:12+00:00",
+   "apply_url": "https://jobs.ashbyhq.com/worldly/310e5a72-0074-4c1e-b94b-af702f453d8d",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -310,9 +312,10 @@
    "bucket": "eu",
    "salary": null,
    "posted": "2026-08-19T02:00:03+00:00",
+   "apply_url": "https://jobs.ashbyhq.com/miro/efcd30b4-b3da-4d11-9f04-b2d9fde2b69f",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -325,9 +328,10 @@
    "bucket": "eu",
    "salary": null,
    "posted": "2026-08-15T14:07:19+00:00",
+   "apply_url": "https://jobs.ashbyhq.com/opensea/1ad9f09a-3331-4f2b-b0f5-c739580bb243",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -342,7 +346,7 @@
    "posted": "2026-08-15T10:58:25+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -357,7 +361,7 @@
    "posted": "2026-06-08T03:58:40-04:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -370,9 +374,10 @@
    "bucket": "eu",
    "salary": null,
    "posted": "2026-08-01T03:04:29+00:00",
+   "apply_url": "https://job-boards.greenhouse.io/canonical/jobs/5995321",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -385,9 +390,10 @@
    "bucket": "eu",
    "salary": null,
    "posted": "2026-08-01T03:04:08+00:00",
+   "apply_url": "https://job-boards.greenhouse.io/canonical/jobs/7566317",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -402,7 +408,7 @@
    "posted": "Wed, 19 Aug 2026 20:37:27 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -415,9 +421,10 @@
    "bucket": "ww",
    "salary": null,
    "posted": "Tue, 18 Aug 2026 20:33:40 +0000",
+   "apply_url": "https://thatch.com/jobs/5136655008?gh_jid=5136655008",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -430,9 +437,10 @@
    "bucket": "ww",
    "salary": "$ 162,500 - $195,000",
    "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
+   "apply_url": "https://webflow.com/careers#pay-zones",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -447,7 +455,7 @@
    "posted": "Tue, 11 Aug 2026 03:24:55 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -462,7 +470,7 @@
    "posted": "Tue, 11 Aug 2026 02:51:33 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -477,7 +485,7 @@
    "posted": "Fri, 07 Aug 2026 09:59:18 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -492,7 +500,7 @@
    "posted": "Thu, 06 Aug 2026 09:16:25 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -507,7 +515,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:58 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -522,7 +530,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -537,7 +545,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:38 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -552,7 +560,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -567,7 +575,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:16 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -582,7 +590,7 @@
    "posted": "Tue, 04 Aug 2026 20:13:15 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -595,9 +603,10 @@
    "bucket": "ww",
    "salary": null,
    "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
+   "apply_url": "https://jobs.lever.co/jobgether/28984445-761f-4b3f-bfae-21a8e53a525b",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -612,7 +621,7 @@
    "posted": "Tue, 04 Aug 2026 15:19:32 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -627,7 +636,7 @@
    "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -642,7 +651,7 @@
    "posted": "Tue, 04 Aug 2026 15:19:15 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -657,7 +666,7 @@
    "posted": "Tue, 04 Aug 2026 15:18:57 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -670,9 +679,10 @@
    "bucket": "ww",
    "salary": null,
    "posted": "Thu, 30 Jul 2026 07:31:03 +0000",
+   "apply_url": "https://job-boards.greenhouse.io/mavenclinic/jobs/8593006002",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -687,7 +697,7 @@
    "posted": "Fri, 17 Jul 2026 16:43:01 +0000",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -702,7 +712,7 @@
    "posted": "2026-07-22T10:57:46.241Z",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -717,7 +727,7 @@
    "posted": "2025-06-20T12:34:51-04:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -732,7 +742,7 @@
    "posted": "2026-08-06T10:41:01-04:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -747,7 +757,7 @@
    "posted": "2026-04-29T18:16:36.164+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -762,7 +772,7 @@
    "posted": "2026-08-06T19:59:06.175+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -777,7 +787,7 @@
    "posted": "2026-06-23T14:51:39.758+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -792,7 +802,7 @@
    "posted": "2026-07-22T11:01:14.397+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -807,7 +817,7 @@
    "posted": "2026-08-04T10:30:17.424+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -822,7 +832,7 @@
    "posted": "2025-11-13T23:43:02.608+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -837,7 +847,7 @@
    "posted": "2026-06-12T20:19:00.233+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   },
   {
@@ -852,7 +862,7 @@
    "posted": "2026-06-26T16:32:25.973+00:00",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T10:43:30Z",
+   "last_seen": "2026-08-28T10:55:55Z",
    "active": true
   }
  ]

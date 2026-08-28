@@ -160,7 +160,7 @@ def src_remotive():
             "location": j.get("candidate_required_location"),
             "remote": True, "salary": (j.get("salary") or "").strip() or None,
             "posted": j.get("publication_date"),
-            "desc": strip_html(j.get("description")),
+            "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
         })
     return out
 
@@ -182,7 +182,7 @@ def src_himalayas():
                 "posted": datetime.fromtimestamp(j["pubDate"], timezone.utc).isoformat() if j.get("pubDate") else None,
                 "restrictions": j.get("locationRestrictions") or None,
                 "timezones": j.get("timezoneRestrictions") or None,
-                "desc": strip_html(j.get("description")),
+                "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
             })
         cur = d.get("nextCursor")
         if not cur:
@@ -200,7 +200,7 @@ def src_jobicy():
             "title": j.get("jobTitle"), "url": j.get("url"),
             "location": j.get("jobGeo"), "remote": True, "salary": sal,
             "posted": j.get("pubDate"),
-            "desc": strip_html(j.get("jobDescription")),
+            "desc": strip_html(j.get("jobDescription")), "raw": j.get("jobDescription") or "",
         })
     return out
 
@@ -215,7 +215,7 @@ def src_workingnomads():
             "title": j.get("title"), "url": j.get("url"),
             "location": j.get("location"), "remote": True, "salary": None,
             "posted": j.get("pub_date"),
-            "desc": strip_html(j.get("description")),
+            "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
         })
     return out
 
@@ -235,7 +235,7 @@ def src_remoteok():
             "title": j.get("position"), "url": j.get("url"),
             "location": j.get("location"), "remote": True, "salary": sal,
             "posted": j.get("date"),
-            "desc": strip_html(j.get("description")),
+            "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
         })
     return out
 
@@ -249,7 +249,7 @@ def src_arbeitnow():
             "location": j.get("location"), "remote": bool(j.get("remote")),
             "salary": None,
             "posted": datetime.fromtimestamp(j["created_at"], timezone.utc).isoformat() if j.get("created_at") else None,
-            "desc": strip_html(j.get("description")),
+            "desc": strip_html(j.get("description")), "raw": j.get("description") or "",
         })
     return out
 
@@ -268,7 +268,7 @@ def src_wwr():
             "title": title.strip(), "url": get("link"),
             "location": get("region"), "remote": True, "salary": None,
             "posted": get("pubDate") or None,
-            "desc": strip_html(get("description")),
+            "desc": strip_html(get("description")), "raw": get("description"),
         })
     return out
 
@@ -348,6 +348,92 @@ def src_ashby(slug):
             "desc": strip_html(j.get("descriptionPlain"), 2000),
         })
     return out
+
+# ------------------------------------------------- direct apply-link hunting
+
+AGGREGATORS = {"remotive", "himalayas", "jobicy", "weworkremotely",
+               "workingnomads", "arbeitnow", "remoteok"}
+ATS_LINK_RE = re.compile(
+    r'https?://[^\s"\'<>]*(?:greenhouse\.io|lever\.co|ashbyhq\.com|workable\.com|'
+    r'recruitee\.com|teamtailor\.com|bamboohr\.com|smartrecruiters\.com|breezy\.hr|'
+    r'personio\.(?:de|com)|jobvite\.com|join\.com|homerun\.co)[^\s"\'<>]*', re.I)
+CAREERS_LINK_RE = re.compile(r'href="(https?://[^"]*(?:careers|jobs|apply|join)[^"]*)"', re.I)
+SOCIAL_RE = re.compile(r'weworkremotely|remotive|jobicy|himalayas|remoteok|workingnomads|'
+                       r'twitter|x\.com|facebook|linkedin|instagram|youtube|tiktok|t\.me', re.I)
+
+ATS_CACHE_FILE = ROOT / "data" / "ats_cache.json"
+try:
+    ATS_CACHE = json.loads(ATS_CACHE_FILE.read_text())
+except Exception:
+    ATS_CACHE = {}
+_board_jobs_memo = {}
+
+def desc_ats_link(raw):
+    m = ATS_LINK_RE.search(unescape(raw or ""))
+    return m.group(0).rstrip(').,;\'"') if m else None
+
+def desc_careers_link(raw):
+    for m in CAREERS_LINK_RE.finditer(unescape(raw or "")):
+        if not SOCIAL_RE.search(m.group(1)):
+            return m.group(1)
+    return None
+
+def slug_candidates(company):
+    low = (company or "").lower()
+    stripped = re.sub(r"\b(inc|ltd|gmbh|bv|llc|co|corp|labs|hq|io|app)\b\.?", "", low)
+    cands = [re.sub(r"[^a-z0-9]+", "", low),
+             re.sub(r"[^a-z0-9]+", "-", low).strip("-"),
+             re.sub(r"[^a-z0-9]+", "", stripped)]
+    return [c for c in dict.fromkeys(cands) if len(c) >= 3]
+
+def board_jobs(kind, slug):
+    memo = _board_jobs_memo.get((kind, slug))
+    if memo is not None:
+        return memo
+    fn = {"greenhouse": src_greenhouse, "lever": src_lever, "ashby": src_ashby}[kind]
+    try:
+        jobs = fn(slug)
+    except Exception:
+        jobs = []
+    _board_jobs_memo[(kind, slug)] = jobs
+    return jobs
+
+def probe_company(company):
+    comp = norm(company)
+    for kind in ("greenhouse", "ashby", "lever"):
+        for slug in slug_candidates(company):
+            try:
+                jobs = board_jobs(kind, slug)
+            except Exception:
+                continue
+            if not jobs:
+                continue
+            if kind == "greenhouse":
+                # greenhouse tells us whose board this is - verify it
+                bc = norm(jobs[0].get("company") or "")
+                if bc and comp not in bc and bc not in comp:
+                    continue
+            return {"kind": kind, "slug": slug, "checked": RUN_ID}
+    return {"kind": None, "checked": RUN_ID}
+
+def find_direct(company, title):
+    """Hunt the company's own ATS board for this job. Cached in data/ats_cache.json."""
+    comp = norm(company)
+    if not comp:
+        return None
+    ent = ATS_CACHE.get(comp)
+    stale = (NOW - timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    if ent is None or (not ent.get("kind") and ent.get("checked", "") < stale):
+        ent = probe_company(company)
+        ATS_CACHE[comp] = ent
+    if not ent.get("kind"):
+        return None
+    t = norm(title)
+    for bj in board_jobs(ent["kind"], ent["slug"]):
+        bt = norm(bj.get("title"))
+        if bt and (bt == t or t in bt or bt in t):
+            return bj.get("url")
+    return None
 
 # ---------------------------------------------------------------- pipeline
 
@@ -441,6 +527,7 @@ def run():
             "location": (j.get("location") or "").strip(),
             "bucket": bucket, "salary": salary,
             "posted": j.get("posted"),
+            "_raw": j.get("raw") or "",
         }
         if key not in kept or priority(j["source"]) < priority(kept[key]["source"]):
             prev = kept.get(key)
@@ -455,6 +542,20 @@ def run():
             if cur["bucket"] == "tiebreak" and bucket != "tiebreak":
                 cur["bucket"] = bucket
 
+    # Resolve direct apply links for aggregator finds.
+    resolved = 0
+    for j in kept.values():
+        rawdesc = j.pop("_raw", "")
+        if j["source"].split("/")[0] not in AGGREGATORS:
+            continue
+        link = (desc_ats_link(rawdesc)
+                or find_direct(j["company"], j["title"])
+                or desc_careers_link(rawdesc))
+        if link:
+            j["apply_url"] = link
+            resolved += 1
+    ATS_CACHE_FILE.write_text(json.dumps(ATS_CACHE, indent=1, sort_keys=True))
+
     # Merge with existing DB.
     old = {}
     if DATA_FILE.exists():
@@ -464,6 +565,8 @@ def run():
     jobs_out = []
     for key, j in kept.items():
         prev = old.pop(key, None)
+        if prev and not j.get("apply_url") and prev.get("apply_url"):
+            j["apply_url"] = prev["apply_url"]
         j["first_seen"] = prev["first_seen"] if prev else RUN_ID
         j["first_run"] = prev.get("first_run", prev["first_seen"]) if prev else RUN_ID
         j["last_seen"] = RUN_ID
@@ -495,7 +598,8 @@ def run():
     # Console summary.
     ok = sum(1 for r in report.values() if r["ok"])
     print(f"sources: {ok}/{len(report)} ok | raw {len(raw)} | kept {len(kept)} | "
-          f"new {out['counts']['new']} | active {out['counts']['active']}")
+          f"new {out['counts']['new']} | active {out['counts']['active']} | "
+          f"direct links {resolved}")
     for n, r in sorted(report.items()):
         if not r["ok"]:
             print(f"  FAIL {n}: {r['error']}")

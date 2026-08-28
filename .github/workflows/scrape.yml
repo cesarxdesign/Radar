@@ -19,7 +19,7 @@ jobs:
         run: |
           git config user.name "Cesar Garcia"
           git config user.email "cesarxdesign@gmail.com"
-          git add data/jobs.json
+          git add data
           git diff --cached --quiet || git commit -m "nightly scrape $(date -u +%F)"
           git pull --rebase origin main
           git push

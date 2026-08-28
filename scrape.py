@@ -801,7 +801,7 @@ def frameable(url):
 
 # ---------------------------------------------------------------- pipeline
 
-SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "landingjobs", "remotive",
+SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "recruitee", "landingjobs", "remotive",
                    "himalayas", "jobicy", "weworkremotely", "workingnomads",
                    "arbeitnow", "remoteok"]
 
@@ -863,6 +863,25 @@ def run():
             report[name] = {"ok": True, "fetched": len(jobs)}
         except urllib.error.HTTPError as e:
             report[name] = {"ok": False, "error": f"HTTP {e.code}"}
+        except Exception as e:
+            report[name] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
+
+    # Boards discovered while hunting originals join the pool permanently -
+    # where there's one design job, there are often more. Agency boards that
+    # post other companies' roles under their own name stay out.
+    AGENCY_BOARDS = {"jobgether", "lemonio", "jobgether-1"}
+    configured = {(k, s) for k, slugs in wl.items() for s in slugs}
+    for comp, ent in list(ATS_CACHE.items()):
+        if comp.startswith("hunt:") or not isinstance(ent, dict) or not ent.get("kind"):
+            continue
+        kind, slug = ent["kind"], ent["slug"]
+        name = f"{kind}/{slug}"
+        if (kind, slug) in configured or name in report or slug in AGENCY_BOARDS:
+            continue
+        try:
+            jobs = board_jobs(kind, slug)
+            raw.extend(jobs)
+            report[name] = {"ok": True, "fetched": len(jobs)}
         except Exception as e:
             report[name] = {"ok": False, "error": f"{type(e).__name__}: {e}"}
 

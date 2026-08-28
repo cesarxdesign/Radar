@@ -972,6 +972,17 @@ def run():
                     or (board_url(ent2["kind"], ent2["slug"]) if ent2.get("kind") else None)
                     or company_url)
             kind = "careers"
+        if kind == "careers":
+            # bring the board's live design roles into the brief pane -
+            # the honest answer when the exact posting is gone or hidden
+            ent2 = ATS_CACHE.get(norm(j["company"])) or {}
+            if ent2.get("kind"):
+                roles = [{"title": bj["title"], "url": bj.get("url"),
+                          "location": bj.get("location") or ""}
+                         for bj in board_jobs(ent2["kind"], ent2["slug"])
+                         if INC.search(bj.get("title") or "")][:8]
+                if roles:
+                    j["board_roles"] = roles
         if link:
             j["apply_url"] = link
             j["apply_kind"] = kind or "direct"

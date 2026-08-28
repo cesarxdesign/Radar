@@ -311,6 +311,10 @@ function renderPreview() {
       cell("years", esc(f.years_experience || (j.xp || "").replace(/y$/, "")), "") +
       cell(dd === 1 ? "day" : "days", dd === null ? "" : String(dd), "") +
     "</div>";
+  if (j.board_roles && j.board_roles.length)
+    h += "<h3>Live on their board right now</h3><ul>" + j.board_roles.map(r =>
+      '<li><a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" +
+      (r.location ? ' <span style="color:var(--mut)">— ' + esc(r.location) + "</span>" : "") + "</li>").join("") + "</ul>";
   if (f.must_haves && f.must_haves.length)
     h += "<h3>Hard requirements</h3><ul>" + f.must_haves.map(m => "<li>" + esc(m) + "</li>").join("") + "</ul>";
   if (JDS === null) {

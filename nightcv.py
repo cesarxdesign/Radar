@@ -124,6 +124,15 @@ def main():
     # --- hunt: search engines block cloud IPs, so the source-link hunt
     # runs here on the home connection and pushes results back -----------
     hunted = 0
+    def git(*a):
+        subprocess.run(["git", "-C", str(HERE),
+                        "-c", "user.email=cesarxdesign@gmail.com",
+                        "-c", "user.name=Cesar Garcia"] + list(a),
+                       check=True, capture_output=True, timeout=120)
+    try:
+        git("pull", "--rebase", "--autostash", "origin", "main")  # before touching data/
+    except Exception as e:
+        log(f"git pull FAIL: {e}")
     try:
         import scrape
         jobs_db = json.loads((HERE / "data" / "jobs.json").read_text())
@@ -162,14 +171,9 @@ def main():
     if parsed or hunted:
         log(f"parsed facts for {parsed} roles, hunted links for {hunted}")
         try:
-            def git(*a):
-                subprocess.run(["git", "-C", str(HERE),
-                                "-c", "user.email=cesarxdesign@gmail.com",
-                                "-c", "user.name=Cesar Garcia"] + list(a),
-                               check=True, capture_output=True, timeout=120)
-            git("pull", "--rebase", "origin", "main")
             git("add", "data/facts.json", "data/ats_cache.json", "data/jobs.json")
             git("commit", "-m", "morning run: %d facts, %d hunted links" % (parsed, hunted))
+            git("pull", "--rebase", "--autostash", "origin", "main")
             git("push", "origin", "main")
             log("results pushed to the radar")
         except Exception as e:

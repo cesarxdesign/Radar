@@ -121,8 +121,46 @@ def main():
             facts_file.write_text(json.dumps(facts, indent=1, ensure_ascii=False))
         except Exception as e:
             log(f"parse FAIL {j['company']} - {j['title']}: {e}")
-    if parsed:
-        log(f"parsed facts for {parsed} roles")
+    # --- hunt: search engines block cloud IPs, so the source-link hunt
+    # runs here on the home connection and pushes results back -----------
+    hunted = 0
+    try:
+        import scrape
+        jobs_db = json.loads((HERE / "data" / "jobs.json").read_text())
+        by_id = {j["id"]: j for j in jobs_db.get("jobs", [])}
+        for jid, j in jobs.items():
+            if hunted >= int(os.environ.get("NIGHTCV_HUNT_MAX", "12")):
+                break
+            dbj = by_id.get(jid)
+            if dbj is None or dbj.get("apply_url") or not dbj.get("active"):
+                continue
+            try:
+                link, kind, stale = scrape.hunt_web(j["company"], j["title"])
+            except scrape.SearchThrottled:
+                log("hunt: search engine bot-challenged this IP - stopping")
+                break
+            except Exception as e:
+                log(f"hunt FAIL {j['company']}: {e}")
+                continue
+            hunted += 1
+            scrape.ATS_CACHE["hunt:" + jid] = {
+                "url": link, "kind": kind, "stale": stale,
+                "checked": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+            if link:
+                dbj["apply_url"], dbj["apply_kind"] = link, kind
+                dbj["direct"] = kind == "direct"
+                dbj["frameable"] = scrape.frameable(link)
+                log(f"hunt: {j['company']} -> [{kind}] {link}")
+        if hunted:
+            scrape.ATS_CACHE_FILE.write_text(
+                json.dumps(scrape.ATS_CACHE, indent=1, sort_keys=True))
+            (HERE / "data" / "jobs.json").write_text(
+                json.dumps(jobs_db, indent=1, ensure_ascii=False))
+    except Exception as e:
+        log(f"hunt phase FAIL: {e}")
+
+    if parsed or hunted:
+        log(f"parsed facts for {parsed} roles, hunted links for {hunted}")
         try:
             def git(*a):
                 subprocess.run(["git", "-C", str(HERE),
@@ -130,12 +168,12 @@ def main():
                                 "-c", "user.name=Cesar Garcia"] + list(a),
                                check=True, capture_output=True, timeout=120)
             git("pull", "--rebase", "origin", "main")
-            git("add", "data/facts.json")
-            git("commit", "-m", "facts: TCV parse of %d roles" % parsed)
+            git("add", "data/facts.json", "data/ats_cache.json", "data/jobs.json")
+            git("commit", "-m", "morning run: %d facts, %d hunted links" % (parsed, hunted))
             git("push", "origin", "main")
-            log("facts pushed to the radar")
+            log("results pushed to the radar")
         except Exception as e:
-            log(f"facts push FAIL (kept locally): {e}")
+            log(f"push FAIL (kept locally): {e}")
 
     ok = fail = 0
     try:

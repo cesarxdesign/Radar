@@ -178,6 +178,13 @@ def main():
                 dbj["direct"] = kind == "direct"
                 dbj["frameable"] = scrape.frameable(link)
                 log(f"hunt: {j['company']} -> [{kind}] {link}")
+                if kind == "direct":
+                    # the original JD replaces the aggregator's noisy copy
+                    # before any CV is tuned against it
+                    orig = scrape.fetch_original(link, j["company"], j["title"])
+                    if orig.get("text") and len(orig["text"]) >= 200:
+                        j["jd"] = orig["text"][:20000]
+                        log(f"hunt: {j['company']} JD swapped for the original")
         if hunted:
             scrape.ATS_CACHE_FILE.write_text(
                 json.dumps(scrape.ATS_CACHE, indent=1, sort_keys=True))

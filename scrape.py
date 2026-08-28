@@ -507,12 +507,23 @@ def ddg_links(q):
     return out
 
 def posting_alive(url, title):
-    """True if the page loads and carries the job title; False if provably not."""
+    """True if the posting still exists and carries this title."""
+    t = norm(title)
+    # greenhouse job pages are client-rendered - ask the API instead
+    m = re.search(r"greenhouse\.io/([^/?#]+)/jobs/(\d+)", url)
+    if m:
+        try:
+            j = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{m.group(1)}/jobs/{m.group(2)}")
+            bt = norm(j.get("title"))
+            return bool(bt) and (bt == t or t in bt or bt in t)
+        except urllib.error.HTTPError:
+            return False
+        except Exception:
+            pass  # fall through to the page check
     try:
         html = fetch(url, timeout=20)
     except Exception:
         return False
-    t = norm(title)
     body = norm(strip_html(unescape(html), 40000))
     return t in body
 
@@ -528,6 +539,72 @@ def greenhouse_stale(url, title):
     t = norm(title)
     return not any(t == norm(j.get("title")) or t in norm(j.get("title"))
                    for j in jobs.get("jobs", []))
+
+def crawl_for_posting(url, title, depth=1, budget=None, company_key=None):
+    """Do what a human does on a company site: find careers, find the role.
+    Returns the specific posting URL or None. At most one hop deep."""
+    if budget is None:
+        budget = [4]  # posting_alive checks allowed
+    try:
+        html = fetch(url, timeout=20)
+    except Exception:
+        return None
+    t = norm(title)
+    # greenhouse embed on the careers page -> board api -> frameable job url
+    m = re.search(r"greenhouse\.io/embed/job_board(?:/js)?\?for=([a-z0-9_-]+)", html, re.I)
+    if m:
+        for bj in board_jobs("greenhouse", m.group(1)):
+            bt = norm(bj.get("title"))
+            if bt and (bt == t or t in bt or bt in t):
+                return bj.get("url")
+    anchors = [(urllib.parse.urljoin(url, unescape(am.group(1))),
+                norm(strip_html(am.group(2), 200)))
+               for am in re.finditer(r'<a\b[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', html, re.S | re.I)]
+    # a link to the company's ATS *board* resolves through the board API -
+    # and teaches the slug cache for every future role at this company
+    BOARD_RES = [(r"jobs\.ashbyhq\.com/([A-Za-z0-9_-]+)/?$", "ashby"),
+                 (r"(?:job-boards|boards)\.greenhouse\.io/([A-Za-z0-9_-]+)/?$", "greenhouse"),
+                 (r"jobs(?:\.eu)?\.lever\.co/([A-Za-z0-9_-]+)/?$", "lever")]
+    for u, _ in anchors:
+        for pat, kind in BOARD_RES:
+            bm = re.search(pat, u)
+            if not bm:
+                continue
+            slug = bm.group(1)
+            jobs = board_jobs(kind, slug)
+            if jobs and company_key and not (ATS_CACHE.get(company_key) or {}).get("kind"):
+                ATS_CACHE[company_key] = {"kind": kind, "slug": slug,
+                                          "checked": RUN_ID}
+            for bj in jobs:
+                bt = norm(bj.get("title"))
+                if bt and (bt == t or t in bt or bt in t):
+                    return bj.get("url")
+    def try_url(u):
+        if budget[0] <= 0:
+            return False
+        budget[0] -= 1
+        return posting_alive(u, title)
+    usable = [(u, text) for u, text in anchors
+              if u.startswith("http") and not AGG_HOST_RE.search(u)]
+    # an anchor on the company's own page naming the exact role is the
+    # company vouching for the link - take it as is
+    for u, text in usable:
+        if t and t in text:
+            return u
+    # anonymous ATS links still need proof; never spend budget on links
+    # labelled with a different role
+    for u, text in usable:
+        if ATS_LINK_RE.search(u) and not text and try_url(u):
+            return u
+    if depth > 0:
+        for u, text in anchors:
+            if not u.startswith("http") or AGG_HOST_RE.search(u):
+                continue
+            if (re.search(r"careers|jobs|join us|open roles|positions|vacancies|hiring", text)
+                    or re.search(r"/(careers|jobs|join)(/|$)", u, re.I)):
+                if u.rstrip("/") != url.rstrip("/"):
+                    return crawl_for_posting(u, title, depth - 1, budget, company_key)
+    return None
 
 def hunt_web(company, title):
     """Search for the posting at its source. Returns (url, kind, stale).
@@ -555,6 +632,9 @@ def hunt_web(company, title):
         if AGG_HOST_RE.search(u) or comp_token not in host:
             continue
         if re.search(r"careers|jobs|join", u, re.I) or ATS_LINK_RE.search(u):
+            hit = crawl_for_posting(u, title, company_key=norm(company))
+            if hit:
+                return hit, "direct", stale_hit
             return u, "careers", stale_hit
     return None, None, stale_hit
 
@@ -660,7 +740,8 @@ def fetch_original(url, company, title):
     m = re.search(r'"location":\s*\{\s*"name":\s*"([^"]+)"', html)
     if m:
         out["loc"] = m.group(1)
-    out["text"] = strip_html(unescape(html), 30000)
+    text = strip_html(unescape(html), 30000)
+    out["text"] = text if norm(title) in norm(text) else None
     return out
 
 def frameable(url):
@@ -801,6 +882,7 @@ def run():
         except Exception:
             pass
     resolved = hunted = 0
+    upgrades = 0
     stale_ids = []
     throttled = False
     week_ago = (NOW - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -815,11 +897,20 @@ def run():
         if not link:
             hk = "hunt:" + j["id"]
             ent = ATS_CACHE.get(hk)
-            if ent and (ent.get("url") or ent.get("checked", "") >= week_ago):
+            if ent and ent.get("kind") == "careers" and upgrades < 8:
+                upgrades += 1
+                hit = crawl_for_posting(ent["url"], j["title"],
+                                        company_key=norm(j["company"]))
+                if hit:
+                    ent = {"url": hit, "kind": "direct", "stale": False,
+                           "checked": RUN_ID}
+                    ATS_CACHE[hk] = ent
+                link, kind = ent.get("url"), ent.get("kind")
+            elif ent and (ent.get("url") or ent.get("checked", "") >= week_ago):
                 link, kind = ent.get("url"), ent.get("kind")
                 if ent.get("stale"):
                     stale_ids.append(j["id"])
-            elif (hunted < 6 and not throttled
+            elif (hunted < 15 and not throttled
                   and prev_seen.get(j["id"], RUN_ID) >= week_ago):
                 hunted += 1
                 try:

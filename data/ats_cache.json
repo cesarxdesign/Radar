@@ -60,10 +60,10 @@
   "url": "https://www.pixelone.app/careers"
  },
  "hunt:fd4f6739cc33a6a1": {
-  "checked": "2026-08-28T11:26:34Z",
-  "kind": "careers",
-  "stale": true,
-  "url": "https://webflow.com/company/careers"
+  "checked": "2026-08-28T16:10:27Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://job-boards.greenhouse.io/webflow/jobs/8096142"
  },
  "iisd": {
   "checked": "2026-08-28T10:55:55Z",
@@ -104,8 +104,9 @@
   "kind": null
  },
  "maze": {
-  "checked": "2026-08-28T10:55:55Z",
-  "kind": null
+  "checked": "2026-08-28T16:05:34Z",
+  "kind": "ashby",
+  "slug": "mazedesign"
  },
  "miro": {
   "checked": "2026-08-28T10:55:55Z",

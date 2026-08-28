@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-28T15:17:18Z",
- "run_id": "2026-08-28T15:17:18Z",
+ "generated_at": "2026-08-28T16:10:27Z",
+ "run_id": "2026-08-28T16:10:27Z",
  "counts": {
-  "active": 36,
+  "active": 37,
   "new": 0
  },
  "sources": {
@@ -40,11 +40,11 @@
   },
   "greenhouse/gitlab": {
    "ok": true,
-   "fetched": 218
+   "fetched": 219
   },
   "greenhouse/cloudflare": {
    "ok": true,
-   "fetched": 312
+   "fetched": 314
   },
   "greenhouse/figma": {
    "ok": true,
@@ -52,7 +52,7 @@
   },
   "greenhouse/stripe": {
    "ok": true,
-   "fetched": 576
+   "fetched": 570
   },
   "greenhouse/duolingo": {
    "ok": true,
@@ -80,7 +80,7 @@
   },
   "greenhouse/remotecom": {
    "ok": true,
-   "fetched": 203
+   "fetched": 204
   },
   "greenhouse/vercel": {
    "ok": true,
@@ -104,11 +104,11 @@
   },
   "greenhouse/grafanalabs": {
    "ok": true,
-   "fetched": 137
+   "fetched": 134
   },
   "greenhouse/anthropic": {
    "ok": true,
-   "fetched": 563
+   "fetched": 564
   },
   "greenhouse/mozilla": {
    "ok": true,
@@ -128,7 +128,7 @@
   },
   "greenhouse/getyourguide": {
    "ok": true,
-   "fetched": 56
+   "fetched": 57
   },
   "greenhouse/n26": {
    "ok": true,
@@ -176,7 +176,7 @@
   },
   "ashby/ramp": {
    "ok": true,
-   "fetched": 136
+   "fetched": 137
   },
   "ashby/openai": {
    "ok": true,
@@ -260,7 +260,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -279,7 +279,26 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
+   "active": true
+  },
+  {
+   "id": "aa901be0cc985037",
+   "title": "Staff Design Engineer - EU",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/87b96eef-edc1-4de4-adb6-d460126d02f8",
+   "source": "ashby/ashby",
+   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
+   "bucket": "pt",
+   "salary": "€154K – €250K • Offers Equity • Multiple Ranges",
+   "posted": "2025-11-13T23:43:02.608+00:00",
+   "xp": "2+y",
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -300,7 +319,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -321,7 +340,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -342,7 +361,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -363,7 +382,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -384,7 +403,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -403,7 +422,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -424,7 +443,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -445,7 +464,28 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
+   "active": true
+  },
+  {
+   "id": "fd4f6739cc33a6a1",
+   "title": "Staff Brand Designer",
+   "company": "Webflow",
+   "url": "https://weworkremotely.com/remote-jobs/webflow-staff-brand-designer",
+   "source": "weworkremotely",
+   "location": "Anywhere in the World",
+   "bucket": "ww",
+   "salary": "$ 162,500 - $195,000",
+   "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
+   "xp": "8+y",
+   "market": "Worldwide",
+   "apply_url": "https://job-boards.greenhouse.io/webflow/jobs/8096142",
+   "apply_kind": "direct",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -466,7 +506,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -485,7 +525,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -504,7 +544,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -523,7 +563,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -542,7 +582,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -561,7 +601,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -580,7 +620,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -599,7 +639,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -618,7 +658,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -637,7 +677,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -656,7 +696,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -675,7 +715,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -694,7 +734,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -713,7 +753,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -732,7 +772,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -751,7 +791,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -770,7 +810,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -789,7 +829,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -808,7 +848,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -827,7 +867,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -846,7 +886,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -865,7 +905,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -884,26 +924,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
-   "active": true
-  },
-  {
-   "id": "aa901be0cc985037",
-   "title": "Staff Design Engineer - EU",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/87b96eef-edc1-4de4-adb6-d460126d02f8",
-   "source": "ashby/ashby",
-   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
-   "bucket": "pt",
-   "salary": "€154K – €250K • Offers Equity • Multiple Ranges",
-   "posted": "2025-11-13T23:43:02.608+00:00",
-   "xp": "2+y",
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -922,7 +943,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -941,7 +962,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:17:18Z",
+   "last_seen": "2026-08-28T16:10:27Z",
    "active": true
   },
   {
@@ -977,25 +998,6 @@
    "market": "Worldwide",
    "apply_url": "https://thatch.com/jobs/5136655008?gh_jid=5136655008",
    "apply_kind": "direct",
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T11:26:34Z",
-   "active": false
-  },
-  {
-   "id": "fd4f6739cc33a6a1",
-   "title": "Staff Brand Designer",
-   "company": "Webflow",
-   "url": "https://weworkremotely.com/remote-jobs/webflow-staff-brand-designer",
-   "source": "weworkremotely",
-   "location": "Anywhere in the World",
-   "bucket": "ww",
-   "salary": "$ 162,500 - $195,000",
-   "posted": "Wed, 12 Aug 2026 23:41:10 +0000",
-   "xp": "8+y",
-   "market": "Worldwide",
-   "apply_url": "https://webflow.com/company/careers",
-   "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-28T11:26:34Z",

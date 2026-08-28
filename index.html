@@ -51,28 +51,18 @@ body {
 }
 .brief .noframe { color: var(--mut); font-size: 12px; margin: 6px 0 14px; }
 @media (max-width: 1100px) { .wrap { grid-template-columns: 1fr; } #preview { display: none; } }
-header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+header h1 { line-height: 1; }
 h1 { font-size: 22px; letter-spacing: -0.02em; }
 .stamp { color: var(--mut); font-size: 13px; flex: 1; }
 .gear { background: none; border: 0; color: var(--mut); font-size: 16px; cursor: pointer; }
-.tabs { display: flex; gap: 4px; margin: 20px 0 0; border-bottom: 1px solid var(--line); }
+.tabs { display: flex; gap: 4px; margin: 18px 0 16px; border-bottom: 1px solid var(--line); }
 .tab {
   background: none; border: 0; color: var(--mut); font: 600 14px/1 inherit;
   padding: 10px 14px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
 }
 .tab.on { color: var(--ink); border-bottom-color: var(--ink); }
 .tab .n { color: var(--mut); font-weight: 400; margin-left: 4px; }
-.controls { display: flex; gap: 8px; margin: 16px 0 22px; flex-wrap: wrap; align-items: center; }
-input[type=search] {
-  flex: 1; min-width: 160px; background: var(--card); color: var(--ink);
-  border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font: inherit;
-}
-input[type=search]:focus { outline: 2px solid var(--acc); outline-offset: -1px; }
-.tgl {
-  background: var(--chip); border: 1px solid var(--line); color: var(--mut);
-  border-radius: 999px; padding: 7px 14px; font: 13px/1 inherit; cursor: pointer;
-}
-.tgl.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .scrape {
   background: var(--card); border: 1px solid var(--line); color: var(--ink);
   border-radius: 999px; padding: 7px 14px; font: 600 13px/1 inherit; cursor: pointer;
@@ -159,6 +149,7 @@ footer .bad { color: var(--danger); }
   <header>
     <h1>JobRadar</h1>
     <span class="stamp" id="stamp">loading…</span>
+    <button class="scrape" id="scrape">↻ Scrape now</button>
     <button class="gear" id="gear" title="Settings">⚙</button>
   </header>
   <div class="settings" id="settings">
@@ -174,14 +165,6 @@ footer .bad { color: var(--danger); }
     <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
     <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
   </nav>
-  <div class="controls">
-    <input type="search" id="q" placeholder="Filter by title, company, location…">
-    <button class="tgl" data-bucket="pt">Portugal</button>
-    <button class="tgl" data-bucket="eu">Europe</button>
-    <button class="tgl" data-bucket="ww">Worldwide</button>
-    <button class="tgl" id="salonly">€ only</button>
-    <button class="scrape" id="scrape">↻ Scrape now</button>
-  </div>
   <main id="listcol"><div id="sections"></div></main>
   <aside id="preview">
     <div class="pvhead">
@@ -212,7 +195,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, FACTS = {}, JDS = null, tab = "direct", buckets = new Set(), salOnly = false, q = "";
+let DATA = null, FACTS = {}, JDS = null, tab = "direct";
 let SEL = null, PV = null;
 
 // ---------- helpers ----------
@@ -379,16 +362,6 @@ function card(j, opts) {
 }
 
 // ---------- render ----------
-function matches(j) {
-  const b = bucketOf(j);
-  if (buckets.size && !buckets.has(b === "ok" ? "ww" : b)) return false;
-  if (salOnly && !(j.salary || (FACTS[j.id] || {}).salary)) return false;
-  if (q) {
-    const hay = (j.title + " " + j.company + " " + j.location + " " + j.source).toLowerCase();
-    if (!hay.includes(q)) return false;
-  }
-  return true;
-}
 function section(root, label, jobs, opts) {
   if (!jobs.length) return;
   const h = document.createElement("h2");
@@ -401,7 +374,7 @@ function render() {
   root.innerHTML = "";
   const bydate = (a, b2) => when(b2) - when(a);
   const act = DATA.jobs.filter(j => j.active).sort(bydate);
-  const inbox = act.filter(j => !state.jobs[j.id] && matches(j));
+  const inbox = act.filter(j => !state.jobs[j.id]);
   const split = w => {
     const pool = inbox.filter(j => !!j.direct === w);
     return {
@@ -410,8 +383,8 @@ function render() {
     };
   };
   const D = split(true), I = split(false);
-  const applied = act.filter(j => state.jobs[j.id] === "applied" && matches(j));
-  const discarded = act.filter(j => state.jobs[j.id] === "discarded" && matches(j));
+  const applied = act.filter(j => state.jobs[j.id] === "applied");
+  const discarded = act.filter(j => state.jobs[j.id] === "discarded");
 
   document.getElementById("c-direct").textContent = D.fresh.length + D.rest.length || "";
   document.getElementById("c-indirect").textContent = I.fresh.length + I.rest.length || "";
@@ -457,13 +430,6 @@ document.querySelectorAll(".tab").forEach(b => b.onclick = () => {
   document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === b));
   render();
 });
-document.getElementById("q").oninput = e => { q = e.target.value.toLowerCase(); render(); };
-document.querySelectorAll(".tgl[data-bucket]").forEach(b => b.onclick = () => {
-  const k = b.dataset.bucket;
-  buckets.has(k) ? buckets.delete(k) : buckets.add(k);
-  b.classList.toggle("on"); render();
-});
-document.getElementById("salonly").onclick = e => { salOnly = !salOnly; e.target.classList.toggle("on"); render(); };
 document.getElementById("scrape").onclick = scrapeNow;
 document.getElementById("gear").onclick = () => document.getElementById("settings").classList.toggle("open");
 document.getElementById("savetok").onclick = () => {

@@ -663,6 +663,22 @@ def fetch_original(url, company, title):
     out["text"] = strip_html(unescape(html), 30000)
     return out
 
+def frameable(url):
+    """Can the browser embed this page in our iframe? Header check."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA})
+        r = urllib.request.urlopen(req, timeout=12)
+        heads = {k.lower(): v for k, v in r.headers.items()}
+        r.close()
+    except Exception:
+        return False
+    if re.search(r"deny|sameorigin", heads.get("x-frame-options", ""), re.I):
+        return False
+    m = re.search(r"frame-ancestors([^;]*)", heads.get("content-security-policy", ""))
+    if m and "*" not in m.group(1):
+        return False
+    return True
+
 # ---------------------------------------------------------------- pipeline
 
 SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "landingjobs", "remotive",
@@ -775,10 +791,13 @@ def run():
 
     # Resolve direct apply links for aggregator finds.
     prev_seen = {}
+    prev_frame = {}
     if DATA_FILE.exists():
         try:
             for pj in json.loads(DATA_FILE.read_text()).get("jobs", []):
                 prev_seen[pj["id"]] = pj.get("first_seen", "")
+                prev_frame[pj["id"]] = (pj.get("apply_url") or pj.get("url"),
+                                        pj.get("frameable"))
         except Exception:
             pass
     resolved = hunted = 0
@@ -847,6 +866,9 @@ def run():
     for j in kept.values():
         if "direct" not in j:
             j["direct"] = j.get("apply_kind") == "direct"
+        target = j.get("apply_url") or j["url"]
+        pu, pf = prev_frame.get(j["id"], (None, None))
+        j["frameable"] = pf if (pu == target and pf is not None) else frameable(target)
     for sid in stale_ids:
         kept.pop(sid, None)
     if stale_ids:

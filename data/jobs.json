@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-28T15:01:40Z",
- "run_id": "2026-08-28T15:01:40Z",
+ "generated_at": "2026-08-28T15:17:18Z",
+ "run_id": "2026-08-28T15:17:18Z",
  "counts": {
   "active": 36,
-  "new": 1
+  "new": 0
  },
  "sources": {
   "remotive": {
@@ -52,7 +52,7 @@
   },
   "greenhouse/stripe": {
    "ok": true,
-   "fetched": 577
+   "fetched": 576
   },
   "greenhouse/duolingo": {
    "ok": true,
@@ -100,7 +100,7 @@
   },
   "greenhouse/elastic": {
    "ok": true,
-   "fetched": 335
+   "fetched": 337
   },
   "greenhouse/grafanalabs": {
    "ok": true,
@@ -144,7 +144,7 @@
   },
   "lever/qonto": {
    "ok": true,
-   "fetched": 32
+   "fetched": 33
   },
   "lever/blablacar": {
    "ok": true,
@@ -176,7 +176,7 @@
   },
   "ashby/ramp": {
    "ok": true,
-   "fetched": 137
+   "fetched": 136
   },
   "ashby/openai": {
    "ok": true,
@@ -208,7 +208,7 @@
   },
   "ashby/notion": {
    "ok": true,
-   "fetched": 134
+   "fetched": 132
   },
   "ashby/miro": {
    "ok": true,
@@ -257,9 +257,10 @@
    "xp": "7+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -275,9 +276,10 @@
    "xp": "5+y",
    "market": "Europe",
    "direct": false,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -295,9 +297,10 @@
    "apply_url": "https://consensys.io/open-roles/7256954?gh_jid=7256954",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -315,9 +318,10 @@
    "apply_url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -335,9 +339,10 @@
    "apply_url": "https://jobs.ashbyhq.com/worldly/310e5a72-0074-4c1e-b94b-af702f453d8d",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -355,9 +360,10 @@
    "apply_url": "https://jobs.ashbyhq.com/opensea/1ad9f09a-3331-4f2b-b0f5-c739580bb243",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -375,9 +381,10 @@
    "apply_url": "https://maze.co/careers/",
    "apply_kind": "careers",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -393,9 +400,10 @@
    "xp": null,
    "market": "EMEA",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -413,9 +421,10 @@
    "apply_url": "https://job-boards.greenhouse.io/canonical/jobs/5995321",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -433,9 +442,10 @@
    "apply_url": "https://job-boards.greenhouse.io/canonical/jobs/7566317",
    "apply_kind": "direct",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -453,9 +463,10 @@
    "apply_url": "https://www.pixelone.app/careers",
    "apply_kind": "careers",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -471,9 +482,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -489,9 +501,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -507,9 +520,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -525,9 +539,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -543,9 +558,10 @@
    "xp": "4+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -561,9 +577,10 @@
    "xp": "2+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -579,9 +596,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -597,9 +615,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -615,9 +634,10 @@
    "xp": "3+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -633,9 +653,10 @@
    "xp": "7–10y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -651,9 +672,10 @@
    "xp": "2+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -669,9 +691,10 @@
    "xp": "3+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -687,9 +710,10 @@
    "xp": null,
    "market": "Pichincha",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -705,9 +729,10 @@
    "xp": "10+y",
    "market": "Worldwide",
    "direct": false,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -723,9 +748,10 @@
    "xp": null,
    "market": "Lisbon",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -741,9 +767,10 @@
    "xp": "5+y",
    "market": "Hybrid",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -759,9 +786,10 @@
    "xp": "10+y",
    "market": "Remote",
    "direct": true,
+   "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -777,9 +805,10 @@
    "xp": "7+y",
    "market": "Europe",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -795,9 +824,10 @@
    "xp": "2+y",
    "market": "Europe",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -813,9 +843,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -831,9 +862,10 @@
    "xp": null,
    "market": "Worldwide",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -849,9 +881,10 @@
    "xp": null,
    "market": "Europe",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -867,9 +900,10 @@
    "xp": "2+y",
    "market": "Portugal",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -885,9 +919,10 @@
    "xp": "2+y",
    "market": "Portugal",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {
@@ -903,9 +938,10 @@
    "xp": "8+y",
    "market": "Portugal",
    "direct": true,
+   "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T15:01:40Z",
+   "last_seen": "2026-08-28T15:17:18Z",
    "active": true
   },
   {

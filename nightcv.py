@@ -80,8 +80,11 @@ def main():
         triage = json.loads((HERE / "data" / "state.json").read_text()).get("jobs", {})
     except Exception:
         pass
+    def handled(k):
+        e = done.get(k)
+        return bool(e) and (e.get("path") or e.get("fails", 0) >= 2)
     todo = {k: v for k, v in jobs.items()
-            if k not in done and v.get("fresh") and not triage.get(k)}
+            if not handled(k) and v.get("fresh") and not triage.get(k)}
     to_parse = {k: v for k, v in jobs.items() if k not in facts}
     if not todo and not to_parse:
         log(f"nothing to do ({len(jobs)} active, all handled)")
@@ -223,6 +226,11 @@ def main():
                 ok += 1
             except Exception as e:
                 log(f"FAIL {label}: {e}")
+                entry = done.get(jid) or {}
+                entry["fails"] = entry.get("fails", 0) + 1
+                entry["label"] = label
+                done[jid] = entry
+                DONE_FILE.write_text(json.dumps(done, indent=1))
                 fail += 1
     finally:
         if started:

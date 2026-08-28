@@ -500,11 +500,13 @@ def src_bamboohr(slug, company):
         loc_s = ", ".join(filter(None, [loc.get("city"), loc.get("state"),
                                         loc.get("country")]))
         raw = ""
+        posted = None
         if title_ok(title):
             try:
                 det = fetch_json(f"https://{slug}.bamboohr.com/careers/{j['id']}/detail")
                 jo = (det.get("result") or {}).get("jobOpening") or {}
                 raw = unescape(jo.get("description") or "")
+                posted = jo.get("datePosted")
             except Exception:
                 pass
         remote = j.get("isRemote")
@@ -515,7 +517,7 @@ def src_bamboohr(slug, company):
             "title": title,
             "url": f"https://{slug}.bamboohr.com/careers/{j['id']}",
             "location": loc_s, "remote": remote, "salary": None,
-            "posted": None, "desc": strip_html(raw), "raw": raw,
+            "posted": posted, "desc": strip_html(raw), "raw": raw,
         })
     return out
 
@@ -619,6 +621,8 @@ def src_teamtailor(host, company):
                 job["location"] = orig["loc"]
             if orig.get("salary"):
                 job["salary"] = orig["salary"]
+            if orig.get("posted"):
+                job["posted"] = orig["posted"]
         out.append(job)
     return out
 
@@ -638,7 +642,7 @@ def src_personio(host, company):
             "url": f"https://{host}/job/{pid}",
             "location": loc,
             "remote": bool(re.search(r"remote", loc, re.I)) or None,
-            "salary": None, "posted": None,
+            "salary": None, "posted": (pos.findtext("createdAt") or "").strip() or None,
             "desc": strip_html(raw), "raw": raw,
         })
     return out
@@ -693,6 +697,8 @@ def src_join(slug, company):
             orig = fetch_original(url, company, job["title"])
             if orig.get("text"):
                 job["desc"] = job["raw"] = orig["text"]
+            if orig.get("posted"):
+                job["posted"] = job.get("posted") or orig["posted"]
         out.append(job)
     return out
 
@@ -1155,7 +1161,8 @@ def _ldjson_jobposting(html):
 def fetch_original(url, company, title):
     """Read the original posting. Structured ATS APIs first, page scrape last.
     Returns {"loc","salary","xp","text","dead"}; any field may be None."""
-    out = {"loc": None, "salary": None, "xp": None, "text": None, "dead": False}
+    out = {"loc": None, "salary": None, "xp": None, "text": None, "dead": False,
+           "posted": None}
     t = norm(title)
     ok_title = lambda bt: not bt or not t or t in bt or bt in t
 
@@ -1258,10 +1265,14 @@ def fetch_original(url, company, title):
             out["salary"] = fmt_range(sal.get("minValue"), sal.get("maxValue"),
                                       (ld.get("baseSalary") or {}).get("currency", ""))
         out["text"] = strip_html(unescape(ld.get("description") or ""), 20000) or None
+        out["posted"] = ld.get("datePosted") or None
         return out
     m = re.search(r'"location":\s*\{\s*"name":\s*"([^"]+)"', html)
     if m:
         out["loc"] = m.group(1)
+    pm = re.search(r'"datePosted"\s*:\s*"([^"]+)"', html)
+    if pm:
+        out["posted"] = pm.group(1)
     text = strip_html(unescape(html), 30000)
     out["text"] = text if norm(title) in norm(text) else None
     return out
@@ -1517,6 +1528,8 @@ def run():
             if orig["dead"]:
                 stale_ids.append(j["id"])
                 continue
+            if orig.get("posted") and not j.get("posted"):
+                j["posted"] = orig["posted"]
             if orig["text"] and len(orig["text"]) >= 200:
                 j["_jd"] = orig["text"]
                 j["xp"] = find_xp(orig["text"]) or j.get("xp")

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-28T23:29:46Z",
- "run_id": "2026-08-28T23:29:46Z",
+ "generated_at": "2026-08-28T23:39:49Z",
+ "run_id": "2026-08-28T23:39:49Z",
  "counts": {
-  "active": 58,
+  "active": 55,
   "new": 0
  },
  "sources": {
@@ -22,161 +22,149 @@
    "ok": true,
    "fetched": 50
   },
-  "weworkremotely": {
+  "greenhouse/cloudflare": {
    "ok": true,
-   "fetched": 63
-  },
-  "himalayas": {
-   "ok": true,
-   "fetched": 100
-  },
-  "greenhouse/wise": {
-   "ok": true,
-   "fetched": 21
+   "fetched": 309
   },
   "remoteok": {
    "ok": true,
    "fetched": 17
   },
-  "greenhouse/cloudflare": {
+  "greenhouse/duolingo": {
    "ok": true,
-   "fetched": 309
-  },
-  "greenhouse/swordhealth": {
-   "ok": true,
-   "fetched": 0
+   "fetched": 83
   },
   "greenhouse/gitlab": {
    "ok": true,
    "fetched": 220
   },
-  "greenhouse/feedzai": {
+  "weworkremotely": {
    "ok": true,
-   "fetched": 38
-  },
-  "greenhouse/duolingo": {
-   "ok": true,
-   "fetched": 83
+   "fetched": 63
   },
   "greenhouse/dropbox": {
    "ok": true,
    "fetched": 41
   },
-  "greenhouse/vercel": {
+  "himalayas": {
    "ok": true,
-   "fetched": 91
+   "fetched": 100
   },
-  "greenhouse/webflow": {
+  "greenhouse/figma": {
    "ok": true,
-   "fetched": 27
+   "fetched": 163
+  },
+  "greenhouse/wise": {
+   "ok": true,
+   "fetched": 21
+  },
+  "greenhouse/swordhealth": {
+   "ok": true,
+   "fetched": 0
   },
   "greenhouse/stripe": {
    "ok": true,
    "fetched": 573
   },
+  "greenhouse/feedzai": {
+   "ok": true,
+   "fetched": 38
+  },
   "greenhouse/monzo": {
    "ok": true,
    "fetched": 67
-  },
-  "greenhouse/intercom": {
-   "ok": true,
-   "fetched": 120
-  },
-  "greenhouse/contentful": {
-   "ok": true,
-   "fetched": 3
-  },
-  "greenhouse/typeform": {
-   "ok": true,
-   "fetched": 12
-  },
-  "greenhouse/anthropic": {
-   "ok": true,
-   "fetched": 570
-  },
-  "greenhouse/getyourguide": {
-   "ok": true,
-   "fetched": 57
-  },
-  "greenhouse/remotecom": {
-   "ok": true,
-   "fetched": 204
-  },
-  "greenhouse/mozilla": {
-   "ok": true,
-   "fetched": 86
-  },
-  "greenhouse/grafanalabs": {
-   "ok": true,
-   "fetched": 134
-  },
-  "greenhouse/elastic": {
-   "ok": true,
-   "fetched": 336
-  },
-  "greenhouse/automatticcareers": {
-   "ok": true,
-   "fetched": 18
-  },
-  "greenhouse/n26": {
-   "ok": true,
-   "fetched": 64
-  },
-  "greenhouse/doctolib": {
-   "ok": true,
-   "fetched": 125
-  },
-  "ashby/linear": {
-   "ok": true,
-   "fetched": 29
-  },
-  "greenhouse/datadog": {
-   "ok": true,
-   "fetched": 454
-  },
-  "ashby/raycast": {
-   "ok": true,
-   "fetched": 0
-  },
-  "ashby/posthog": {
-   "ok": true,
-   "fetched": 13
-  },
-  "ashby/supabase": {
-   "ok": true,
-   "fetched": 59
-  },
-  "ashby/deel": {
-   "ok": true,
-   "fetched": 0
-  },
-  "ashby/attio": {
-   "ok": true,
-   "fetched": 47
   },
   "workingnomads": {
    "ok": true,
    "fetched": 0
   },
+  "greenhouse/remotecom": {
+   "ok": true,
+   "fetched": 204
+  },
+  "greenhouse/intercom": {
+   "ok": true,
+   "fetched": 120
+  },
+  "greenhouse/grafanalabs": {
+   "ok": true,
+   "fetched": 134
+  },
+  "greenhouse/typeform": {
+   "ok": true,
+   "fetched": 12
+  },
+  "greenhouse/datadog": {
+   "ok": true,
+   "fetched": 454
+  },
+  "greenhouse/webflow": {
+   "ok": true,
+   "fetched": 27
+  },
+  "greenhouse/n26": {
+   "ok": true,
+   "fetched": 64
+  },
+  "greenhouse/getyourguide": {
+   "ok": true,
+   "fetched": 57
+  },
+  "greenhouse/contentful": {
+   "ok": true,
+   "fetched": 3
+  },
+  "greenhouse/vercel": {
+   "ok": true,
+   "fetched": 91
+  },
+  "greenhouse/automatticcareers": {
+   "ok": true,
+   "fetched": 18
+  },
+  "greenhouse/mozilla": {
+   "ok": true,
+   "fetched": 86
+  },
+  "ashby/raycast": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/linear": {
+   "ok": true,
+   "fetched": 29
+  },
+  "ashby/posthog": {
+   "ok": true,
+   "fetched": 13
+  },
+  "greenhouse/anthropic": {
+   "ok": true,
+   "fetched": 570
+  },
+  "ashby/deel": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/supabase": {
+   "ok": true,
+   "fetched": 59
+  },
+  "greenhouse/doctolib": {
+   "ok": true,
+   "fetched": 125
+  },
+  "greenhouse/elastic": {
+   "ok": true,
+   "fetched": 336
+  },
   "ashby/ramp": {
    "ok": true,
    "fetched": 138
   },
-  "ashby/openai": {
-   "ok": true,
-   "fetched": 760
-  },
-  "ashby/lovable": {
-   "ok": true,
-   "fetched": 78
-  },
   "ashby/ashby": {
    "ok": true,
-   "fetched": 66
-  },
-  "ashby/plaid": {
-   "ok": true,
-   "fetched": 102
+   "fetched": 67
   },
   "ashby/cursor": {
    "ok": true,
@@ -186,9 +174,13 @@
    "ok": true,
    "fetched": 7
   },
-  "lever/blablacar": {
+  "ashby/attio": {
    "ok": true,
-   "fetched": 12
+   "fetched": 47
+  },
+  "ashby/lovable": {
+   "ok": true,
+   "fetched": 78
   },
   "ashby/notion": {
    "ok": true,
@@ -198,19 +190,23 @@
    "ok": true,
    "fetched": 37
   },
-  "ashby/1password": {
+  "ashby/openai": {
    "ok": true,
-   "fetched": 62
-  },
-  "lever/pipedrive": {
-   "ok": true,
-   "fetched": 16
+   "fetched": 760
   },
   "ashby/oyster": {
    "ok": true,
    "fetched": 29
   },
-  "ashby/bolt": {
+  "ashby/alan": {
+   "ok": true,
+   "fetched": 95
+  },
+  "ashby/1password": {
+   "ok": true,
+   "fetched": 62
+  },
+  "ashby/spendesk": {
    "ok": true,
    "fetched": 0
   },
@@ -218,25 +214,17 @@
    "ok": true,
    "fetched": 14
   },
-  "lever/qonto": {
+  "ashby/plaid": {
    "ok": true,
-   "fetched": 33
+   "fetched": 102
   },
-  "ashby/spendesk": {
+  "ashby/bolt": {
    "ok": true,
    "fetched": 0
   },
-  "ashby/alan": {
+  "lever/qonto": {
    "ok": true,
-   "fetched": 95
-  },
-  "lever/aircall": {
-   "ok": true,
-   "fetched": 77
-  },
-  "bamboohr/malalafund": {
-   "ok": true,
-   "fetched": 2
+   "fetched": 33
   },
   "workday/modsquad": {
    "ok": true,
@@ -246,7 +234,15 @@
    "ok": true,
    "fetched": 0
   },
-  "bamboohr/ylabs": {
+  "lever/pipedrive": {
+   "ok": true,
+   "fetched": 16
+  },
+  "bamboohr/malalafund": {
+   "ok": true,
+   "fetched": 2
+  },
+  "workday/marmon": {
    "ok": true,
    "fetched": 1
   },
@@ -254,73 +250,73 @@
    "ok": true,
    "fetched": 2
   },
-  "bamboohr/smiletrain": {
+  "bamboohr/ylabs": {
    "ok": true,
-   "fetched": 4
+   "fetched": 1
   },
   "bamboohr/trusscore": {
    "ok": true,
    "fetched": 8
   },
-  "bamboohr/simpligov": {
+  "bamboohr/smiletrain": {
    "ok": true,
-   "fetched": 10
-  },
-  "bamboohr/scalepad": {
-   "ok": true,
-   "fetched": 6
-  },
-  "workday/mastercorp": {
-   "ok": true,
-   "fetched": 0
-  },
-  "workday/marmon": {
-   "ok": true,
-   "fetched": 1
+   "fetched": 4
   },
   "workday/thinkbrg": {
    "ok": true,
    "fetched": 0
   },
-  "bamboohr/researchsol": {
+  "bamboohr/simpligov": {
    "ok": true,
-   "fetched": 4
+   "fetched": 10
+  },
+  "workday/mastercorp": {
+   "ok": true,
+   "fetched": 0
+  },
+  "lever/blablacar": {
+   "ok": true,
+   "fetched": 12
+  },
+  "bamboohr/scalepad": {
+   "ok": true,
+   "fetched": 6
   },
   "workable/plateful": {
    "ok": true,
    "fetched": 24
   },
-  "workday/irhythmtech": {
+  "bamboohr/researchsol": {
    "ok": true,
-   "fetched": 2
-  },
-  "workable/aperture-london": {
-   "ok": true,
-   "fetched": 41
-  },
-  "bamboohr/brndwgn": {
-   "ok": true,
-   "fetched": 9
+   "fetched": 4
   },
   "workable/astral-media-group-limited": {
    "ok": true,
    "fetched": 9
   },
-  "teamtailor/careers": {
+  "workable/aperture-london": {
    "ok": true,
-   "fetched": 12
+   "fetched": 41
   },
-  "workday/outsystems": {
+  "workable/huzzle": {
    "ok": true,
-   "fetched": 3
+   "fetched": 2411
+  },
+  "workday/irhythmtech": {
+   "ok": true,
+   "fetched": 2
+  },
+  "bamboohr/brndwgn": {
+   "ok": true,
+   "fetched": 9
   },
   "personio/digital-growth-studio": {
    "ok": true,
    "fetched": 4
   },
-  "workable/huzzle": {
+  "teamtailor/careers": {
    "ok": true,
-   "fetched": 2411
+   "fetched": 12
   },
   "join/skyve": {
    "ok": true,
@@ -330,75 +326,83 @@
    "ok": true,
    "fetched": 11
   },
-  "join/yoursoftwaresuppliercom": {
-   "ok": true,
-   "fetched": 2
-  },
   "join/digitale-leute441": {
    "ok": true,
    "fetched": 5
   },
-  "teamtailor/saasglobal": {
+  "join/yoursoftwaresuppliercom": {
    "ok": true,
-   "fetched": 13
+   "fetched": 2
   },
   "join/standard-ecom": {
    "ok": true,
    "fetched": 1
   },
-  "greenhouse/costar": {
-   "ok": true,
-   "fetched": 8
-  },
   "breezy/20four7va": {
    "ok": true,
    "fetched": 85
-  },
-  "greenhouse/gr8tech": {
-   "ok": true,
-   "fetched": 18
-  },
-  "greenhouse/agency": {
-   "ok": true,
-   "fetched": 821
-  },
-  "manatal/humanit": {
-   "ok": true,
-   "fetched": 20
   },
   "pinpoint/intermedia": {
    "ok": true,
    "fetched": 57
   },
-  "greenhouse/fueledcareers": {
+  "greenhouse/costar": {
    "ok": true,
-   "fetched": 10
+   "fetched": 8
   },
-  "greenhouse/fingerprint": {
+  "workday/outsystems": {
    "ok": true,
-   "fetched": 22
+   "fetched": 3
+  },
+  "greenhouse/agency": {
+   "ok": true,
+   "fetched": 821
+  },
+  "teamtailor/saasglobal": {
+   "ok": true,
+   "fetched": 13
+  },
+  "greenhouse/gr8tech": {
+   "ok": true,
+   "fetched": 18
   },
   "manatal/myva360": {
    "ok": true,
    "fetched": 3
   },
+  "greenhouse/fueledcareers": {
+   "ok": true,
+   "fetched": 10
+  },
   "smartrecruiters/inetum2": {
    "ok": true,
    "fetched": 3
   },
-  "greenhouse/recast": {
+  "greenhouse/fingerprint": {
    "ok": true,
-   "fetched": 3
+   "fetched": 22
+  },
+  "manatal/humanit": {
+   "ok": true,
+   "fetched": 20
   },
   "greenhouse/nebius": {
    "ok": true,
    "fetched": 373
   },
+  "greenhouse/recast": {
+   "ok": true,
+   "fetched": 3
+  },
   "ashby/flipper": {
    "ok": true,
    "fetched": 7
   },
-  "lever/quadcode": {
+  "ashby/onhires": {
+   "ok": true,
+   "fetched": 54
+  },
+  "ashby/omniscient": {
    "ok": true,
    "fetched": 16
   },
@@ -406,29 +410,41 @@
    "ok": true,
    "fetched": 250
   },
-  "ashby/omniscient": {
-   "ok": true,
-   "fetched": 16
-  },
   "ashby/wundergraph": {
    "ok": true,
    "fetched": 4
   },
-  "ashby/onhires": {
+  "lever/jito": {
    "ok": true,
-   "fetched": 54
-  },
-  "ashby/scarlet": {
-   "ok": true,
-   "fetched": 12
+   "fetched": 3
   },
   "ashby/walrus": {
    "ok": true,
    "fetched": 3
   },
+  "ashby/scarlet": {
+   "ok": true,
+   "fetched": 12
+  },
   "ashby/paddle": {
    "ok": true,
    "fetched": 20
+  },
+  "lever/quadcode": {
+   "ok": true,
+   "fetched": 16
+  },
+  "ashby/aios": {
+   "ok": true,
+   "fetched": 17
+  },
+  "lever/aircall": {
+   "ok": true,
+   "fetched": 77
+  },
+  "ashby/nevis": {
+   "ok": true,
+   "fetched": 23
   },
   "ashby/resend": {
    "ok": true,
@@ -438,49 +454,33 @@
    "ok": true,
    "fetched": 16
   },
-  "ashby/aios": {
-   "ok": true,
-   "fetched": 17
-  },
-  "ashby/nevis": {
-   "ok": true,
-   "fetched": 23
-  },
   "ashby/mazehq": {
    "ok": true,
    "fetched": 3
-  },
-  "ashby/docker": {
-   "ok": true,
-   "fetched": 62
-  },
-  "ashby/wetravel": {
-   "ok": true,
-   "fetched": 27
-  },
-  "lever/jito": {
-   "ok": true,
-   "fetched": 3
-  },
-  "lever/superside": {
-   "ok": true,
-   "fetched": 14
-  },
-  "greenhouse/figma": {
-   "ok": true,
-   "fetched": 163
   },
   "lever/websummit": {
    "ok": true,
    "fetched": 28
   },
-  "breezy/uvation": {
+  "ashby/docker": {
    "ok": true,
-   "fetched": 69
+   "fetched": 62
   },
   "lever/cyara": {
    "ok": true,
    "fetched": 18
+  },
+  "ashby/wetravel": {
+   "ok": true,
+   "fetched": 27
+  },
+  "breezy/uvation": {
+   "ok": true,
+   "fetched": 69
+  },
+  "lever/superside": {
+   "ok": true,
+   "fetched": 14
   },
   "workday/iqvia": {
    "ok": true,
@@ -490,13 +490,13 @@
    "ok": true,
    "fetched": 2
   },
-  "ashby/mazedesign": {
-   "ok": true,
-   "fetched": 6
-  },
   "ashby/pressw": {
    "ok": true,
    "fetched": 5
+  },
+  "ashby/mazedesign": {
+   "ok": true,
+   "fetched": 6
   },
   "greenhouse/remote": {
    "ok": true,
@@ -506,18 +506,6 @@
    "ok": true,
    "fetched": 5
   },
-  "greenhouse/mavenclinic": {
-   "ok": true,
-   "fetched": 32
-  },
-  "recruitee/mayflower": {
-   "ok": true,
-   "fetched": 41
-  },
-  "greenhouse/addepar1": {
-   "ok": true,
-   "fetched": 123
-  },
   "ashby/airapps": {
    "ok": true,
    "fetched": 498
@@ -526,13 +514,25 @@
    "ok": true,
    "fetched": 5
   },
+  "greenhouse/mavenclinic": {
+   "ok": true,
+   "fetched": 32
+  },
   "greenhouse/thatch": {
    "ok": true,
    "fetched": 24
   },
+  "recruitee/mayflower": {
+   "ok": true,
+   "fetched": 41
+  },
   "greenhouse/canonical": {
    "ok": true,
    "fetched": 303
+  },
+  "greenhouse/addepar1": {
+   "ok": true,
+   "fetched": 123
   },
   "websearch": {
    "ok": false,
@@ -553,7 +553,7 @@
    "location": "",
    "bucket": "tiebreak",
    "salary": "$48,500 - $72,143",
-   "posted": null,
+   "posted": "2026-08-28",
    "xp": "7+y",
    "derived_from": null,
    "market": "Unclear",
@@ -561,7 +561,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -581,47 +581,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "fb20d135f11ab1fb",
-   "title": "Graphic Designer",
-   "company": "BRND WGN",
-   "url": "https://brndwgn.bamboohr.com/careers/56",
-   "source": "bamboohr/brndwgn",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": "€30,000 — €40,000",
-   "posted": null,
-   "xp": "3–5y",
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "83f8520ae543fcda",
-   "title": "Senior Graphic Designer",
-   "company": "BRND WGN",
-   "url": "https://brndwgn.bamboohr.com/careers/59",
-   "source": "bamboohr/brndwgn",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": null,
-   "xp": "5–8y",
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -641,47 +601,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "f55797700e4ac22a",
-   "title": "Lead Product Designer",
-   "company": "OutSystems",
-   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/Portugal---Remote/Lead-Product-Designer_R1695",
-   "source": "workday/outsystems",
-   "location": "Portugal - Remote, UK - Remote",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-08-11",
-   "xp": "5+y",
-   "derived_from": null,
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "23d6a9fce334dcf6",
-   "title": "Ad Creative Graphic Designer",
-   "company": "Digital Growth Studio",
-   "url": "https://digital-growth-studio.jobs.personio.com/job/2228729",
-   "source": "personio/digital-growth-studio",
-   "location": "Remote, Lisbon, Hybrid",
-   "bucket": "pt",
-   "salary": null,
-   "posted": null,
-   "xp": "3+y",
-   "derived_from": null,
-   "market": "Portugal",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -701,7 +621,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -721,27 +641,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "4c883a2a743561c7",
-   "title": "Brand Designer",
-   "company": "Co–Star",
-   "url": "https://job-boards.greenhouse.io/costar/jobs/6126693004",
-   "source": "greenhouse/costar",
-   "location": "Remote",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-07-24T12:20:09-04:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Remote",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -761,7 +661,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -781,7 +681,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -801,27 +701,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "ae67d7e258162193",
-   "title": "Senior UI/UX Designer (Figma/E-commerce) - Full Remote Portugal",
-   "company": "HumanIT Digital Consulting",
-   "url": "https://www.careers-page.com/humanit/job/3W64W85W",
-   "source": "manatal/humanit",
-   "location": "Portugal, Lisbon",
-   "bucket": "pt",
-   "salary": null,
-   "posted": null,
-   "xp": "5+y",
-   "derived_from": null,
-   "market": "Portugal",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -841,7 +721,47 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "4c883a2a743561c7",
+   "title": "Brand Designer",
+   "company": "Co–Star",
+   "url": "https://job-boards.greenhouse.io/costar/jobs/6126693004",
+   "source": "greenhouse/costar",
+   "location": "Remote",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-07-24T12:20:09-04:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Remote",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "f55797700e4ac22a",
+   "title": "Lead Product Designer",
+   "company": "OutSystems",
+   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/Portugal---Remote/Lead-Product-Designer_R1695",
+   "source": "workday/outsystems",
+   "location": "Portugal - Remote, UK - Remote",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-08-11",
+   "xp": "5+y",
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -861,7 +781,27 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "ae67d7e258162193",
+   "title": "Senior UI/UX Designer (Figma/E-commerce) - Full Remote Portugal",
+   "company": "HumanIT Digital Consulting",
+   "url": "https://www.careers-page.com/humanit/job/3W64W85W",
+   "source": "manatal/humanit",
+   "location": "Portugal, Lisbon",
+   "bucket": "pt",
+   "salary": null,
+   "posted": null,
+   "xp": "5+y",
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -881,7 +821,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -901,27 +841,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "e078201204b4e2e0",
-   "title": "Senior Product Designer EMEA",
-   "company": "WunderGraph",
-   "url": "https://jobs.ashbyhq.com/wundergraph/822c2b09-155e-448d-bb89-4976d0d99667",
-   "source": "ashby/wundergraph",
-   "location": "EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-20T12:15:03.777+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "EMEA",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -941,7 +861,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -961,87 +881,27 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
-   "id": "9e1ab1a327e2d6b3",
-   "title": "Staff Product Designer",
-   "company": "Canadian Journalism Foundation",
-   "url": "https://jobs.ashbyhq.com/walrus/e6c66391-6ac7-4251-b893-4a9fc6d63f5c",
-   "source": "ashby/walrus",
-   "location": "Europe (Remote)",
+   "id": "e078201204b4e2e0",
+   "title": "Senior Product Designer EMEA",
+   "company": "WunderGraph",
+   "url": "https://jobs.ashbyhq.com/wundergraph/822c2b09-155e-448d-bb89-4976d0d99667",
+   "source": "ashby/wundergraph",
+   "location": "EMEA",
    "bucket": "eu",
    "salary": null,
-   "posted": "2026-08-14T19:23:31.054+00:00",
-   "xp": "8–10y",
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "7b6322d84568172a",
-   "title": "Senior Product Designer",
-   "company": "Paddle",
-   "url": "https://jobs.ashbyhq.com/paddle/e8297f02-7942-4772-a04d-3bdb61a1231d",
-   "source": "ashby/paddle",
-   "location": "UK, Portugal, Ireland",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-08-04T18:04:39.059+00:00",
+   "posted": "2026-08-20T12:15:03.777+00:00",
    "xp": null,
    "derived_from": null,
-   "market": "Portugal",
+   "market": "EMEA",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "a06c78e66ce38f72",
-   "title": "Product Designer",
-   "company": "Resend",
-   "url": "https://jobs.ashbyhq.com/resend/8d7e13ac-4c08-4981-9589-c163a4b29dee",
-   "source": "ashby/resend",
-   "location": "Americas, Europe",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-07-31T17:12:49.889+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
-   "active": true
-  },
-  {
-   "id": "c862d06c892aff1b",
-   "title": "Senior Product Designer",
-   "company": "Secfix",
-   "url": "https://jobs.ashbyhq.com/secfix/3fd72701-24db-48a3-a3df-9c889d26b86b",
-   "source": "ashby/secfix",
-   "location": "Remote-Europe, Remote-Munich",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-07-31T08:30:59.943+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1061,7 +921,87 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "9e1ab1a327e2d6b3",
+   "title": "Staff Product Designer",
+   "company": "Canadian Journalism Foundation",
+   "url": "https://jobs.ashbyhq.com/walrus/e6c66391-6ac7-4251-b893-4a9fc6d63f5c",
+   "source": "ashby/walrus",
+   "location": "Europe (Remote)",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-14T19:23:31.054+00:00",
+   "xp": "8–10y",
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "7b6322d84568172a",
+   "title": "Senior Product Designer",
+   "company": "Paddle",
+   "url": "https://jobs.ashbyhq.com/paddle/e8297f02-7942-4772-a04d-3bdb61a1231d",
+   "source": "ashby/paddle",
+   "location": "UK, Portugal, Ireland",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-08-04T18:04:39.059+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "a06c78e66ce38f72",
+   "title": "Product Designer",
+   "company": "Resend",
+   "url": "https://jobs.ashbyhq.com/resend/8d7e13ac-4c08-4981-9589-c163a4b29dee",
+   "source": "ashby/resend",
+   "location": "Americas, Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-07-31T17:12:49.889+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
+   "active": true
+  },
+  {
+   "id": "c862d06c892aff1b",
+   "title": "Senior Product Designer",
+   "company": "Secfix",
+   "url": "https://jobs.ashbyhq.com/secfix/3fd72701-24db-48a3-a3df-9c889d26b86b",
+   "source": "ashby/secfix",
+   "location": "Remote-Europe, Remote-Munich",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-07-31T08:30:59.943+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1081,8 +1021,68 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
+  },
+  {
+   "id": "fb20d135f11ab1fb",
+   "title": "Graphic Designer",
+   "company": "BRND WGN",
+   "url": "https://brndwgn.bamboohr.com/careers/56",
+   "source": "bamboohr/brndwgn",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": "€30,000 — €40,000",
+   "posted": null,
+   "xp": "3–5y",
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:36:10Z",
+   "active": false
+  },
+  {
+   "id": "83f8520ae543fcda",
+   "title": "Senior Graphic Designer",
+   "company": "BRND WGN",
+   "url": "https://brndwgn.bamboohr.com/careers/59",
+   "source": "bamboohr/brndwgn",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": null,
+   "xp": "5–8y",
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:36:10Z",
+   "active": false
+  },
+  {
+   "id": "23d6a9fce334dcf6",
+   "title": "Ad Creative Graphic Designer",
+   "company": "Digital Growth Studio",
+   "url": "https://digital-growth-studio.jobs.personio.com/job/2228729",
+   "source": "personio/digital-growth-studio",
+   "location": "Remote, Lisbon, Hybrid",
+   "bucket": "pt",
+   "salary": null,
+   "posted": null,
+   "xp": "3+y",
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-28T23:36:10Z",
+   "active": false
   },
   {
    "id": "62b33f685d62ad1f",
@@ -1265,7 +1265,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1562,7 +1562,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1582,7 +1582,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1604,7 +1604,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1626,7 +1626,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1648,7 +1648,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1670,7 +1670,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1692,7 +1692,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1714,7 +1714,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1736,7 +1736,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1758,7 +1758,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1780,7 +1780,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1800,7 +1800,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1822,7 +1822,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1844,7 +1844,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1866,7 +1866,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1888,7 +1888,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1910,7 +1910,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1944,7 +1944,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1966,7 +1966,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -1988,7 +1988,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2010,7 +2010,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2032,7 +2032,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2054,7 +2054,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2076,7 +2076,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2098,7 +2098,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2120,7 +2120,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2140,7 +2140,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2160,7 +2160,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2180,7 +2180,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {
@@ -2200,7 +2200,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-28T23:29:46Z",
+   "last_seen": "2026-08-28T23:39:49Z",
    "active": true
   },
   {

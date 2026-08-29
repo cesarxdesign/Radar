@@ -400,6 +400,7 @@ def src_landingjobs():
             "title": j.get("title"), "url": j.get("url"),
             "location": loc or "Portugal", "remote": bool(j.get("remote")),
             "salary": sal, "posted": j.get("published_at"),
+            "updated": j.get("updated_at"),
             "desc": strip_html(j.get("role_description")),
         })
     return out
@@ -1165,6 +1166,7 @@ def src_recruitee(slug):
             "title": o.get("title"), "url": o.get("careers_url") or o.get("url"),
             "location": o.get("location") or "", "remote": bool(o.get("remote")),
             "salary": None, "posted": o.get("published_at"),
+            "updated": o.get("updated_at"),
             "desc": strip_html(o.get("description")), "raw": o.get("description") or "",
         })
     return out

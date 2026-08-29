@@ -37,7 +37,8 @@ body {
 .pvhead b { font-size: 15px; }
 .pvhead .co { color: var(--mut); font-size: 13px; }
 .pvhead a { color: var(--acc); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; }
-.pvhead #pv-orig { margin-left: auto; }
+.pvhead #pv-cv { margin-left: auto; }
+.pvhead #pv-orig { margin-left: 0; }
 .pvhead #pv-src { color: var(--mut); }
 .pvbody { flex: 1; min-height: 0; display: flex; }
 .pvbody iframe { width: 100%; height: 100%; border: 0; background: #fff; }
@@ -172,6 +173,7 @@ footer .bad { color: var(--danger); }
   <aside id="preview">
     <div class="pvhead">
       <b id="pv-title">—</b><span class="co" id="pv-co"></span>
+      <a id="pv-cv" href="#" style="display:none">CV 📄</a>
       <a id="pv-orig" href="#" target="_blank" rel="noopener" style="display:none">Original ↗</a>
       <a id="pv-src" href="#" target="_blank" rel="noopener" style="display:none">Source ↗</a>
     </div>
@@ -314,6 +316,17 @@ function renderPreview() {
   const target = safeUrl(j.apply_url || j.url);
   document.getElementById("pv-title").textContent = j.title;
   document.getElementById("pv-co").textContent = j.company;
+  const cvBtn = document.getElementById("pv-cv");
+  const cv = CVS[j.id];
+  cvBtn.style.display = cv ? "" : "none";
+  cvBtn.title = (cv && cv.label) || "reveal the tailored CV in Finder";
+  cvBtn.onclick = e => {
+    e.preventDefault();
+    fetch("http://127.0.0.1:8765/api/reveal", { method: "POST", mode: "no-cors",
+      body: JSON.stringify({ path: cv.path }) })
+      .then(() => toast("Revealed in Finder"))
+      .catch(() => toast("TCV isn't running — double-click TCV.command first"));
+  };
   const orig = document.getElementById("pv-orig");
   const srcBtn = document.getElementById("pv-src");
   orig.href = target; orig.style.display = j.apply_url ? "" : "none";
@@ -329,7 +342,8 @@ function renderPreview() {
     srcBtn.href = safeUrl(j.url);
     srcBtn.style.display = (j.apply_url && j.apply_url !== j.url) ? "" : "none";
   }
-  srcBtn.style.marginLeft = j.apply_url ? "" : "auto";
+  orig.style.marginLeft = cv ? "" : "auto";
+  srcBtn.style.marginLeft = (cv || j.apply_url) ? "" : "auto";
   const body = document.getElementById("pv-body");
   if (j.frameable) {
     body.innerHTML = '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
@@ -412,8 +426,7 @@ function card(j, opts) {
         cell("via", esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : ""), "dim") +
       "</div>" +
     "</div>" +
-    '<div class="jacts">' +
-      (CVS[j.id] ? '<button class="cv" title="' + esc(CVS[j.id].label || "reveal the tailored CV in Finder") + '">CV</button>' : "") + (
+    '<div class="jacts">' + (
       opts.done
         ? '<button class="restore">restore</button>'
         : '<button class="applied">applied</button><button class="discard">discard</button>'
@@ -422,12 +435,6 @@ function card(j, opts) {
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
   on(".restore", () => { delete state.jobs[j.id]; save(); scheduleState(); render(); });
-  on(".cv", () => {
-    fetch("http://127.0.0.1:8765/api/reveal", { method: "POST", mode: "no-cors",
-      body: JSON.stringify({ path: CVS[j.id].path }) })
-      .then(() => toast("Revealed in Finder"))
-      .catch(() => toast("TCV isn't running — double-click TCV.command first"));
-  });
   return el;
 }
 
@@ -625,7 +632,7 @@ fetch("data/applied_email.json?t=" + Date.now()).then(r => r.ok ? r.json() : nul
   EMAILS = d; if (DATA) render();
 }).catch(() => {});
 fetch("data/cvs.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(d => {
-  CVS = d || {}; if (DATA) render();
+  CVS = d || {}; PV = null; if (DATA) render();
 }).catch(() => {});
 fetch("data/jobs.json?t=" + Date.now()).then(r => r.json()).then(d => {
   DATA = d; stamp(); render();

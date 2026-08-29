@@ -1642,6 +1642,11 @@
    "company": "Tylko",
    "slug": "tylko",
    "via": "djw-census"
+  },
+  {
+   "slug": "mondaymerch",
+   "company": "Monday Merch",
+   "via": "djw-census"
   }
  ],
  "rippling": [
@@ -1649,6 +1654,11 @@
    "company": "Scentbird",
    "slug": "scentbird",
    "via": "email"
+  },
+  {
+   "company": "Q4",
+   "slug": "q4_careers",
+   "via": "api-crack"
   }
  ],
  "smartrecruiters": [
@@ -1980,6 +1990,251 @@
   {
    "company": "Twin Harbour",
    "host": "twinharbour.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Simple (Palta)",
+   "host": "jobs.simple.life",
+   "via": "djw-census"
+  },
+  {
+   "company": "Operations1",
+   "host": "career.operations1.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Manual",
+   "host": "careers.joinvoy.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Sanity Group 2",
+   "host": "career.sanitygroup.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Patranous",
+   "host": "careers.patronus-group.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Funnel",
+   "host": "jobs.funnel.io",
+   "via": "djw-census"
+  },
+  {
+   "company": "Bakken Baeck",
+   "host": "bakkenbaeck.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Happy Socks 2",
+   "host": "career.happysocks.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Chapter2",
+   "host": "chapter2.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Anyfin",
+   "host": "career.anyfin.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Appagent",
+   "host": "careers.appagent.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Autoliv",
+   "host": "careermexico.autoliv.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Bambuser",
+   "host": "bambuser.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Billogram",
+   "host": "career.billogram.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Boozt",
+   "host": "careers.booztgroup.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Cloudsmith",
+   "host": "careers.cloudsmith.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Embark Studios",
+   "host": "careers.embark-studios.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Enlabs",
+   "host": "careers.entainnce.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Everymatrix",
+   "host": "everymatrix.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Fatshark",
+   "host": "jobs.fatsharkgames.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Fjallraven",
+   "host": "career.fjallraven.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Goodgame Studios",
+   "host": "goodgamestudios.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Greenely",
+   "host": "careers.greenely.se",
+   "via": "djw-census"
+  },
+  {
+   "company": "Indy",
+   "host": "jobs.indy.fr",
+   "via": "djw-census"
+  },
+  {
+   "company": "K3Capitalgroup",
+   "host": "careers.k3advisorygroup.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Keyrus",
+   "host": "jobs.keyrus.com.br",
+   "via": "djw-census"
+  },
+  {
+   "company": "Moburst",
+   "host": "moburst.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Na Kd",
+   "host": "career.na-kd.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Nofence",
+   "host": "nofence.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Norton Motorcycles",
+   "host": "careers.nortonmotorcycles.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Paradox Interactive",
+   "host": "career.paradoxplaza.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Preferred By Nature",
+   "host": "career.preferredbynature.org",
+   "via": "djw-census"
+  },
+  {
+   "company": "Remote People",
+   "host": "jobs.remotepeople.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Sage Publishing",
+   "host": "careers.sagepub.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Scrive",
+   "host": "careers.scrive.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Star Stable",
+   "host": "jobs.starstableentertainment.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Studiob",
+   "host": "join.studiob.net",
+   "via": "djw-census"
+  },
+  {
+   "company": "Tradingview",
+   "host": "tradingview.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Virtualteammate",
+   "host": "virtualteammate-1719208705.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Electra",
+   "host": "careers.go-electra.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Froda",
+   "host": "join.froda.se",
+   "via": "djw-census"
+  },
+  {
+   "company": "Britbox",
+   "host": "jointheteam.britboxinternational.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Eterno",
+   "host": "careers.eterno.group",
+   "via": "djw-census"
+  },
+  {
+   "company": "Why Hire Wrong",
+   "host": "whyhirewrong.teamtailor.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Acast",
+   "host": "careers.acast.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Soundtrack",
+   "host": "careers.soundtrack.io",
+   "via": "djw-census"
+  },
+  {
+   "company": "Stravito",
+   "host": "careers.stravito.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Nextory",
+   "host": "career.nextory.com",
+   "via": "djw-census"
+  },
+  {
+   "company": "Yazen",
+   "host": "jobs.yazen.com",
    "via": "djw-census"
   }
  ],

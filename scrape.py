@@ -691,7 +691,7 @@ def src_teamtailor(host, company):
         raw = get("description")
         loc = ", ".join(filter(None, [get("location"), get("region"), get("country")]))
         job = {
-            "source": f"teamtailor/{host.split('.')[0]}", "company": company,
+            "source": f"teamtailor/{host}", "company": company,
             "title": title, "url": link, "location": loc,
             "remote": bool(re.search(r"remote", f"{title} {loc}", re.I)) or None,
             "salary": None, "posted": get("pubDate") or None,
@@ -914,7 +914,33 @@ def src_freshteam(slug, company):
     return out
 
 def src_rippling(slug, company):
-    """Rippling ATS - jobs embedded in the board page's NEXT_DATA."""
+    """Rippling ATS. The official board API works even where the HTML page
+    bot-walls (Q4); NEXT_DATA scrape stays as the fallback."""
+    try:
+        d = fetch_json(f"https://api.rippling.com/platform/api/ats/v1/board/{slug}/jobs")
+        out = []
+        for j in d if isinstance(d, list) else []:
+            loc = (j.get("workLocation") or {}).get("label") or ""
+            job = {
+                "source": f"rippling/{slug}", "company": company,
+                "title": j.get("name"), "url": j.get("url"),
+                "location": loc,
+                "remote": bool(re.search(r"remote", loc, re.I)) or None,
+                "salary": None, "posted": None, "desc": "", "raw": "",
+            }
+            if title_ok(job["title"]) and j.get("uuid"):
+                try:
+                    det = fetch_json(
+                        f"https://api.rippling.com/platform/api/ats/v1/board/{slug}/jobs/{j['uuid']}")
+                    raw = " ".join(str(v) for v in (det.get("description") or {}).values())
+                    job["desc"] = job["raw"] = strip_html(raw)
+                    job["salary"] = find_salary(job["desc"])
+                except Exception:
+                    pass
+            out.append(job)
+        return out
+    except Exception:
+        pass
     html = fetch(f"https://ats.rippling.com/{slug}/jobs")
     m = re.search(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
     if not m:
@@ -1034,7 +1060,7 @@ def registry_tasks():
         tasks.append((f"smartrecruiters/{e['slug']}", lambda e=e: src_smartrecruiters(
             e["slug"], label(e, e["slug"].title()))))
     for e in REGISTRY.get("teamtailor", []):
-        tasks.append((f"teamtailor/{e['host'].split('.')[0]}", lambda e=e: src_teamtailor(
+        tasks.append((f"teamtailor/{e['host']}", lambda e=e: src_teamtailor(
             e["host"], label(e, e["host"].split(".")[0].title()))))
     for e in REGISTRY.get("personio", []):
         tasks.append((f"personio/{e['host'].split('.')[0]}", lambda e=e: src_personio(

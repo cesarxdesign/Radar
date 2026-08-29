@@ -584,73 +584,73 @@
    "via": "djw-census"
   },
   {
-   "slug": "runway",
    "company": "Runway",
+   "slug": "runway",
    "via": "nicola-post"
   },
   {
-   "slug": "checkly",
    "company": "Checkly",
+   "slug": "checkly",
    "via": "nicola-post"
   },
   {
-   "slug": "assured",
    "company": "Assured",
+   "slug": "assured",
    "via": "nicola-post"
   },
   {
-   "slug": "phantom",
    "company": "Phantom",
+   "slug": "phantom",
    "via": "nicola-post"
   },
   {
-   "slug": "kong",
    "company": "Kong",
+   "slug": "kong",
    "via": "nicola-post"
   },
   {
-   "slug": "quora",
    "company": "Quora",
+   "slug": "quora",
    "via": "nicola-post"
   },
   {
-   "slug": "synthesia",
    "company": "Synthesia",
+   "slug": "synthesia",
    "via": "nicola-post"
   },
   {
-   "slug": "sardine",
    "company": "Sardine",
+   "slug": "sardine",
    "via": "nicola-post"
   },
   {
-   "slug": "hubstaff",
    "company": "Hubstaff",
+   "slug": "hubstaff",
    "via": "nicola-post"
   },
   {
-   "slug": "junction",
    "company": "Junction",
+   "slug": "junction",
    "via": "nicola-post"
   },
   {
-   "slug": "natter",
    "company": "Natter",
+   "slug": "natter",
    "via": "nicola-post"
   },
   {
-   "slug": "magicschool",
    "company": "MagicSchool AI",
+   "slug": "magicschool",
    "via": "nicola-post"
   },
   {
-   "slug": "helpscout",
    "company": "Help Scout",
+   "slug": "helpscout",
    "via": "nicola-post"
   },
   {
-   "slug": "cohere",
    "company": "Cohere",
+   "slug": "cohere",
    "via": "nicola-post"
   }
  ],
@@ -1427,58 +1427,58 @@
    "via": "djw-census"
   },
   {
-   "slug": "form3",
    "company": "Form3",
+   "slug": "form3",
    "via": "nicola-post"
   },
   {
-   "slug": "qualio",
    "company": "Qualio",
+   "slug": "qualio",
    "via": "nicola-post"
   },
   {
-   "slug": "goodnotes",
    "company": "Goodnotes",
+   "slug": "goodnotes",
    "via": "nicola-post"
   },
   {
-   "slug": "customerio",
    "company": "Customer.io",
+   "slug": "customerio",
    "via": "nicola-post"
   },
   {
-   "slug": "postscript",
    "company": "Postscript",
+   "slug": "postscript",
    "via": "nicola-post"
   },
   {
-   "slug": "kalepa",
    "company": "Kalepa",
+   "slug": "kalepa",
    "via": "nicola-post"
   },
   {
-   "slug": "prisma",
    "company": "Prisma",
+   "slug": "prisma",
    "via": "nicola-post"
   },
   {
-   "slug": "federato",
    "company": "Federato",
+   "slug": "federato",
    "via": "nicola-post"
   },
   {
-   "slug": "arizeai",
    "company": "Arize AI",
+   "slug": "arizeai",
    "via": "nicola-post"
   },
   {
-   "slug": "clickhouse",
    "company": "ClickHouse",
+   "slug": "clickhouse",
    "via": "nicola-post"
   },
   {
-   "slug": "vannevarlabs",
    "company": "Vannevar",
+   "slug": "vannevarlabs",
    "via": "nicola-post"
   }
  ],
@@ -1711,18 +1711,18 @@
    "via": "djw-census"
   },
   {
-   "slug": "filevine",
    "company": "Filevine",
+   "slug": "filevine",
    "via": "nicola-post"
   },
   {
-   "slug": "metabase",
    "company": "Metabase",
+   "slug": "metabase",
    "via": "nicola-post"
   },
   {
-   "slug": "supermove",
    "company": "Supermove",
+   "slug": "supermove",
    "via": "nicola-post"
   }
  ],
@@ -2535,8 +2535,8 @@
    "via": "djw-census"
   },
   {
-   "slug": "cloudtalk",
    "company": "CloudTalk",
+   "slug": "cloudtalk",
    "via": "nicola-post"
   }
  ],

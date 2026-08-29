@@ -582,6 +582,76 @@
    "company": "Replit",
    "slug": "replit",
    "via": "djw-census"
+  },
+  {
+   "slug": "runway",
+   "company": "Runway",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "checkly",
+   "company": "Checkly",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "assured",
+   "company": "Assured",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "phantom",
+   "company": "Phantom",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "kong",
+   "company": "Kong",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "quora",
+   "company": "Quora",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "synthesia",
+   "company": "Synthesia",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "sardine",
+   "company": "Sardine",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "hubstaff",
+   "company": "Hubstaff",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "junction",
+   "company": "Junction",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "natter",
+   "company": "Natter",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "magicschool",
+   "company": "MagicSchool AI",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "helpscout",
+   "company": "Help Scout",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "cohere",
+   "company": "Cohere",
+   "via": "nicola-post"
   }
  ],
  "bamboohr": [
@@ -1355,6 +1425,61 @@
    "eu": true,
    "slug": "avatrgmbh",
    "via": "djw-census"
+  },
+  {
+   "slug": "form3",
+   "company": "Form3",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "qualio",
+   "company": "Qualio",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "goodnotes",
+   "company": "Goodnotes",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "customerio",
+   "company": "Customer.io",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "postscript",
+   "company": "Postscript",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "kalepa",
+   "company": "Kalepa",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "prisma",
+   "company": "Prisma",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "federato",
+   "company": "Federato",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "arizeai",
+   "company": "Arize AI",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "clickhouse",
+   "company": "ClickHouse",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "vannevarlabs",
+   "company": "Vannevar",
+   "via": "nicola-post"
   }
  ],
  "jazzhr": [
@@ -1584,6 +1709,21 @@
    "company": "Ivo",
    "slug": "ivo",
    "via": "djw-census"
+  },
+  {
+   "slug": "filevine",
+   "company": "Filevine",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "metabase",
+   "company": "Metabase",
+   "via": "nicola-post"
+  },
+  {
+   "slug": "supermove",
+   "company": "Supermove",
+   "via": "nicola-post"
   }
  ],
  "manatal": [
@@ -2393,6 +2533,11 @@
    "company": "goodhabitz",
    "slug": "goodhabitz",
    "via": "djw-census"
+  },
+  {
+   "slug": "cloudtalk",
+   "company": "CloudTalk",
+   "via": "nicola-post"
   }
  ],
  "workday": [

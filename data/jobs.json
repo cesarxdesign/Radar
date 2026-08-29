@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-29T11:42:36Z",
- "run_id": "2026-08-29T11:42:36Z",
+ "generated_at": "2026-08-29T11:48:11Z",
+ "run_id": "2026-08-29T11:48:11Z",
  "counts": {
   "active": 202,
-  "new": 20
+  "new": 0
  },
  "sources": {
   "remotive": {
@@ -26,123 +26,131 @@
    "ok": true,
    "fetched": 62
   },
-  "himalayas": {
-   "ok": true,
-   "fetched": 100
-  },
-  "greenhouse/figma": {
-   "ok": true,
-   "fetched": 163
-  },
-  "remoteok": {
-   "ok": true,
-   "fetched": 18
-  },
-  "greenhouse/gitlab": {
-   "ok": true,
-   "fetched": 220
-  },
-  "greenhouse/duolingo": {
-   "ok": true,
-   "fetched": 83
-  },
-  "workingnomads": {
-   "ok": true,
-   "fetched": 0
-  },
-  "greenhouse/cloudflare": {
-   "ok": true,
-   "fetched": 309
-  },
-  "greenhouse/swordhealth": {
-   "ok": true,
-   "fetched": 0
-  },
   "greenhouse/stripe": {
    "ok": true,
    "fetched": 573
-  },
-  "greenhouse/feedzai": {
-   "ok": true,
-   "fetched": 38
-  },
-  "greenhouse/dropbox": {
-   "ok": true,
-   "fetched": 41
-  },
-  "greenhouse/wise": {
-   "ok": true,
-   "fetched": 21
   },
   "greenhouse/monzo": {
    "ok": true,
    "fetched": 67
   },
+  "greenhouse/dropbox": {
+   "ok": true,
+   "fetched": 41
+  },
+  "greenhouse/swordhealth": {
+   "ok": true,
+   "fetched": 0
+  },
+  "greenhouse/feedzai": {
+   "ok": true,
+   "fetched": 38
+  },
+  "remoteok": {
+   "ok": true,
+   "fetched": 18
+  },
+  "greenhouse/figma": {
+   "ok": true,
+   "fetched": 163
+  },
+  "workingnomads": {
+   "ok": true,
+   "fetched": 0
+  },
+  "himalayas": {
+   "ok": true,
+   "fetched": 100
+  },
+  "greenhouse/gitlab": {
+   "ok": true,
+   "fetched": 220
+  },
+  "greenhouse/wise": {
+   "ok": true,
+   "fetched": 21
+  },
+  "greenhouse/duolingo": {
+   "ok": true,
+   "fetched": 83
+  },
+  "greenhouse/cloudflare": {
+   "ok": true,
+   "fetched": 309
+  },
   "greenhouse/vercel": {
    "ok": true,
    "fetched": 91
-  },
-  "greenhouse/webflow": {
-   "ok": true,
-   "fetched": 27
   },
   "greenhouse/remotecom": {
    "ok": true,
    "fetched": 204
   },
-  "greenhouse/mozilla": {
-   "ok": true,
-   "fetched": 86
-  },
   "greenhouse/contentful": {
    "ok": true,
    "fetched": 3
-  },
-  "greenhouse/anthropic": {
-   "ok": true,
-   "fetched": 571
-  },
-  "greenhouse/doctolib": {
-   "ok": true,
-   "fetched": 125
   },
   "greenhouse/intercom": {
    "ok": true,
    "fetched": 120
   },
+  "greenhouse/anthropic": {
+   "ok": true,
+   "fetched": 571
+  },
   "greenhouse/typeform": {
    "ok": true,
    "fetched": 12
-  },
-  "greenhouse/getyourguide": {
-   "ok": true,
-   "fetched": 57
-  },
-  "greenhouse/n26": {
-   "ok": true,
-   "fetched": 64
   },
   "greenhouse/datadog": {
    "ok": true,
    "fetched": 454
   },
-  "greenhouse/automatticcareers": {
+  "greenhouse/getyourguide": {
    "ok": true,
-   "fetched": 18
+   "fetched": 57
   },
-  "ashby/posthog": {
+  "greenhouse/mozilla": {
    "ok": true,
-   "fetched": 13
-  },
-  "ashby/linear": {
-   "ok": true,
-   "fetched": 29
+   "fetched": 86
   },
   "greenhouse/grafanalabs": {
    "ok": true,
    "fetched": 134
   },
+  "greenhouse/webflow": {
+   "ok": true,
+   "fetched": 27
+  },
+  "greenhouse/automatticcareers": {
+   "ok": true,
+   "fetched": 18
+  },
+  "greenhouse/elastic": {
+   "ok": true,
+   "fetched": 336
+  },
+  "ashby/linear": {
+   "ok": true,
+   "fetched": 29
+  },
   "ashby/raycast": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/posthog": {
+   "ok": true,
+   "fetched": 13
+  },
+  "greenhouse/doctolib": {
+   "ok": true,
+   "fetched": 125
+  },
+  "greenhouse/n26": {
+   "ok": true,
+   "fetched": 64
+  },
+  "ashby/deel": {
    "ok": true,
    "fetched": 0
   },
@@ -150,29 +158,21 @@
    "ok": true,
    "fetched": 59
   },
-  "ashby/deel": {
+  "ashby/ramp": {
    "ok": true,
-   "fetched": 0
+   "fetched": 138
   },
   "ashby/attio": {
    "ok": true,
    "fetched": 47
   },
-  "ashby/ramp": {
+  "ashby/openai": {
    "ok": true,
-   "fetched": 138
-  },
-  "ashby/ashby": {
-   "ok": true,
-   "fetched": 67
+   "fetched": 758
   },
   "ashby/lovable": {
    "ok": true,
    "fetched": 78
-  },
-  "ashby/openai": {
-   "ok": true,
-   "fetched": 758
   },
   "ashby/plaid": {
    "ok": true,
@@ -186,41 +186,45 @@
    "ok": true,
    "fetched": 7
   },
-  "greenhouse/elastic": {
-   "ok": true,
-   "fetched": 336
-  },
   "ashby/miro": {
    "ok": true,
    "fetched": 37
-  },
-  "ashby/oyster": {
-   "ok": true,
-   "fetched": 29
-  },
-  "ashby/alan": {
-   "ok": true,
-   "fetched": 95
   },
   "ashby/notion": {
    "ok": true,
    "fetched": 133
   },
-  "ashby/bolt": {
+  "ashby/oyster": {
    "ok": true,
-   "fetched": 0
+   "fetched": 29
   },
   "ashby/1password": {
    "ok": true,
    "fetched": 62
   },
-  "ashby/spendesk": {
+  "ashby/bolt": {
    "ok": true,
    "fetched": 0
   },
   "ashby/backmarket": {
    "ok": true,
    "fetched": 14
+  },
+  "ashby/ashby": {
+   "ok": true,
+   "fetched": 67
+  },
+  "ashby/spendesk": {
+   "ok": true,
+   "fetched": 0
+  },
+  "ashby/alan": {
+   "ok": true,
+   "fetched": 95
+  },
+  "lever/blablacar": {
+   "ok": true,
+   "fetched": 12
   },
   "lever/qonto": {
    "ok": true,
@@ -234,45 +238,53 @@
    "ok": true,
    "fetched": 0
   },
-  "workday/marmon": {
-   "ok": true,
-   "fetched": 1
-  },
   "bamboohr/malalafund": {
    "ok": true,
    "fetched": 2
   },
-  "bamboohr/ylabs": {
+  "workday/marmon": {
    "ok": true,
    "fetched": 1
-  },
-  "workday/mastercorp": {
-   "ok": true,
-   "fetched": 0
   },
   "bamboohr/validity": {
    "ok": true,
    "fetched": 2
   },
-  "lever/pipedrive": {
+  "workday/mastercorp": {
    "ok": true,
-   "fetched": 16
+   "fetched": 0
   },
-  "bamboohr/smiletrain": {
+  "lever/aircall": {
    "ok": true,
-   "fetched": 4
+   "fetched": 77
   },
   "workday/thinkbrg": {
    "ok": true,
    "fetched": 0
   },
+  "lever/pipedrive": {
+   "ok": true,
+   "fetched": 16
+  },
+  "bamboohr/ylabs": {
+   "ok": true,
+   "fetched": 1
+  },
   "bamboohr/trusscore": {
    "ok": true,
    "fetched": 8
   },
+  "bamboohr/smiletrain": {
+   "ok": true,
+   "fetched": 4
+  },
   "bamboohr/simpligov": {
    "ok": true,
    "fetched": 10
+  },
+  "workable/plateful": {
+   "ok": true,
+   "fetched": 24
   },
   "bamboohr/scalepad": {
    "ok": true,
@@ -281,14 +293,6 @@
   "bamboohr/researchsol": {
    "ok": true,
    "fetched": 4
-  },
-  "workable/plateful": {
-   "ok": true,
-   "fetched": 24
-  },
-  "lever/blablacar": {
-   "ok": true,
-   "fetched": 12
   },
   "workable/astral-media-group-limited": {
    "ok": true,
@@ -302,33 +306,33 @@
    "ok": true,
    "fetched": 2
   },
-  "workday/outsystems": {
-   "ok": true,
-   "fetched": 3
-  },
-  "bamboohr/brndwgn": {
-   "ok": true,
-   "fetched": 9
-  },
   "teamtailor/careers": {
    "ok": true,
    "fetched": 12
+  },
+  "workday/outsystems": {
+   "ok": true,
+   "fetched": 3
   },
   "workable/huzzle": {
    "ok": true,
    "fetched": 2411
   },
+  "bamboohr/brndwgn": {
+   "ok": true,
+   "fetched": 9
+  },
   "personio/digital-growth-studio": {
    "ok": true,
    "fetched": 4
   },
-  "teamtailor/saasglobal": {
+  "join/skyve": {
    "ok": true,
-   "fetched": 13
+   "fetched": 2
   },
-  "teamtailor/bunnynet": {
+  "join/standard-ecom": {
    "ok": true,
-   "fetched": 11
+   "fetched": 1
   },
   "join/yoursoftwaresuppliercom": {
    "ok": true,
@@ -338,137 +342,129 @@
    "ok": true,
    "fetched": 5
   },
-  "join/skyve": {
+  "smartrecruiters/inetum2": {
    "ok": true,
-   "fetched": 2
-  },
-  "breezy/20four7va": {
-   "ok": true,
-   "fetched": 85
-  },
-  "join/standard-ecom": {
-   "ok": true,
-   "fetched": 1
-  },
-  "greenhouse/costar": {
-   "ok": true,
-   "fetched": 8
+   "fetched": 3
   },
   "recruitee/hostaway": {
    "ok": true,
    "fetched": 9
   },
-  "greenhouse/agency": {
-   "ok": true,
-   "fetched": 821
-  },
   "pinpoint/intermedia": {
    "ok": true,
    "fetched": 56
+  },
+  "greenhouse/costar": {
+   "ok": true,
+   "fetched": 8
   },
   "greenhouse/gr8tech": {
    "ok": true,
    "fetched": 18
   },
-  "greenhouse/fueledcareers": {
+  "breezy/20four7va": {
    "ok": true,
-   "fetched": 10
+   "fetched": 85
   },
-  "smartrecruiters/inetum2": {
+  "greenhouse/agency": {
    "ok": true,
-   "fetched": 3
-  },
-  "greenhouse/fingerprint": {
-   "ok": true,
-   "fetched": 22
-  },
-  "greenhouse/nebius": {
-   "ok": true,
-   "fetched": 373
-  },
-  "greenhouse/recast": {
-   "ok": true,
-   "fetched": 3
-  },
-  "lever/quadcode": {
-   "ok": true,
-   "fetched": 16
+   "fetched": 821
   },
   "manatal/humanit": {
    "ok": true,
    "fetched": 20
   },
+  "teamtailor/saasglobal": {
+   "ok": true,
+   "fetched": 13
+  },
+  "greenhouse/fueledcareers": {
+   "ok": true,
+   "fetched": 10
+  },
+  "greenhouse/fingerprint": {
+   "ok": true,
+   "fetched": 22
+  },
+  "manatal/myva360": {
+   "ok": true,
+   "fetched": 3
+  },
+  "greenhouse/recast": {
+   "ok": true,
+   "fetched": 3
+  },
+  "greenhouse/nebius": {
+   "ok": true,
+   "fetched": 373
+  },
+  "lever/quadcode": {
+   "ok": true,
+   "fetched": 16
+  },
   "ashby/flipper": {
    "ok": true,
    "fetched": 7
-  },
-  "ashby/elevenlabs": {
-   "ok": true,
-   "fetched": 249
   },
   "ashby/onhires": {
    "ok": true,
    "fetched": 54
   },
-  "lever/jito": {
+  "teamtailor/bunnynet": {
    "ok": true,
-   "fetched": 3
+   "fetched": 11
   },
-  "ashby/wundergraph": {
+  "ashby/elevenlabs": {
    "ok": true,
-   "fetched": 4
+   "fetched": 249
   },
   "ashby/omniscient": {
    "ok": true,
    "fetched": 16
   },
-  "lever/superside": {
+  "ashby/wundergraph": {
    "ok": true,
-   "fetched": 14
-  },
-  "ashby/walrus": {
-   "ok": true,
-   "fetched": 3
+   "fetched": 4
   },
   "ashby/scarlet": {
    "ok": true,
    "fetched": 12
   },
+  "ashby/walrus": {
+   "ok": true,
+   "fetched": 3
+  },
   "ashby/paddle": {
    "ok": true,
    "fetched": 20
-  },
-  "ashby/secfix": {
-   "ok": true,
-   "fetched": 16
   },
   "ashby/resend": {
    "ok": true,
    "fetched": 12
   },
-  "ashby/nevis": {
+  "ashby/secfix": {
    "ok": true,
-   "fetched": 23
+   "fetched": 16
   },
   "ashby/aios": {
    "ok": true,
    "fetched": 17
   },
-  "lever/websummit": {
+  "ashby/nevis": {
    "ok": true,
-   "fetched": 28
+   "fetched": 23
   },
   "ashby/mazehq": {
    "ok": true,
    "fetched": 3
   },
-  "ashby/wayflyer": {
+  "lever/superside": {
    "ok": true,
-   "fetched": 13
+   "fetched": 14
   },
-  "ashby/primer": {
+  "lever/jito": {
    "ok": true,
-   "fetched": 22
+   "fetched": 3
   },
   "ashby/docker": {
    "ok": true,
@@ -478,33 +474,33 @@
    "ok": true,
    "fetched": 27
   },
-  "lever/cyara": {
+  "ashby/primer": {
    "ok": true,
-   "fetched": 18
+   "fetched": 22
   },
-  "ashby/volta": {
+  "ashby/wayflyer": {
    "ok": true,
-   "fetched": 67
+   "fetched": 13
   },
   "ashby/zoe": {
    "ok": true,
    "fetched": 6
   },
-  "lever/aircall": {
+  "ashby/volta": {
    "ok": true,
-   "fetched": 77
+   "fetched": 67
   },
-  "manatal/myva360": {
+  "lever/websummit": {
    "ok": true,
-   "fetched": 3
+   "fetched": 28
+  },
+  "lever/cyara": {
+   "ok": true,
+   "fetched": 18
   },
   "freshteam/tourscanner": {
    "ok": true,
    "fetched": 1
-  },
-  "rippling/scentbird": {
-   "ok": true,
-   "fetched": 11
   },
   "freshteam/a5labs-talent": {
    "ok": false,
@@ -514,9 +510,13 @@
    "ok": true,
    "fetched": 35
   },
-  "breezy/uvation": {
+  "rippling/scentbird": {
    "ok": true,
-   "fetched": 69
+   "fetched": 11
+  },
+  "zoho/genesis": {
+   "ok": true,
+   "fetched": 9
   },
   "comeet/mwdn": {
    "ok": true,
@@ -524,39 +524,39 @@
   },
   "successfactors/careers.capgemini.com": {
    "ok": true,
-   "fetched": 25
+   "fetched": 52
   },
-  "zoho/genesis": {
+  "breezy/uvation": {
    "ok": true,
-   "fetched": 9
+   "fetched": 69
   },
   "workday/iqvia": {
    "ok": true,
    "fetched": 8
   },
-  "zoho/slash": {
-   "ok": true,
-   "fetched": 5
-  },
   "zoho/perrystreet": {
    "ok": true,
    "fetched": 4
   },
-  "greenhouse/dispatch": {
+  "zoho/slash": {
    "ok": true,
-   "fetched": 4
+   "fetched": 5
+  },
+  "greenhouse/addepar1": {
+   "ok": true,
+   "fetched": 123
   },
   "greenhouse/consensys": {
    "ok": true,
    "fetched": 5
   },
+  "greenhouse/dispatch": {
+   "ok": true,
+   "fetched": 4
+  },
   "greenhouse/elationhealth": {
    "ok": true,
    "fetched": 17
-  },
-  "greenhouse/amplitude": {
-   "ok": true,
-   "fetched": 37
   },
   "ashby/fieldguide": {
    "ok": true,
@@ -566,69 +566,73 @@
    "ok": true,
    "fetched": 95
   },
-  "greenhouse/addepar1": {
+  "ashby/airapps": {
    "ok": true,
-   "fetched": 123
-  },
-  "ashby/infisical": {
-   "ok": true,
-   "fetched": 8
+   "fetched": 498
   },
   "ashby/homebound": {
    "ok": true,
    "fetched": 9
   },
+  "ashby/infisical": {
+   "ok": true,
+   "fetched": 8
+  },
   "greenhouse/canonical": {
    "ok": true,
    "fetched": 303
-  },
-  "greenhouse/mavenclinic": {
-   "ok": true,
-   "fetched": 32
-  },
-  "ashby/mazedesign": {
-   "ok": true,
-   "fetched": 6
-  },
-  "greenhouse/remote": {
-   "ok": true,
-   "fetched": 2
-  },
-  "recruitee/mayflower": {
-   "ok": true,
-   "fetched": 41
-  },
-  "ashby/pressw": {
-   "ok": true,
-   "fetched": 5
-  },
-  "ashby/opensea": {
-   "ok": true,
-   "fetched": 2
   },
   "ashby/nash": {
    "ok": true,
    "fetched": 17
   },
-  "greenhouse/reddit": {
+  "greenhouse/mavenclinic": {
    "ok": true,
-   "fetched": 153
+   "fetched": 32
+  },
+  "greenhouse/amplitude": {
+   "ok": true,
+   "fetched": 37
+  },
+  "ashby/mazedesign": {
+   "ok": true,
+   "fetched": 6
+  },
+  "recruitee/mayflower": {
+   "ok": true,
+   "fetched": 41
+  },
+  "ashby/opensea": {
+   "ok": true,
+   "fetched": 2
   },
   "recruitee/meta": {
    "ok": true,
    "fetched": 1
   },
-  "greenhouse/thatch": {
+  "greenhouse/remote": {
    "ok": true,
-   "fetched": 24
+   "fetched": 2
+  },
+  "ashby/pressw": {
+   "ok": true,
+   "fetched": 5
+  },
+  "ashby/worldly": {
+   "ok": true,
+   "fetched": 5
   },
   "greenhouse/okx": {
    "ok": true,
    "fetched": 341
   },
-  "ashby/worldly": {
+  "greenhouse/reddit": {
    "ok": true,
-   "fetched": 5
+   "fetched": 153
+  },
+  "lever/blackbirdinteractive": {
+   "ok": true,
+   "fetched": 14
   },
   "greenhouse/samsara": {
    "ok": true,
@@ -638,13 +642,9 @@
    "ok": true,
    "fetched": 8
   },
-  "lever/blackbirdinteractive": {
+  "greenhouse/thatch": {
    "ok": true,
-   "fetched": 14
-  },
-  "ashby/airapps": {
-   "ok": true,
-   "fetched": 498
+   "fetched": 24
   },
   "websearch": {
    "ok": false,
@@ -673,27 +673,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "c4d4576e5c168c60",
-   "title": "UI UX Designer",
-   "company": "Slash",
-   "url": "https://slash.zohorecruit.com/jobs/Careers/745410000001574080/UI-UX-Designer",
-   "source": "zoho/slash",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-04-20",
-   "xp": null,
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:42:36Z",
-   "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -713,7 +693,27 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "c4d4576e5c168c60",
+   "title": "UI UX Designer",
+   "company": "Slash",
+   "url": "https://slash.zohorecruit.com/jobs/Careers/745410000001574080/UI-UX-Designer",
+   "source": "zoho/slash",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-04-20",
+   "xp": null,
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:42:36Z",
+   "first_run": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -733,7 +733,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -753,7 +753,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -773,7 +773,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -793,7 +793,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -813,7 +813,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -833,7 +833,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -853,7 +853,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -873,27 +873,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "0ab555111a4a79ea",
-   "title": "Lead Product Designer",
-   "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8007939?gh_jid=8007939",
-   "source": "greenhouse/samsara",
-   "location": "Remote - US",
-   "bucket": "tiebreak",
-   "salary": "$137,445",
-   "posted": "2026-06-22T15:15:20-04:00",
-   "xp": "6+y",
-   "derived_from": "47ad5bf8a5cb7303",
-   "market": "Remote - US",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-29T11:42:36Z",
-   "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -913,7 +893,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -933,7 +913,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -953,7 +933,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -973,7 +953,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -993,7 +973,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1013,7 +993,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1033,7 +1013,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1053,7 +1033,27 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:42:36Z",
    "first_run": "2026-08-29T11:42:36Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "0ab555111a4a79ea",
+   "title": "Lead Product Designer",
+   "company": "Samsara",
+   "url": "https://www.samsara.com/company/careers/roles/8007939?gh_jid=8007939",
+   "source": "greenhouse/samsara",
+   "location": "Remote - US",
+   "bucket": "tiebreak",
+   "salary": "$137,445",
+   "posted": "2026-06-22T15:15:20-04:00",
+   "xp": "6+y",
+   "derived_from": "47ad5bf8a5cb7303",
+   "market": "Remote - US",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-29T11:42:36Z",
+   "first_run": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1073,7 +1073,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1095,7 +1095,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1115,7 +1115,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1137,7 +1137,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1159,7 +1159,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1181,7 +1181,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1201,7 +1201,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1221,7 +1221,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1243,7 +1243,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1265,7 +1265,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1285,7 +1285,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1305,7 +1305,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1325,7 +1325,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1347,7 +1347,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1411,7 +1411,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1433,7 +1433,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1453,7 +1453,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1473,7 +1473,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1495,7 +1495,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1515,7 +1515,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1537,7 +1537,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1559,7 +1559,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1581,27 +1581,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "44d49e1d0546a1f9",
-   "title": "Senior Product Designer, AI",
-   "company": "GitLab",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8464608002",
-   "source": "greenhouse/gitlab",
-   "location": "Remote, Canada; Remote, US",
-   "bucket": "tiebreak",
-   "salary": "$140,000",
-   "posted": "2026-03-19T11:45:39-04:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Remote, Canada; Remote, US",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1621,27 +1601,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "b59f46101c3dbe82",
-   "title": "Staff Product Designer",
-   "company": "Dropbox",
-   "url": "https://jobs.dropbox.com/listing/8092715?gh_jid=8092715",
-   "source": "greenhouse/dropbox",
-   "location": "Remote - Canada: Select locations",
-   "bucket": "tiebreak",
-   "salary": "$178,500",
-   "posted": "2026-08-03T15:08:29-04:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Remote - Canada: Select lo…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1661,7 +1621,47 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "b59f46101c3dbe82",
+   "title": "Staff Product Designer",
+   "company": "Dropbox",
+   "url": "https://jobs.dropbox.com/listing/8092715?gh_jid=8092715",
+   "source": "greenhouse/dropbox",
+   "location": "Remote - Canada: Select locations",
+   "bucket": "tiebreak",
+   "salary": "$178,500",
+   "posted": "2026-08-03T15:08:29-04:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Remote - Canada: Select lo…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "44d49e1d0546a1f9",
+   "title": "Senior Product Designer, AI",
+   "company": "GitLab",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8464608002",
+   "source": "greenhouse/gitlab",
+   "location": "Remote, Canada; Remote, US",
+   "bucket": "tiebreak",
+   "salary": "$140,000",
+   "posted": "2026-03-19T11:45:39-04:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Remote, Canada; Remote, US",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1681,27 +1681,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "3dd49d380ccf8aa9",
-   "title": "Production Designer (Contract)",
-   "company": "Mozilla",
-   "url": "https://job-boards.greenhouse.io/mozilla/jobs/7961363",
-   "source": "greenhouse/mozilla",
-   "location": "Remote Germany",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-08-10T14:20:29-04:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Remote Germany",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1721,7 +1701,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1741,7 +1721,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1761,7 +1741,27 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "3dd49d380ccf8aa9",
+   "title": "Production Designer (Contract)",
+   "company": "Mozilla",
+   "url": "https://job-boards.greenhouse.io/mozilla/jobs/7961363",
+   "source": "greenhouse/mozilla",
+   "location": "Remote Germany",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-08-10T14:20:29-04:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Remote Germany",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1781,7 +1781,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1801,7 +1801,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1821,7 +1821,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1841,7 +1841,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1861,7 +1861,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1881,7 +1881,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -1901,107 +1901,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "7f73584f6612ac18",
-   "title": "Staff Design Engineer - Canada",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/97c6542c-7ff9-43e5-ac54-b77b45fc7378",
-   "source": "ashby/ashby",
-   "location": "Remote - Canada, Montreal, Vancouver, Toronto",
-   "bucket": "tiebreak",
-   "salary": "CA$256K – CA$380K • Offers Equity • Multiple Ranges",
-   "posted": "2025-11-13T22:59:40.371+00:00",
-   "xp": "2+y",
-   "derived_from": null,
-   "market": "Remote - Canada, Montreal,…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "d1e5b61cffaee01d",
-   "title": "Design Engineer - UK",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/cb45928e-c7c7-4163-84d0-a962755a3593",
-   "source": "ashby/ashby",
-   "location": "United Kingdom, Manchester, Oxford, London, Cambridge",
-   "bucket": "tiebreak",
-   "salary": "£56K – £149K • Offers Equity • Multiple Ranges",
-   "posted": "2026-06-12T20:24:40.656+00:00",
-   "xp": "2+y",
-   "derived_from": null,
-   "market": "United Kingdom, Manchester…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "ab34b3a60bd9ef5c",
-   "title": "Design Engineer - Americas",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/fd86edd7-3af0-4977-a61a-215212c296fa",
-   "source": "ashby/ashby",
-   "location": "Remote - US, Austin, Los Angeles, Portland, Boston, Seattle, New York, San Francisco, Denver, Chicago",
-   "bucket": "tiebreak",
-   "salary": "$126K – $250K • Offers Equity • Multiple Ranges",
-   "posted": "2026-06-12T21:11:08.658+00:00",
-   "xp": "2+y",
-   "derived_from": null,
-   "market": "Remote - US, Austin, Los A…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "41b89cd5a5afff6c",
-   "title": "Design Engineer - Canada",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/85713f4a-ad14-4edd-8c56-0065f5897551",
-   "source": "ashby/ashby",
-   "location": "Remote - Canada, Montreal, Vancouver, Toronto",
-   "bucket": "tiebreak",
-   "salary": "CA$121K – CA$248K • Offers Equity • Multiple Ranges",
-   "posted": "2026-06-12T21:13:59.287+00:00",
-   "xp": "2+y",
-   "derived_from": null,
-   "market": "Remote - Canada, Montreal,…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "b89e15d9449596d4",
-   "title": "Staff Product Designer",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1",
-   "source": "ashby/ashby",
-   "location": "Remote - US, Austin, Los Angeles, Portland, Salt Lake City, Boston, Remote - Canada, Seattle, New York, San Francisco, Vancouver, Denver, Toronto, Chicago",
-   "bucket": "tiebreak",
-   "salary": "$180K – $240K • Offers Equity • Multiple Ranges",
-   "posted": "2025-12-11T04:38:54.143+00:00",
-   "xp": "10+y",
-   "derived_from": null,
-   "market": "Remote - US, Austin, Los A…",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2021,7 +1921,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2041,7 +1941,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2061,7 +1961,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2081,7 +1981,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2101,7 +2001,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2121,7 +2021,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2141,7 +2041,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2161,7 +2061,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2181,7 +2081,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2201,7 +2101,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2221,27 +2121,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "81f34978dddb632b",
-   "title": "Product Designer",
-   "company": "Alan",
-   "url": "https://jobs.ashbyhq.com/alan/4cfa1d2f-c930-4ae5-90c6-96eb1c8ada7f",
-   "source": "ashby/alan",
-   "location": "Paris, France",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-05-21T15:21:07.361+00:00",
-   "xp": "5+y",
-   "derived_from": null,
-   "market": "Paris, France",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2261,7 +2141,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2281,7 +2161,127 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "7f73584f6612ac18",
+   "title": "Staff Design Engineer - Canada",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/97c6542c-7ff9-43e5-ac54-b77b45fc7378",
+   "source": "ashby/ashby",
+   "location": "Remote - Canada, Montreal, Vancouver, Toronto",
+   "bucket": "tiebreak",
+   "salary": "CA$256K – CA$380K • Offers Equity • Multiple Ranges",
+   "posted": "2025-11-13T22:59:40.371+00:00",
+   "xp": "2+y",
+   "derived_from": null,
+   "market": "Remote - Canada, Montreal,…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "d1e5b61cffaee01d",
+   "title": "Design Engineer - UK",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/cb45928e-c7c7-4163-84d0-a962755a3593",
+   "source": "ashby/ashby",
+   "location": "United Kingdom, Manchester, Oxford, London, Cambridge",
+   "bucket": "tiebreak",
+   "salary": "£56K – £149K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T20:24:40.656+00:00",
+   "xp": "2+y",
+   "derived_from": null,
+   "market": "United Kingdom, Manchester…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "ab34b3a60bd9ef5c",
+   "title": "Design Engineer - Americas",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/fd86edd7-3af0-4977-a61a-215212c296fa",
+   "source": "ashby/ashby",
+   "location": "Remote - US, Austin, Los Angeles, Portland, Boston, Seattle, New York, San Francisco, Denver, Chicago",
+   "bucket": "tiebreak",
+   "salary": "$126K – $250K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T21:11:08.658+00:00",
+   "xp": "2+y",
+   "derived_from": null,
+   "market": "Remote - US, Austin, Los A…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "41b89cd5a5afff6c",
+   "title": "Design Engineer - Canada",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/85713f4a-ad14-4edd-8c56-0065f5897551",
+   "source": "ashby/ashby",
+   "location": "Remote - Canada, Montreal, Vancouver, Toronto",
+   "bucket": "tiebreak",
+   "salary": "CA$121K – CA$248K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T21:13:59.287+00:00",
+   "xp": "2+y",
+   "derived_from": null,
+   "market": "Remote - Canada, Montreal,…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "b89e15d9449596d4",
+   "title": "Staff Product Designer",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1",
+   "source": "ashby/ashby",
+   "location": "Remote - US, Austin, Los Angeles, Portland, Salt Lake City, Boston, Remote - Canada, Seattle, New York, San Francisco, Vancouver, Denver, Toronto, Chicago",
+   "bucket": "tiebreak",
+   "salary": "$180K – $240K • Offers Equity • Multiple Ranges",
+   "posted": "2025-12-11T04:38:54.143+00:00",
+   "xp": "10+y",
+   "derived_from": null,
+   "market": "Remote - US, Austin, Los A…",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "81f34978dddb632b",
+   "title": "Product Designer",
+   "company": "Alan",
+   "url": "https://jobs.ashbyhq.com/alan/4cfa1d2f-c930-4ae5-90c6-96eb1c8ada7f",
+   "source": "ashby/alan",
+   "location": "Paris, France",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-05-21T15:21:07.361+00:00",
+   "xp": "5+y",
+   "derived_from": null,
+   "market": "Paris, France",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2301,47 +2301,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f6bf99b71af45d07",
-   "title": "Principal Agent Experience Designer",
-   "company": "OutSystems",
-   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/US---Remote/Principal-Agent-Experience-Designer_R1696",
-   "source": "workday/outsystems",
-   "location": "US - Remote",
-   "bucket": "tiebreak",
-   "salary": "$195.500",
-   "posted": "2026-08-24",
-   "xp": "7+y",
-   "derived_from": null,
-   "market": "US - Remote",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f7c0384d2872a98c",
-   "title": "UX/UI Expert - Professional Services",
-   "company": "OutSystems",
-   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/US---Remote/UX-UI-Expert_R1638",
-   "source": "workday/outsystems",
-   "location": "US - Remote",
-   "bucket": "tiebreak",
-   "salary": "$157,250 - $191,475",
-   "posted": "2026-08-21",
-   "xp": "8–10y",
-   "derived_from": null,
-   "market": "US - Remote",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-29T11:17:45Z",
-   "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2361,7 +2321,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2381,7 +2341,47 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f6bf99b71af45d07",
+   "title": "Principal Agent Experience Designer",
+   "company": "OutSystems",
+   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/US---Remote/Principal-Agent-Experience-Designer_R1696",
+   "source": "workday/outsystems",
+   "location": "US - Remote",
+   "bucket": "tiebreak",
+   "salary": "$195.500",
+   "posted": "2026-08-24",
+   "xp": "7+y",
+   "derived_from": null,
+   "market": "US - Remote",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f7c0384d2872a98c",
+   "title": "UX/UI Expert - Professional Services",
+   "company": "OutSystems",
+   "url": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/US---Remote/UX-UI-Expert_R1638",
+   "source": "workday/outsystems",
+   "location": "US - Remote",
+   "bucket": "tiebreak",
+   "salary": "$157,250 - $191,475",
+   "posted": "2026-08-21",
+   "xp": "8–10y",
+   "derived_from": null,
+   "market": "US - Remote",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-29T11:17:45Z",
+   "first_run": "2026-08-29T11:17:45Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2401,7 +2401,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2421,7 +2421,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2441,7 +2441,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2461,7 +2461,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2481,7 +2481,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2501,7 +2501,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2521,7 +2521,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2541,7 +2541,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2561,7 +2561,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2581,7 +2581,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2601,7 +2601,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2621,7 +2621,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2641,7 +2641,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2661,7 +2661,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2681,7 +2681,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2701,7 +2701,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2721,7 +2721,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2741,7 +2741,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2761,7 +2761,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2781,7 +2781,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2801,7 +2801,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2821,7 +2821,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2841,7 +2841,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2861,7 +2861,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2881,7 +2881,7 @@
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2903,7 +2903,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T11:12:10Z",
    "first_run": "2026-08-29T11:12:10Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2923,7 +2923,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2943,7 +2943,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2963,7 +2963,7 @@
    "frameable": true,
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -2983,7 +2983,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3003,7 +3003,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3023,7 +3023,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3043,7 +3043,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3063,7 +3063,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3083,7 +3083,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3103,7 +3103,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3123,27 +3123,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "74d0ee2bc114e7d3",
-   "title": "Conceptual Art Director",
-   "company": "Superside",
-   "url": "https://jobs.lever.co/superside/a6b28001-e4b7-4253-bb2e-bc0ce8e74f07",
-   "source": "lever/superside",
-   "location": "Global",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2023-08-09T13:48:56.919000+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:59:33Z",
-   "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3163,67 +3143,27 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
-   "id": "0ac7d41a81a7c9e4",
-   "title": "UX Designer",
-   "company": "Volta",
-   "url": "https://jobs.ashbyhq.com/volta/b98857b1-a800-44a3-a6df-7b16f4456f06",
-   "source": "ashby/volta",
-   "location": "Palo Alto, CA",
-   "bucket": "tiebreak",
-   "salary": "$170K – $220K • Offers Equity • Offers Bonus",
-   "posted": "2026-07-28T18:25:21.000+00:00",
+   "id": "74d0ee2bc114e7d3",
+   "title": "Conceptual Art Director",
+   "company": "Superside",
+   "url": "https://jobs.lever.co/superside/a6b28001-e4b7-4253-bb2e-bc0ce8e74f07",
+   "source": "lever/superside",
+   "location": "Global",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2023-08-09T13:48:56.919000+00:00",
    "xp": null,
    "derived_from": null,
-   "market": "Palo Alto, CA",
+   "market": "Worldwide",
    "direct": true,
-   "frameable": false,
+   "frameable": true,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "78bb14aed4d8d8dc",
-   "title": "UX Researcher",
-   "company": "Volta",
-   "url": "https://jobs.ashbyhq.com/volta/1eb56494-2e2b-4969-a748-4e361f5fe5ca",
-   "source": "ashby/volta",
-   "location": "Palo Alto, CA",
-   "bucket": "tiebreak",
-   "salary": "$175K – $225K • Offers Equity • Offers Bonus",
-   "posted": "2026-07-28T18:05:09.935+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Palo Alto, CA",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:59:33Z",
-   "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "7bae8fc94faa99f2",
-   "title": "Design Lead",
-   "company": "Volta",
-   "url": "https://jobs.ashbyhq.com/volta/7b60ba39-47d5-4960-8e6d-b7713589630e",
-   "source": "ashby/volta",
-   "location": "Europe",
-   "bucket": "eu",
-   "salary": "€180K – €245K • Offers Equity • Offers Bonus • Multiple Ranges",
-   "posted": "2026-07-28T17:34:06.137+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:59:33Z",
-   "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3243,7 +3183,67 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "0ac7d41a81a7c9e4",
+   "title": "UX Designer",
+   "company": "Volta",
+   "url": "https://jobs.ashbyhq.com/volta/b98857b1-a800-44a3-a6df-7b16f4456f06",
+   "source": "ashby/volta",
+   "location": "Palo Alto, CA",
+   "bucket": "tiebreak",
+   "salary": "$170K – $220K • Offers Equity • Offers Bonus",
+   "posted": "2026-07-28T18:25:21.000+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Palo Alto, CA",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:59:33Z",
+   "first_run": "2026-08-28T23:59:33Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "78bb14aed4d8d8dc",
+   "title": "UX Researcher",
+   "company": "Volta",
+   "url": "https://jobs.ashbyhq.com/volta/1eb56494-2e2b-4969-a748-4e361f5fe5ca",
+   "source": "ashby/volta",
+   "location": "Palo Alto, CA",
+   "bucket": "tiebreak",
+   "salary": "$175K – $225K • Offers Equity • Offers Bonus",
+   "posted": "2026-07-28T18:05:09.935+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Palo Alto, CA",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:59:33Z",
+   "first_run": "2026-08-28T23:59:33Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "7bae8fc94faa99f2",
+   "title": "Design Lead",
+   "company": "Volta",
+   "url": "https://jobs.ashbyhq.com/volta/7b60ba39-47d5-4960-8e6d-b7713589630e",
+   "source": "ashby/volta",
+   "location": "Europe",
+   "bucket": "eu",
+   "salary": "€180K – €245K • Offers Equity • Offers Bonus • Multiple Ranges",
+   "posted": "2026-07-28T17:34:06.137+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:59:33Z",
+   "first_run": "2026-08-28T23:59:33Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3303,7 +3303,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3323,7 +3323,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3343,7 +3343,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3363,47 +3363,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "fb20d135f11ab1fb",
-   "title": "Graphic Designer",
-   "company": "BRND WGN",
-   "url": "https://brndwgn.bamboohr.com/careers/56",
-   "source": "bamboohr/brndwgn",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": "€30,000 — €40,000",
-   "posted": "2025-11-22",
-   "xp": "3–5y",
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "83f8520ae543fcda",
-   "title": "Senior Graphic Designer",
-   "company": "BRND WGN",
-   "url": "https://brndwgn.bamboohr.com/careers/59",
-   "source": "bamboohr/brndwgn",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-03-10",
-   "xp": "5–8y",
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3423,7 +3383,47 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "fb20d135f11ab1fb",
+   "title": "Graphic Designer",
+   "company": "BRND WGN",
+   "url": "https://brndwgn.bamboohr.com/careers/56",
+   "source": "bamboohr/brndwgn",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": "€30,000 — €40,000",
+   "posted": "2025-11-22",
+   "xp": "3–5y",
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "83f8520ae543fcda",
+   "title": "Senior Graphic Designer",
+   "company": "BRND WGN",
+   "url": "https://brndwgn.bamboohr.com/careers/59",
+   "source": "bamboohr/brndwgn",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-03-10",
+   "xp": "5–8y",
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3443,107 +3443,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "d6d6cd92049399ab",
-   "title": "UX & Product Design Lead",
-   "company": "bunny.net",
-   "url": "https://bunnynet.teamtailor.com/jobs/8105954-ux-product-design-lead",
-   "source": "teamtailor/bunnynet",
-   "location": "",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "Wed, 22 Jul 2026 08:55:53 +0200",
-   "xp": "7+y",
-   "derived_from": null,
-   "market": "Unclear",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "b04050849748e47d",
-   "title": "CPT-11376 Production Graphic Designer – Signage & Print",
-   "company": "20four7VA",
-   "url": "https://20four7va.breezy.hr/p/86d3a62eebf9-cpt-11376-production-graphic-designer-signage-print",
-   "source": "breezy/20four7va",
-   "location": "Worldwide",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-08-27T14:58:23.444Z",
-   "xp": null,
-   "derived_from": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "7f8fc61ea09244f5",
-   "title": "CPT-11423 Graphic Designer VA",
-   "company": "20four7VA",
-   "url": "https://20four7va.breezy.hr/p/3bcdcd536d3e-cpt-11423-graphic-designer-va",
-   "source": "breezy/20four7va",
-   "location": "Worldwide",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-08-20T13:05:49.655Z",
-   "xp": null,
-   "derived_from": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "444300a0edd673d8",
-   "title": "T-CPT-11377 WordPress Website Designer & Developer Virtual Assistant (Project-Based)",
-   "company": "20four7VA",
-   "url": "https://20four7va.breezy.hr/p/c207706f8e20-t-cpt-11377-wordpress-website-designer-developer-virtual-assistant-project-based",
-   "source": "breezy/20four7va",
-   "location": "Worldwide",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-08-11T12:53:16.776Z",
-   "xp": null,
-   "derived_from": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "4c883a2a743561c7",
-   "title": "Brand Designer",
-   "company": "Co–Star",
-   "url": "https://job-boards.greenhouse.io/costar/jobs/6126693004",
-   "source": "greenhouse/costar",
-   "location": "Remote",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-07-24T12:20:09-04:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Remote",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3563,47 +3463,87 @@
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
-   "id": "3a7d149e11a9f719",
-   "title": "Senior Product Designer - Compute, Nebius Console",
-   "company": "Nebius",
-   "url": "https://careers.nebius.com/?gh_jid=4955928101",
-   "source": "greenhouse/nebius",
-   "location": "Remote - Europe",
-   "bucket": "eu",
+   "id": "4c883a2a743561c7",
+   "title": "Brand Designer",
+   "company": "Co–Star",
+   "url": "https://job-boards.greenhouse.io/costar/jobs/6126693004",
+   "source": "greenhouse/costar",
+   "location": "Remote",
+   "bucket": "tiebreak",
    "salary": null,
-   "posted": "2026-08-24T10:32:29-04:00",
-   "xp": "6+y",
+   "posted": "2026-07-24T12:20:09-04:00",
+   "xp": null,
    "derived_from": null,
-   "market": "Europe",
+   "market": "Remote",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
-   "id": "052674c7bec1ba8b",
-   "title": "Structured Cabling Design Engineer",
-   "company": "Nebius",
-   "url": "https://careers.nebius.com/?gh_jid=4957416101",
-   "source": "greenhouse/nebius",
-   "location": "Remote - Europe",
-   "bucket": "eu",
+   "id": "b04050849748e47d",
+   "title": "CPT-11376 Production Graphic Designer – Signage & Print",
+   "company": "20four7VA",
+   "url": "https://20four7va.breezy.hr/p/86d3a62eebf9-cpt-11376-production-graphic-designer-signage-print",
+   "source": "breezy/20four7va",
+   "location": "Worldwide",
+   "bucket": "ww",
    "salary": null,
-   "posted": "2026-08-25T09:54:22-04:00",
-   "xp": "5+y",
+   "posted": "2026-08-27T14:58:23.444Z",
+   "xp": null,
    "derived_from": null,
-   "market": "Europe",
+   "market": "Worldwide",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "7f8fc61ea09244f5",
+   "title": "CPT-11423 Graphic Designer VA",
+   "company": "20four7VA",
+   "url": "https://20four7va.breezy.hr/p/3bcdcd536d3e-cpt-11423-graphic-designer-va",
+   "source": "breezy/20four7va",
+   "location": "Worldwide",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-08-20T13:05:49.655Z",
+   "xp": null,
+   "derived_from": null,
+   "market": "Worldwide",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "444300a0edd673d8",
+   "title": "T-CPT-11377 WordPress Website Designer & Developer Virtual Assistant (Project-Based)",
+   "company": "20four7VA",
+   "url": "https://20four7va.breezy.hr/p/c207706f8e20-t-cpt-11377-wordpress-website-designer-developer-virtual-assistant-project-based",
+   "source": "breezy/20four7va",
+   "location": "Worldwide",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-08-11T12:53:16.776Z",
+   "xp": null,
+   "derived_from": null,
+   "market": "Worldwide",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3623,167 +3563,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f2a9f1703f482230",
-   "title": "Senior Product Designer (Growth & Conversion)",
-   "company": "OnHires",
-   "url": "https://jobs.ashbyhq.com/onhires/a2525758-d6ea-4163-ab42-8785a4761abe",
-   "source": "ashby/onhires",
-   "location": "Europe (remote)",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-11T11:07:45.329+00:00",
-   "xp": "3–5y",
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "68d44203c0bf012d",
-   "title": "AI Graphic Designer - Performance Ads",
-   "company": "OnHires",
-   "url": "https://jobs.ashbyhq.com/onhires/c7f7a6d4-96e4-4ac9-9f47-04d6d0c5af91",
-   "source": "ashby/onhires",
-   "location": "Europe (remote)",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-12T12:36:26.057+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "dc75d1ae9b458bf3",
-   "title": "Product Designer",
-   "company": "Jito",
-   "url": "https://jobs.lever.co/jito/97151aba-e3eb-483d-b56c-34711b873760",
-   "source": "lever/jito",
-   "location": "Worldwide, but must be willing to attend regular EST meetings",
-   "bucket": "ww",
-   "salary": null,
-   "posted": "2026-08-04T20:39:25.274000+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Worldwide",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "e078201204b4e2e0",
-   "title": "Senior Product Designer EMEA",
-   "company": "WunderGraph",
-   "url": "https://jobs.ashbyhq.com/wundergraph/822c2b09-155e-448d-bb89-4976d0d99667",
-   "source": "ashby/wundergraph",
-   "location": "EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-20T12:15:03.777+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "EMEA",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "9e1ab1a327e2d6b3",
-   "title": "Staff Product Designer",
-   "company": "Canadian Journalism Foundation",
-   "url": "https://jobs.ashbyhq.com/walrus/e6c66391-6ac7-4251-b893-4a9fc6d63f5c",
-   "source": "ashby/walrus",
-   "location": "Europe (Remote)",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-08-14T19:23:31.054+00:00",
-   "xp": "8–10y",
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "7b6322d84568172a",
-   "title": "Senior Product Designer",
-   "company": "Paddle",
-   "url": "https://jobs.ashbyhq.com/paddle/e8297f02-7942-4772-a04d-3bdb61a1231d",
-   "source": "ashby/paddle",
-   "location": "UK, Portugal, Ireland",
-   "bucket": "pt",
-   "salary": null,
-   "posted": "2026-08-04T18:04:39.059+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "c862d06c892aff1b",
-   "title": "Senior Product Designer",
-   "company": "Secfix",
-   "url": "https://jobs.ashbyhq.com/secfix/3fd72701-24db-48a3-a3df-9c889d26b86b",
-   "source": "ashby/secfix",
-   "location": "Remote-Europe, Remote-Munich",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-07-31T08:30:59.943+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "a06c78e66ce38f72",
-   "title": "Product Designer",
-   "company": "Resend",
-   "url": "https://jobs.ashbyhq.com/resend/8d7e13ac-4c08-4981-9589-c163a4b29dee",
-   "source": "ashby/resend",
-   "location": "Americas, Europe",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-07-31T17:12:49.889+00:00",
-   "xp": null,
-   "derived_from": null,
-   "market": "Europe",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T23:18:18Z",
-   "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3803,7 +3583,227 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "3a7d149e11a9f719",
+   "title": "Senior Product Designer - Compute, Nebius Console",
+   "company": "Nebius",
+   "url": "https://careers.nebius.com/?gh_jid=4955928101",
+   "source": "greenhouse/nebius",
+   "location": "Remote - Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-24T10:32:29-04:00",
+   "xp": "6+y",
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "052674c7bec1ba8b",
+   "title": "Structured Cabling Design Engineer",
+   "company": "Nebius",
+   "url": "https://careers.nebius.com/?gh_jid=4957416101",
+   "source": "greenhouse/nebius",
+   "location": "Remote - Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-25T09:54:22-04:00",
+   "xp": "5+y",
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f2a9f1703f482230",
+   "title": "Senior Product Designer (Growth & Conversion)",
+   "company": "OnHires",
+   "url": "https://jobs.ashbyhq.com/onhires/a2525758-d6ea-4163-ab42-8785a4761abe",
+   "source": "ashby/onhires",
+   "location": "Europe (remote)",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-11T11:07:45.329+00:00",
+   "xp": "3–5y",
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "68d44203c0bf012d",
+   "title": "AI Graphic Designer - Performance Ads",
+   "company": "OnHires",
+   "url": "https://jobs.ashbyhq.com/onhires/c7f7a6d4-96e4-4ac9-9f47-04d6d0c5af91",
+   "source": "ashby/onhires",
+   "location": "Europe (remote)",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-12T12:36:26.057+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "d6d6cd92049399ab",
+   "title": "UX & Product Design Lead",
+   "company": "bunny.net",
+   "url": "https://bunnynet.teamtailor.com/jobs/8105954-ux-product-design-lead",
+   "source": "teamtailor/bunnynet",
+   "location": "",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "Wed, 22 Jul 2026 08:55:53 +0200",
+   "xp": "7+y",
+   "derived_from": null,
+   "market": "Unclear",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "e078201204b4e2e0",
+   "title": "Senior Product Designer EMEA",
+   "company": "WunderGraph",
+   "url": "https://jobs.ashbyhq.com/wundergraph/822c2b09-155e-448d-bb89-4976d0d99667",
+   "source": "ashby/wundergraph",
+   "location": "EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-20T12:15:03.777+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "EMEA",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "9e1ab1a327e2d6b3",
+   "title": "Staff Product Designer",
+   "company": "Canadian Journalism Foundation",
+   "url": "https://jobs.ashbyhq.com/walrus/e6c66391-6ac7-4251-b893-4a9fc6d63f5c",
+   "source": "ashby/walrus",
+   "location": "Europe (Remote)",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-08-14T19:23:31.054+00:00",
+   "xp": "8–10y",
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "7b6322d84568172a",
+   "title": "Senior Product Designer",
+   "company": "Paddle",
+   "url": "https://jobs.ashbyhq.com/paddle/e8297f02-7942-4772-a04d-3bdb61a1231d",
+   "source": "ashby/paddle",
+   "location": "UK, Portugal, Ireland",
+   "bucket": "pt",
+   "salary": null,
+   "posted": "2026-08-04T18:04:39.059+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "a06c78e66ce38f72",
+   "title": "Product Designer",
+   "company": "Resend",
+   "url": "https://jobs.ashbyhq.com/resend/8d7e13ac-4c08-4981-9589-c163a4b29dee",
+   "source": "ashby/resend",
+   "location": "Americas, Europe",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-07-31T17:12:49.889+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "c862d06c892aff1b",
+   "title": "Senior Product Designer",
+   "company": "Secfix",
+   "url": "https://jobs.ashbyhq.com/secfix/3fd72701-24db-48a3-a3df-9c889d26b86b",
+   "source": "ashby/secfix",
+   "location": "Remote-Europe, Remote-Munich",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-07-31T08:30:59.943+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Europe",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "dc75d1ae9b458bf3",
+   "title": "Product Designer",
+   "company": "Jito",
+   "url": "https://jobs.lever.co/jito/97151aba-e3eb-483d-b56c-34711b873760",
+   "source": "lever/jito",
+   "location": "Worldwide, but must be willing to attend regular EST meetings",
+   "bucket": "ww",
+   "salary": null,
+   "posted": "2026-08-04T20:39:25.274000+00:00",
+   "xp": null,
+   "derived_from": null,
+   "market": "Worldwide",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T23:18:18Z",
+   "first_run": "2026-08-28T23:18:18Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3823,7 +3823,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3947,7 +3947,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3967,7 +3967,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -3987,147 +3987,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "cc2da5874ee2cbff",
-   "title": "Senior Design Researcher - User Science",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/7528950",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-01-11T11:27:41-05:00",
-   "xp": null,
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "7b992fb7bbf43429",
-   "title": "Staff Design Engineer - Cloud Networking UX",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/7574469",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2026-01-29T09:30:50-05:00",
-   "xp": "8+y",
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f917987db6450816",
-   "title": "UX Designer - Design systems",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/7043028",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2025-07-04T03:38:19-04:00",
-   "xp": null,
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "b6650afcb5c635f1",
-   "title": "UX Designer - Developer experience",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/7043026",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2025-07-04T03:30:57-04:00",
-   "xp": null,
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f44fc78821abdd81",
-   "title": "UX Designer - Infrastructure",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/6072086",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2025-01-28T04:50:31-05:00",
-   "xp": null,
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "dfebb9269da51640",
-   "title": "Visual Designer",
-   "company": "Canonical",
-   "url": "https://job-boards.greenhouse.io/canonical/jobs/5326986",
-   "source": "greenhouse/canonical",
-   "location": "Home based - EMEA",
-   "bucket": "eu",
-   "salary": null,
-   "posted": "2023-08-29T11:10:54-04:00",
-   "xp": null,
-   "derived_from": "74c44fcebaa771da",
-   "market": "EMEA",
-   "direct": true,
-   "frameable": true,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "05b7eb627ba5c0e7",
-   "title": "Brand Designer",
-   "company": "Mayflower",
-   "url": "https://mayflower.recruitee.com/o/brand-designer",
-   "source": "recruitee/mayflower",
-   "location": "Remote job",
-   "bucket": "tiebreak",
-   "salary": null,
-   "posted": "2026-08-14 08:56:41 UTC",
-   "xp": null,
-   "derived_from": "4999834a0de25100",
-   "market": "Remote job",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T22:55:06Z",
-   "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4147,7 +4007,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4167,7 +4027,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4187,7 +4047,147 @@
    "frameable": false,
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "cc2da5874ee2cbff",
+   "title": "Senior Design Researcher - User Science",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/7528950",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-01-11T11:27:41-05:00",
+   "xp": null,
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "7b992fb7bbf43429",
+   "title": "Staff Design Engineer - Cloud Networking UX",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/7574469",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2026-01-29T09:30:50-05:00",
+   "xp": "8+y",
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f917987db6450816",
+   "title": "UX Designer - Design systems",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/7043028",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2025-07-04T03:38:19-04:00",
+   "xp": null,
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "b6650afcb5c635f1",
+   "title": "UX Designer - Developer experience",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/7043026",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2025-07-04T03:30:57-04:00",
+   "xp": null,
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f44fc78821abdd81",
+   "title": "UX Designer - Infrastructure",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/6072086",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2025-01-28T04:50:31-05:00",
+   "xp": null,
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "dfebb9269da51640",
+   "title": "Visual Designer",
+   "company": "Canonical",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/5326986",
+   "source": "greenhouse/canonical",
+   "location": "Home based - EMEA",
+   "bucket": "eu",
+   "salary": null,
+   "posted": "2023-08-29T11:10:54-04:00",
+   "xp": null,
+   "derived_from": "74c44fcebaa771da",
+   "market": "EMEA",
+   "direct": true,
+   "frameable": true,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "05b7eb627ba5c0e7",
+   "title": "Brand Designer",
+   "company": "Mayflower",
+   "url": "https://mayflower.recruitee.com/o/brand-designer",
+   "source": "recruitee/mayflower",
+   "location": "Remote job",
+   "bucket": "tiebreak",
+   "salary": null,
+   "posted": "2026-08-14 08:56:41 UTC",
+   "xp": null,
+   "derived_from": "4999834a0de25100",
+   "market": "Remote job",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T22:55:06Z",
+   "first_run": "2026-08-28T22:55:06Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4304,7 +4304,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T15:01:40Z",
    "first_run": "2026-08-28T15:01:40Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4326,7 +4326,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4348,7 +4348,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4370,7 +4370,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4392,7 +4392,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4414,7 +4414,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4436,7 +4436,7 @@
    "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4458,7 +4458,7 @@
    "apply_kind": "careers",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4480,7 +4480,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4502,7 +4502,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4522,7 +4522,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4544,7 +4544,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4566,7 +4566,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4588,7 +4588,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4610,7 +4610,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4632,7 +4632,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4654,7 +4654,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4688,7 +4688,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4710,7 +4710,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4732,7 +4732,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4754,7 +4754,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4776,7 +4776,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4798,7 +4798,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4820,7 +4820,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4842,7 +4842,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4864,7 +4864,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4884,7 +4884,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4904,7 +4904,7 @@
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4924,7 +4924,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4944,7 +4944,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4964,7 +4964,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -4984,7 +4984,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -5004,27 +5004,7 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
-   "active": true
-  },
-  {
-   "id": "f62eb5a97ddb4d3e",
-   "title": "Design Engineer - EU",
-   "company": "Ashby",
-   "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
-   "source": "ashby/ashby",
-   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
-   "bucket": "pt",
-   "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
-   "posted": "2026-06-12T20:19:00.233+00:00",
-   "xp": "2+y",
-   "derived_from": null,
-   "market": "Portugal",
-   "direct": true,
-   "frameable": false,
-   "first_seen": "2026-08-28T10:22:12Z",
-   "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -5044,7 +5024,27 @@
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
+   "active": true
+  },
+  {
+   "id": "f62eb5a97ddb4d3e",
+   "title": "Design Engineer - EU",
+   "company": "Ashby",
+   "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
+   "source": "ashby/ashby",
+   "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
+   "bucket": "pt",
+   "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
+   "posted": "2026-06-12T20:19:00.233+00:00",
+   "xp": "2+y",
+   "derived_from": null,
+   "market": "Portugal",
+   "direct": true,
+   "frameable": false,
+   "first_seen": "2026-08-28T10:22:12Z",
+   "first_run": "2026-08-28T10:22:12Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {
@@ -5066,7 +5066,7 @@
    "apply_kind": "direct",
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
-   "last_seen": "2026-08-29T11:42:36Z",
+   "last_seen": "2026-08-29T11:48:11Z",
    "active": true
   },
   {

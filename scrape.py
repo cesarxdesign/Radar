@@ -781,7 +781,9 @@ def src_successfactors(host, company, loc=""):
     """SAP SuccessFactors RMK careers sites (custom domains, server-rendered
     search). One query per design keyword, dedupe by numeric job id."""
     seen, out = set(), []
-    for kw in ("designer", "design"):
+    # RMK search drops short tokens - "ux" alone misses what "UX Analyst"
+    # finds. Query phrases, dedupe by id.
+    for kw in ("designer", "design", "UX designer", "UX analyst", "user experience"):
         try:
             html = fetch(f"https://{host}/search/?q={urllib.parse.quote(kw)}"
                          f"&locationsearch={urllib.parse.quote(loc)}", timeout=30)

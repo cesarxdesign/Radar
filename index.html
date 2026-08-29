@@ -264,6 +264,7 @@ function propagateVariants() {
   if (changed) { save(); scheduleState(); }
 }
 function unsureReason(j) {
+  if (j.why) return j.why;  // the judge pass names the failing criterion
   const loc = (j.location || "").trim();
   if (!loc) return "the source lists no location at all";
   if (/hybrid/i.test(loc)) return "hybrid in \u201c" + loc + "\u201d";
@@ -493,12 +494,15 @@ function card(j, opts) {
     '<div class="jacts">' + (
       opts.done
         ? '<button class="restore">restore</button>'
+        : opts.unsure
+        ? '<button class="m2o">move to open</button><button class="discard">discard</button>'
         : '<button class="applied">applied</button>' +
           '<button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
+  on(".m2o", () => { state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); render(); });
   on(".restore", () => {
     const k = variantKey(j);
     DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) delete state.jobs[x.id]; });
@@ -546,7 +550,7 @@ function render() {
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
-    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done });
+    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done, unsure: tab === "unsure" });
     // company grouping - sticky per run: once grouped this run, a company's
     // rows stay under their header even when triage leaves just one behind
     let G = { run: null, tabs: {} };

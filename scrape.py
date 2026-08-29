@@ -23,9 +23,10 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) JobRadar/1.0 (personal job
 NOW = datetime.now(timezone.utc)
 RUN_ID = NOW.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-INC = re.compile(CONFIG["title_include"], re.I)
+NET = re.compile(r"design|product|\bux\b|\bui\b", re.I)
+DESIGN_SIGNAL = re.compile(r"design|\bux\b|\bui\b", re.I)
 EXC_JUNIOR = re.compile(CONFIG["title_exclude_junior"], re.I)
-EXC_FIELD = re.compile(CONFIG["title_exclude_field"], re.I)
+EXC_SURE = re.compile(CONFIG["title_exclude_sure"], re.I)
 
 # ---------------------------------------------------------------- fetch
 
@@ -40,8 +41,13 @@ def fetch_json(url, timeout=30):
 # ---------------------------------------------------------------- filters
 
 def title_ok(title):
+    """Pass 1: wide net (design/product/ux/ui in the title) - recall is sacred.
+    Only for-sure non-design phrases are cut here, and never when the title
+    carries a design signal. The judge pass reads the JD and does precision."""
     t = title or ""
-    return bool(INC.search(t)) and not EXC_FIELD.search(t)
+    if not NET.search(t):
+        return False
+    return not (EXC_SURE.search(t) and not DESIGN_SIGNAL.search(t))
 
 def salary_top(s):
     """Highest figure in a salary string, normalized to plain units."""
@@ -56,22 +62,25 @@ def salary_top(s):
     return best
 
 # A JD written in another language means they want that language - cut it.
+# English and Portuguese are César's languages; everything else is a red flag.
 # The JD text decides, never the company's nationality.
 EN_STOP = re.compile(
     r"\b(the|and|you|we|with|for|our|will|team|are|is|to|of|in|be|your)\b", re.I)
-NON_EN_STOP = re.compile(
+PT_STOP = re.compile(
+    r"\b(vaga|você|voce|nós|não|nao|uma|dos|das|será|sera|para|equipa|"
+    r"candidatura|função|experiência|conhecimentos|procuramos)\b", re.I)
+OTHER_STOP = re.compile(
     r"\b(und|oder|für|mit|wir|der|die|das|nicht|bei|sind|werden|eine[nr]?|"
     r"avec|pour|dans|les|des|une|vous|nous|sont|être|"
-    r"para|con|una|los|las|nuestro|equipo|"
-    r"vaga|você|nós|não|uma|dos|será|"
+    r"con|una|los|las|nuestro|equipo|buscamos|"
     r"wij|het|een|niet|voor|met|onze)\b", re.I)
 
-def english_jd(text):
-    """False when the JD is clearly written in another language."""
+def jd_language_ok(text):
+    """True for English or Portuguese JDs; False when clearly another language."""
     t = (text or "")[:4000]
     if len(t) < 120:
         return True  # too little text to judge
-    return len(EN_STOP.findall(t)) >= len(NON_EN_STOP.findall(t))
+    return len(EN_STOP.findall(t)) + len(PT_STOP.findall(t)) >= len(OTHER_STOP.findall(t))
 
 PT_RE = re.compile(
     r"\b(portugal|lisbon|lisboa|porto(?!\s*alegre)|braga|coimbra|aveiro|faro|"
@@ -134,13 +143,8 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
         return "eu"
     if WW_RE.search(loc):
         return "ww"
-    # Timezone restrictions: Portugal is UTC+0 (+1 in summer).
-    if timezones:
-        if 0 in timezones or 1 in timezones:
-            return "ww"
-        if any(isinstance(t, (int, float)) and -2 <= t <= 3 for t in timezones):
-            return "tiebreak"  # near-PT window, worth a look
-        return None  # window is explicitly far from Portugal
+    # Timezones are NOT a criterion (César, 2026-08-29): if they accept
+    # Portugal but want 10pm shifts, that's his call to make, not the radar's.
     if loc:
         if ELSEWHERE_RE.search(loc):
             # RRS parity: a REMOTE role stated elsewhere might still hire
@@ -331,7 +335,7 @@ def src_remoteok():
         if not isinstance(j, dict) or not j.get("position"):
             continue
         tags = " ".join(j.get("tags") or [])
-        if not (INC.search(j["position"]) or re.search(r"\b(design|ux|ui)\b", tags, re.I)):
+        if not (title_ok(j["position"]) or re.search(r"\b(design|ux|ui)\b", tags, re.I)):
             continue
         lo, hi = j.get("salary_min") or 0, j.get("salary_max") or 0
         sal = fmt_range(lo, hi, "USD") if (lo or hi) else None
@@ -1657,7 +1661,7 @@ def run():
     for j in raw:
         if not title_ok(j.get("title")):
             continue
-        if not english_jd(j.get("desc")):
+        if not jd_language_ok(j.get("desc")):
             continue  # JD in another language - they want that language
         if posted_cutoff:
             pdate = parse_posted(j.get("posted"))
@@ -1884,6 +1888,27 @@ def run():
             j["active"] = False
         if j["last_seen"] >= cutoff:
             jobs_out.append(j)
+
+    # Judge verdicts (the JD-reading pass) are authoritative once given:
+    # cut roles go dark for good, judged buckets override classify()'s guess.
+    # Unjudged actives carry judged:false until the judge pass reads them.
+    judged = {}
+    jfile = ROOT / "data" / "judged.json"
+    if jfile.exists():
+        judged = json.loads(jfile.read_text()).get("jobs", {})
+    for j in jobs_out:
+        v = judged.get(j["id"])
+        if not v:
+            j["judged"] = False
+            continue
+        j["judged"] = True
+        if v["bucket"] == "cut":
+            j["active"] = False
+        else:
+            j["bucket"] = v["bucket"]
+            j["market"] = market_label(v["bucket"], j.get("location"))
+            if v.get("why"):
+                j["why"] = v["why"]
 
     # JDs for the overnight runner: every active role (facts parsing), the
     # fresh non-tiebreak ones flagged for CV generation.

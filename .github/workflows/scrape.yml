@@ -23,3 +23,38 @@ jobs:
           git diff --cached --quiet || git commit -m "nightly scrape $(date -u +%F)"
           git pull --rebase origin main
           git push
+  judge:
+    # the JD-reading pass: role + place verdicts on new roles (cheap; CV
+    # creation stays manual-only - this job never tunes anything)
+    needs: scrape
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: nightcv
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: install claude cli
+        run: npm install -g @anthropic-ai/claude-code
+      - name: judge new roles
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          git pull --rebase origin main
+          python3 nightjudge.py
+      - name: push verdicts
+        run: |
+          git config user.name "Cesar Garcia"
+          git config user.email "cesarxdesign@gmail.com"
+          git add data/judged.json data/jobs.json
+          git diff --cached --quiet && exit 0
+          git commit -m "judge pass $(date -u +%F)"
+          git pull --rebase --autostash origin main
+          git push

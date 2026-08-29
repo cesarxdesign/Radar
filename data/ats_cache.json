@@ -227,6 +227,10 @@
   "slug": "meta",
   "via": "e7f9da027d8cab96"
  },
+ "micro1": {
+  "checked": "2026-08-29T19:31:44Z",
+  "kind": null
+ },
  "miro": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "ashby",
@@ -305,6 +309,12 @@
   "kind": "greenhouse",
   "slug": "thatch",
   "via": "6b19e78d6eb4aafd"
+ },
+ "truelogic": {
+  "checked": "2026-08-29T19:31:44Z",
+  "kind": "ashby",
+  "slug": "truelogic",
+  "via": "97da1d5c57fc2479"
  },
  "vercel": {
   "checked": "2026-08-29T11:17:45Z",

@@ -411,8 +411,65 @@ def src_landingjobs():
 
 # --- ATS watchlist -------------------------------------------------
 
-def src_greenhouse(slug):
-    d = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true")
+DJW_ATS_RE = re.compile(
+    r'https?://[^"\']*(?:greenhouse\.io|lever\.co|ashbyhq\.com|workable\.com|'
+    r'recruitee\.com|teamtailor\.com|bamboohr\.com|breezy\.hr|myworkdayjobs\.com|'
+    r'smartrecruiters\.com|applytojob\.com|ats\.rippling\.com|jobs\.personio\.|'
+    r'pinpointhq\.com|careers-page\.com|freshteam\.com|zohorecruit\.)[^"\']*')
+
+def src_designjobsworld():
+    """designjobs.world republishes ATS design roles with JSON-LD JobPosting
+    markup and a direct apply link - their recent-jobs sitemap is the delta.
+    Using the ATS link as our url makes the resolver learn each board."""
+    xml = fetch("https://designjobs.world/recent_jobs.xml")
+    urls = re.findall(r"<loc>(https://designjobs\.world/jobs/[^<]+)</loc>", xml)[:250]
+    out = []
+    for u in urls:
+        try:
+            h = fetch(u, timeout=15)
+        except Exception:
+            continue
+        ld = None
+        for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+            try:
+                d = json.loads(x)
+                if d.get("@type") == "JobPosting":
+                    ld = d
+                    break
+            except Exception:
+                pass
+        if not ld or not ld.get("title"):
+            continue
+        m = DJW_ATS_RE.search(h)
+        locs = ld.get("jobLocation") or []
+        if isinstance(locs, dict):
+            locs = [locs]
+        parts = []
+        for l in locs:
+            a = (l.get("address") or {}) if isinstance(l, dict) else {}
+            if isinstance(a, dict):
+                parts += [a.get("addressLocality"), a.get("addressCountry")]
+        alr = ld.get("applicantLocationRequirements") or []
+        if isinstance(alr, dict):
+            alr = [alr]
+        parts += [x.get("name") for x in alr if isinstance(x, dict)]
+        loc = ", ".join(dict.fromkeys(str(p) for p in parts if p))
+        raw = ld.get("description") or ""
+        out.append({
+            "source": "designjobsworld",
+            "company": (ld.get("hiringOrganization") or {}).get("name") or "?",
+            "title": ld.get("title"), "url": (m.group(0) if m else u),
+            "location": loc,
+            "remote": bool(re.search(r"remote|anywhere|telecommute",
+                                     f"{loc} {ld.get('jobLocationType') or ''}", re.I)) or None,
+            "salary": None, "posted": ld.get("datePosted"),
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
+def src_greenhouse(slug, eu=False):
+    api = "boards-api.eu.greenhouse.io" if eu else "boards-api.greenhouse.io"
+    d = fetch_json(f"https://{api}/v1/boards/{slug}/jobs?content=true")
     out = []
     for j in d.get("jobs", []):
         loc = (j.get("location") or {}).get("name", "")
@@ -993,7 +1050,8 @@ def registry_tasks():
     for e in REGISTRY.get("recruitee", []):
         tasks.append((f"recruitee/{e['slug']}", lambda e=e: brand(src_recruitee(e["slug"]), e)))
     for e in REGISTRY.get("greenhouse", []):
-        tasks.append((f"greenhouse/{e['slug']}", lambda e=e: src_greenhouse(e["slug"])))
+        tasks.append((f"greenhouse/{e['slug']}", lambda e=e: brand(
+            src_greenhouse(e["slug"], e.get("eu", False)), e)))
     for e in REGISTRY.get("lever", []):
         tasks.append((f"lever/{e['slug']}", lambda e=e: brand(
             src_lever(e["slug"], e.get("eu", False)), e)))
@@ -1058,7 +1116,7 @@ def parse_board_url(u):
     m = re.search(r"https?://apply\.workable\.com/([a-z0-9-]+)/", u, re.I)
     if m and m.group(1).lower() not in ("j", "api"):
         return "workable", {"slug": m.group(1).lower()}
-    m = re.search(r"https?://jobs\.smartrecruiters\.com/([A-Za-z0-9]+)/", u)
+    m = re.search(r"https?://jobs\.smartrecruiters\.com/([A-Za-z0-9-]+)/", u)
     if m:
         return "smartrecruiters", {"slug": m.group(1)}
     m = re.search(r"https?://([a-z0-9-]+)\.teamtailor\.com", u, re.I)
@@ -1073,9 +1131,12 @@ def parse_board_url(u):
     m = re.search(r"https?://(?:www\.)?careers-page\.com/([a-z0-9-]+)", u, re.I)
     if m:
         return "manatal", {"slug": m.group(1).lower()}
-    m = re.search(r"https?://(?:job-boards\.|boards\.)greenhouse\.io/([A-Za-z0-9_-]+)", u)
-    if m and m.group(1) != "embed":
-        return "greenhouse", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://(?:job-boards|boards)\.(eu\.)?greenhouse\.io/([A-Za-z0-9_-]+)", u)
+    if m and m.group(2) != "embed":
+        ent = {"slug": m.group(2).lower()}
+        if m.group(1):  # EU-hosted greenhouse boards live on a separate API host
+            ent["eu"] = True
+        return "greenhouse", ent
     m = re.search(r"https?://jobs(\.eu)?\.lever\.co/([A-Za-z0-9_-]+)", u)
     if m:
         ent = {"slug": m.group(2).lower()}
@@ -1603,6 +1664,7 @@ def run():
         ("jobicy", src_jobicy), ("workingnomads", src_workingnomads),
         ("remoteok", src_remoteok), ("arbeitnow", src_arbeitnow),
         ("weworkremotely", src_wwr), ("landingjobs", src_landingjobs),
+        ("designjobsworld", src_designjobsworld),
     ]
     wl = CONFIG.get("watchlist", {})
     tasks = list(aggregators)

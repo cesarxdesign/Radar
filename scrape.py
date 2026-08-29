@@ -418,6 +418,7 @@ def src_greenhouse(slug):
             "title": j.get("title"), "url": j.get("absolute_url"),
             "location": loc, "remote": bool(REMOTE_RE.search(loc)),
             "salary": None, "posted": j.get("first_published"),
+            "updated": j.get("updated_at"),
             "desc": strip_html(raw), "raw": raw,
         })
     return out
@@ -1666,6 +1667,7 @@ def run():
             "location": (j.get("location") or "").strip(),
             "bucket": bucket, "salary": salary,
             "posted": j.get("posted"),
+            "updated": j.get("updated"),
             "xp": find_xp(j.get("desc")),
             "derived_from": j.get("derived_from"),
             "market": market_label(bucket, j.get("location")),
@@ -1846,6 +1848,8 @@ def run():
             j["xp"] = prev["xp"]
         if prev and not j.get("posted") and prev.get("posted"):
             j["posted"] = prev["posted"]
+        if prev and not j.get("updated") and prev.get("updated"):
+            j["updated"] = prev["updated"]
         j["first_seen"] = prev["first_seen"] if prev else RUN_ID
         j["first_run"] = prev.get("first_run", prev["first_seen"]) if prev else RUN_ID
         j["last_seen"] = RUN_ID

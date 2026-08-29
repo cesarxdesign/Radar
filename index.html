@@ -219,8 +219,10 @@ function norm(s) { return (s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").tr
 function when(j) { const t = new Date(j.posted || j.first_seen).getTime(); return isNaN(t) ? 0 : t; }
 function days(j) {
   // posted only - first_seen is when WE first saw it, not when it was published
-  const t = new Date(j.posted || 0).getTime();
-  if (!j.posted || isNaN(t)) return null;
+  // last touched by the company where the source exposes it, else published
+  const d = j.updated || j.posted;
+  const t = new Date(d || 0).getTime();
+  if (!d || isNaN(t)) return null;
   return Math.max(0, Math.floor((Date.now() - t) / 864e5));
 }
 function daysCell(dd, j) {

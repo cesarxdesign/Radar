@@ -404,8 +404,13 @@ function renderPreview() {
   const cvBtn = document.getElementById("pv-cv");
   const cv = CVS[j.id];
   cvBtn.style.display = cv ? "" : "none";
-  cvBtn.title = (cv && cv.label) || "reveal the tailored CV in Finder";
-  cvBtn.onclick = e => {
+  // night-run CVs live in the repo (cvs/<id>/...) and open anywhere;
+  // pre-move CVs are Mac paths and still go through the local reveal
+  const cvWeb = cv && cv.path && !cv.path.startsWith("/") && !cv.path.startsWith("~");
+  cvBtn.title = (cv && cv.label) || (cvWeb ? "open the tailored CV" : "reveal the tailored CV in Finder");
+  cvBtn.href = cvWeb ? encodeURI(cv.path) : "#";
+  cvBtn.target = cvWeb ? "_blank" : "";
+  cvBtn.onclick = cvWeb ? null : e => {
     e.preventDefault();
     fetch("http://127.0.0.1:8765/api/reveal", { method: "POST", mode: "no-cors",
       body: JSON.stringify({ path: cv.path }) })

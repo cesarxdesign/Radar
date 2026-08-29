@@ -1,0 +1,37 @@
+name: night cv
+on:
+  workflow_run:
+    workflows: ["nightly scrape"]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nightcv
+  cancel-in-progress: false
+jobs:
+  tune:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: cesarxdesign/CV-Tuner
+          path: tcv
+      - name: install claude cli
+        run: npm install -g @anthropic-ai/claude-code
+      - name: tune CVs on the subscription
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: python3 nightcv_cloud.py
+      - name: push results
+        run: |
+          git config user.email cesarxdesign@gmail.com
+          git config user.name "Cesar Garcia"
+          git add data/facts.json data/cvdone.json data/cvs.json cvs/
+          git diff --cached --quiet && exit 0
+          git commit -m "night run: tuned CVs"
+          git pull --rebase --autostash origin main
+          git push origin main

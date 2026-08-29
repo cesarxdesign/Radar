@@ -163,8 +163,7 @@ footer .bad { color: var(--danger); }
     <button id="savetok">Save</button><span class="sync" id="syncmsg"></span>
   </div>
   <nav class="tabs">
-    <button class="tab on" data-tab="direct">Direct<span class="n" id="c-direct"></span></button>
-    <button class="tab" data-tab="indirect">Indirect<span class="n" id="c-indirect"></span></button>
+    <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
     <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
     <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
   </nav>
@@ -200,7 +199,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, FACTS = {}, JDS = null, CVS = {}, tab = "direct";
+let DATA = null, FACTS = {}, JDS = null, CVS = {}, tab = "open";
 let SEL = null, PV = null;
 
 // ---------- helpers ----------
@@ -301,8 +300,7 @@ function goToJob(id) {
   const j = DATA.jobs.find(x => x.id === id && x.active);
   if (!j) return;
   const st = state.jobs[id];
-  tab = st === "applied" ? "applied" : st === "discarded" ? "discarded"
-      : j.direct ? "direct" : "indirect";
+  tab = st === "applied" ? "applied" : st === "discarded" ? "discarded" : "open";
   document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.tab === tab));
   SEL = id;
   render();
@@ -450,33 +448,25 @@ function render() {
   const bydate = (a, b2) => when(b2) - when(a);
   const act = DATA.jobs.filter(j => j.active).sort(bydate);
   const inbox = act.filter(j => !state.jobs[j.id]);
-  const split = w => {
-    const pool = inbox.filter(j => !!j.direct === w);
-    return {
-      fresh: pool.filter(j => j.first_run === DATA.run_id),
-      rest: pool.filter(j => j.first_run !== DATA.run_id),
-    };
+  const O = {
+    fresh: inbox.filter(j => j.first_run === DATA.run_id),
+    rest: inbox.filter(j => j.first_run !== DATA.run_id),
   };
-  const D = split(true), I = split(false);
   const applied = act.filter(j => state.jobs[j.id] === "applied");
   const discarded = act.filter(j => state.jobs[j.id] === "discarded");
 
-  document.getElementById("c-direct").textContent = D.fresh.length + D.rest.length || "";
-  document.getElementById("c-indirect").textContent = I.fresh.length + I.rest.length || "";
+  document.getElementById("c-open").textContent = O.fresh.length + O.rest.length || "";
   document.getElementById("c-applied").textContent = applied.length || "";
   document.getElementById("c-discarded").textContent = discarded.length || "";
 
-  const visible = (tab === "direct" ? [...D.fresh, ...D.rest]
-                  : tab === "indirect" ? [...I.fresh, ...I.rest]
+  const visible = (tab === "open" ? [...O.fresh, ...O.rest]
                   : tab === "applied" ? applied : discarded);
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
-  if (tab === "direct" || tab === "indirect") {
-    const S = tab === "direct" ? D : I;
-    section(root, "New overnight", S.fresh, {});
-    section(root, "Active", S.rest, {});
-    if (!S.fresh.length && !S.rest.length)
-      root.innerHTML = '<div class="empty">' + (tab === "direct"
-        ? "No direct roles match." : "Nothing here — every find has a source link.") + "</div>";
+  if (tab === "open") {
+    section(root, "New overnight", O.fresh, {});
+    section(root, "Active", O.rest, {});
+    if (!O.fresh.length && !O.rest.length)
+      root.innerHTML = '<div class="empty">No open roles match.</div>';
   } else if (tab === "applied") {
     section(root, "Applied", applied, { done: true });
     if (!applied.length) root.innerHTML = '<div class="empty">Nothing applied yet.</div>';

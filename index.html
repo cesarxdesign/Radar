@@ -49,7 +49,7 @@ body {
 .brief { padding: 22px; overflow-y: auto; width: 100%; flex: 1; min-height: 0; }
 .brief .tiles { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px; }
 .brief h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin: 18px 0 8px; }
-.mailconf { font-size: 13px; line-height: 1.5; border-left: 2px solid var(--line); padding: 8px 12px; margin: 4px 0 12px; max-height: 220px; overflow: auto; }
+.mailconf { font-size: 13.5px; line-height: 1.55; border-left: 2px solid var(--acc); padding: 8px 12px; margin: 4px 0 16px; }
 .mailconf b { display: block; }
 .mailconf .mailmeta { display: block; color: var(--mut); margin: 2px 0 8px; }
 .brief ul { padding-left: 18px; font-size: 14px; }
@@ -411,7 +411,9 @@ function renderPreview() {
   const body = document.getElementById("pv-body");
   const why = bucketOf(j) === "tiebreak"
     ? '<div class="unsure-why">Unsure because ' + esc(unsureReason(j)) + "</div>" : "";
-  if (j.frameable) {
+  const mail = mailFor(j);
+  // on the Maybe tab the email IS the preview - never the apply page
+  if (j.frameable && !(tab === "maybe" && mail)) {
     body.innerHTML = why + '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
     return;
   }
@@ -419,8 +421,9 @@ function renderPreview() {
   const pt = ptSituation(j, f);
   const dd = days(j);
   let h = why + '<div class="brief">' +
+    (tab === "maybe" ? mail : "") +
     '<a class="goapply" href="' + esc(target) + '" target="_blank" rel="noopener">Open application ↗</a>' +
-    '<div class="noframe">this site refuses embedding — the form opens in a new tab</div>' +
+    (j.frameable ? "" : '<div class="noframe">this site refuses embedding — the form opens in a new tab</div>') +
     '<div class="tiles">' +
       cell("salary", esc(f.salary || j.salary || ""), (f.salary || j.salary) ? "yes" : "dim") +
       cell("remote", esc(f.remote || ""), "") +
@@ -428,7 +431,7 @@ function renderPreview() {
       cell("years", esc(f.years_experience || (j.xp || "").replace(/y$/, "")), "") +
       daysCell(dd, j) +
     "</div>";
-  h += mailFor(j);
+  h += tab === "maybe" ? "" : mail;
   if (j.board_roles && j.board_roles.length)
     h += "<h3>Live on their board right now</h3><ul>" + j.board_roles.map(r =>
       '<li><a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" +

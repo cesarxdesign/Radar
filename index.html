@@ -582,12 +582,14 @@ function render() {
     let G = { run: null, tabs: {} };
     try { G = JSON.parse(localStorage.getItem("radar_groups") || "null") || G; } catch (e) {}
     if (G.run !== DATA.run_id) G = { run: DATA.run_id, tabs: {} };
-    const gset = G.tabs[tab] = G.tabs[tab] || {};
-    const byCo = {};
+    // proto-less maps: a company named "Constructor" must not collide with
+    // Object.prototype (norm("Constructor") === "constructor")
+    const gset = G.tabs[tab] = Object.assign(Object.create(null), G.tabs[tab]);
+    const byCo = Object.create(null);
     visible.forEach(j => { const c = norm(j.company); (byCo[c] = byCo[c] || []).push(j); });
     for (const c in byCo) if (byCo[c].length >= 2) gset[c] = true;
     try { localStorage.setItem("radar_groups", JSON.stringify(G)); } catch (e) {}
-    const emitted = {};
+    const emitted = Object.create(null);
     visible.forEach(j => {
       const c = norm(j.company);
       if (!gset[c]) { root.appendChild(card(j, opts(j))); return; }

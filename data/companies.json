@@ -582,11 +582,6 @@
    "slug": "replit",
    "company": "Replit",
    "via": "djw-census"
-  },
-  {
-   "slug": "Backmarket",
-   "company": "Backmarket",
-   "via": "djw-census"
   }
  ],
  "bamboohr": [
@@ -1332,24 +1327,9 @@
    "via": "djw-census"
   },
   {
-   "slug": "figma",
-   "company": "Figma",
-   "via": "djw-census"
-  },
-  {
    "slug": "nscaleoperationsukltd",
    "eu": true,
    "company": "NSCALE",
-   "via": "djw-census"
-  },
-  {
-   "slug": "getyourguide",
-   "company": "GetYourGuide",
-   "via": "djw-census"
-  },
-  {
-   "slug": "intercom",
-   "company": "Intercom",
    "via": "djw-census"
   },
   {
@@ -1368,11 +1348,6 @@
    "slug": "raisin",
    "eu": true,
    "company": "Raisin",
-   "via": "djw-census"
-  },
-  {
-   "slug": "doctolib",
-   "company": "Doctolib (Germany)",
    "via": "djw-census"
   },
   {
@@ -1608,11 +1583,6 @@
   {
    "slug": "ivo",
    "company": "Ivo",
-   "via": "djw-census"
-  },
-  {
-   "slug": "aircall",
-   "company": "Aircall",
    "via": "djw-census"
   }
  ],

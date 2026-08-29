@@ -152,7 +152,7 @@ footer .bad { color: var(--danger); }
   <header>
     <h1>JobRadar</h1>
     <span class="stamp" id="stamp">loading…</span>
-    <button class="scrape" id="scrape">↻ Scrape now</button>
+    <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
     <button class="gear" id="gear" title="Settings">⚙</button>
   </header>
   <div class="settings" id="settings">
@@ -166,6 +166,7 @@ footer .bad { color: var(--danger); }
     <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
     <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
     <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
+    <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
   </nav>
   <main id="listcol"><div id="sections"></div></main>
   <aside id="preview">
@@ -258,35 +259,47 @@ function ghHeaders() {
 function setSyncMsg(m) { document.getElementById("syncmsg").textContent = m; }
 
 // ---------- scrape now ----------
+function pollUpdate(btn, minutes) {
+  const was = DATA.generated_at;
+  const poll = setInterval(async () => {
+    try {
+      const d = await (await fetch("data/jobs.json?t=" + Date.now())).json();
+      if (d.generated_at !== was) {
+        clearInterval(poll); DATA = d; stamp(); render();
+        btn.disabled = false; btn.textContent = "↻ Run now";
+        toast("Updated — " + d.counts.new + " new");
+      }
+    } catch (e) {}
+  }, 30000);
+  setTimeout(() => { clearInterval(poll); btn.disabled = false; btn.textContent = "↻ Run now"; },
+             minutes * 60000);
+}
 async function scrapeNow() {
+  const btn = document.getElementById("scrape");
+  btn.disabled = true; btn.textContent = "↻ running…";
+  // TCV on his Mac runs the FULL pipeline (scrape + facts + CVs) on demand
+  try {
+    await fetch("http://127.0.0.1:8765/api/run-radar", { method: "POST", mode: "no-cors" });
+    toast("Full run started on this Mac — scrape, facts, CVs. Give it a while.");
+    pollUpdate(btn, 45);
+    return;
+  } catch (e) {}
   if (!state.token) {
+    btn.disabled = false; btn.textContent = "↻ Run now";
     document.getElementById("settings").classList.add("open");
-    toast("Needs the GitHub token — or run it from the repo’s Actions tab");
+    toast("TCV isn’t running here — cloud scrape needs the GitHub token");
     return;
   }
-  const btn = document.getElementById("scrape");
-  btn.disabled = true; btn.textContent = "↻ scraping…";
   try {
     const r = await fetch("https://api.github.com/repos/" + REPO + "/actions/workflows/scrape.yml/dispatches", {
       method: "POST", headers: ghHeaders(), body: JSON.stringify({ ref: "main" })
     });
     if (r.status !== 204) throw new Error("HTTP " + r.status);
-    toast("Scrape started — takes ~2 min, page will refresh itself");
-    const was = DATA.generated_at;
-    const poll = setInterval(async () => {
-      try {
-        const d = await (await fetch("data/jobs.json?t=" + Date.now())).json();
-        if (d.generated_at !== was) {
-          clearInterval(poll); DATA = d; stamp(); render();
-          btn.disabled = false; btn.textContent = "↻ Scrape now";
-          toast("Updated — " + d.counts.new + " new");
-        }
-      } catch (e) {}
-    }, 20000);
-    setTimeout(() => { clearInterval(poll); btn.disabled = false; btn.textContent = "↻ Scrape now"; }, 480000);
+    toast("Cloud scrape started — takes ~2 min, page will refresh itself");
+    pollUpdate(btn, 8);
   } catch (e) {
-    btn.disabled = false; btn.textContent = "↻ Scrape now";
-    toast("Couldn’t start scrape: " + e.message);
+    btn.disabled = false; btn.textContent = "↻ Run now";
+    toast("Couldn’t start the run: " + e.message);
   }
 }
 
@@ -300,7 +313,8 @@ function goToJob(id) {
   const j = DATA.jobs.find(x => x.id === id && x.active);
   if (!j) return;
   const st = state.jobs[id];
-  tab = st === "applied" ? "applied" : st === "discarded" ? "discarded" : "open";
+  tab = st === "applied" ? "applied" : st === "discarded" ? "discarded"
+      : bucketOf(j) === "tiebreak" ? "unsure" : "open";
   document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.tab === tab));
   SEL = id;
   render();
@@ -399,7 +413,9 @@ function card(j, opts) {
   el.className = "job" + (SEL === j.id ? " sel" : "");
   el.onclick = e => { if (!e.target.closest("a,button")) selectJob(j.id); };
   const dd = days(j);
-  const remote = f.remote || (/hybrid/i.test(j.location) ? "Hybrid" : (j.direct === false || j.apply_url || /remote/i.test(j.location) || j.market ? "Remote" : ""));
+  const remote = f.remote || (/hybrid/i.test(j.location) ? "Hybrid"
+      : /remote/i.test(j.location) ? "Remote"
+      : (j.direct === false || j.apply_url) ? "Remote" : "");
   const years = f.years_experience || (j.xp ? j.xp.replace(/y$/, "") : "");
   const pt = ptSituation(j, f);
   const salary = f.salary || j.salary;
@@ -445,34 +461,34 @@ function section(root, label, jobs, opts) {
 function render() {
   const root = document.getElementById("sections");
   root.innerHTML = "";
-  const bydate = (a, b2) => when(b2) - when(a);
-  const act = DATA.jobs.filter(j => j.active).sort(bydate);
-  const inbox = act.filter(j => !state.jobs[j.id]);
-  const O = {
-    fresh: inbox.filter(j => j.first_run === DATA.run_id),
-    rest: inbox.filter(j => j.first_run !== DATA.run_id),
+  // one flat list per tab, sorted by the DAYS count - nothing else
+  const byDays = (a, b2) => {
+    const da = days(a), db = days(b2);
+    if (da === null && db === null) return when(b2) - when(a);
+    if (da === null) return 1;
+    if (db === null) return -1;
+    return da - db;
   };
-  const applied = act.filter(j => state.jobs[j.id] === "applied");
-  const discarded = act.filter(j => state.jobs[j.id] === "discarded");
+  const act = DATA.jobs.filter(j => j.active).sort(byDays);
+  const inbox = act.filter(j => !state.jobs[j.id]);
+  const pools = {
+    open: inbox.filter(j => bucketOf(j) !== "tiebreak"),
+    unsure: inbox.filter(j => bucketOf(j) === "tiebreak"),
+    applied: act.filter(j => state.jobs[j.id] === "applied"),
+    discarded: act.filter(j => state.jobs[j.id] === "discarded"),
+  };
+  for (const t in pools)
+    document.getElementById("c-" + t).textContent = pools[t].length || "";
 
-  document.getElementById("c-open").textContent = O.fresh.length + O.rest.length || "";
-  document.getElementById("c-applied").textContent = applied.length || "";
-  document.getElementById("c-discarded").textContent = discarded.length || "";
-
-  const visible = (tab === "open" ? [...O.fresh, ...O.rest]
-                  : tab === "applied" ? applied : discarded);
+  const visible = pools[tab] || pools.open;
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
-  if (tab === "open") {
-    section(root, "New overnight", O.fresh, {});
-    section(root, "Active", O.rest, {});
-    if (!O.fresh.length && !O.rest.length)
-      root.innerHTML = '<div class="empty">No open roles match.</div>';
-  } else if (tab === "applied") {
-    section(root, "Applied", applied, { done: true });
-    if (!applied.length) root.innerHTML = '<div class="empty">Nothing applied yet.</div>';
+  if (!visible.length) {
+    const EMPTY = { open: "No open roles match.", applied: "Nothing applied yet.",
+                    discarded: "Nothing discarded.", unsure: "Nothing unsure." };
+    root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
-    section(root, "Discarded", discarded, { done: true });
-    if (!discarded.length) root.innerHTML = '<div class="empty">Nothing discarded.</div>';
+    const done = tab === "applied" || tab === "discarded";
+    visible.forEach(j => root.appendChild(card(j, { isNew: j.first_run === DATA.run_id, done: done })));
   }
 
   renderPreview();

@@ -40,9 +40,13 @@ body {
 .pvhead #pv-cv { margin-left: auto; }
 .pvhead #pv-orig { margin-left: 0; }
 .pvhead #pv-src { color: var(--mut); }
-.pvbody { flex: 1; min-height: 0; display: flex; }
-.pvbody iframe { width: 100%; height: 100%; border: 0; background: #fff; }
-.brief { padding: 22px; overflow-y: auto; width: 100%; }
+.pvbody { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.unsure-why {
+  padding: 10px 16px; font-size: 12.5px; font-weight: 600;
+  color: var(--amber); background: var(--amber-bg); border-bottom: 1px solid var(--line);
+}
+.pvbody iframe { width: 100%; flex: 1; min-height: 0; border: 0; background: #fff; }
+.brief { padding: 22px; overflow-y: auto; width: 100%; flex: 1; min-height: 0; }
 .brief .tiles { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px; }
 .brief h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin: 18px 0 8px; }
 .brief ul { padding-left: 18px; font-size: 14px; }
@@ -223,7 +227,17 @@ function daysCell(dd, j) {
 function bucketOf(j) {
   const v = state.verdicts[j.id];
   if (v) return v.v === "y" ? "ok" : "no";
+  // the JD itself confirming Portugal lifts a role out of Unsure
+  if (j.bucket === "tiebreak" && FACTS[j.id] && /^yes/i.test(FACTS[j.id].portugal || ""))
+    return "eu";
   return j.bucket;
+}
+function unsureReason(j) {
+  const loc = (j.location || "").trim();
+  if (!loc) return "the source lists no location at all";
+  if (/hybrid/i.test(loc)) return "hybrid in \u201c" + loc + "\u201d";
+  if (/remote/i.test(loc)) return "remote, but the stated scope is \u201c" + loc + "\u201d \u2014 Portugal not guaranteed";
+  return "location reads \u201c" + loc + "\u201d \u2014 no Portugal / Europe / Worldwide signal";
 }
 function toast(msg, ms) {
   const t = document.getElementById("toast");
@@ -355,14 +369,16 @@ function renderPreview() {
   orig.style.marginLeft = cv ? "" : "auto";
   srcBtn.style.marginLeft = (cv || j.apply_url) ? "" : "auto";
   const body = document.getElementById("pv-body");
+  const why = bucketOf(j) === "tiebreak"
+    ? '<div class="unsure-why">Unsure because ' + esc(unsureReason(j)) + "</div>" : "";
   if (j.frameable) {
-    body.innerHTML = '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
+    body.innerHTML = why + '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
     return;
   }
   const f = FACTS[j.id] || {};
   const pt = ptSituation(j, f);
   const dd = days(j);
-  let h = '<div class="brief">' +
+  let h = why + '<div class="brief">' +
     '<a class="goapply" href="' + esc(target) + '" target="_blank" rel="noopener">Open application ↗</a>' +
     '<div class="noframe">this site refuses embedding — the form opens in a new tab</div>' +
     '<div class="tiles">' +

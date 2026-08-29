@@ -320,6 +320,14 @@
    "via": "rrs-census"
   }
  ],
+ "successfactors": [
+  {
+   "company": "Capgemini",
+   "host": "careers.capgemini.com",
+   "loc": "portugal",
+   "via": "rrs-census"
+  }
+ ],
  "teamtailor": [
   {
    "company": "group.one",
@@ -436,6 +444,26 @@
    "host": "iqvia.wd1.myworkdayjobs.com",
    "site": "iqvia",
    "tenant": "iqvia",
+   "via": "rrs-census"
+  }
+ ],
+ "zoho": [
+  {
+   "company": "Perry Street Software",
+   "sub": "perrystreet",
+   "tld": "com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Slash",
+   "sub": "slash",
+   "tld": "com",
+   "via": "rrs-census"
+  },
+  {
+   "company": "Genesis",
+   "sub": "genesis",
+   "tld": "eu",
    "via": "rrs-census"
   }
  ]

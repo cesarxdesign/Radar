@@ -744,6 +744,71 @@ def src_manatal(slug, company):
         out.append(job)
     return out
 
+def src_zoho(sub, tld, company):
+    """Zoho Recruit careers page: the full job list rides in a hidden
+    input id="jobs", entity-encoded, near the end of a ~1.8MB page."""
+    html = fetch(f"https://{sub}.zohorecruit.{tld}/jobs/Careers", timeout=30)
+    m = re.search(r'value="([^"]*)"\s*id="jobs"', html)
+    if not m:
+        m = re.search(r'id="jobs"[^>]*value="([^"]*)"', html)
+    if not m:
+        return []
+    data = json.loads(unescape(m.group(1)))
+    out = []
+    for j in (data if isinstance(data, list) else data.get("jobs", [])):
+        if str(j.get("Publish", "true")).lower() == "false":
+            continue
+        title = j.get("Job_Opening_Name") or ""
+        jid = j.get("id") or j.get("Id")
+        slug_name = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-")
+        url = f"https://{sub}.zohorecruit.{tld}/jobs/Careers/{jid}/{slug_name}"
+        loc = ", ".join(filter(None, [j.get("City"), j.get("State"), j.get("Country")]))
+        remote = bool(re.search(r"remote", f"{title} {j.get('Job_Type') or ''} {loc}", re.I)) or None
+        desc = f"Experience asked: {j.get('Work_Experience')}" if j.get("Work_Experience") else ""
+        job = {"source": f"zoho/{sub}", "company": company, "title": title,
+               "url": url, "location": loc, "remote": remote, "salary": None,
+               "posted": j.get("Date_Opened"), "desc": desc, "raw": ""}
+        if title_ok(title):
+            orig = fetch_original(url, company, title)
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+            if orig.get("loc"):
+                job["location"] = orig["loc"]
+        out.append(job)
+    return out
+
+def src_successfactors(host, company, loc=""):
+    """SAP SuccessFactors RMK careers sites (custom domains, server-rendered
+    search). One query per design keyword, dedupe by numeric job id."""
+    seen, out = set(), []
+    for kw in ("designer", "design"):
+        try:
+            html = fetch(f"https://{host}/search/?q={urllib.parse.quote(kw)}"
+                         f"&locationsearch={urllib.parse.quote(loc)}", timeout=30)
+        except Exception:
+            continue
+        for m in re.finditer(r'href="(/job/[^"]+/(\d+)/?)"[^>]*class="jobTitle-link"[^>]*>(.*?)</a>',
+                             html, re.S):
+            path, jid, title = m.group(1), m.group(2), strip_html(m.group(3), 200).strip()
+            if jid in seen or not title:
+                continue
+            seen.add(jid)
+            url = f"https://{host}{path}"
+            job = {"source": f"successfactors/{host.split('.')[1] if host.count('.') > 1 else host}",
+                   "company": company, "title": title, "url": url,
+                   "location": loc.title() if loc else "", "remote": None,
+                   "salary": None, "posted": None, "desc": "", "raw": ""}
+            if title_ok(title):
+                orig = fetch_original(url, company, title)
+                if orig.get("text"):
+                    job["desc"] = job["raw"] = orig["text"]
+                if orig.get("loc"):
+                    job["location"] = orig["loc"]
+                if orig.get("posted"):
+                    job["posted"] = orig["posted"]
+            out.append(job)
+    return out
+
 def src_freshteam(slug, company):
     d = fetch_json(f"https://{slug}.freshteam.com/hire/widgets/jobs.json")
     out = []
@@ -914,6 +979,12 @@ def registry_tasks():
     for e in REGISTRY.get("jazzhr", []):
         tasks.append((f"jazzhr/{e['slug']}", lambda e=e: src_jazzhr(
             e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("zoho", []):
+        tasks.append((f"zoho/{e['sub']}", lambda e=e: src_zoho(
+            e["sub"], e.get("tld", "com"), label(e, e["sub"].title()))))
+    for e in REGISTRY.get("successfactors", []):
+        tasks.append((f"successfactors/{e['host']}", lambda e=e: src_successfactors(
+            e["host"], label(e, e["host"]), e.get("loc", ""))))
     for e in REGISTRY.get("freshteam", []):
         tasks.append((f"freshteam/{e['slug']}", lambda e=e: src_freshteam(
             e["slug"], label(e, e["slug"].title()))))
@@ -934,6 +1005,7 @@ DISCOVERY_SITES = [
     ("lever", "jobs.lever.co"), ("workday", "myworkdayjobs.com"),
     ("rippling", "ats.rippling.com"), ("jazzhr", "applytojob.com"),
     ("comeet", "comeet.com"), ("freshteam", "freshteam.com"),
+    ("zoho", "zohorecruit.com"),
 ]
 
 def parse_board_url(u):
@@ -941,6 +1013,9 @@ def parse_board_url(u):
     m = re.search(r"https?://([a-z0-9-]+)\.freshteam\.com", u, re.I)
     if m and m.group(1) not in ("www", "support"):
         return "freshteam", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://([a-z0-9-]+)\.zohorecruit\.(com|eu)", u, re.I)
+    if m and m.group(1) not in ("www", "support"):
+        return "zoho", {"sub": m.group(1).lower(), "tld": m.group(2).lower()}
     m = re.search(r"https?://([a-z0-9-]+)(\.wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)", u, re.I)
     if m:
         return "workday", {"tenant": m.group(1).lower(),

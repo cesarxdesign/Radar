@@ -77,6 +77,12 @@
   "stale": true,
   "url": null
  },
+ "hunt:a13fe9d2a846c702": {
+  "checked": "2026-08-29T11:17:16Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://jungvonmatt.jobs.personio.de/job/2760501?language=en"
+ },
  "hunt:fb5eaddc8b57c919": {
   "checked": "2026-08-28T11:26:34Z",
   "kind": "careers",

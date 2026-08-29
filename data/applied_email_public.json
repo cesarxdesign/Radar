@@ -1052,27 +1052,331 @@
  ],
  "maybe": [
   {
-   "id": "781ee2ac0b2c1bd4",
-   "company": "Scentbird",
-   "title": "Sr Product Designer",
+   "id": "a93daa5a8acfc6cc",
+   "company": "Wildix",
+   "title": "Senior Product Designer - Remote",
    "bucket": "tiebreak",
-   "email": "19ed4a43efbb202a",
+   "email": "1a03609b8ccfe2bb",
    "reason": "same"
   },
   {
-   "id": "f7cdc3a9bfbadb7a",
-   "company": "Nebius",
-   "title": "Senior Product Designer - Observability & Data Visualization",
+   "id": "8a92a76fa4de9487",
+   "company": "Dev.Pro",
+   "title": "Senior/Principal Product Designer - OP02142",
+   "bucket": "pt",
+   "email": "19ebc60895a19377",
+   "reason": "same"
+  },
+  {
+   "id": "09bdad71c02f308b",
+   "company": "Fuse Energy",
+   "title": "Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a03df0cc63a7222",
+   "reason": "same"
+  },
+  {
+   "id": "dee27d5ed937e5d3",
+   "company": "Remofirst",
+   "title": "Senior Product Designer",
+   "bucket": "pt",
+   "email": "1a03deec9750a6fc",
+   "reason": "same"
+  },
+  {
+   "id": "e53fae0e2d514bcd",
+   "company": "Velsera",
+   "title": "Director, Product Design",
+   "bucket": "tiebreak",
+   "email": "19fabee5d6379b8f",
+   "reason": "same"
+  },
+  {
+   "id": "ff6467e3a1390318",
+   "company": "Virtusan",
+   "title": "Product Designer - APP",
+   "bucket": "ww",
+   "email": "1a03470478ebfd74",
+   "reason": "same"
+  },
+  {
+   "id": "4b2aaf970f8706e7",
+   "company": "Causeway Technologies",
+   "title": "Product Designer",
+   "bucket": "pt",
+   "email": "19ef1c051e085985",
+   "reason": "same"
+  },
+  {
+   "id": "e2c273aff6e906e7",
+   "company": "Tether",
+   "title": "Senior Product Designer (Wallets) - 100% Remote Worldwide",
+   "bucket": "tiebreak",
+   "email": "1a0343ce14b0e8bc",
+   "reason": "same"
+  },
+  {
+   "id": "a28d7da093a4c681",
+   "company": "Fluxon",
+   "title": "Senior Product Designer",
+   "bucket": "pt",
+   "email": "19ed23eea6f2fcad",
+   "reason": "same"
+  },
+  {
+   "id": "0c514232e54d0533",
+   "company": "Moniepoint",
+   "title": "Product Design Lead",
+   "bucket": "tiebreak",
+   "email": "19fb8f5339fc21c4",
+   "reason": "same"
+  },
+  {
+   "id": "730f8b1adfe9fcfb",
+   "company": "Moniepoint",
+   "title": "Senior Product Designer - Design System",
+   "bucket": "tiebreak",
+   "email": "1a03edaa6d3fe0f4",
+   "reason": "same"
+  },
+  {
+   "id": "7a1e12b29718d73c",
+   "company": "Xapo Bank",
+   "title": "Head of Design (Remote - Work from Anywhere)",
+   "bucket": "tiebreak",
+   "email": "19fd23fe5ebb2f21",
+   "reason": "same"
+  },
+  {
+   "id": "9ee97337db42bca0",
+   "company": "iCapital",
+   "title": "Design System Designer - Assistant Vice President",
+   "bucket": "pt",
+   "email": "1a033c29884d2c04",
+   "reason": "same"
+  },
+  {
+   "id": "c581ff0b91f0c949",
+   "company": "Circle",
+   "title": "Lead Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a04317a5f6c442e",
+   "reason": "same"
+  },
+  {
+   "id": "6eb3975123808fe1",
+   "company": "Circle",
+   "title": "Lead Product Designer, Marketplace",
+   "bucket": "tiebreak",
+   "email": "1a0380e1b39b9156",
+   "reason": "same"
+  },
+  {
+   "id": "ef3f306d37bfdd00",
+   "company": "Duna",
+   "title": "Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a033fd797234352",
+   "reason": "same"
+  },
+  {
+   "id": "68be4cb729cd79d3",
+   "company": "Constructor",
+   "title": "Product Designer: AI Agent Tools",
    "bucket": "eu",
-   "email": "1a03480471e41a1c",
+   "email": "19ef756c6d03e146",
+   "reason": "same"
+  },
+  {
+   "id": "b621ebe6c8545087",
+   "company": "Plain",
+   "title": "Senior Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a0360dcc25b3bd4",
+   "reason": "same"
+  },
+  {
+   "id": "693978614034b0ac",
+   "company": "RoomPriceGenie",
+   "title": "Remote Head of UX (m/f/d)",
+   "bucket": "pt",
+   "email": "1a03815cc6f34bdb",
+   "reason": "same"
+  },
+  {
+   "id": "9bb7c916d4b900db",
+   "company": "Pennylane",
+   "title": "Product Design Manager",
+   "bucket": "pt",
+   "email": "19fec05e576dbee5",
+   "reason": "same"
+  },
+  {
+   "id": "44127e02e8c267a8",
+   "company": "Pennylane",
+   "title": "Product Designer (Confirmed/Senior) - Remote Europe \ud83c\uddea\ud83c\uddfa",
+   "bucket": "pt",
+   "email": "19eee9d14425a1e1",
+   "reason": "same"
+  },
+  {
+   "id": "1cdef51f585e9e7b",
+   "company": "Pennylane",
+   "title": "Design system manager",
+   "bucket": "tiebreak",
+   "email": "19f6a294b3d1fd03",
+   "reason": "same"
+  },
+  {
+   "id": "8dbfda2258653322",
+   "company": "Pliant",
+   "title": "Senior Product Designer, Design Systems (m/f/d)",
+   "bucket": "tiebreak",
+   "email": "19fcdc4d6298530d",
+   "reason": "same"
+  },
+  {
+   "id": "39ce3d71fcea64ef",
+   "company": "Rho",
+   "title": "Staff Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a03e2554081512c",
+   "reason": "same"
+  },
+  {
+   "id": "6a07d3dee4011a16",
+   "company": "Symbiotic",
+   "title": "Senior Product Designer",
+   "bucket": "pt",
+   "email": "19fca28f3a698119",
+   "reason": "same"
+  },
+  {
+   "id": "61f2e51b42362d22",
+   "company": "Jimdo",
+   "title": "Senior Product Designer",
+   "bucket": "pt",
+   "email": "1a037b8f276a4c86",
+   "reason": "same"
+  },
+  {
+   "id": "9e860e528405b8ef",
+   "company": "Pigment",
+   "title": "AI Product Designer",
+   "bucket": "tiebreak",
+   "email": "1a037d7812822b38",
+   "reason": "same"
+  },
+  {
+   "id": "df23e418ad147021",
+   "company": "Trade Nation",
+   "title": "Product Designer (Trading)",
+   "bucket": "tiebreak",
+   "email": "19eab94735155641",
+   "reason": "near"
+  },
+  {
+   "id": "a6a22d1ad88e9548",
+   "company": "Metalab",
+   "title": "Design Director",
+   "bucket": "tiebreak",
+   "email": "19ea78d2f537ae5b",
    "reason": "unnamed"
   },
   {
-   "id": "3a7d149e11a9f719",
-   "company": "Nebius",
-   "title": "Senior Product Designer - Compute, Nebius Console",
-   "bucket": "eu",
-   "email": "1a03480471e41a1c",
+   "id": "fea58b4a07512011",
+   "company": "Metalab",
+   "title": "Design Lead",
+   "bucket": "tiebreak",
+   "email": "19ea78d2f537ae5b",
+   "reason": "unnamed"
+  },
+  {
+   "id": "2220454f83f8c3b5",
+   "company": "Metalab",
+   "title": "Executive Design Director (Brand & Product)",
+   "bucket": "tiebreak",
+   "email": "19ea78d2f537ae5b",
+   "reason": "unnamed"
+  },
+  {
+   "id": "238b20c98edb7753",
+   "company": "Prolific",
+   "title": "Lead Product Designer",
+   "bucket": "tiebreak",
+   "email": "19ee0e12c8c658e9",
+   "reason": "unnamed"
+  },
+  {
+   "id": "3550f1679a34d86c",
+   "company": "Bjak",
+   "title": "Senior Graphic Designer",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "ae92ca6f9409bccb",
+   "company": "Bjak",
+   "title": "UI Designer - AI Neobank App",
+   "bucket": "pt",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "bd838e94cf448e35",
+   "company": "Bjak",
+   "title": "Mobile UI Designer",
+   "bucket": "pt",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "f959d27ea953c3af",
+   "company": "Bjak",
+   "title": "Interaction Designer, HCI",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "c647bde20daba6c7",
+   "company": "Bjak",
+   "title": "Creative Design Lead - UK",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "5cec9cdd20171ec8",
+   "company": "Bjak",
+   "title": "Lead Graphic Designer",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "0948a72d3cf5a963",
+   "company": "Bjak",
+   "title": "Creative Design Lead",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "637fd6c75debe8b5",
+   "company": "Bjak",
+   "title": "Product Designer (UI/UX)",
+   "bucket": "pt",
+   "email": "19fcd1c96ecf1cdc",
+   "reason": "unnamed"
+  },
+  {
+   "id": "81876d6020bea220",
+   "company": "Bjak",
+   "title": "Lead Brand Designer",
+   "bucket": "tiebreak",
+   "email": "19fcd1c96ecf1cdc",
    "reason": "unnamed"
   }
  ]

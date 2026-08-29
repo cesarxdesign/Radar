@@ -504,8 +504,8 @@
   },
   {
    "company": "Eneba",
-   "slug": "eneba",
    "eu": true,
+   "slug": "eneba",
    "via": "email"
   },
   {
@@ -520,8 +520,8 @@
   },
   {
    "company": "Finom",
-   "slug": "pnlfin",
    "eu": true,
+   "slug": "pnlfin",
    "via": "email"
   }
  ],
@@ -830,9 +830,9 @@
   },
   {
    "company": "Snyk",
-   "tenant": "snyk",
    "host": "snyk.wd103.myworkdayjobs.com",
    "site": "External",
+   "tenant": "snyk",
    "via": "email"
   }
  ],

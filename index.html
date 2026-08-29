@@ -248,8 +248,10 @@ function mailFor(j) {
     if (c) {
       const head = my.reason === "same"
         ? "⚠ Applied — this exact role, confirmation on file"
+        : my.reason === "near"
+        ? "⚠ You applied to a close title here — likely the same job, retitled"
         : "You applied at " + esc(j.company) + " but the email names no role — is it this posting?";
-      return "<h3>" + head + "</h3><div class='mailconf" + (my.reason === "same" ? " same" : "") +
+      return "<h3>" + head + "</h3><div class='mailconf" + (my.reason !== "unnamed" ? " same" : "") +
         "'><b>" + esc(c.subject) + '</b><span class="mailmeta">' +
         esc(c.title || "role not named in the email") + " · " +
         esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span>" + esc(c.body) + "</div>";

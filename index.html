@@ -237,17 +237,23 @@ function bucketOf(j) {
   return j.bucket;
 }
 function mailFor(j) {
-  // the application-confirmation email behind this role, if one exists
+  // the application-confirmation email(s) behind this role, if any exist
   const co = norm(j.company), mine = CONFS.filter(c => norm(c.company) === co);
   if (!mine.length) return "";
-  const exact = mine.find(c => norm(c.title || "") === norm(j.title));
-  if (exact)
-    return "<h3>Applied — confirmation on file</h3><div class='mailconf'><b>" + esc(exact.subject) +
-      '</b><span class="mailmeta">' + esc((exact.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span>" +
-      esc(exact.body) + "</div>";
-  return "<h3>Applied at " + esc(j.company) + " (other role)</h3><ul>" + mine.map(c =>
-    "<li>" + esc(c.title || c.subject) + ' <span style="color:var(--mut)">— ' +
-    esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span></li>").join("") + "</ul>";
+  // newest first in CONFS - keep one email per distinct role
+  const seen = {}, uniq = [];
+  for (const c of mine) {
+    const k = norm(c.title || c.subject);
+    if (!seen[k]) { seen[k] = 1; uniq.push(c); }
+  }
+  const exact = uniq.find(c => norm(c.title || "") === norm(j.title));
+  const list = exact ? [exact] : uniq;
+  const head = exact ? "Applied — confirmation on file"
+    : "Applied at " + esc(j.company) + " — the email" + (list.length > 1 ? "s" : "") + " you got";
+  return "<h3>" + head + "</h3>" + list.map(c =>
+    "<div class='mailconf'><b>" + esc(c.subject) + '</b><span class="mailmeta">' +
+    (c.title ? esc(c.title) + " · " : "") + esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) +
+    "</span>" + esc(c.body) + "</div>").join("");
 }
 function variantKey(j) {
   // same company, same title once (FTC/Contract/city)-style parentheticals go
@@ -492,11 +498,18 @@ function card(j, opts) {
     '<div class="jacts">' + (
       opts.done
         ? '<button class="restore">restore</button>'
-        : '<button class="applied">applied</button><button class="discard">discard</button>'
+        : '<button class="applied">applied</button>' +
+          (opts.maybe ? '<button class="m2o">move to open</button>' : "") +
+          '<button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
+  on(".m2o", () => {
+    // not the job already applied to - clear it into Open as an OK'd role
+    state.verdicts[j.id] = { v: "y", via: "maybe" };
+    save(); render();
+  });
   on(".restore", () => {
     const k = variantKey(j);
     DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) delete state.jobs[x.id]; });
@@ -530,7 +543,7 @@ function render() {
   const pools = {
     open: inbox.filter(j => bucketOf(j) !== "tiebreak"),
     unsure: inbox.filter(j => bucketOf(j) === "tiebreak"),
-    maybe: inbox.filter(j => MAYBE[j.id]),
+    maybe: inbox.filter(j => MAYBE[j.id] && !state.verdicts[j.id]),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded"),
   };
@@ -546,7 +559,7 @@ function render() {
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
-    visible.forEach(j => root.appendChild(card(j, { isNew: j.first_run === DATA.run_id, done: done })));
+    visible.forEach(j => root.appendChild(card(j, { isNew: j.first_run === DATA.run_id, done: done, maybe: tab === "maybe" })));
   }
 
   renderPreview();

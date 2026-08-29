@@ -138,15 +138,24 @@ def main():
     OUT_FILE.write_text(json.dumps(
         {"generated_at": scrape.RUN_ID, "matches": matches},
         indent=1, ensure_ascii=False))
-    # Redacted twin for the public dashboard (GitHub Pages): no bodies, no
-    # links (candidate tokens), sender reduced to its domain.
+    # Public twin for the dashboard on GitHub Pages. Message text included
+    # by César's explicit call (2026-08-29); the routing block (sender and
+    # recipient addresses), links (candidate-token URLs), and any inline
+    # addresses stay out.
+    def message_text(body):
+        t = body or ""
+        m2 = re.search(r"To:\s*(?:Cesar Garcia\s*)?cesarxdesign@gmail\.com\s*(?:Cc:[^\n]{0,80}?)?", t)
+        if m2:
+            t = t[m2.end():]
+        return re.sub(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+", "", t).strip()
     public = [dict(
         {k: m.get(k) for k in ("key", "date", "subject", "company", "title",
                                "platform", "radar_id", "confidence")},
+        body=message_text(m.get("body")),
         from_domain=(m.get("from") or "").rsplit("@", 1)[-1],
     ) for m in matches]
     (ROOT / "data" / "applied_email_public.json").write_text(json.dumps(
-        {"generated_at": scrape.RUN_ID, "redacted": True, "matches": public},
+        {"generated_at": scrape.RUN_ID, "matches": public},
         indent=1, ensure_ascii=False))
 
     paired = [m for m in matches if m["radar_id"]]

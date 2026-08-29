@@ -209,378 +209,378 @@
    "via": "email"
   },
   {
-   "slug": "magiceden",
    "company": "Magic Eden",
+   "slug": "magiceden",
    "via": "djw-census"
   },
   {
-   "slug": "uipath",
    "company": "Uipath",
+   "slug": "uipath",
    "via": "djw-census"
   },
   {
-   "slug": "warp",
    "company": "Warp",
+   "slug": "warp",
    "via": "djw-census"
   },
   {
-   "slug": "legora",
    "company": "Legora",
+   "slug": "legora",
    "via": "djw-census"
   },
   {
-   "slug": "marianaminerals",
    "company": "Marianaminerals",
+   "slug": "marianaminerals",
    "via": "djw-census"
   },
   {
-   "slug": "tensorwave",
    "company": "TensorWave",
+   "slug": "tensorwave",
    "via": "djw-census"
   },
   {
-   "slug": "suno",
    "company": "Suno",
+   "slug": "suno",
    "via": "djw-census"
   },
   {
-   "slug": "slingshotai",
    "company": "Slingshot AI",
+   "slug": "slingshotai",
    "via": "djw-census"
   },
   {
-   "slug": "bland",
    "company": "bland",
+   "slug": "bland",
    "via": "djw-census"
   },
   {
-   "slug": "hadrian-automation",
    "company": "hadrian-automation",
+   "slug": "hadrian-automation",
    "via": "djw-census"
   },
   {
-   "slug": "polymarket",
    "company": "Polymarket",
+   "slug": "polymarket",
    "via": "djw-census"
   },
   {
-   "slug": "joko",
    "company": "Joko",
+   "slug": "joko",
    "via": "djw-census"
   },
   {
-   "slug": "patreon",
    "company": "Patreon",
+   "slug": "patreon",
    "via": "djw-census"
   },
   {
-   "slug": "camber",
    "company": "camber",
+   "slug": "camber",
    "via": "djw-census"
   },
   {
-   "slug": "tennr",
    "company": "tennr",
+   "slug": "tennr",
    "via": "djw-census"
   },
   {
-   "slug": "clickup",
    "company": "ClickUp",
+   "slug": "clickup",
    "via": "djw-census"
   },
   {
-   "slug": "kayak",
    "company": "KAYAK",
+   "slug": "kayak",
    "via": "djw-census"
   },
   {
-   "slug": "substack",
    "company": "substack",
+   "slug": "substack",
    "via": "djw-census"
   },
   {
-   "slug": "betterup",
    "company": "BetterUp",
+   "slug": "betterup",
    "via": "djw-census"
   },
   {
-   "slug": "deliveroo",
    "company": "Deliveroo",
+   "slug": "deliveroo",
    "via": "djw-census"
   },
   {
-   "slug": "envoy",
    "company": "Envoy",
+   "slug": "envoy",
    "via": "djw-census"
   },
   {
-   "slug": "illumio",
    "company": "Illumio",
+   "slug": "illumio",
    "via": "djw-census"
   },
   {
-   "slug": "imprint",
    "company": "Imprint",
+   "slug": "imprint",
    "via": "djw-census"
   },
   {
-   "slug": "mural",
    "company": "Mural",
+   "slug": "mural",
    "via": "djw-census"
   },
   {
-   "slug": "nuna",
    "company": "Nuna Incorporated",
+   "slug": "nuna",
    "via": "djw-census"
   },
   {
-   "slug": "render",
    "company": "Render",
+   "slug": "render",
    "via": "djw-census"
   },
   {
-   "slug": "revenuecat",
    "company": "RevenueCat",
+   "slug": "revenuecat",
    "via": "djw-census"
   },
   {
-   "slug": "valon",
    "company": "Valon Technologies",
+   "slug": "valon",
    "via": "djw-census"
   },
   {
-   "slug": "zip",
    "company": "Zip",
+   "slug": "zip",
    "via": "djw-census"
   },
   {
-   "slug": "abridge",
    "company": "Abridge",
+   "slug": "abridge",
    "via": "djw-census"
   },
   {
-   "slug": "almedia",
    "company": "Almedia",
+   "slug": "almedia",
    "via": "djw-census"
   },
   {
-   "slug": "amo",
    "company": "Amo",
+   "slug": "amo",
    "via": "djw-census"
   },
   {
-   "slug": "arketa",
    "company": "Arketa",
+   "slug": "arketa",
    "via": "djw-census"
   },
   {
-   "slug": "bestow",
    "company": "Bestow",
+   "slug": "bestow",
    "via": "djw-census"
   },
   {
-   "slug": "brainco",
    "company": "Brainco",
+   "slug": "brainco",
    "via": "djw-census"
   },
   {
-   "slug": "browserbase",
    "company": "Browserbase",
+   "slug": "browserbase",
    "via": "djw-census"
   },
   {
-   "slug": "DatologyAI",
    "company": "Datologyai",
+   "slug": "DatologyAI",
    "via": "djw-census"
   },
   {
-   "slug": "dust",
    "company": "Dust",
+   "slug": "dust",
    "via": "djw-census"
   },
   {
-   "slug": "EightSleep",
    "company": "Eightsleep",
+   "slug": "EightSleep",
    "via": "djw-census"
   },
   {
-   "slug": "GPTZero",
    "company": "Gptzero",
+   "slug": "GPTZero",
    "via": "djw-census"
   },
   {
-   "slug": "happyrobot",
    "company": "Happyrobot.ai",
+   "slug": "happyrobot",
    "via": "djw-census"
   },
   {
-   "slug": "harvey",
    "company": "Harvey",
+   "slug": "harvey",
    "via": "djw-census"
   },
   {
-   "slug": "horizon3ai",
    "company": "Horizon3ai",
+   "slug": "horizon3ai",
    "via": "djw-census"
   },
   {
-   "slug": "humaans",
    "company": "Humaans",
+   "slug": "humaans",
    "via": "djw-census"
   },
   {
-   "slug": "intangible",
    "company": "Intangible.ai",
+   "slug": "intangible",
    "via": "djw-census"
   },
   {
-   "slug": "jimdo",
    "company": "Jimdo.com",
+   "slug": "jimdo",
    "via": "djw-census"
   },
   {
-   "slug": "lendable",
    "company": "Lendable",
+   "slug": "lendable",
    "via": "djw-census"
   },
   {
-   "slug": "luminai",
    "company": "Luminai",
+   "slug": "luminai",
    "via": "djw-census"
   },
   {
-   "slug": "mach",
    "company": "Mach",
+   "slug": "mach",
    "via": "djw-census"
   },
   {
-   "slug": "marshmallow",
    "company": "Marshmallow",
+   "slug": "marshmallow",
    "via": "djw-census"
   },
   {
-   "slug": "miter",
    "company": "Miter",
+   "slug": "miter",
    "via": "djw-census"
   },
   {
-   "slug": "Multiverse",
    "company": "Multiverse",
+   "slug": "Multiverse",
    "via": "djw-census"
   },
   {
-   "slug": "notable",
    "company": "Notable",
+   "slug": "notable",
    "via": "djw-census"
   },
   {
-   "slug": "Sierra",
    "company": "Sierra",
+   "slug": "Sierra",
    "via": "djw-census"
   },
   {
-   "slug": "Stepful",
    "company": "Stepful",
+   "slug": "Stepful",
    "via": "djw-census"
   },
   {
-   "slug": "sweatpals",
    "company": "Sweatpals",
+   "slug": "sweatpals",
    "via": "djw-census"
   },
   {
-   "slug": "taktile",
    "company": "Taktile",
+   "slug": "taktile",
    "via": "djw-census"
   },
   {
-   "slug": "upside",
    "company": "Upside",
+   "slug": "upside",
    "via": "djw-census"
   },
   {
-   "slug": "zefir",
    "company": "Zefir",
+   "slug": "zefir",
    "via": "djw-census"
   },
   {
-   "slug": "buffer",
    "company": "Buffer",
+   "slug": "buffer",
    "via": "djw-census"
   },
   {
-   "slug": "telli",
    "company": "Telli",
+   "slug": "telli",
    "via": "djw-census"
   },
   {
-   "slug": "n8n",
    "company": "n8n",
+   "slug": "n8n",
    "via": "djw-census"
   },
   {
-   "slug": "tacto",
    "company": "Tacto",
+   "slug": "tacto",
    "via": "djw-census"
   },
   {
-   "slug": "MaticRobots",
    "company": "MaticRobots",
+   "slug": "MaticRobots",
    "via": "djw-census"
   },
   {
-   "slug": "taxfix",
    "company": "Taxfix",
+   "slug": "taxfix",
    "via": "djw-census"
   },
   {
-   "slug": "amboss",
    "company": "Amboss",
+   "slug": "amboss",
    "via": "djw-census"
   },
   {
-   "slug": "moss",
    "company": "Moss",
+   "slug": "moss",
    "via": "djw-census"
   },
   {
-   "slug": "Atlas",
    "company": "Atlas",
+   "slug": "Atlas",
    "via": "djw-census"
   },
   {
-   "slug": "Yubo",
    "company": "Yubo",
+   "slug": "Yubo",
    "via": "djw-census"
   },
   {
-   "slug": "Upflow",
    "company": "Upflow",
+   "slug": "Upflow",
    "via": "djw-census"
   },
   {
-   "slug": "Tandem-health",
    "company": "Tandem-health",
+   "slug": "Tandem-health",
    "via": "djw-census"
   },
   {
-   "slug": "Frontcareers",
    "company": "Frontcareers",
+   "slug": "Frontcareers",
    "via": "djw-census"
   },
   {
-   "slug": "rillet",
    "company": "Rillet",
+   "slug": "rillet",
    "via": "djw-census"
   },
   {
-   "slug": "vanta",
    "company": "Vanta",
+   "slug": "vanta",
    "via": "djw-census"
   },
   {
-   "slug": "replit",
    "company": "Replit",
+   "slug": "replit",
    "via": "djw-census"
   }
  ],
@@ -801,559 +801,559 @@
    "via": "email"
   },
   {
-   "slug": "wargamingen",
    "company": "War Gaming",
+   "slug": "wargamingen",
    "via": "djw-census"
   },
   {
-   "slug": "doordashcanada",
    "company": "DoorDash",
+   "slug": "doordashcanada",
    "via": "djw-census"
   },
   {
-   "slug": "checkr",
    "company": "Checkr",
+   "slug": "checkr",
    "via": "djw-census"
   },
   {
-   "slug": "tecovas",
    "company": "Tecovas",
+   "slug": "tecovas",
    "via": "djw-census"
   },
   {
-   "slug": "babylist",
    "company": "Babylist",
+   "slug": "babylist",
    "via": "djw-census"
   },
   {
-   "slug": "wildlifestudios",
    "company": "wildlifestudios",
+   "slug": "wildlifestudios",
    "via": "djw-census"
   },
   {
-   "slug": "dept",
    "company": "Dept",
+   "slug": "dept",
    "via": "djw-census"
   },
   {
-   "slug": "criticalmass",
    "company": "Critical Mass",
+   "slug": "criticalmass",
    "via": "djw-census"
   },
   {
-   "slug": "gusto",
    "company": "Gusto",
+   "slug": "gusto",
    "via": "djw-census"
   },
   {
-   "slug": "hackerrank",
    "company": "HackerRank",
+   "slug": "hackerrank",
    "via": "djw-census"
   },
   {
-   "slug": "verkada",
    "company": "Verkada",
+   "slug": "verkada",
    "via": "djw-census"
   },
   {
-   "slug": "discord",
    "company": "Discord",
+   "slug": "discord",
    "via": "djw-census"
   },
   {
-   "slug": "projectaservicesgmbhcokg",
    "company": "projectaservicesgmbhcokg",
+   "slug": "projectaservicesgmbhcokg",
    "via": "djw-census"
   },
   {
-   "slug": "proto",
    "company": "proto",
+   "slug": "proto",
    "via": "djw-census"
   },
   {
-   "slug": "smartlyio",
    "company": "smartlyio",
+   "slug": "smartlyio",
    "via": "djw-census"
   },
   {
-   "slug": "2k",
    "company": "2k",
+   "slug": "2k",
    "via": "djw-census"
   },
   {
-   "slug": "assemblyai",
    "company": "AssemblyAI",
+   "slug": "assemblyai",
    "via": "djw-census"
   },
   {
-   "slug": "cultureamp",
    "company": "Culture Amp",
+   "slug": "cultureamp",
    "via": "djw-census"
   },
   {
-   "slug": "landor",
    "company": "Landor",
+   "slug": "landor",
    "via": "djw-census"
   },
   {
-   "slug": "braineffectjobs",
    "company": "braineffectjobs",
+   "slug": "braineffectjobs",
    "via": "djw-census"
   },
   {
-   "slug": "hudl",
    "company": "Hudl",
+   "slug": "hudl",
    "via": "djw-census"
   },
   {
-   "slug": "taketwo",
    "company": "taketwo",
+   "slug": "taketwo",
    "via": "djw-census"
   },
   {
-   "slug": "robinhood",
    "company": "Robinhood",
+   "slug": "robinhood",
    "via": "djw-census"
   },
   {
-   "slug": "neuralink",
    "company": "Neuralink",
+   "slug": "neuralink",
    "via": "djw-census"
   },
   {
-   "slug": "onrunning",
    "company": "On",
+   "slug": "onrunning",
    "via": "djw-census"
   },
   {
-   "slug": "journey",
    "company": "Journey",
+   "slug": "journey",
    "via": "djw-census"
   },
   {
-   "slug": "flohealth",
    "company": "Flo Health",
+   "slug": "flohealth",
    "via": "djw-census"
   },
   {
-   "slug": "newrelic",
    "company": "newrelic",
+   "slug": "newrelic",
    "via": "djw-census"
   },
   {
-   "slug": "calm",
    "company": "Calm",
+   "slug": "calm",
    "via": "djw-census"
   },
   {
-   "slug": "chime",
    "company": "Chime",
+   "slug": "chime",
    "via": "djw-census"
   },
   {
-   "slug": "thenewyorktimes",
    "company": "The New York Times",
+   "slug": "thenewyorktimes",
    "via": "djw-census"
   },
   {
-   "slug": "via",
    "company": "Via",
+   "slug": "via",
    "via": "djw-census"
   },
   {
-   "slug": "autoscout24",
    "company": "autoscout24",
+   "slug": "autoscout24",
    "via": "djw-census"
   },
   {
-   "slug": "dkbcodefactory",
    "company": "DKB Code Factory",
+   "slug": "dkbcodefactory",
    "via": "djw-census"
   },
   {
-   "slug": "soundcloud71",
    "company": "SoundCloud",
+   "slug": "soundcloud71",
    "via": "djw-census"
   },
   {
-   "slug": "pushpay",
    "company": "Pushpay",
+   "slug": "pushpay",
    "via": "djw-census"
   },
   {
-   "slug": "isomorphiclabs",
    "company": "Isomorphic Labs",
+   "slug": "isomorphiclabs",
    "via": "djw-census"
   },
   {
-   "slug": "airtable",
    "company": "Airtable",
+   "slug": "airtable",
    "via": "djw-census"
   },
   {
-   "slug": "linkedin",
    "company": "linkedin",
+   "slug": "linkedin",
    "via": "djw-census"
   },
   {
-   "slug": "twitch",
    "company": "Twitch",
+   "slug": "twitch",
    "via": "djw-census"
   },
   {
-   "slug": "affirm",
    "company": "Affirm",
+   "slug": "affirm",
    "via": "djw-census"
   },
   {
-   "slug": "braze",
    "company": "Braze",
+   "slug": "braze",
    "via": "djw-census"
   },
   {
-   "slug": "bungie",
    "company": "bungie",
+   "slug": "bungie",
    "via": "djw-census"
   },
   {
-   "slug": "zscaler",
    "company": "zscaler",
+   "slug": "zscaler",
    "via": "djw-census"
   },
   {
-   "slug": "sezzle",
    "company": "Sezzle",
+   "slug": "sezzle",
    "via": "djw-census"
   },
   {
-   "slug": "adyen",
    "company": "Adyen",
+   "slug": "adyen",
    "via": "djw-census"
   },
   {
-   "slug": "afresh",
    "company": "Afresh",
+   "slug": "afresh",
    "via": "djw-census"
   },
   {
-   "slug": "alpaca",
    "company": "Alpaca",
+   "slug": "alpaca",
    "via": "djw-census"
   },
   {
-   "slug": "altanaai",
    "company": "Altana AI",
+   "slug": "altanaai",
    "via": "djw-census"
   },
   {
-   "slug": "astranis",
    "company": "Astranis",
+   "slug": "astranis",
    "via": "djw-census"
   },
   {
-   "slug": "b12",
    "company": "B12",
+   "slug": "b12",
    "via": "djw-census"
   },
   {
-   "slug": "billiontoone",
    "company": "BillionToOne",
+   "slug": "billiontoone",
    "via": "djw-census"
   },
   {
-   "slug": "boulevard",
    "company": "Boulevard",
+   "slug": "boulevard",
    "via": "djw-census"
   },
   {
-   "slug": "careem",
    "company": "Careem",
+   "slug": "careem",
    "via": "djw-census"
   },
   {
-   "slug": "coast",
    "company": "Coast",
+   "slug": "coast",
    "via": "djw-census"
   },
   {
-   "slug": "dataiku",
    "company": "Dataiku",
+   "slug": "dataiku",
    "via": "djw-census"
   },
   {
-   "slug": "deepmind",
    "company": "DeepMind",
+   "slug": "deepmind",
    "via": "djw-census"
   },
   {
-   "slug": "everlaw",
    "company": "Everlaw",
+   "slug": "everlaw",
    "via": "djw-census"
   },
   {
-   "slug": "fictiv",
    "company": "Fictiv",
+   "slug": "fictiv",
    "via": "djw-census"
   },
   {
-   "slug": "gatherai",
    "company": "Gather AI",
+   "slug": "gatherai",
    "via": "djw-census"
   },
   {
-   "slug": "generalassembly",
    "company": "General Assembly",
+   "slug": "generalassembly",
    "via": "djw-census"
   },
   {
-   "slug": "glance",
    "company": "Glance",
+   "slug": "glance",
    "via": "djw-census"
   },
   {
-   "slug": "goguardian",
    "company": "GoGuardian",
+   "slug": "goguardian",
    "via": "djw-census"
   },
   {
-   "slug": "hightouch",
    "company": "Hightouch",
+   "slug": "hightouch",
    "via": "djw-census"
   },
   {
-   "slug": "misfitsmarket",
    "company": "Imperfect Foods",
+   "slug": "misfitsmarket",
    "via": "djw-census"
   },
   {
-   "slug": "ionq",
    "company": "IonQ",
+   "slug": "ionq",
    "via": "djw-census"
   },
   {
-   "slug": "justworks",
    "company": "Justworks",
+   "slug": "justworks",
    "via": "djw-census"
   },
   {
-   "slug": "juullabs",
    "company": "JUUL",
+   "slug": "juullabs",
    "via": "djw-census"
   },
   {
-   "slug": "kalshi",
    "company": "Kalshi",
+   "slug": "kalshi",
    "via": "djw-census"
   },
   {
-   "slug": "knowbe4",
    "company": "KnowBe4",
+   "slug": "knowbe4",
    "via": "djw-census"
   },
   {
-   "slug": "mercury",
    "company": "Mercury",
+   "slug": "mercury",
    "via": "djw-census"
   },
   {
-   "slug": "metropolis",
    "company": "Metropolis",
+   "slug": "metropolis",
    "via": "djw-census"
   },
   {
-   "slug": "mixpanel",
    "company": "Mixpanel",
+   "slug": "mixpanel",
    "via": "djw-census"
   },
   {
-   "slug": "natera",
    "company": "Natera",
+   "slug": "natera",
    "via": "djw-census"
   },
   {
-   "slug": "newsela",
    "company": "Newsela",
+   "slug": "newsela",
    "via": "djw-census"
   },
   {
-   "slug": "omadahealth",
    "company": "Omada Health",
+   "slug": "omadahealth",
    "via": "djw-census"
   },
   {
-   "slug": "platformscience",
    "company": "Platform Science",
+   "slug": "platformscience",
    "via": "djw-census"
   },
   {
-   "slug": "point72",
    "company": "Point72",
+   "slug": "point72",
    "via": "djw-census"
   },
   {
-   "slug": "primemedicine",
    "company": "Prime Medicine",
+   "slug": "primemedicine",
    "via": "djw-census"
   },
   {
-   "slug": "redwoodmaterials",
    "company": "Redwood Materials",
+   "slug": "redwoodmaterials",
    "via": "djw-census"
   },
   {
-   "slug": "roofr",
    "company": "Roofr",
+   "slug": "roofr",
    "via": "djw-census"
   },
   {
-   "slug": "samsungresearchamerica",
    "company": "Samsung Research America",
+   "slug": "samsungresearchamerica",
    "via": "djw-census"
   },
   {
-   "slug": "scaleai",
    "company": "Scale AI",
+   "slug": "scaleai",
    "via": "djw-census"
   },
   {
-   "slug": "securityscorecard",
    "company": "SecurityScorecard",
+   "slug": "securityscorecard",
    "via": "djw-census"
   },
   {
-   "slug": "sigmacomputing",
    "company": "Sigma Computing",
+   "slug": "sigmacomputing",
    "via": "djw-census"
   },
   {
-   "slug": "simplisafe",
    "company": "SimpliSafe",
+   "slug": "simplisafe",
    "via": "djw-census"
   },
   {
-   "slug": "smartasset",
    "company": "SmartAsset",
+   "slug": "smartasset",
    "via": "djw-census"
   },
   {
-   "slug": "smartsheet",
    "company": "Smartsheet",
+   "slug": "smartsheet",
    "via": "djw-census"
   },
   {
-   "slug": "splice",
    "company": "Splice",
+   "slug": "splice",
    "via": "djw-census"
   },
   {
-   "slug": "stockx",
    "company": "StockX",
+   "slug": "stockx",
    "via": "djw-census"
   },
   {
-   "slug": "tailscale",
    "company": "Tailscale",
+   "slug": "tailscale",
    "via": "djw-census"
   },
   {
-   "slug": "tatari",
    "company": "Tatari",
+   "slug": "tatari",
    "via": "djw-census"
   },
   {
-   "slug": "vardaspace",
    "company": "Varda",
+   "slug": "vardaspace",
    "via": "djw-census"
   },
   {
-   "slug": "apptronik",
    "company": "Apptronik",
+   "slug": "apptronik",
    "via": "djw-census"
   },
   {
-   "slug": "skildai-careers",
    "company": "Skildai Careers",
+   "slug": "skildai-careers",
    "via": "djw-census"
   },
   {
-   "slug": "stackblitz",
    "company": "Stackblitz",
+   "slug": "stackblitz",
    "via": "djw-census"
   },
   {
-   "slug": "togetherai",
    "company": "Togetherai",
+   "slug": "togetherai",
    "via": "djw-census"
   },
   {
-   "slug": "vsco39",
    "company": "VSCO",
+   "slug": "vsco39",
    "via": "djw-census"
   },
   {
-   "slug": "enterpret",
    "company": "Enterpret",
+   "slug": "enterpret",
    "via": "djw-census"
   },
   {
-   "slug": "xometry",
    "company": "Xometry",
+   "slug": "xometry",
    "via": "djw-census"
   },
   {
-   "slug": "ideo",
    "company": "Ideo",
+   "slug": "ideo",
    "via": "djw-census"
   },
   {
-   "slug": "celonis",
    "company": "Celonis",
+   "slug": "celonis",
    "via": "djw-census"
   },
   {
-   "slug": "rockstargames",
    "company": "Rockstar Games",
+   "slug": "rockstargames",
    "via": "djw-census"
   },
   {
-   "slug": "oura",
    "company": "Ōura",
+   "slug": "oura",
    "via": "djw-census"
   },
   {
-   "slug": "financialtimes33",
-   "eu": true,
    "company": "Financial Times",
+   "eu": true,
+   "slug": "financialtimes33",
    "via": "djw-census"
   },
   {
-   "slug": "nscaleoperationsukltd",
-   "eu": true,
    "company": "NSCALE",
+   "eu": true,
+   "slug": "nscaleoperationsukltd",
    "via": "djw-census"
   },
   {
-   "slug": "parloa",
-   "eu": true,
    "company": "Parloa",
+   "eu": true,
+   "slug": "parloa",
    "via": "djw-census"
   },
   {
-   "slug": "capgeminideutschlandgmbh",
-   "eu": true,
    "company": "Capgemini Invent",
+   "eu": true,
+   "slug": "capgeminideutschlandgmbh",
    "via": "djw-census"
   },
   {
-   "slug": "raisin",
-   "eu": true,
    "company": "Raisin",
+   "eu": true,
+   "slug": "raisin",
    "via": "djw-census"
   },
   {
-   "slug": "avatrgmbh",
-   "eu": true,
    "company": "Avatr",
+   "eu": true,
+   "slug": "avatrgmbh",
    "via": "djw-census"
   }
  ],
@@ -1406,13 +1406,13 @@
    "via": "email"
   },
   {
-   "slug": "arvana",
    "company": "Arvana",
+   "slug": "arvana",
    "via": "djw-census"
   },
   {
-   "slug": "sanktrobo",
    "company": "ST. ROBO",
+   "slug": "sanktrobo",
    "via": "djw-census"
   }
  ],
@@ -1466,123 +1466,123 @@
    "via": "email"
   },
   {
-   "slug": "angellist",
    "company": "AngelList",
+   "slug": "angellist",
    "via": "djw-census"
   },
   {
-   "slug": "analyticpartners",
    "company": "Analytic Partners",
+   "slug": "analyticpartners",
    "via": "djw-census"
   },
   {
-   "slug": "lalamove",
    "company": "LALAMOVE",
+   "slug": "lalamove",
    "via": "djw-census"
   },
   {
-   "slug": "hypebeast",
    "company": "HYPEBEAST",
+   "slug": "hypebeast",
    "via": "djw-census"
   },
   {
-   "slug": "bumbleinc",
    "company": "Bumble",
+   "slug": "bumbleinc",
    "via": "djw-census"
   },
   {
-   "slug": "woven-by-toyota",
    "company": "Woven by Toyota",
+   "slug": "woven-by-toyota",
    "via": "djw-census"
   },
   {
-   "slug": "caseware",
    "company": "Caseware",
+   "slug": "caseware",
    "via": "djw-census"
   },
   {
-   "slug": "usmobile",
    "company": "US Mobile",
+   "slug": "usmobile",
    "via": "djw-census"
   },
   {
-   "slug": "elfbeauty",
    "company": "Elf Beauty",
+   "slug": "elfbeauty",
    "via": "djw-census"
   },
   {
-   "slug": "walkme",
    "company": "walkme",
+   "slug": "walkme",
    "via": "djw-census"
   },
   {
-   "slug": "binance",
    "company": "Binance",
+   "slug": "binance",
    "via": "djw-census"
   },
   {
-   "slug": "bazaarvoice",
    "company": "bazaarvoice",
+   "slug": "bazaarvoice",
    "via": "djw-census"
   },
   {
-   "slug": "mulberry",
    "company": "Mulberry",
+   "slug": "mulberry",
    "via": "djw-census"
   },
   {
-   "slug": "malt",
    "company": "Malt",
+   "slug": "malt",
    "via": "djw-census"
   },
   {
-   "slug": "vestiairecollective",
    "company": "vestiaire collective",
+   "slug": "vestiairecollective",
    "via": "djw-census"
   },
   {
-   "slug": "penumbrainc",
    "company": "Penumbra",
+   "slug": "penumbrainc",
    "via": "djw-census"
   },
   {
-   "slug": "outreach",
    "company": "Outreach",
+   "slug": "outreach",
    "via": "djw-census"
   },
   {
-   "slug": "blinkux",
    "company": "Blink UX",
+   "slug": "blinkux",
    "via": "djw-census"
   },
   {
-   "slug": "spotify",
    "company": "Spotify",
+   "slug": "spotify",
    "via": "djw-census"
   },
   {
-   "slug": "agile-defense",
    "company": "Agile Defence",
+   "slug": "agile-defense",
    "via": "djw-census"
   },
   {
-   "slug": "inkitt",
    "company": "Inkitt",
+   "slug": "inkitt",
    "via": "djw-census"
   },
   {
-   "slug": "kolibrigames",
    "company": "Kolibri Games",
+   "slug": "kolibrigames",
    "via": "djw-census"
   },
   {
-   "slug": "shieldai",
    "company": "Shield AI",
+   "slug": "shieldai",
    "via": "djw-census"
   },
   {
-   "slug": "ivo",
    "company": "Ivo",
+   "slug": "ivo",
    "via": "djw-census"
   }
  ],
@@ -1639,8 +1639,8 @@
    "via": "email"
   },
   {
-   "slug": "tylko",
    "company": "Tylko",
+   "slug": "tylko",
    "via": "djw-census"
   }
  ],
@@ -1668,228 +1668,228 @@
    "via": "email"
   },
   {
-   "slug": "BoschGroup",
    "company": "Bosch Group",
+   "slug": "BoschGroup",
    "via": "djw-census"
   },
   {
-   "slug": "TechlandSA",
    "company": "Techland S.A.",
+   "slug": "TechlandSA",
    "via": "djw-census"
   },
   {
-   "slug": "Wix2",
    "company": "Wix",
+   "slug": "Wix2",
    "via": "djw-census"
   },
   {
-   "slug": "Rituals1",
    "company": "Rituals",
+   "slug": "Rituals1",
    "via": "djw-census"
   },
   {
-   "slug": "Wise",
    "company": "Wise",
+   "slug": "Wise",
    "via": "djw-census"
   },
   {
-   "slug": "ServiceNow",
    "company": "ServiceNow",
+   "slug": "ServiceNow",
    "via": "djw-census"
   },
   {
-   "slug": "Nexthink",
    "company": "Nexthink",
+   "slug": "Nexthink",
    "via": "djw-census"
   },
   {
-   "slug": "Experian",
    "company": "Experian",
+   "slug": "Experian",
    "via": "djw-census"
   },
   {
-   "slug": "NEXTON",
    "company": "NEXTON",
+   "slug": "NEXTON",
    "via": "djw-census"
   },
   {
-   "slug": "RRDonnelley",
    "company": "RR Donnelley",
+   "slug": "RRDonnelley",
    "via": "djw-census"
   },
   {
-   "slug": "ABOUTYOUGmbH",
    "company": "ABOUT YOU",
+   "slug": "ABOUTYOUGmbH",
    "via": "djw-census"
   },
   {
-   "slug": "EgisGroup",
    "company": "Egis Group",
+   "slug": "EgisGroup",
    "via": "djw-census"
   },
   {
-   "slug": "AFRY",
    "company": "AFRY",
+   "slug": "AFRY",
    "via": "djw-census"
   },
   {
-   "slug": "Aumovio",
    "company": "Aumovio",
+   "slug": "Aumovio",
    "via": "djw-census"
   },
   {
-   "slug": "SopraSteria1",
    "company": "Sopra Steria",
+   "slug": "SopraSteria1",
    "via": "djw-census"
   },
   {
-   "slug": "Sportradar",
    "company": "Sportradar",
+   "slug": "Sportradar",
    "via": "djw-census"
   },
   {
-   "slug": "Devoteam",
    "company": "Devoteam",
+   "slug": "Devoteam",
    "via": "djw-census"
   },
   {
-   "slug": "AccorCorpo",
    "company": "AccorCorpo",
+   "slug": "AccorCorpo",
    "via": "djw-census"
   },
   {
-   "slug": "Ubisoft2",
    "company": "Ubisoft",
+   "slug": "Ubisoft2",
    "via": "djw-census"
   },
   {
-   "slug": "InformaGroupPlc",
    "company": "Informa Group Plc.",
+   "slug": "InformaGroupPlc",
    "via": "djw-census"
   },
   {
-   "slug": "Konecranes",
    "company": "Konecranes",
+   "slug": "Konecranes",
    "via": "djw-census"
   },
   {
-   "slug": "ASSYSTEM",
    "company": "ASSYSTEM",
+   "slug": "ASSYSTEM",
    "via": "djw-census"
   },
   {
-   "slug": "Entain",
    "company": "Entain",
+   "slug": "Entain",
    "via": "djw-census"
   },
   {
-   "slug": "LegalAndGeneral",
    "company": "LegalAndGeneral",
+   "slug": "LegalAndGeneral",
    "via": "djw-census"
   },
   {
-   "slug": "EVERSANA1",
    "company": "EVERSANA",
+   "slug": "EVERSANA1",
    "via": "djw-census"
   },
   {
-   "slug": "DeliveryHero",
    "company": "Delivery Hero",
+   "slug": "DeliveryHero",
    "via": "djw-census"
   },
   {
-   "slug": "AJBell1",
    "company": "AJ Bell",
+   "slug": "AJBell1",
    "via": "djw-census"
   },
   {
-   "slug": "Endava",
    "company": "Endava",
+   "slug": "Endava",
    "via": "djw-census"
   },
   {
-   "slug": "ReitmansCanadaLteLtd",
    "company": "Reitmans (Canada) Ltée/Ltd",
+   "slug": "ReitmansCanadaLteLtd",
    "via": "djw-census"
   },
   {
-   "slug": "EVERIENCE",
    "company": "EVERIENCE",
+   "slug": "EVERIENCE",
    "via": "djw-census"
   },
   {
-   "slug": "RHG",
    "company": "Radisson Hotel Group",
+   "slug": "RHG",
    "via": "djw-census"
   },
   {
-   "slug": "ReachPlc",
    "company": "Reach plc",
+   "slug": "ReachPlc",
    "via": "djw-census"
   },
   {
-   "slug": "TBCBANK",
    "company": "TBCBANK",
+   "slug": "TBCBANK",
    "via": "djw-census"
   },
   {
-   "slug": "Scalian",
    "company": "Scalian",
+   "slug": "Scalian",
    "via": "djw-census"
   },
   {
-   "slug": "FrasersGroup",
    "company": "Frasers Group",
+   "slug": "FrasersGroup",
    "via": "djw-census"
   },
   {
-   "slug": "CDPROJEKTRED",
    "company": "CD PROJEKT",
+   "slug": "CDPROJEKTRED",
    "via": "djw-census"
   },
   {
-   "slug": "Sia",
    "company": "Sia",
+   "slug": "Sia",
    "via": "djw-census"
   },
   {
-   "slug": "HMGroup",
    "company": "H&M Group",
+   "slug": "HMGroup",
    "via": "djw-census"
   },
   {
-   "slug": "Playtech",
    "company": "Playtech",
+   "slug": "Playtech",
    "via": "djw-census"
   },
   {
-   "slug": "Version1",
    "company": "Version 1",
+   "slug": "Version1",
    "via": "djw-census"
   },
   {
-   "slug": "REXEL1",
    "company": "REXEL",
+   "slug": "REXEL1",
    "via": "djw-census"
   },
   {
-   "slug": "AveryDennison",
    "company": "Avery Dennison",
+   "slug": "AveryDennison",
    "via": "djw-census"
   },
   {
-   "slug": "VeoliaEnvironnementSA",
    "company": "Veolia Environnement SA",
+   "slug": "VeoliaEnvironnementSA",
    "via": "djw-census"
   },
   {
-   "slug": "PortmanDentex",
    "company": "PortmanDentex",
+   "slug": "PortmanDentex",
    "via": "djw-census"
   },
   {
-   "slug": "Three-UK",
    "company": "Three UK",
+   "slug": "Three-UK",
    "via": "djw-census"
   }
  ],
@@ -1973,13 +1973,13 @@
    "via": "email"
   },
   {
-   "host": "upcloud.teamtailor.com",
    "company": "Upcloud",
+   "host": "upcloud.teamtailor.com",
    "via": "djw-census"
   },
   {
-   "host": "twinharbour.teamtailor.com",
    "company": "Twin Harbour",
+   "host": "twinharbour.teamtailor.com",
    "via": "djw-census"
   }
  ],
@@ -2065,78 +2065,78 @@
    "via": "email"
   },
   {
-   "slug": "zaizi",
    "company": "Zaizi",
+   "slug": "zaizi",
    "via": "djw-census"
   },
   {
-   "slug": "jones-knowles-ritchie",
    "company": "Jones Knowles Ritchie",
+   "slug": "jones-knowles-ritchie",
    "via": "djw-census"
   },
   {
-   "slug": "escape-velocity-entertainment-inc",
    "company": "Escape Velocity Entertainment Inc",
+   "slug": "escape-velocity-entertainment-inc",
    "via": "djw-census"
   },
   {
-   "slug": "lyst",
    "company": "Lyst",
+   "slug": "lyst",
    "via": "djw-census"
   },
   {
-   "slug": "salescaptain",
    "company": "Sales Captain",
+   "slug": "salescaptain",
    "via": "djw-census"
   },
   {
-   "slug": "control-risks-6",
    "company": "ControlRisks",
+   "slug": "control-risks-6",
    "via": "djw-census"
   },
   {
-   "slug": "soar-with-us",
    "company": "Soar With Us",
+   "slug": "soar-with-us",
    "via": "djw-census"
   },
   {
-   "slug": "paired",
    "company": "Paired",
+   "slug": "paired",
    "via": "djw-census"
   },
   {
-   "slug": "mondu",
    "company": "Mondu",
+   "slug": "mondu",
    "via": "djw-census"
   },
   {
-   "slug": "workmotion",
    "company": "WorkMotion",
+   "slug": "workmotion",
    "via": "djw-census"
   },
   {
-   "slug": "fioneer",
    "company": "SAP Fioneer",
+   "slug": "fioneer",
    "via": "djw-census"
   },
   {
-   "slug": "snuggs",
    "company": "Snuggs",
+   "slug": "snuggs",
    "via": "djw-census"
   },
   {
-   "slug": "trinetix",
    "company": "Trinetix",
+   "slug": "trinetix",
    "via": "djw-census"
   },
   {
-   "slug": "dlthub",
    "company": "dltHub",
+   "slug": "dlthub",
    "via": "djw-census"
   },
   {
-   "slug": "goodhabitz",
    "company": "goodhabitz",
+   "slug": "goodhabitz",
    "via": "djw-census"
   }
  ],

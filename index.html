@@ -236,24 +236,17 @@ function bucketOf(j) {
     return "eu";
   return j.bucket;
 }
+function canonT(s) { return norm(s).replace(/\bsr\b/g, "senior").replace(/\bjr\b/g, "junior"); }
 function mailFor(j) {
-  // the application-confirmation email(s) behind this role, if any exist
-  const co = norm(j.company), mine = CONFS.filter(c => norm(c.company) === co);
-  if (!mine.length) return "";
-  // newest first in CONFS - keep one email per distinct role
-  const seen = {}, uniq = [];
-  for (const c of mine) {
-    const k = norm(c.title || c.subject);
-    if (!seen[k]) { seen[k] = 1; uniq.push(c); }
-  }
-  const exact = uniq.find(c => norm(c.title || "") === norm(j.title));
-  const list = exact ? [exact] : uniq;
-  const head = exact ? "Applied — confirmation on file"
-    : "Applied at " + esc(j.company) + " — the email" + (list.length > 1 ? "s" : "") + " you got";
-  return "<h3>" + head + "</h3>" + list.map(c =>
-    "<div class='mailconf'><b>" + esc(c.subject) + '</b><span class="mailmeta">' +
-    (c.title ? esc(c.title) + " · " : "") + esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) +
-    "</span>" + esc(c.body) + "</div>").join("");
+  // strict: only the confirmation for exactly this company + this role.
+  // One email never fans out across different titles.
+  const key = (MAYBE[j.id] || {}).email_key;
+  const c = (key && CONFS.find(x => x.key === key)) ||
+    CONFS.find(x => x.title && canonT(x.company) === canonT(j.company) && canonT(x.title) === canonT(j.title));
+  if (!c) return "";
+  return "<h3>Applied — confirmation on file</h3><div class='mailconf'><b>" + esc(c.subject) +
+    '</b><span class="mailmeta">' + esc(c.title) + " · " + esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) +
+    "</span>" + esc(c.body) + "</div>";
 }
 function variantKey(j) {
   // same company, same title once (FTC/Contract/city)-style parentheticals go

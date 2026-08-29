@@ -232,6 +232,23 @@ function bucketOf(j) {
     return "eu";
   return j.bucket;
 }
+function variantKey(j) {
+  // same company, same title once (FTC/Contract/city)-style parentheticals go
+  return norm(j.company) + "|" + norm((j.title || "").replace(/\([^)]*\)/g, " "));
+}
+function propagateVariants() {
+  // a verdict on one posting variant covers its twins - ZOE/Air Apps style
+  const byKey = {};
+  for (const j of DATA.jobs)
+    if (j.active && state.jobs[j.id]) byKey[variantKey(j)] = state.jobs[j.id];
+  let changed = false;
+  for (const j of DATA.jobs) {
+    if (!j.active || state.jobs[j.id]) continue;
+    const v = byKey[variantKey(j)];
+    if (v) { state.jobs[j.id] = v; changed = true; }
+  }
+  if (changed) { save(); scheduleState(); }
+}
 function unsureReason(j) {
   const loc = (j.location || "").trim();
   if (!loc) return "the source lists no location at all";
@@ -462,7 +479,11 @@ function card(j, opts) {
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
-  on(".restore", () => { delete state.jobs[j.id]; save(); scheduleState(); render(); });
+  on(".restore", () => {
+    const k = variantKey(j);
+    DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) delete state.jobs[x.id]; });
+    save(); scheduleState(); render();
+  });
   return el;
 }
 
@@ -477,6 +498,7 @@ function section(root, label, jobs, opts) {
 function render() {
   const root = document.getElementById("sections");
   root.innerHTML = "";
+  propagateVariants();
   // one flat list per tab, sorted by the DAYS count - nothing else
   const byDays = (a, b2) => {
     const da = days(a), db = days(b2);

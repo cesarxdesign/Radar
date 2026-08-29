@@ -41,7 +41,19 @@ def fetch_json(url, timeout=30):
 
 def title_ok(title):
     t = title or ""
-    return bool(INC.search(t)) and not EXC_JUNIOR.search(t) and not EXC_FIELD.search(t)
+    return bool(INC.search(t)) and not EXC_FIELD.search(t)
+
+def salary_top(s):
+    """Highest figure in a salary string, normalized to plain units."""
+    best = 0
+    for m in re.finditer(r"(\d[\d.,]*)\s?([kKmM]?)", s or ""):
+        try:
+            n = float(m.group(1).replace(",", ""))
+        except ValueError:
+            continue
+        n *= {"k": 1e3, "m": 1e6}.get(m.group(2).lower(), 1)
+        best = max(best, n)
+    return best
 
 # A JD written in another language means they want that language - cut it.
 # The JD text decides, never the company's nationality.
@@ -131,7 +143,13 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
         return None  # window is explicitly far from Portugal
     if loc:
         if ELSEWHERE_RE.search(loc):
-            return None  # stated scope is somewhere else, not Portugal
+            # RRS parity: a REMOTE role stated elsewhere might still hire
+            # from PT - surface as Unsure. Hybrid/on-site elsewhere drops.
+            if re.search(r"\bhybrid\b", loc, re.I):
+                return None
+            if REMOTE_RE.search(loc) or remote is True:
+                return "tiebreak"
+            return None  # on-site somewhere specific, not Portugal
         return "tiebreak"  # a place or scope we can't read - surface it
     # No location info at all.
     if remote is False:
@@ -726,6 +744,26 @@ def src_manatal(slug, company):
         out.append(job)
     return out
 
+def src_freshteam(slug, company):
+    d = fetch_json(f"https://{slug}.freshteam.com/hire/widgets/jobs.json")
+    out = []
+    for j in d.get("jobs", []):
+        if j.get("deleted") or str(j.get("status", "")).lower() in ("closed", "on_hold"):
+            continue
+        raw = unescape(j.get("description") or "")
+        remote = str(j.get("remote", "")).lower() == "true"
+        locs = j.get("preferred_remote_job_locations") or ""
+        out.append({
+            "source": f"freshteam/{slug}", "company": company,
+            "title": j.get("title"), "url": j.get("url"),
+            "location": (locs if isinstance(locs, str)
+                         else ", ".join(map(str, locs))) or ("Remote" if remote else ""),
+            "remote": remote or None, "salary": None,
+            "posted": j.get("created_at"),
+            "desc": strip_html(raw), "raw": raw,
+        })
+    return out
+
 def src_rippling(slug, company):
     """Rippling ATS - jobs embedded in the board page's NEXT_DATA."""
     html = fetch(f"https://ats.rippling.com/{slug}/jobs")
@@ -876,6 +914,9 @@ def registry_tasks():
     for e in REGISTRY.get("jazzhr", []):
         tasks.append((f"jazzhr/{e['slug']}", lambda e=e: src_jazzhr(
             e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("freshteam", []):
+        tasks.append((f"freshteam/{e['slug']}", lambda e=e: src_freshteam(
+            e["slug"], label(e, e["slug"].title()))))
     for e in REGISTRY.get("comeet", []):
         tasks.append((f"comeet/{e['slug']}", lambda e=e: src_comeet(
             e["slug"], e["uid"], e.get("token"), label(e, e["slug"].title()))))
@@ -892,11 +933,14 @@ DISCOVERY_SITES = [
     ("ashby", "jobs.ashbyhq.com"), ("greenhouse", "boards.greenhouse.io"),
     ("lever", "jobs.lever.co"), ("workday", "myworkdayjobs.com"),
     ("rippling", "ats.rippling.com"), ("jazzhr", "applytojob.com"),
-    ("comeet", "comeet.com"),
+    ("comeet", "comeet.com"), ("freshteam", "freshteam.com"),
 ]
 
 def parse_board_url(u):
     """URL on any known ATS platform -> (platform, registry entry) or None."""
+    m = re.search(r"https?://([a-z0-9-]+)\.freshteam\.com", u, re.I)
+    if m and m.group(1) not in ("www", "support"):
+        return "freshteam", {"slug": m.group(1).lower()}
     m = re.search(r"https?://([a-z0-9-]+)(\.wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)", u, re.I)
     if m:
         return "workday", {"tenant": m.group(1).lower(),
@@ -1533,6 +1577,10 @@ def run():
             if v == "y":
                 bucket = "ok"
         salary = j.get("salary") or find_salary(j.get("desc"))
+        if EXC_JUNIOR.search(j.get("title") or ""):
+            # junior/mid titles only survive when the money says otherwise
+            if salary_top(salary) < 100_000:
+                continue
         key = job_key(j.get("company"), j.get("title"))
         entry = {
             "id": key, "title": (j.get("title") or "").strip(),

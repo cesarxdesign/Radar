@@ -167,6 +167,18 @@
    "via": "email"
   }
  ],
+ "freshteam": [
+  {
+   "company": "TourScanner",
+   "slug": "tourscanner",
+   "via": "rrs-census"
+  },
+  {
+   "company": "A5 Labs",
+   "slug": "a5labs-talent",
+   "via": "rrs-census"
+  }
+ ],
  "greenhouse": [
   {
    "company": "Co–Star",

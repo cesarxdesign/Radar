@@ -1,0 +1,53 @@
+name: tune one
+# Open an issue titled "tune: Company — Role" with the JD pasted in the
+# body; the tuned CV comes back as a comment with a link. Owner-only.
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: nightcv   # never push-race a batch night run
+  cancel-in-progress: false
+jobs:
+  tune:
+    if: >-
+      github.event.issue.user.login == github.repository_owner &&
+      (startsWith(github.event.issue.title, 'tune:') ||
+       startsWith(github.event.issue.title, 'Tune:') ||
+       startsWith(github.event.issue.title, 'TUNE:'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: cesarxdesign/CV-Tuner
+          path: tcv
+      - name: install claude cli
+        run: npm install -g @anthropic-ai/claude-code
+      - name: write jd from the issue
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          BODY: ${{ github.event.issue.body }}
+        run: printf '%s\n\n%s\n' "${TITLE#*:}" "$BODY" > jd.txt
+      - name: tune on the subscription
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: python3 tune_one.py jd.txt "i${{ github.event.issue.number }}"
+      - name: push the CV
+        run: |
+          git config user.email cesarxdesign@gmail.com
+          git config user.name "Cesar Garcia"
+          git add cvs/
+          git commit -m "manual tune: issue #${{ github.event.issue.number }}"
+          git pull --rebase --autostash origin main
+          git push origin main
+      - name: reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} \
+            --body "CV ready: https://cesarxdesign.github.io/Radar/cvs/manual/i${{ github.event.issue.number }}/Cesar%20Garcia%20CV.pdf — give Pages a minute to deploy before clicking."
+          gh issue close ${{ github.event.issue.number }} -R ${{ github.repository }}

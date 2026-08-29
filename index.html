@@ -128,6 +128,11 @@ h2 .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-si
 .jacts button:hover { color: var(--ink); border-color: var(--mut); }
 .jacts .applied.on { color: var(--acc); border-color: var(--acc); }
 .empty { color: var(--mut); padding: 8px 2px 20px; font-size: 14px; }
+.cohead { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 8px; padding: 0 2px; }
+.cohead b { font-size: 14px; }
+.cohead .cohead-days { font-size: 12px; font-weight: 700; color: var(--amber); min-width: 52px; }
+.cohead .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 11px; color: var(--mut); }
+.job.ingroup { margin-left: 18px; }
 .settings {
   background: var(--card); border: 1px solid var(--line); border-radius: 10px;
   padding: 16px; margin: 16px 0; font-size: 13px; display: none;
@@ -571,7 +576,33 @@ function render() {
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
-    visible.forEach(j => root.appendChild(card(j, { isNew: j.first_run === DATA.run_id, done: done, maybe: tab === "maybe" })));
+    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done, maybe: tab === "maybe" });
+    // company grouping - sticky per run: once grouped this run, a company's
+    // rows stay under their header even when triage leaves just one behind
+    let G = { run: null, tabs: {} };
+    try { G = JSON.parse(localStorage.getItem("radar_groups") || "null") || G; } catch (e) {}
+    if (G.run !== DATA.run_id) G = { run: DATA.run_id, tabs: {} };
+    const gset = G.tabs[tab] = G.tabs[tab] || {};
+    const byCo = {};
+    visible.forEach(j => { const c = norm(j.company); (byCo[c] = byCo[c] || []).push(j); });
+    for (const c in byCo) if (byCo[c].length >= 2) gset[c] = true;
+    try { localStorage.setItem("radar_groups", JSON.stringify(G)); } catch (e) {}
+    const emitted = {};
+    visible.forEach(j => {
+      const c = norm(j.company);
+      if (!gset[c]) { root.appendChild(card(j, opts(j))); return; }
+      if (emitted[c]) return;
+      emitted[c] = true;
+      const rows = byCo[c];           // days-sorted already - newest leads
+      const dd = days(rows[0]);
+      const h = document.createElement("div");
+      h.className = "cohead";
+      h.innerHTML = '<span class="cohead-days">' + (dd === null ? "?" : dd + (dd === 1 ? " day" : " days")) + "</span>" +
+        "<b>" + esc(rows[0].company) + "</b>" +
+        '<span class="n">' + rows.length + (rows.length === 1 ? " role" : " roles") + "</span>";
+      root.appendChild(h);
+      rows.forEach(x => { const el = card(x, opts(x)); el.classList.add("ingroup"); root.appendChild(el); });
+    });
   }
 
   renderPreview();

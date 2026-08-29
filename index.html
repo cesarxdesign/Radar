@@ -50,6 +50,7 @@ body {
 .brief .tiles { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px; }
 .brief h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin: 18px 0 8px; }
 .mailconf { font-size: 13.5px; line-height: 1.55; border-left: 2px solid var(--acc); padding: 8px 12px; margin: 4px 0 16px; }
+.mailconf.same { border-left-color: var(--amber); background: var(--amber-bg); }
 .mailconf b { display: block; }
 .mailconf .mailmeta { display: block; color: var(--mut); margin: 2px 0 8px; }
 .brief ul { padding-left: 18px; font-size: 14px; }
@@ -238,11 +239,27 @@ function bucketOf(j) {
 }
 function canonT(s) { return norm(s).replace(/\bsr\b/g, "senior").replace(/\bjr\b/g, "junior"); }
 function mailFor(j) {
-  // strict: only the confirmation for exactly this company + this role.
-  // One email never fans out across different titles.
-  const key = (MAYBE[j.id] || {}).email_key;
-  const c = (key && CONFS.find(x => x.key === key)) ||
-    CONFS.find(x => x.title && canonT(x.company) === canonT(j.company) && canonT(x.title) === canonT(j.title));
+  const my = MAYBE[j.id];
+  if (my && my.emails && my.emails.length) {
+    // review queue: every confirmation from this company, labelled with its own
+    // role - César compares and decides; nothing is marked applied by code
+    const list = my.emails.map(k => CONFS.find(c => c.key === k)).filter(Boolean);
+    const seen = {}, uniq = [];
+    for (const c of list) {
+      const k = canonT(c.title || c.subject);
+      if (!seen[k]) { seen[k] = 1; uniq.push(c); }
+    }
+    return "<h3>Your applications at " + esc(j.company) + " — do any match this role?</h3>" +
+      uniq.map(c => {
+        const same = c.title && canonT(c.title) === canonT(j.title);
+        return "<div class='mailconf" + (same ? " same" : "") + "'><b>" + esc(c.subject) +
+          '</b><span class="mailmeta">' + (same ? "⚠ same role title · " : "") +
+          esc(c.title || "role not named in the email") + " · " +
+          esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span>" + esc(c.body) + "</div>";
+      }).join("");
+  }
+  // outside the queue: only an exact company+title confirmation ever shows
+  const c = CONFS.find(x => x.title && canonT(x.company) === canonT(j.company) && canonT(x.title) === canonT(j.title));
   if (!c) return "";
   return "<h3>Applied — confirmation on file</h3><div class='mailconf'><b>" + esc(c.subject) +
     '</b><span class="mailmeta">' + esc(c.title) + " · " + esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) +

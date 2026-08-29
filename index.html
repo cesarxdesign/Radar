@@ -51,10 +51,6 @@ body {
 .brief { padding: 22px; overflow-y: auto; width: 100%; flex: 1; min-height: 0; }
 .brief .tiles { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px; }
 .brief h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin: 18px 0 8px; }
-.mailconf { font-size: 13.5px; line-height: 1.55; border-left: 2px solid var(--acc); padding: 8px 12px; margin: 4px 0 16px; }
-.mailconf.same { border-left-color: var(--amber); background: var(--amber-bg); }
-.mailconf b { display: block; }
-.mailconf .mailmeta { display: block; color: var(--mut); margin: 2px 0 8px; }
 .brief ul { padding-left: 18px; font-size: 14px; }
 .brief li { margin-bottom: 4px; }
 .brief .jd { white-space: pre-wrap; font-size: 13.5px; line-height: 1.55; color: var(--ink); opacity: 0.92; }
@@ -176,7 +172,6 @@ footer .bad { color: var(--danger); }
     <nav class="tabs">
       <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
       <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
-      <button class="tab" data-tab="maybe">Maybe<span class="n" id="c-maybe"></span></button>
       <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
       <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
     </nav>
@@ -221,7 +216,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, FACTS = {}, JDS = null, CVS = {}, MAYBE = {}, CONFS = [], tab = "open";
+let DATA = null, FACTS = {}, JDS = null, CVS = {}, tab = "open";
 let SEL = null, PV = null;
 
 // ---------- helpers ----------
@@ -250,31 +245,6 @@ function bucketOf(j) {
   if (j.bucket === "tiebreak" && FACTS[j.id] && /^yes/i.test(FACTS[j.id].portugal || ""))
     return "eu";
   return j.bucket;
-}
-function canonT(s) { return norm(s).replace(/\bsr\b/g, "senior").replace(/\bjr\b/g, "junior"); }
-function mailFor(j) {
-  const my = MAYBE[j.id];
-  if (my && my.email) {
-    // one judged pairing per row - never a different role's email
-    const c = CONFS.find(x => x.key === my.email);
-    if (c) {
-      const head = my.reason === "same"
-        ? "⚠ Applied — this exact role, confirmation on file"
-        : my.reason === "near"
-        ? "⚠ You applied to a close title here — likely the same job, retitled"
-        : "You applied at " + esc(j.company) + " but the email names no role — is it this posting?";
-      return "<h3>" + head + "</h3><div class='mailconf" + (my.reason !== "unnamed" ? " same" : "") +
-        "'><b>" + esc(c.subject) + '</b><span class="mailmeta">' +
-        esc(c.title || "role not named in the email") + " · " +
-        esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span>" + esc(c.body) + "</div>";
-    }
-  }
-  // outside the queue: only an exact company+title confirmation ever shows
-  const c = CONFS.find(x => x.title && canonT(x.company) === canonT(j.company) && canonT(x.title) === canonT(j.title));
-  if (!c) return "";
-  return "<h3>Applied — confirmation on file</h3><div class='mailconf'><b>" + esc(c.subject) +
-    '</b><span class="mailmeta">' + esc(c.title) + " · " + esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) +
-    "</span>" + esc(c.body) + "</div>";
 }
 function variantKey(j) {
   // same company, same title once (FTC/Contract/city)-style parentheticals go
@@ -437,9 +407,7 @@ function renderPreview() {
   const body = document.getElementById("pv-body");
   const why = bucketOf(j) === "tiebreak"
     ? '<div class="unsure-why">Unsure because ' + esc(unsureReason(j)) + "</div>" : "";
-  const mail = mailFor(j);
-  // on the Maybe tab the email IS the preview - never the apply page
-  if (j.frameable && !(tab === "maybe" && mail)) {
+  if (j.frameable) {
     body.innerHTML = why + '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
     return;
   }
@@ -447,7 +415,6 @@ function renderPreview() {
   const pt = ptSituation(j, f);
   const dd = days(j);
   let h = why + '<div class="brief">' +
-    (tab === "maybe" ? mail : "") +
     '<a class="goapply" href="' + esc(target) + '" target="_blank" rel="noopener">Open application ↗</a>' +
     (j.frameable ? "" : '<div class="noframe">this site refuses embedding — the form opens in a new tab</div>') +
     '<div class="tiles">' +
@@ -457,7 +424,6 @@ function renderPreview() {
       cell("years", esc(f.years_experience || (j.xp || "").replace(/y$/, "")), "") +
       daysCell(dd, j) +
     "</div>";
-  h += tab === "maybe" ? "" : mail;
   if (j.board_roles && j.board_roles.length)
     h += "<h3>Live on their board right now</h3><ul>" + j.board_roles.map(r =>
       '<li><a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" +
@@ -528,17 +494,11 @@ function card(j, opts) {
       opts.done
         ? '<button class="restore">restore</button>'
         : '<button class="applied">applied</button>' +
-          (opts.maybe ? '<button class="m2o">move to open</button>' : "") +
           '<button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
   on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
   on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
-  on(".m2o", () => {
-    // not the job already applied to - clear it into Open as an OK'd role
-    state.verdicts[j.id] = { v: "y", via: "maybe" };
-    save(); render();
-  });
   on(".restore", () => {
     const k = variantKey(j);
     DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) delete state.jobs[x.id]; });
@@ -572,7 +532,6 @@ function render() {
   const pools = {
     open: inbox.filter(j => bucketOf(j) !== "tiebreak"),
     unsure: inbox.filter(j => bucketOf(j) === "tiebreak"),
-    maybe: inbox.filter(j => MAYBE[j.id] && !state.verdicts[j.id]),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded"),
   };
@@ -583,12 +542,11 @@ function render() {
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
   if (!visible.length) {
     const EMPTY = { open: "No open roles match.", applied: "Nothing applied yet.",
-                    discarded: "Nothing discarded.", unsure: "Nothing unsure.",
-                    maybe: "No overlap between email applications and open roles." };
+                    discarded: "Nothing discarded.", unsure: "Nothing unsure." };
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
-    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done, maybe: tab === "maybe" });
+    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done });
     // company grouping - sticky per run: once grouped this run, a company's
     // rows stay under their header even when triage leaves just one behind
     let G = { run: null, tabs: {} };
@@ -647,13 +605,6 @@ document.getElementById("savetok").onclick = () => {
 };
 if (state.token) document.getElementById("tok").value = state.token;
 
-fetch("data/applied_email_public.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => {
-  if (!d) return;
-  MAYBE = {};
-  (d.maybe || []).forEach(m => MAYBE[m.id] = m);
-  CONFS = d.confirmations || [];
-  if (DATA) render();
-}).catch(() => {});
 fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(t => {
   REPO_STATE = t;
   if (t) {

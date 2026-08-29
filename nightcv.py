@@ -17,7 +17,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-RADAR = "https://cesarxdesign.github.io/jobradar/data/jds.json"
+RADAR = "https://cesarxdesign.github.io/radar/data/jds.json"
 TCV_DIR = Path.home() / "Claude" / "CXD" / "cv" / "tcv"
 TCV_PORT = int(os.environ.get("TCV_PORT", "8765"))
 TCV = f"http://127.0.0.1:{TCV_PORT}"

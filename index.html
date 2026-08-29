@@ -164,7 +164,7 @@ footer .bad { color: var(--danger); }
   </header>
   <div class="settings" id="settings">
     <p><strong>GitHub token</strong> — enables the Scrape now button. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Create a fine-grained token</a>:
-    repository access <em>only cesarxdesign/jobradar</em>, permissions <em>Contents: read&nbsp;+&nbsp;write</em> and
+    repository access <em>only cesarxdesign/radar</em>, permissions <em>Contents: read&nbsp;+&nbsp;write</em> and
     <em>Actions: read&nbsp;+&nbsp;write</em>. It never leaves this browser.</p>
     <input type="password" id="tok" placeholder="github_pat_…" autocomplete="off">
     <button id="savetok">Save</button><span class="sync" id="syncmsg"></span>
@@ -191,7 +191,7 @@ footer .bad { color: var(--danger); }
 <div class="toast" id="toast"></div>
 <script>
 "use strict";
-const REPO = "cesarxdesign/jobradar";
+const REPO = "cesarxdesign/radar";
 const LS = "jobradar-v2";
 let state = { jobs: {}, verdicts: {}, emails: {}, token: "" };
 try {

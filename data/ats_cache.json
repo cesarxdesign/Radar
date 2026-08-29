@@ -5,6 +5,10 @@
   "slug": "addepar1",
   "via": "55198b53ac149efa"
  },
+ "aecom": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
  "air apps": {
   "checked": "2026-08-28T22:40:15Z",
   "kind": "ashby",
@@ -37,11 +41,21 @@
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
  },
+ "cloudflare inc": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "greenhouse",
+  "slug": "cloudflare",
+  "via": "cfcfca055879a3f1"
+ },
  "consensys": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "greenhouse",
   "slug": "consensys",
   "via": "471d129097fa5781"
+ },
+ "cornelis networks inc": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
  },
  "cresta": {
   "checked": "2026-08-29T11:17:45Z",
@@ -77,11 +91,27 @@
   "slug": "figma",
   "via": "2c2a86f7c63115e0"
  },
+ "fisher associates p e l s l a d": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
+ "fresh prints": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "greenhouse",
+  "slug": "freshprints",
+  "via": "c08a4dda8814f218"
+ },
  "fueled": {
   "checked": "2026-08-28T23:02:18Z",
   "kind": "greenhouse",
   "slug": "fueledcareers",
   "via": "5ffa0ba9139dca8f"
+ },
+ "fullscript": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "lever",
+  "slug": "fullscript",
+  "via": "1c03e92fa74c3e86"
  },
  "future plc": {
   "checked": "2026-08-29T11:17:45Z",
@@ -89,6 +119,10 @@
  },
  "garden3d": {
   "checked": "2026-08-28T10:55:55Z",
+  "kind": null
+ },
+ "hanson professional services": {
+  "checked": "2026-08-29T22:11:38Z",
   "kind": null
  },
  "homebound": {
@@ -173,6 +207,18 @@
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
  },
+ "interaction design foundation": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
+ "ischool": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
+ "ixdf interaction design foundation": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
  "jobgether": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": "lever",
@@ -189,6 +235,10 @@
  },
  "kazaar fragrances": {
   "checked": "2026-08-28T10:55:55Z",
+  "kind": null
+ },
+ "kertos": {
+  "checked": "2026-08-29T22:11:38Z",
   "kind": null
  },
  "koin limited": {
@@ -247,6 +297,12 @@
   "checked": "2026-08-29T11:17:45Z",
   "kind": null
  },
+ "oklo": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "greenhouse",
+  "slug": "oklo",
+  "via": "209b6ce294944797"
+ },
  "okx": {
   "checked": "2026-08-29T11:17:45Z",
   "kind": "greenhouse",
@@ -266,6 +322,12 @@
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
  },
+ "perfectserve": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "greenhouse",
+  "slug": "perfectserve",
+  "via": "3628db04cbf26c4e"
+ },
  "performancepixel gmbh": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
@@ -273,6 +335,12 @@
  "pixel one": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
+ },
+ "pleo": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "ashby",
+  "slug": "pleo",
+  "via": "b8cb6e04262c2b00"
  },
  "pressw": {
   "checked": "2026-08-28T10:55:55Z",
@@ -292,11 +360,23 @@
   "slug": "remote",
   "via": "307f6605876e54e0"
  },
+ "rtx": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
  "samsara": {
   "checked": "2026-08-29T11:17:45Z",
   "kind": "greenhouse",
   "slug": "samsara",
   "via": "47ad5bf8a5cb7303"
+ },
+ "sunotec": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
+ },
+ "systra": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
  },
  "teamsnap": {
   "checked": "2026-08-29T11:17:45Z",
@@ -315,6 +395,10 @@
   "kind": "ashby",
   "slug": "truelogic",
   "via": "97da1d5c57fc2479"
+ },
+ "uptalent io": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": null
  },
  "vercel": {
   "checked": "2026-08-29T11:17:45Z",
@@ -336,6 +420,12 @@
   "checked": "2026-08-28T10:55:55Z",
   "kind": "ashby",
   "slug": "worldly"
+ },
+ "wpromote": {
+  "checked": "2026-08-29T22:11:38Z",
+  "kind": "lever",
+  "slug": "wpromote",
+  "via": "69d8292ce8f4b7b5"
  },
  "wsp": {
   "checked": "2026-08-29T11:17:45Z",

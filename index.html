@@ -171,6 +171,7 @@ footer .bad { color: var(--danger); }
     </header>
     <nav class="tabs">
       <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
+      <button class="tab" data-tab="portugal">Portugal<span class="n" id="c-portugal"></span></button>
       <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
       <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
       <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
@@ -533,9 +534,13 @@ function render() {
   };
   const act = DATA.jobs.filter(j => j.active).sort(byDays);
   const inbox = act.filter(j => !state.jobs[j.id]);
+  // physically-in-Portugal roles (onsite/hybrid) get their own tab, even when
+  // the role itself is still unsure - remote-from-Portugal stays in Open
+  const isPT = j => /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || "");
   const pools = {
-    open: inbox.filter(j => bucketOf(j) !== "tiebreak"),
-    unsure: inbox.filter(j => bucketOf(j) === "tiebreak"),
+    open: inbox.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
+    portugal: inbox.filter(isPT),
+    unsure: inbox.filter(j => !isPT(j) && bucketOf(j) === "tiebreak"),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded"),
   };
@@ -546,7 +551,8 @@ function render() {
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
   if (!visible.length) {
     const EMPTY = { open: "No open roles match.", applied: "Nothing applied yet.",
-                    discarded: "Nothing discarded.", unsure: "Nothing unsure." };
+                    discarded: "Nothing discarded.", unsure: "Nothing unsure.",
+                    portugal: "No onsite/hybrid roles in Portugal right now." };
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";

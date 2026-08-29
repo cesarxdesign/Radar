@@ -518,13 +518,16 @@ function renderEmailPreview() {
     return;
   }
   document.getElementById("pv-title").textContent = m.subject || m.title || "—";
-  document.getElementById("pv-co").textContent = (m.from || "") + " · " + (m.date || "").split(",").slice(0, 2).join(",");
+  document.getElementById("pv-co").textContent = (m.from || m.from_domain || "") + " · " + (m.date || "").split(",").slice(0, 2).join(",");
   const j = m.radar_id && DATA.jobs.find(x => x.id === m.radar_id);
   body.innerHTML = '<div class="brief">' +
     (j ? '<div class="noframe">paired with radar: ' + esc(j.company) + " — " + esc(j.title) +
          " (" + esc(j.source) + ")</div>"
        : '<div class="noframe">no radar pairing — role likely gone from the internet</div>') +
-    "<h3>Email</h3><div class='jd'>" + esc(m.body || "(no body captured)") + "</div></div>";
+    "<h3>Email</h3><div class='jd'>" + (m.body ? esc(m.body)
+      : (EMAILS && EMAILS.redacted
+        ? "Email body stays on your Mac — the public dashboard carries only the redacted sweep. Open the dashboard from the repo folder to read it."
+        : "(no body captured)")) + "</div></div>";
 }
 
 // ---------- render ----------
@@ -629,7 +632,11 @@ fetch("data/facts.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(f 
   FACTS = f || {}; if (DATA) render();
 }).catch(() => {});
 fetch("data/applied_email.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => {
-  EMAILS = d; if (DATA) render();
+  if (d) { EMAILS = d; if (DATA) render(); return; }
+  // public dashboard: the full sweep stays on his Mac - use the redacted twin
+  return fetch("data/applied_email_public.json?t=" + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(d2 => { EMAILS = d2; if (DATA) render(); });
 }).catch(() => {});
 fetch("data/cvs.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(d => {
   CVS = d || {}; PV = null; if (DATA) render();

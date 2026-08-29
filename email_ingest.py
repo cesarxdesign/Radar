@@ -138,6 +138,16 @@ def main():
     OUT_FILE.write_text(json.dumps(
         {"generated_at": scrape.RUN_ID, "matches": matches},
         indent=1, ensure_ascii=False))
+    # Redacted twin for the public dashboard (GitHub Pages): no bodies, no
+    # links (candidate tokens), sender reduced to its domain.
+    public = [dict(
+        {k: m.get(k) for k in ("key", "date", "subject", "company", "title",
+                               "platform", "radar_id", "confidence")},
+        from_domain=(m.get("from") or "").rsplit("@", 1)[-1],
+    ) for m in matches]
+    (ROOT / "data" / "applied_email_public.json").write_text(json.dumps(
+        {"generated_at": scrape.RUN_ID, "redacted": True, "matches": public},
+        indent=1, ensure_ascii=False))
 
     paired = [m for m in matches if m["radar_id"]]
     print(f"emails: {len(matches)} | paired with radar: {len(paired)} | "

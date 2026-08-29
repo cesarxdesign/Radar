@@ -49,6 +49,9 @@ body {
 .brief { padding: 22px; overflow-y: auto; width: 100%; flex: 1; min-height: 0; }
 .brief .tiles { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 18px; }
 .brief h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--mut); margin: 18px 0 8px; }
+.mailconf { font-size: 13px; line-height: 1.5; border-left: 2px solid var(--line); padding: 8px 12px; margin: 4px 0 12px; max-height: 220px; overflow: auto; }
+.mailconf b { display: block; }
+.mailconf .mailmeta { display: block; color: var(--mut); margin: 2px 0 8px; }
 .brief ul { padding-left: 18px; font-size: 14px; }
 .brief li { margin-bottom: 4px; }
 .brief .jd { white-space: pre-wrap; font-size: 13.5px; line-height: 1.55; color: var(--ink); opacity: 0.92; }
@@ -169,6 +172,7 @@ footer .bad { color: var(--danger); }
   <nav class="tabs">
     <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
     <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
+    <button class="tab" data-tab="maybe">Maybe<span class="n" id="c-maybe"></span></button>
     <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
     <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
   </nav>
@@ -204,7 +208,7 @@ try {
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
-let DATA = null, FACTS = {}, JDS = null, CVS = {}, tab = "open";
+let DATA = null, FACTS = {}, JDS = null, CVS = {}, MAYBE = {}, CONFS = [], tab = "open";
 let SEL = null, PV = null;
 
 // ---------- helpers ----------
@@ -231,6 +235,19 @@ function bucketOf(j) {
   if (j.bucket === "tiebreak" && FACTS[j.id] && /^yes/i.test(FACTS[j.id].portugal || ""))
     return "eu";
   return j.bucket;
+}
+function mailFor(j) {
+  // the application-confirmation email behind this role, if one exists
+  const co = norm(j.company), mine = CONFS.filter(c => norm(c.company) === co);
+  if (!mine.length) return "";
+  const exact = mine.find(c => norm(c.title || "") === norm(j.title));
+  if (exact)
+    return "<h3>Applied — confirmation on file</h3><div class='mailconf'><b>" + esc(exact.subject) +
+      '</b><span class="mailmeta">' + esc((exact.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span>" +
+      esc(exact.body) + "</div>";
+  return "<h3>Applied at " + esc(j.company) + " (other role)</h3><ul>" + mine.map(c =>
+    "<li>" + esc(c.title || c.subject) + ' <span style="color:var(--mut)">— ' +
+    esc((c.date || "").replace(/ [0-9:+ ]+$/, "")) + "</span></li>").join("") + "</ul>";
 }
 function variantKey(j) {
   // same company, same title once (FTC/Contract/city)-style parentheticals go
@@ -405,6 +422,7 @@ function renderPreview() {
       cell("years", esc(f.years_experience || (j.xp || "").replace(/y$/, "")), "") +
       daysCell(dd, j) +
     "</div>";
+  h += mailFor(j);
   if (j.board_roles && j.board_roles.length)
     h += "<h3>Live on their board right now</h3><ul>" + j.board_roles.map(r =>
       '<li><a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" +
@@ -512,6 +530,7 @@ function render() {
   const pools = {
     open: inbox.filter(j => bucketOf(j) !== "tiebreak"),
     unsure: inbox.filter(j => bucketOf(j) === "tiebreak"),
+    maybe: inbox.filter(j => MAYBE[j.id]),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded"),
   };
@@ -522,7 +541,8 @@ function render() {
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;
   if (!visible.length) {
     const EMPTY = { open: "No open roles match.", applied: "Nothing applied yet.",
-                    discarded: "Nothing discarded.", unsure: "Nothing unsure." };
+                    discarded: "Nothing discarded.", unsure: "Nothing unsure.",
+                    maybe: "No overlap between email applications and open roles." };
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
@@ -557,6 +577,13 @@ document.getElementById("savetok").onclick = () => {
 };
 if (state.token) document.getElementById("tok").value = state.token;
 
+fetch("data/applied_email_public.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => {
+  if (!d) return;
+  MAYBE = {};
+  (d.maybe || []).forEach(m => MAYBE[m.id] = m);
+  CONFS = d.confirmations || [];
+  if (DATA) render();
+}).catch(() => {});
 fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(t => {
   REPO_STATE = t;
   if (t) {

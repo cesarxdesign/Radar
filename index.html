@@ -66,6 +66,9 @@ header h1 { line-height: 1; }
 h1 { font-size: 22px; letter-spacing: -0.02em; }
 .stamp { color: var(--mut); font-size: 13px; flex: 1; }
 .gear { background: none; border: 0; color: var(--mut); font-size: 16px; cursor: pointer; }
+.newcount { background: var(--amber-bg); color: var(--amber); font: 700 12px/1 inherit;
+            border-radius: 999px; padding: 6px 11px; white-space: nowrap; }
+.newcount:empty { display: none; }
 .tabs { display: flex; gap: 4px; margin: 18px 0 16px; border-bottom: 1px solid var(--line); }
 .tab {
   background: none; border: 0; color: var(--mut); font: 600 14px/1 inherit;
@@ -166,6 +169,7 @@ footer .bad { color: var(--danger); }
     <header>
       <h1>JobRadar</h1>
       <span class="stamp" id="stamp">loading…</span>
+      <span class="newcount" id="newcount" title="new roles added on the last run (Open + Portugal + Unsure)"></span>
       <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
       <button class="gear" id="gear" title="Settings">⚙</button>
     </header>
@@ -546,6 +550,10 @@ function render() {
   };
   for (const t in pools)
     document.getElementById("c-" + t).textContent = pools[t].length || "";
+  // survivors of the last run: new, still active (judge cuts are inactive),
+  // and by definition untriaged - i.e. exactly what landed in Open/Portugal/Unsure
+  const fresh = act.filter(j => j.first_run === DATA.run_id).length;
+  document.getElementById("newcount").textContent = fresh ? "+" + fresh + " new" : "";
 
   const visible = pools[tab] || pools.open;
   if (!visible.some(j => j.id === SEL)) SEL = visible.length ? visible[0].id : null;

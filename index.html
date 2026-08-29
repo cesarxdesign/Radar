@@ -24,10 +24,12 @@ body {
   font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding: 40px 20px 120px;
 }
-.wrap { max-width: 1560px; margin: 0 auto; display: grid;
-        grid-template-columns: minmax(430px, 540px) 1fr; gap: 22px; align-items: start; }
-.wrap > header, .wrap > .settings, .wrap > .tabs, .wrap > .controls, .wrap > footer { grid-column: 1 / -1; }
+.wrap { max-width: 1560px; margin: 0 auto; display: flex; gap: 22px; align-items: flex-start; }
+#leftcol { flex: 0 1 540px; min-width: 430px; }
 #listcol { min-width: 0; }
+.topbar { position: sticky; top: 0; z-index: 6; background: var(--bg);
+          padding-top: 40px; margin-top: -40px; padding-bottom: 10px; }
+.topbar .tabs { margin-bottom: 0; }
 #preview {
   position: sticky; top: 18px; height: calc(100vh - 36px); min-width: 0;
   background: var(--card); border: 1px solid var(--line); border-radius: 12px;
@@ -61,7 +63,8 @@ body {
   border-radius: 9px; padding: 11px 20px; text-decoration: none; margin-bottom: 6px;
 }
 .brief .noframe { color: var(--mut); font-size: 12px; margin: 6px 0 14px; }
-@media (max-width: 1100px) { .wrap { grid-template-columns: 1fr; } #preview { display: none; } }
+#preview { flex: 1; }
+@media (max-width: 1100px) { .wrap { display: block; } #leftcol { min-width: 0; } #preview { display: none; } }
 header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 header h1 { line-height: 1; }
 h1 { font-size: 22px; letter-spacing: -0.02em; }
@@ -162,12 +165,22 @@ footer .bad { color: var(--danger); }
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>JobRadar</h1>
-    <span class="stamp" id="stamp">loading…</span>
-    <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
-    <button class="gear" id="gear" title="Settings">⚙</button>
-  </header>
+  <div id="leftcol">
+  <div class="topbar">
+    <header>
+      <h1>JobRadar</h1>
+      <span class="stamp" id="stamp">loading…</span>
+      <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
+      <button class="gear" id="gear" title="Settings">⚙</button>
+    </header>
+    <nav class="tabs">
+      <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
+      <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
+      <button class="tab" data-tab="maybe">Maybe<span class="n" id="c-maybe"></span></button>
+      <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
+      <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
+    </nav>
+  </div>
   <div class="settings" id="settings">
     <p><strong>GitHub token</strong> — enables the Scrape now button. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Create a fine-grained token</a>:
     repository access <em>only cesarxdesign/Radar</em>, permissions <em>Contents: read&nbsp;+&nbsp;write</em> and
@@ -175,14 +188,9 @@ footer .bad { color: var(--danger); }
     <input type="password" id="tok" placeholder="github_pat_…" autocomplete="off">
     <button id="savetok">Save</button><span class="sync" id="syncmsg"></span>
   </div>
-  <nav class="tabs">
-    <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
-    <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
-    <button class="tab" data-tab="maybe">Maybe<span class="n" id="c-maybe"></span></button>
-    <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
-    <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
-  </nav>
   <main id="listcol"><div id="sections"></div></main>
+  <footer id="foot"></footer>
+  </div>
   <aside id="preview">
     <div class="pvhead">
       <b id="pv-title">—</b><span class="co" id="pv-co"></span>
@@ -192,7 +200,6 @@ footer .bad { color: var(--danger); }
     </div>
     <div class="pvbody" id="pv-body"><div class="brief"><span class="empty">Select a role on the left.</span></div></div>
   </aside>
-  <footer id="foot"></footer>
 </div>
 <div class="toast" id="toast"></div>
 <script>

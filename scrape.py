@@ -1790,7 +1790,7 @@ def run():
                 roles = [{"title": bj["title"], "url": bj.get("url"),
                           "location": bj.get("location") or ""}
                          for bj in board_jobs(ent2["kind"], ent2["slug"])
-                         if INC.search(bj.get("title") or "")][:8]
+                         if title_ok(bj.get("title"))][:8]
                 if roles:
                     j["board_roles"] = roles
         if link:

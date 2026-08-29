@@ -1056,160 +1056,24 @@
    "company": "Scentbird",
    "title": "Sr Product Designer",
    "bucket": "tiebreak",
-   "likely": true,
-   "emails": [
-    "19ed4a43efbb202a"
-   ]
-  },
-  {
-   "id": "62874da30b08b191",
-   "company": "Ashby",
-   "title": "Staff Design Engineer - UK",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "84a75f7f4ef286da",
-   "company": "Ashby",
-   "title": "Staff Design Engineer - Americas",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "00ad23c75f9464bc",
-   "company": "Ashby",
-   "title": "Senior Product Designer",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "f2298d7904c7c6b1",
-   "company": "Stripe",
-   "title": "Senior Staff Product Designer, Risk",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a03352df4f99475"
-   ]
-  },
-  {
-   "id": "44f73ceb33b000cc",
-   "company": "Linear",
-   "title": "Senior / Staff Product Designer",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048fd3f4c80da9"
-   ]
-  },
-  {
-   "id": "2201686c1098cad5",
-   "company": "Linear",
-   "title": "Mobile Product Designer",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048fd3f4c80da9"
-   ]
-  },
-  {
-   "id": "7f73584f6612ac18",
-   "company": "Ashby",
-   "title": "Staff Design Engineer - Canada",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "d1e5b61cffaee01d",
-   "company": "Ashby",
-   "title": "Design Engineer - UK",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "ab34b3a60bd9ef5c",
-   "company": "Ashby",
-   "title": "Design Engineer - Americas",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "41b89cd5a5afff6c",
-   "company": "Ashby",
-   "title": "Design Engineer - Canada",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "b89e15d9449596d4",
-   "company": "Ashby",
-   "title": "Staff Product Designer",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a048ed19b01b88c"
-   ]
-  },
-  {
-   "id": "28de0aa7d1cdad38",
-   "company": "Codekeeper",
-   "title": "Digital Product Designer",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a0345b2dff97b85"
-   ]
-  },
-  {
-   "id": "4eae1ec1f2954317",
-   "company": "Codekeeper",
-   "title": "Product Designer (Figma)",
-   "bucket": "tiebreak",
-   "likely": false,
-   "emails": [
-    "1a0345b2dff97b85"
-   ]
+   "email": "19ed4a43efbb202a",
+   "reason": "same"
   },
   {
    "id": "f7cdc3a9bfbadb7a",
    "company": "Nebius",
    "title": "Senior Product Designer - Observability & Data Visualization",
    "bucket": "eu",
-   "likely": false,
-   "emails": [
-    "1a03480471e41a1c"
-   ]
+   "email": "1a03480471e41a1c",
+   "reason": "unnamed"
   },
   {
    "id": "3a7d149e11a9f719",
    "company": "Nebius",
    "title": "Senior Product Designer - Compute, Nebius Console",
    "bucket": "eu",
-   "likely": false,
-   "emails": [
-    "1a03480471e41a1c"
-   ]
+   "email": "1a03480471e41a1c",
+   "reason": "unnamed"
   }
  ]
 }

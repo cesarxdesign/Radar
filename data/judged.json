@@ -1,0 +1,904 @@
+{
+ "jobs": {
+  "0a9879c50f495c2c": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "89884f8a2eeb5a04": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "1754d1d087271267": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "28de0aa7d1cdad38": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "4eae1ec1f2954317": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "465b04ee45c023be": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "7b992fb7bbf43429": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9e1ab1a327e2d6b3": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a6c7823105df7d9b": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b019ecbe10cbd896": {
+   "bucket": "eu",
+   "why": "JD: remote from any European country, CET±2",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b6650afcb5c635f1": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f44fc78821abdd81": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f917987db6450816": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c862d06c892aff1b": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "d6d6cd92049399ab": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e078201204b4e2e0": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f2a9f1703f482230": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "918d26a3fc4774af": {
+   "bucket": "eu",
+   "why": "title says Europe (Remote); lever variant lists Poland",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "2792f23ccb9703a5": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "61f2e51b42362d22": {
+   "bucket": "pt",
+   "why": "Portugal in hiring list, remote-first",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "de6aadaa37d39161": {
+   "bucket": "pt",
+   "why": "design-code hybrid in Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e15517109d99214e": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f39aacffe8fd0cbe": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f55797700e4ac22a": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "4999834a0de25100": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9fc0a7fb7c514312": {
+   "bucket": "ww",
+   "why": "no JD served; judged on title+Remote Global",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "eac0de7d2f2f0b12": {
+   "bucket": "ww",
+   "why": "3-month founding contract, remote international",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "596405aaa087c6c2": {
+   "bucket": "ww",
+   "why": "TryHackMe is 100% remote work-from-anywhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f722d4e31136103b": {
+   "bucket": "ww",
+   "why": "100% remote, work from anywhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6ea4390baef06596": {
+   "bucket": "tiebreak",
+   "why": "judge: bare Remote, US company — Portugal not confirmed",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "98288b6410e2c5c1": {
+   "bucket": "tiebreak",
+   "why": "judge: no location or JD served (zoho board)",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c4d4576e5c168c60": {
+   "bucket": "tiebreak",
+   "why": "judge: no location or JD served (zoho board)",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a2b6019f68662a51": {
+   "bucket": "tiebreak",
+   "why": "judge: Lisbon, but 'Creative Designer' may be brand work — your call",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "678d551f77e5feff": {
+   "bucket": "tiebreak",
+   "why": "judge: 'Creative Designer' in Europe — product design not confirmed",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a9c92a4b67f00aaf": {
+   "bucket": "tiebreak",
+   "why": "judge: part-time web design, remote scope unstated",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c07faf5d4ed6d6cd": {
+   "bucket": "tiebreak",
+   "why": "judge: bare Remote, US sports app — Portugal not confirmed",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "cc2da5874ee2cbff": {
+   "bucket": "tiebreak",
+   "why": "judge: researcher discipline, EMEA remote — in or out is your call",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9f9af687285b0d90": {
+   "bucket": "tiebreak",
+   "why": "judge: researcher discipline, worldwide remote — in or out is your call",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "dfebb9269da51640": {
+   "bucket": "tiebreak",
+   "why": "judge: visual/brand + design systems mix, EMEA — your call",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f55d6e015082aaa7": {
+   "bucket": "tiebreak",
+   "why": "judge: offices London/NY, remote scope unclear",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "fb0b08af63acaaeb": {
+   "bucket": "tiebreak",
+   "why": "judge: UK fintech, remote likely UK-bound — not confirmed",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "00ad23c75f9464bc": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "0ab555111a4a79ea": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "13bd00eeaaf023be": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "17b7fa5220c52e53": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "2201686c1098cad5": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "3ec3f7235097f881": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "41b89cd5a5afff6c": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "44d49e1d0546a1f9": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "44f73ceb33b000cc": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "4a6f858601716a38": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "542e723f691b6a64": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5adf7d538745975c": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6a58c1710ccc545b": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6b19e78d6eb4aafd": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "82eb1e45d479595a": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "84a75f7f4ef286da": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "7f73584f6612ac18": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ab34b3a60bd9ef5c": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "aca80ea4c14e7a98": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "adb543c6f1790bea": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b0ed7573acf1fcc4": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b59f46101c3dbe82": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b89e15d9449596d4": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "d1e5b61cffaee01d": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e210fd018935f006": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e7f9da027d8cab96": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e9e9551201949128": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f2298d7904c7c6b1": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f6bf99b71af45d07": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f7c0384d2872a98c": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f8c4c4276682b037": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f9f965582485b00e": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "fde64fdf7a06eb2b": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a7a59729f8424427": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "30045ff6f8693be5": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "62874da30b08b191": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "0de72ee24b99c190": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "29c70e2c18e42470": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "473af4dd38b83c2b": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5b2d60d12360f686": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5e3b9b42fa657ee6": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "69e65f3ed8100dcf": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "81f34978dddb632b": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "42704e5b1280f4d9": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c0506878bd3c3975": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ca630b1da9d7bfbb": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "cddbed81fd0709e3": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "cf9033a784856aae": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "d1a9bd2e0b942e32": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "dd34af6ab6b4e032": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "dd917f1d18342925": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f5fa115557c2c270": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "fc25d30ed4580ae5": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a24ca13bf10cecfb": {
+   "bucket": "cut",
+   "why": "judge: onsite/hybrid outside Lisbon",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "853b091318862ad0": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9cbe39eff9bf7ff4": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f5b18aaac8439c61": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f059c993c6e974c8": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b90d8125b7c1a153": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9cf9aee11a3dcbaa": {
+   "bucket": "cut",
+   "why": "judge: UK-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "046ec2100528621b": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "0c71a044716052e3": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "0d4609adc0f88cc2": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "0fd04059ed5c8080": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "13809b99bd951e97": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "28c2a9759fd002bc": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "296b340c9453ee00": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "2714089441d3b49b": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "36a1785fcd1bdb5f": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "375609c1f65ddaf5": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "381c6c40f833d434": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "3dd49d380ccf8aa9": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5ea387400725e5c9": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "804a86e40689538e": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "8ff723230facbff1": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9d9907d334f24b16": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ad01e451acb0ade5": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b2a167e2be3fea24": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c77612196c7a7f0b": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "dbc30096bfe3dc22": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e42ca7c84220e517": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e764204c8e5ee918": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "eab70d96151fc719": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "dfb4e12d0169290f": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9f57ad79a952b1f0": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "d2c0a6f6ed80bfe6": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "d7705ffae6f95244": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "eef0e69c123cef26": {
+   "bucket": "cut",
+   "why": "judge: country-locked elsewhere",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "00e3ae019e36b409": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "1ec9bf4d26fe6bc9": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "212dd4c1cf370c14": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "23d6a9fce334dcf6": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "27ddb0041e90d3c7": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "386af82811713f4a": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "4a49e92956e148bb": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5193031a7b54dac0": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "569a6ada6d538be1": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "5b7d1459c8c5db97": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "611dfb3afee46523": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6cb28a63355be48f": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "72f584c0f613a2c9": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "74d0ee2bc114e7d3": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "7ae8cce646966d29": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "84e48abd359c2818": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "87445794064adbf4": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9e0a432cef5b8b77": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b18fc63bba932e68": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c968b94d1d813c52": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "cab1e06d03aec9b1": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e40d33f8065389aa": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e653a67c7affaa7a": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ea45e130c4d1c803": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "f8a682e99b918958": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ff20f9673ada527f": {
+   "bucket": "cut",
+   "why": "judge: not product design — brand/marketing/graphic",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "86c943b5765be8ce": {
+   "bucket": "cut",
+   "why": "judge: not product design — web/marketing sites",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "feda093852ab72e2": {
+   "bucket": "cut",
+   "why": "judge: not product design — web/marketing sites",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "202994ff8777fc22": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "43abaa123f6e124c": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "51decb33b8ea1af8": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6e8fe95d767dd8db": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "95818a47a8d60653": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b426c3b2dc50d311": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c2654499653aafd7": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "e651e570cbd951d6": {
+   "bucket": "cut",
+   "why": "judge: not product design — games",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "1c3128fdda9e114a": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "2379241d52d0f689": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "529c70520099b9e3": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "6385f8bbba3f78d9": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "9b2bbff3c7833141": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "a15e422e1a9a14b9": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ac6e85330ecf38d2": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "b943f9352555d7ac": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "bb783dad221829e1": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "c67d1dcddb334295": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "ca4abd14b0a5996c": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "efc63f4e8ed55b24": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "fddd6bec46120403": {
+   "bucket": "cut",
+   "why": "judge: not product design — engineering/other field",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "4279e91462f53cb8": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  },
+  "cf82180c6a7a4f93": {
+   "bucket": "cut",
+   "why": "judge: US/Canada-only scope",
+   "at": "2026-08-29T19:32:46Z"
+  }
+ }
+}

@@ -155,7 +155,8 @@ def main():
 def registry_platforms():
     return {"workday", "bamboohr", "breezy", "workable", "smartrecruiters",
             "teamtailor", "personio", "pinpoint", "join", "manatal",
-            "recruitee", "greenhouse", "lever", "ashby"}
+            "recruitee", "greenhouse", "lever", "ashby",
+            "rippling", "jazzhr", "comeet"}
 
 if __name__ == "__main__":
     sys.exit(main())

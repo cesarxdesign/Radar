@@ -726,6 +726,103 @@ def src_manatal(slug, company):
         out.append(job)
     return out
 
+def src_rippling(slug, company):
+    """Rippling ATS - jobs embedded in the board page's NEXT_DATA."""
+    html = fetch(f"https://ats.rippling.com/{slug}/jobs")
+    m = re.search(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+    if not m:
+        return []
+    def find_items(o):
+        if isinstance(o, dict):
+            v = o.get("items")
+            if (isinstance(v, list) and v and isinstance(v[0], dict)
+                    and "name" in v[0] and "url" in v[0]):
+                return v
+            for x in o.values():
+                r = find_items(x)
+                if r:
+                    return r
+        elif isinstance(o, list):
+            for x in o:
+                r = find_items(x)
+                if r:
+                    return r
+        return None
+    out = []
+    for j in find_items(json.loads(m.group(1))) or []:
+        locs = [l for l in (j.get("locations") or []) if isinstance(l, dict)]
+        loc = ", ".join(dict.fromkeys(filter(None, [
+            ", ".join(filter(None, [l.get("city"), l.get("country")])) or l.get("name")
+            for l in locs])))
+        remote = any((l.get("workplaceType") or "").upper() == "REMOTE" for l in locs)
+        job = {
+            "source": f"rippling/{slug}", "company": company,
+            "title": j.get("name"), "url": j.get("url"),
+            "location": loc, "remote": remote or None, "salary": None,
+            "posted": None, "desc": "", "raw": "",
+        }
+        if title_ok(job["title"]) and job["url"]:
+            orig = fetch_original(job["url"], company, job["title"])
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+            if orig.get("salary"):
+                job["salary"] = orig["salary"]
+        out.append(job)
+    return out
+
+def src_jazzhr(slug, company):
+    """JazzHR - server-rendered list at {slug}.applytojob.com/apply."""
+    html = fetch(f"https://{slug}.applytojob.com/apply")
+    out = []
+    for block in re.findall(r'class="list-group-item"[\s\S]*?</ul>', html):
+        am = re.search(r'<a[^>]*href="([^"]*/apply/[A-Za-z0-9]+/[^"]*)"[^>]*>([\s\S]*?)</a>', block)
+        if not am:
+            continue
+        url = am.group(1)
+        title = re.sub(r"\s+", " ", strip_html(am.group(2), 150)).strip()
+        lm = re.search(r"fa-map-marker[^>]*></i>\s*([^<]{0,80})", block)
+        loc = lm.group(1).strip() if lm else ""
+        job = {"source": f"jazzhr/{slug}", "company": company, "title": title,
+               "url": url, "location": loc,
+               "remote": bool(re.search(r"remote", loc, re.I)) or None,
+               "salary": None, "posted": None, "desc": "", "raw": ""}
+        if title_ok(title):
+            orig = fetch_original(url, company, title)
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+            if orig.get("loc") and not loc:
+                job["location"] = orig["loc"]
+        out.append(job)
+    return out
+
+def src_comeet(slug, uid, token, company):
+    """Comeet - positions API; the page-embedded token is re-read if absent."""
+    if not token:
+        page = fetch(f"https://www.comeet.com/jobs/{slug}/{uid}")
+        tm = re.search(r'"token"\s*:\s*"([A-F0-9]{20,40})"', page)
+        if not tm:
+            return []
+        token = tm.group(1)
+    d = fetch_json(f"https://www.comeet.co/careers-api/2.0/company/{uid}/positions?token={token}")
+    out = []
+    for p in d:
+        loc = p.get("location") or {}
+        loc_s = ", ".join(filter(None, [loc.get("city"), loc.get("country")])) \
+            or (loc.get("name") or "")
+        job = {
+            "source": f"comeet/{slug}", "company": company,
+            "title": p.get("name"),
+            "url": p.get("url_active_page") or p.get("url_comeet_hosted_page"),
+            "location": loc_s, "remote": bool(loc.get("is_remote")) or None,
+            "salary": None, "posted": None, "desc": "", "raw": "",
+        }
+        if title_ok(job["title"]) and job["url"]:
+            orig = fetch_original(job["url"], company, job["title"])
+            if orig.get("text"):
+                job["desc"] = job["raw"] = orig["text"]
+        out.append(job)
+    return out
+
 def registry_tasks():
     """(name, fetch-callable) per registry company. Names match job sources."""
     tasks = []
@@ -773,6 +870,15 @@ def registry_tasks():
             src_lever(e["slug"], e.get("eu", False)), e)))
     for e in REGISTRY.get("ashby", []):
         tasks.append((f"ashby/{e['slug']}", lambda e=e: brand(src_ashby(e["slug"]), e)))
+    for e in REGISTRY.get("rippling", []):
+        tasks.append((f"rippling/{e['slug']}", lambda e=e: src_rippling(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("jazzhr", []):
+        tasks.append((f"jazzhr/{e['slug']}", lambda e=e: src_jazzhr(
+            e["slug"], label(e, e["slug"].title()))))
+    for e in REGISTRY.get("comeet", []):
+        tasks.append((f"comeet/{e['slug']}", lambda e=e: src_comeet(
+            e["slug"], e["uid"], e.get("token"), label(e, e["slug"].title()))))
     return tasks
 
 # --- registry discovery: search engines teach us new company boards ------
@@ -785,6 +891,8 @@ DISCOVERY_SITES = [
     ("manatal", "careers-page.com"), ("join", "join.com"),
     ("ashby", "jobs.ashbyhq.com"), ("greenhouse", "boards.greenhouse.io"),
     ("lever", "jobs.lever.co"), ("workday", "myworkdayjobs.com"),
+    ("rippling", "ats.rippling.com"), ("jazzhr", "applytojob.com"),
+    ("comeet", "comeet.com"),
 ]
 
 def parse_board_url(u):
@@ -832,6 +940,15 @@ def parse_board_url(u):
     m = re.search(r"https?://jobs\.ashbyhq\.com/([A-Za-z0-9_-]+)", u)
     if m:
         return "ashby", {"slug": m.group(1)}
+    m = re.search(r"https?://ats\.rippling\.com/([A-Za-z0-9_-]+)/jobs", u, re.I)
+    if m:
+        return "rippling", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://([a-z0-9-]+)\.applytojob\.com", u, re.I)
+    if m and m.group(1).lower() != "www":
+        return "jazzhr", {"slug": m.group(1).lower()}
+    m = re.search(r"https?://(?:www\.)?comeet\.com/jobs/([a-z0-9-]+)/(\d{2}\.[0-9A-F]{3})", u, re.I)
+    if m:
+        return "comeet", {"slug": m.group(1).lower(), "uid": m.group(2)}
     return None
 
 def registry_add(reg, platform, ent):
@@ -1298,6 +1415,7 @@ def frameable(url):
 SOURCE_PRIORITY = ["greenhouse", "lever", "ashby", "recruitee", "workday",
                    "smartrecruiters", "workable", "teamtailor", "personio",
                    "bamboohr", "breezy", "pinpoint", "join", "manatal",
+                   "rippling", "jazzhr", "comeet",
                    "landingjobs", "remotive", "himalayas", "jobicy",
                    "weworkremotely", "workingnomads", "arbeitnow", "remoteok"]
 

@@ -158,6 +158,15 @@
    "via": "rrs-census"
   }
  ],
+ "comeet": [
+  {
+   "company": "MWDN",
+   "slug": "mwdn",
+   "token": "1655946F92CA85E9C35946F99C3165",
+   "uid": "61.005",
+   "via": "email"
+  }
+ ],
  "greenhouse": [
   {
    "company": "Co–Star",
@@ -193,6 +202,13 @@
    "company": "Recast",
    "slug": "recast",
    "via": "rrs-census"
+  }
+ ],
+ "jazzhr": [
+  {
+   "company": "Codekeeper",
+   "slug": "codekeeper",
+   "via": "email"
   }
  ],
  "join": [
@@ -275,6 +291,13 @@
   {
    "company": "Hostaway",
    "slug": "hostaway",
+   "via": "email"
+  }
+ ],
+ "rippling": [
+  {
+   "company": "Scentbird",
+   "slug": "scentbird",
    "via": "email"
   }
  ],

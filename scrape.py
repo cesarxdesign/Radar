@@ -468,8 +468,9 @@ def src_designjobsworld():
     return out
 
 def src_greenhouse(slug, eu=False):
-    api = "boards-api.eu.greenhouse.io" if eu else "boards-api.greenhouse.io"
-    d = fetch_json(f"https://{api}/v1/boards/{slug}/jobs?content=true")
+    # the standard boards-api serves EU-hosted orgs too (verified: the .eu API
+    # host doesn't even resolve) - eu is accepted only for registry compat
+    d = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true")
     out = []
     for j in d.get("jobs", []):
         loc = (j.get("location") or {}).get("name", "")

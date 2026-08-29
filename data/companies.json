@@ -97,6 +97,116 @@
    "company": "ZOE",
    "slug": "zoe",
    "via": "email"
+  },
+  {
+   "company": "B2Spin",
+   "slug": "b2spin",
+   "via": "email"
+  },
+  {
+   "company": "Cello",
+   "slug": "cello",
+   "via": "email"
+  },
+  {
+   "company": "Circle",
+   "slug": "circle",
+   "via": "email"
+  },
+  {
+   "company": "Constructor",
+   "slug": "constructor",
+   "via": "email"
+  },
+  {
+   "company": "Duna",
+   "slug": "duna",
+   "via": "email"
+  },
+  {
+   "company": "Good Maven",
+   "slug": "goodmaven",
+   "via": "email"
+  },
+  {
+   "company": "Improbable",
+   "slug": "improbable",
+   "via": "email"
+  },
+  {
+   "company": "Kognity",
+   "slug": "kognity",
+   "via": "email"
+  },
+  {
+   "company": "Kraken",
+   "slug": "kraken",
+   "via": "email"
+  },
+  {
+   "company": "Mollie",
+   "slug": "mollie",
+   "via": "email"
+  },
+  {
+   "company": "Pencil",
+   "slug": "pencil",
+   "via": "email"
+  },
+  {
+   "company": "Pennylane",
+   "slug": "pennylane",
+   "via": "email"
+  },
+  {
+   "company": "Plain",
+   "slug": "plain",
+   "via": "email"
+  },
+  {
+   "company": "Pliant",
+   "slug": "pliant",
+   "via": "email"
+  },
+  {
+   "company": "Restream",
+   "slug": "restream",
+   "via": "email"
+  },
+  {
+   "company": "Rho",
+   "slug": "rho",
+   "via": "email"
+  },
+  {
+   "company": "RoomPriceGenie",
+   "slug": "roompricegenie",
+   "via": "email"
+  },
+  {
+   "company": "Symbiotic",
+   "slug": "symbiotic",
+   "via": "email"
+  },
+  {
+   "company": "Yazio",
+   "slug": "yazio",
+   "via": "email"
+  },
+  {
+   "company": "Solana Foundation",
+   "slug": "Solana%20Foundation",
+   "via": "email"
+  },
+  {
+   "company": "Jimdo",
+   "slug": "jimdo.com",
+   "via": "email"
+  },
+  {
+   "company": "Bjak",
+   "slug": "bjakcareer",
+   "via": "email"
   }
  ],
  "bamboohr": [
@@ -144,6 +254,16 @@
    "company": "BRND WGN",
    "slug": "brndwgn",
    "via": "rrs-census"
+  },
+  {
+   "company": "GoCharting",
+   "slug": "gocharting",
+   "via": "email"
+  },
+  {
+   "company": "Wildix",
+   "slug": "wildix",
+   "via": "email"
   }
  ],
  "breezy": [
@@ -214,12 +334,117 @@
    "company": "Recast",
    "slug": "recast",
    "via": "rrs-census"
+  },
+  {
+   "company": "Bitpanda",
+   "slug": "bitpanda",
+   "via": "email"
+  },
+  {
+   "company": "Catawiki",
+   "slug": "catawiki",
+   "via": "email"
+  },
+  {
+   "company": "Cleo (US) ",
+   "slug": "cleo",
+   "via": "email"
+  },
+  {
+   "company": "Fluxon",
+   "slug": "fluxon",
+   "via": "email"
+  },
+  {
+   "company": "Follett Software, LLC",
+   "slug": "follettsoftware",
+   "via": "email"
+  },
+  {
+   "company": "Iterable",
+   "slug": "iterable",
+   "via": "email"
+  },
+  {
+   "company": "JetBrains",
+   "slug": "jetbrains",
+   "via": "email"
+  },
+  {
+   "company": "Make",
+   "slug": "make",
+   "via": "email"
+  },
+  {
+   "company": "MeetingPackage",
+   "slug": "meetingpackage",
+   "via": "email"
+  },
+  {
+   "company": "Metalab",
+   "slug": "metalab",
+   "via": "email"
+  },
+  {
+   "company": "Momence",
+   "slug": "momence",
+   "via": "email"
+  },
+  {
+   "company": "Moniepoint",
+   "slug": "moniepoint",
+   "via": "email"
+  },
+  {
+   "company": "Prolific ",
+   "slug": "prolific",
+   "via": "email"
+  },
+  {
+   "company": "Careers at Tide",
+   "slug": "tide",
+   "via": "email"
+  },
+  {
+   "company": "Timeleft",
+   "slug": "timeleft",
+   "via": "email"
+  },
+  {
+   "company": "Wrike",
+   "slug": "wrike",
+   "via": "email"
+  },
+  {
+   "company": "iCapital",
+   "slug": "icapitalnetwork",
+   "via": "email"
+  },
+  {
+   "company": "Xapo Bank",
+   "slug": "xapo61",
+   "via": "email"
   }
  ],
  "jazzhr": [
   {
    "company": "Codekeeper",
    "slug": "codekeeper",
+   "via": "email"
+  },
+  {
+   "company": "RootstockLabs",
+   "slug": "rootstocklabs",
+   "via": "email"
+  },
+  {
+   "company": "AnchorLess",
+   "slug": "anchorless",
+   "via": "email"
+  },
+  {
+   "company": "Smartness",
+   "slug": "smartness",
    "via": "email"
   }
  ],
@@ -243,6 +468,11 @@
    "company": "Standard Ecom",
    "slug": "standard-ecom",
    "via": "rrs-census"
+  },
+  {
+   "company": "Virtusan",
+   "slug": "virtusan",
+   "via": "email"
   }
  ],
  "lever": [
@@ -271,6 +501,28 @@
    "company": "Web Summit",
    "slug": "websummit",
    "via": "rrs-census"
+  },
+  {
+   "company": "Eneba",
+   "slug": "eneba",
+   "eu": true,
+   "via": "email"
+  },
+  {
+   "company": "Lodgify",
+   "slug": "lodgify",
+   "via": "email"
+  },
+  {
+   "company": "Pigment",
+   "slug": "pigment",
+   "via": "email"
+  },
+  {
+   "company": "Finom",
+   "slug": "pnlfin",
+   "eu": true,
+   "via": "email"
   }
  ],
  "manatal": [
@@ -290,6 +542,11 @@
    "company": "Digital Growth Studio",
    "host": "digital-growth-studio.jobs.personio.com",
    "via": "rrs-census"
+  },
+  {
+   "company": "Peratera",
+   "host": "peratera.jobs.personio.com",
+   "via": "email"
   }
  ],
  "pinpoint": [
@@ -303,6 +560,21 @@
   {
    "company": "Hostaway",
    "slug": "hostaway",
+   "via": "email"
+  },
+  {
+   "company": "INDG",
+   "slug": "indg",
+   "via": "email"
+  },
+  {
+   "company": "Tether",
+   "slug": "tether",
+   "via": "email"
+  },
+  {
+   "company": "CC Group",
+   "slug": "ccgroupcareers",
    "via": "email"
   }
  ],
@@ -318,6 +590,16 @@
    "company": "Inetum",
    "slug": "inetum2",
    "via": "rrs-census"
+  },
+  {
+   "company": "Cint",
+   "slug": "Cint",
+   "via": "email"
+  },
+  {
+   "company": "Nagarro",
+   "slug": "Nagarro",
+   "via": "email"
   }
  ],
  "successfactors": [
@@ -358,6 +640,46 @@
    "company": "Coverflex",
    "host": "careers.coverflex.com",
    "via": "rrs-census"
+  },
+  {
+   "company": "FounderNest",
+   "host": "foundernest.teamtailor.com",
+   "via": "email"
+  },
+  {
+   "company": "InvestEngine",
+   "host": "investengine.teamtailor.com",
+   "via": "email"
+  },
+  {
+   "company": "Nutrium",
+   "host": "nutrium.teamtailor.com",
+   "via": "email"
+  },
+  {
+   "company": "Spacelift",
+   "host": "spacelift.teamtailor.com",
+   "via": "email"
+  },
+  {
+   "company": "Syncle",
+   "host": "videoly.teamtailor.com",
+   "via": "email"
+  },
+  {
+   "company": "Bark",
+   "host": "careers.bark.com",
+   "via": "email"
+  },
+  {
+   "company": "WorkFlex",
+   "host": "careers.getworkflex.com",
+   "via": "email"
+  },
+  {
+   "company": "Causeway Technologies",
+   "host": "causeway-1588594217.teamtailor.com",
+   "via": "email"
   }
  ],
  "workable": [
@@ -380,6 +702,66 @@
    "company": "Plutus Media",
    "slug": "astral-media-group-limited",
    "via": "rrs-census"
+  },
+  {
+   "company": "Booksy",
+   "slug": "booksy",
+   "via": "email"
+  },
+  {
+   "company": "Dev.Pro",
+   "slug": "devpro",
+   "via": "email"
+  },
+  {
+   "company": "Fuse Energy",
+   "slug": "fuseenergy",
+   "via": "email"
+  },
+  {
+   "company": "H2o",
+   "slug": "h2o",
+   "via": "email"
+  },
+  {
+   "company": "Innovation",
+   "slug": "innovation",
+   "via": "email"
+  },
+  {
+   "company": "NineTwoThree AI Studio",
+   "slug": "ninetwothree-ai-studio",
+   "via": "email"
+  },
+  {
+   "company": "pitch",
+   "slug": "pitch",
+   "via": "email"
+  },
+  {
+   "company": "Remofirst",
+   "slug": "remofirst",
+   "via": "email"
+  },
+  {
+   "company": "Revolut Ltd",
+   "slug": "revolut",
+   "via": "email"
+  },
+  {
+   "company": "SCALEUP",
+   "slug": "scaleup",
+   "via": "email"
+  },
+  {
+   "company": "Trade Nation",
+   "slug": "trade-nation",
+   "via": "email"
+  },
+  {
+   "company": "Velsera",
+   "slug": "velsera",
+   "via": "email"
   }
  ],
  "workday": [
@@ -445,6 +827,13 @@
    "site": "iqvia",
    "tenant": "iqvia",
    "via": "rrs-census"
+  },
+  {
+   "company": "Snyk",
+   "tenant": "snyk",
+   "host": "snyk.wd103.myworkdayjobs.com",
+   "site": "External",
+   "via": "email"
   }
  ],
  "zoho": [

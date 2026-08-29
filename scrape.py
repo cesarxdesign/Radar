@@ -647,7 +647,25 @@ def src_teamtailor(host, company):
     return out
 
 def src_personio(host, company):
-    xml = fetch(f"https://{host}/xml")
+    try:
+        xml = fetch(f"https://{host}/xml")
+    except Exception:
+        # some personio sites disable the XML feed - search.json still serves
+        out = []
+        for j in fetch_json(f"https://{host}/search.json"):
+            loc = ", ".join(dict.fromkeys(j.get("offices") or []))
+            raw = j.get("description") or ""
+            out.append({
+                "source": f"personio/{host.split('.')[0]}",
+                "company": (j.get("subcompany") or "").strip() or company,
+                "title": (j.get("name") or "").strip(),
+                "url": f"https://{host}/job/{j.get('id')}",
+                "location": loc,
+                "remote": bool(re.search(r"remote", loc, re.I)) or None,
+                "salary": None, "posted": None,
+                "desc": strip_html(raw), "raw": raw,
+            })
+        return out
     root = ET.fromstring(xml)
     out = []
     for pos in root.iter("position"):

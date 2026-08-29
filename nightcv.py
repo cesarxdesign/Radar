@@ -84,7 +84,8 @@ def main():
         e = done.get(k)
         return bool(e) and (e.get("path") or e.get("fails", 0) >= 2)
     todo = {k: v for k, v in jobs.items()
-            if not handled(k) and v.get("fresh") and not triage.get(k)}
+            if not handled(k) and v.get("fresh") and not triage.get(k)
+            and v.get("bucket") != "tiebreak"}  # unsure roles get facts, never CVs
     to_parse = {k: v for k, v in jobs.items() if k not in facts}
     if not todo and not to_parse:
         log(f"nothing to do ({len(jobs)} active, all handled)")

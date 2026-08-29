@@ -6,3 +6,5 @@ launchd.log
 tcv-server.log
 data/email_raw.json
 data/applied_email.json
+.cvcheck/
+runradar.log

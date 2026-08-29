@@ -540,7 +540,9 @@ function render() {
   const inbox = act.filter(j => !state.jobs[j.id]);
   // physically-in-Portugal roles (onsite/hybrid) get their own tab, even when
   // the role itself is still unsure - remote-from-Portugal stays in Open
-  const isPT = j => /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || "");
+  // bucket is the judge's authoritative call - location text alone misleads
+  // (an EU-remote role can list Portugal among 20 hiring countries)
+  const isPT = j => bucketOf(j) === "pt" && /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || "");
   const pools = {
     open: inbox.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
     portugal: inbox.filter(isPT),

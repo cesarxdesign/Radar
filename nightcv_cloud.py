@@ -133,7 +133,9 @@ def main():
         todo = {k: v for k, v in jobs.items()
                 if not handled(k) and v.get("fresh") and not triage.get(k)
                 and v.get("bucket") != "tiebreak"}  # unsure roles get facts, never CVs
-    to_parse = {k: v for k, v in jobs.items() if k not in facts}
+    # batch mode is about CVs NOW - skip the JD-facts parse pass (a dashboard
+    # nicety that would burn ~40 claude calls and 20+ min before the first tune)
+    to_parse = {} if batch is not None else {k: v for k, v in jobs.items() if k not in facts}
     if not todo and not to_parse:
         log(f"nothing to do ({len(jobs)} active, all handled)")
         return 0

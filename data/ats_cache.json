@@ -201,6 +201,12 @@
   "stale": false,
   "url": "https://job-boards.greenhouse.io/fueledcareers/jobs/5200414008"
  },
+ "hunt:6a49978c27dcb0f4": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://clario.com/careers/"
+ },
  "hunt:72b3758ef50fafc9": {
   "checked": "2026-08-28T11:26:34Z",
   "kind": null,
@@ -267,6 +273,24 @@
   "stale": false,
   "url": null
  },
+ "hunt:bf03b89d809de443": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:c12cd73f6de1dc0a": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:c5e37bc75b27e7fa": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://apply.workable.com/uptalent-dot-i-o/j/F1C41DB0B4/"
+ },
  "hunt:caf0b09dab896695": {
   "checked": "2026-08-30T11:31:44Z",
   "kind": "careers",
@@ -278,6 +302,12 @@
   "kind": "direct",
   "stale": false,
   "url": "https://apply.workable.com/uptalent-dot-i-o/j/6D7E26B440/"
+ },
+ "hunt:d7ea34af9cc76298": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": null,
+  "stale": false,
+  "url": null
  },
  "hunt:d9fbe26427097acb": {
   "checked": "2026-08-30T09:12:03Z",
@@ -302,6 +332,12 @@
   "kind": "direct",
   "stale": false,
   "url": "https://apply.workable.com/uptalent-dot-i-o/j/119EBD12F1/"
+ },
+ "hunt:efc63f4e8ed55b24": {
+  "checked": "2026-08-30T12:18:11Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://www.wsp.com/en-us/careers/job-opportunities"
  },
  "hunt:fb5eaddc8b57c919": {
   "checked": "2026-08-28T11:26:34Z",

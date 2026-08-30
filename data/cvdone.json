@@ -162,27 +162,5 @@
  "b907b6c05095e2f3": {
   "fails": 1,
   "label": "n8n - Head of Product Design"
- },
- "e9354a8c65ff212a": {
-  "fails": 1,
-  "label": "Nexthink - Senior Product Designer"
- },
- "c80271494b15ec30": {
-  "fails": 1,
-  "label": "Delivery Hero - Product Design Manager - (They/She/He)"
- },
- "cb48832126fdc412": {
-  "fails": 1,
-  "label": "JetBrains - Senior Product Designer (AIR)"
- },
- "ecc5211b9b533e82": {
-  "at": "2026-08-30T22:03",
-  "path": "cvs/ecc5211b9b533e82/Cesar Garcia CV.pdf",
-  "label": "newrelic - Principal Product Designer"
- },
- "aec9759f585db35a": {
-  "at": "2026-08-30T22:05",
-  "path": "cvs/aec9759f585db35a/Cesar Garcia CV.pdf",
-  "label": "DKB Code Factory - Product Designer"
  }
 }

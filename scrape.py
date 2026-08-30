@@ -116,6 +116,19 @@ ELSEWHERE_RE = re.compile(
     re.I,
 )
 
+# European places named in ELSEWHERE_RE - a remote role scoped to any of
+# these is hireable from Portugal (César: "european countries ok").
+EU_COUNTRY_RE = re.compile(
+    r"\b(uk|united kingdom|england|scotland|wales|london|manchester|"
+    r"germany|berlin|munich|hamburg|cologne|frankfurt|france|paris|lyon|"
+    r"spain|madrid|barcelona|italy|milan|netherlands|amsterdam|rotterdam|"
+    r"poland|warsaw|ireland|dublin|austria|vienna|switzerland|zurich|"
+    r"sweden|stockholm|denmark|copenhagen|norway|oslo|finland|helsinki|"
+    r"estonia|tallinn|latvia|lithuania|czech|prague|slovakia|hungary|budapest|"
+    r"romania|bulgaria|greece|croatia|serbia|ukraine|belgium|brussels|"
+    r"luxembourg|malta|cyprus|iceland|moldova|macedonia|albania|bosnia|"
+    r"montenegro|kosovo|slovenia)\b", re.I)
+
 def classify(location_text, remote=None, restrictions=None, timezones=None):
     """Bucket a job by Portugal hireability.
 
@@ -147,13 +160,15 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
     # Portugal but want 10pm shifts, that's his call to make, not the radar's.
     if loc:
         if ELSEWHERE_RE.search(loc):
-            # RRS parity: a REMOTE role stated elsewhere might still hire
-            # from PT - surface as Unsure. Hybrid/on-site elsewhere drops.
-            if re.search(r"\bhybrid\b", loc, re.I):
-                return None
-            if REMOTE_RE.search(loc) or remote is True:
-                return "tiebreak"
-            return None  # on-site somewhere specific, not Portugal
+            # César's rule (2026-08-30): a named European place is PT-hireable
+            # (remote from anywhere in Europe); a named NON-European scope
+            # ("Americas Remote", "Remote - US", "APAC") is explicit negative
+            # evidence and cuts. Citizenship/onsite nuance is the judge's job.
+            eu_place = EU_COUNTRY_RE.search(loc)
+            remote_ok = REMOTE_RE.search(loc) or remote is True
+            if eu_place:
+                return "eu" if remote_ok else "tiebreak"
+            return None  # non-European scope, remote or not
         return "tiebreak"  # a place or scope we can't read - surface it
     # No location info at all.
     if remote is False:

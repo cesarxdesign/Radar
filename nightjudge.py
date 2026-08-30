@@ -83,9 +83,22 @@ JD:
 {jd}"""
 
 
+_diag = {"n": 0}
+
 def ask(prompt):
-    r = subprocess.run(["claude", "-p", prompt], capture_output=True, text=True, timeout=300)
-    m = re.search(r"\{.*\}", r.stdout, re.S)
+    r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
+                       capture_output=True, text=True, timeout=300)
+    # --output-format json wraps the reply; pull the model's text then the JSON
+    text = r.stdout
+    try:
+        env = json.loads(r.stdout)
+        text = env.get("result") or env.get("text") or r.stdout
+    except Exception:
+        pass
+    m = re.search(r"\{.*\}", text, re.S)
+    if not m and _diag["n"] < 3:  # surface the real CLI error a few times
+        _diag["n"] += 1
+        print(f"  [diag] rc={r.returncode} stdout={r.stdout[:200]!r} stderr={r.stderr[:200]!r}")
     return json.loads(m.group(0)) if m else None
 
 

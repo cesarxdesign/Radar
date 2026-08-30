@@ -1674,6 +1674,52 @@ def norm(s):
 def job_key(company, title):
     return hashlib.sha1(f"{norm(company)}|{norm(title)}".encode()).hexdigest()[:16]
 
+# A posting's stable identity is the id its ATS mints, not its company name or
+# title - both of which the employer edits freely (a rename or a title tweak
+# must never orphan triage). We read that id out of the apply URL. Platform-
+# tagged so ids never collide across boards; the same gh_jid appearing on a
+# direct board and inside an aggregator link resolves to one fingerprint.
+_FP_PATTERNS = [
+    ("gh",    r"[?&]gh_jid=(\d+)"),
+    ("gh",    r"greenhouse\.io/[^/]+/jobs/(\d+)"),
+    ("ashby", r"ashbyhq\.com/[^/]+/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"),
+    ("lever", r"lever\.co/[^/]+/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"),
+    ("sr",    r"smartrecruiters\.com/[^/]+/(\d{8,})"),
+    ("wk",    r"workable\.com/j/([A-Za-z0-9]+)"),
+    ("ph",    r"personio\.(?:com|de)/job/(\d+)"),
+    ("zoho",  r"zohorecruit\.[^/]+/jobs/[^/]+/(\d{10,})"),
+    ("rip",   r"rippling\.com/[^/]+/jobs/([0-9a-f-]{20,})"),
+    ("fresh", r"freshteam\.com/jobs/([A-Za-z0-9]+)"),
+    ("jazz",  r"applytojob\.com/apply/([A-Za-z0-9]+)"),
+    ("wd",    r"myworkdayjobs\.com/.*?_([A-Za-z]{0,3}\d{3,})"),
+    ("tt",    r"teamtailor\.com/jobs/(\d+)"),
+    ("cp",    r"careers-page\.com/[^/]+/job/([A-Za-z0-9]+)"),
+    ("pin",   r"pinpointhq\.com/(?:en/)?postings/([0-9a-f-]{36})"),
+    ("join",  r"join\.com/companies/[^/]+/(\d{5,})"),
+]
+_FP_PATTERNS = [(tag, re.compile(pat, re.I)) for tag, pat in _FP_PATTERNS]
+# generic hosted board (custom domain fronting greenhouse/recruitee etc.):
+# /jobs/<digits>. Tagged by host root so two boards' "8285191" stay distinct.
+_FP_GENERIC = re.compile(r"/jobs/(\d{5,})\b", re.I)
+
+def posting_fp(url):
+    """Stable, rename-proof fingerprint for a posting, or None when the URL
+    carries no ATS id (a bare careers page, an unresolved aggregator link)."""
+    u = url or ""
+    for tag, rx in _FP_PATTERNS:
+        m = rx.search(u)
+        if m:
+            return f"{tag}:{m.group(1).lower()}"
+    m = _FP_GENERIC.search(u)
+    if m:
+        host = re.match(r"https?://([^/]+)", u)
+        root = ""
+        if host:
+            parts = host.group(1).lower().replace("www.", "").split(".")
+            root = parts[-2] if len(parts) >= 2 else parts[0]
+        return f"{root}:{m.group(1)}"
+    return None
+
 def priority(source):
     base = source.split("/")[0]
     return SOURCE_PRIORITY.index(base) if base in SOURCE_PRIORITY else 99
@@ -1962,13 +2008,32 @@ def run():
 
     # Merge with existing DB.
     old = {}
+    old_by_fp = {}
     if DATA_FILE.exists():
         for j in json.loads(DATA_FILE.read_text()).get("jobs", []):
             old[j["id"]] = j
+            fp = posting_fp(j.get("apply_url") or j.get("url"))
+            if fp:
+                old_by_fp.setdefault(fp, j["id"])
     failed_prefixes = tuple(n for n, r in report.items() if not r["ok"])
     jobs_out = []
+    adopted = set()
     for key, j in kept.items():
         prev = old.pop(key, None)
+        if prev is None:
+            # Company or title changed since last run: the company+title id is
+            # new, but the ATS fingerprint pins it to the same posting. Adopt
+            # the old id so triage, judge verdicts and first_seen stay bound.
+            fp = posting_fp(j.get("apply_url") or j.get("url"))
+            pid = old_by_fp.get(fp) if fp else None
+            if pid and pid not in adopted and pid in old:
+                prev = old.pop(pid)
+                if prev.get("source", "").split("/")[0] == j["source"].split("/")[0]:
+                    adopted.add(pid)
+                    j["id"] = pid
+                else:
+                    old[pid] = prev  # different board, not the same posting
+                    prev = None
         if prev and not j.get("apply_url") and prev.get("apply_url"):
             j["apply_url"] = prev["apply_url"]
             j["apply_kind"] = prev.get("apply_kind", "direct")
@@ -2020,6 +2085,12 @@ def run():
     jds = {}
     for j in jobs_out:
         jd = j.pop("_jd", "")
+        if j["active"] and jd:
+            # content signature the dashboard watches: a real JD edit flips it,
+            # so a role discarded on an old description can resurface for a
+            # second look. Normalized so page volatility alone never trips it.
+            sig = re.sub(r"[^a-z0-9]+", " ", jd.lower()).strip()
+            j["jdhash"] = hashlib.sha1(sig.encode()).hexdigest()[:12]
         if j["active"] and len(jd) >= 200:
             jds[j["id"]] = {
                 "title": j["title"], "company": j["company"],

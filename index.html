@@ -125,6 +125,7 @@ h2 .n { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-si
 .b-new { background: var(--amber-bg); color: var(--amber); }
 .b-pt { background: var(--acc); color: var(--bg); }
 .b-ok { background: var(--chip); color: var(--acc); }
+.b-edit { background: var(--amber); color: var(--bg); }
 .jacts { display: flex; gap: 6px; }
 .jacts button {
   background: none; border: 1px solid var(--line); color: var(--mut);
@@ -210,7 +211,7 @@ footer .bad { color: var(--danger); }
 "use strict";
 const REPO = "cesarxdesign/Radar";
 const LS = "jobradar-v2";
-let state = { jobs: {}, verdicts: {}, emails: {}, token: "" };
+let state = { jobs: {}, verdicts: {}, editsig: {}, emails: {}, token: "" };
 try {
   const v2 = JSON.parse(localStorage.getItem(LS));
   if (v2) state = Object.assign(state, v2);
@@ -259,6 +260,15 @@ function variantKey(j) {
   // same company, same title once (FTC/Contract/city)-style parentheticals go
   return norm(j.company) + "|" + norm((j.title || "").replace(/\([^)]*\)/g, " "));
 }
+// A posting's content signature: the JD hash the scraper stamps, else the ATS
+// "last edited" date. Applied is sticky forever (you can't unapply), but a
+// DISCARDED role whose JD later changes has effectively become a new posting -
+// something in it might change your mind - so it comes back for a second look.
+function editSig(j) { return j.updated || j.jdhash || ""; }
+function isReopened(j) {
+  return state.jobs[j.id] === "discarded" && state.editsig[j.id]
+      && editSig(j) && editSig(j) !== state.editsig[j.id];
+}
 function propagateVariants() {
   // a verdict on one posting variant covers its twins - ZOE/Air Apps style
   const byKey = {};
@@ -292,11 +302,12 @@ let REPO_STATE = null, stTimer = null;
 function scheduleState() { clearTimeout(stTimer); stTimer = setTimeout(pushState, 2000); }
 async function pushState() {
   if (!state.token) return;
-  const payload = JSON.stringify({ updated: new Date().toISOString(), jobs: state.jobs, verdicts: state.verdicts }, null, 1);
+  const payload = JSON.stringify({ updated: new Date().toISOString(), jobs: state.jobs, verdicts: state.verdicts, editsig: state.editsig }, null, 1);
   if (REPO_STATE !== null) {
     const prev = JSON.parse(REPO_STATE);
     if (JSON.stringify(prev.jobs || {}) === JSON.stringify(state.jobs) &&
-        JSON.stringify(prev.verdicts || {}) === JSON.stringify(state.verdicts)) return;
+        JSON.stringify(prev.verdicts || {}) === JSON.stringify(state.verdicts) &&
+        JSON.stringify(prev.editsig || {}) === JSON.stringify(state.editsig)) return;
   }
   const url = "https://api.github.com/repos/" + REPO + "/contents/data/state.json";
   try {
@@ -490,6 +501,7 @@ function card(j, opts) {
       '<div class="jrow1">' +
         '<a class="jtitle" href="' + esc(safeUrl(j.apply_url || j.url)) + '" target="_blank" rel="noopener">' + esc(j.title) + "</a>" +
         (opts.isNew ? ' <span class="badge b-new">new</span>' : "") +
+        (isReopened(j) ? ' <span class="badge b-edit" title="You discarded this, but the company has since edited the description — a second look.">JD edited</span>' : "") +
         (b === "pt" ? ' <span class="badge b-pt">PT</span>' : "") +
         (b === "ok" ? ' <span class="badge b-ok">ok’d</span>' : "") +
         '<span class="co">' + esc(j.company) + "</span>" +
@@ -513,12 +525,13 @@ function card(j, opts) {
           '<button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
-  on(".applied", () => { state.jobs[j.id] = "applied"; save(); scheduleState(); render(); });
-  on(".discard", () => { state.jobs[j.id] = "discarded"; save(); scheduleState(); render(); });
-  on(".m2o", () => { state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); scheduleState(); render(); });
+  on(".applied", () => { state.jobs[j.id] = "applied"; delete state.editsig[j.id]; save(); scheduleState(); render(); });
+  // stamp the JD signature at discard time; a later edit trips isReopened()
+  on(".discard", () => { state.jobs[j.id] = "discarded"; state.editsig[j.id] = editSig(j); save(); scheduleState(); render(); });
+  on(".m2o", () => { delete state.jobs[j.id]; delete state.editsig[j.id]; state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); scheduleState(); render(); });
   on(".restore", () => {
     const k = variantKey(j);
-    DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) delete state.jobs[x.id]; });
+    DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) { delete state.jobs[x.id]; delete state.editsig[x.id]; } });
     save(); scheduleState(); render();
   });
   return el;
@@ -556,12 +569,14 @@ function render() {
   // back as "pending" - never shown half-filtered, whoever triggered the run.
   const done = inbox.filter(j => j.judged || state.verdicts[j.id]);
   const pending = inbox.filter(j => !j.judged && !state.verdicts[j.id]);
+  // discarded roles whose JD has since changed come back to Unsure for review
+  const reopened = act.filter(isReopened);
   const pools = {
     open: done.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
     portugal: done.filter(isPT),
-    unsure: done.filter(j => !isPT(j) && bucketOf(j) === "tiebreak"),
+    unsure: done.filter(j => !isPT(j) && bucketOf(j) === "tiebreak").concat(reopened).sort(byDays),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
-    discarded: act.filter(j => state.jobs[j.id] === "discarded"),
+    discarded: act.filter(j => state.jobs[j.id] === "discarded" && !isReopened(j)),
   };
   for (const t in pools)
     document.getElementById("c-" + t).textContent = pools[t].length || "";
@@ -664,10 +679,11 @@ fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(
   if (t) {
     try {
       const rd = JSON.parse(t);
-      const repo = rd.jobs || {}, rv = rd.verdicts || {};
+      const repo = rd.jobs || {}, rv = rd.verdicts || {}, res = rd.editsig || {};
       let changed = false;
       for (const id in repo) if (!(id in state.jobs)) { state.jobs[id] = repo[id]; changed = true; }
       for (const id in rv) if (!(id in state.verdicts)) { state.verdicts[id] = rv[id]; changed = true; }
+      for (const id in res) if (!(id in state.editsig)) { state.editsig[id] = res[id]; changed = true; }
       if (changed) { save(); if (DATA) render(); }
     } catch (e) {}
   }

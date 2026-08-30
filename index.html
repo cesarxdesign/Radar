@@ -582,8 +582,10 @@ function render() {
   } else {
     const done = tab === "applied" || tab === "discarded";
     const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done, unsure: tab === "unsure" });
-    // company grouping - sticky per run: once grouped this run, a company's
-    // rows stay under their header even when triage leaves just one behind
+    // company grouping - sticky AND anchored per run: a group keeps the list
+    // position and header of its newest role AT FORMATION (frozen by id), even
+    // after that role is applied/discarded, so the group never jumps while you
+    // triage it. It only leaves the list once every role in it is cleared.
     let G = { run: null, tabs: {} };
     try { G = JSON.parse(localStorage.getItem("radar_groups") || "null") || G; } catch (e) {}
     if (G.run !== DATA.run_id) G = { run: DATA.run_id, tabs: {} };
@@ -592,23 +594,40 @@ function render() {
     const gset = G.tabs[tab] = Object.assign(Object.create(null), G.tabs[tab]);
     const byCo = Object.create(null);
     visible.forEach(j => { const c = norm(j.company); (byCo[c] = byCo[c] || []).push(j); });
-    for (const c in byCo) if (byCo[c].length >= 2) gset[c] = true;
+    // form groups; anchor each to its newest role's id (frozen once set).
+    // visible is byDays-sorted so byCo[c][0] is the newest at formation.
+    for (const c in byCo) if (byCo[c].length >= 2 && typeof gset[c] !== "string") gset[c] = byCo[c][0].id;
     try { localStorage.setItem("radar_groups", JSON.stringify(G)); } catch (e) {}
-    const emitted = Object.create(null);
+    const jobById = Object.create(null);
+    DATA.jobs.forEach(j => { jobById[j.id] = j; });
+    // build render units with a frozen sort anchor (the anchor role, looked up
+    // anywhere in DATA so it survives being triaged/inactive)
+    const units = [];
+    const seen = Object.create(null);
     visible.forEach(j => {
       const c = norm(j.company);
-      if (!gset[c]) { root.appendChild(card(j, opts(j))); return; }
-      if (emitted[c]) return;
-      emitted[c] = true;
-      const rows = byCo[c];           // days-sorted already - newest leads
-      const dd = days(rows[0]);
+      if (!(c in gset)) { units.push({ solo: j, days: days(j), when: when(j) }); return; }
+      if (seen[c]) return;
+      seen[c] = true;
+      const anchor = jobById[gset[c]] || byCo[c][0];
+      units.push({ rows: byCo[c], anchor: anchor, days: days(anchor), when: when(anchor) });
+    });
+    units.sort((a, b2) => {
+      if (a.days === null && b2.days === null) return b2.when - a.when;
+      if (a.days === null) return 1;
+      if (b2.days === null) return -1;
+      return a.days - b2.days;
+    });
+    units.forEach(u => {
+      if (u.solo) { root.appendChild(card(u.solo, opts(u.solo))); return; }
+      const dd = u.days;
       const h = document.createElement("div");
       h.className = "cohead";
       h.innerHTML = '<span class="cohead-days">' + (dd === null ? "?" : dd + (dd === 1 ? " day" : " days")) + "</span>" +
-        "<b>" + esc(rows[0].company) + "</b>" +
-        '<span class="n">' + rows.length + (rows.length === 1 ? " role" : " roles") + "</span>";
+        "<b>" + esc(u.anchor.company) + "</b>" +
+        '<span class="n">' + u.rows.length + (u.rows.length === 1 ? " role" : " roles") + "</span>";
       root.appendChild(h);
-      rows.forEach(x => { const el = card(x, opts(x)); el.classList.add("ingroup"); root.appendChild(el); });
+      u.rows.forEach(x => { const el = card(x, opts(x)); el.classList.add("ingroup"); root.appendChild(el); });
     });
   }
 

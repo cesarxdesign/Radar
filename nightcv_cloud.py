@@ -73,6 +73,40 @@ def read_json(path, default):
         return default
 
 
+def write_manifest(done):
+    # id -> Pages path (or an older Mac path); the dashboard CV button reads this
+    manifest = {k: {"path": e["path"], "label": e.get("label", ""),
+                    "at": e.get("at", "")}
+                for k, e in done.items() if e.get("path")}
+    (HERE / "data" / "cvs.json").write_text(json.dumps(manifest, indent=1))
+
+
+def git_checkpoint(msg):
+    """Commit + push what's tuned SO FAR, after each CV. A 120-min timeout on
+    the last role must never cost the ones already done. Best-effort: a push
+    race just retries next checkpoint, it never aborts the run. CI only - a
+    local run shouldn't auto-push."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    base = ["git", "-C", str(HERE),
+            "-c", "user.email=cesarxdesign@gmail.com",
+            "-c", "user.name=Cesar Garcia"]
+    try:
+        subprocess.run(base + ["add", "cvs", "data/cvdone.json",
+                               "data/cvs.json", "data/facts.json"],
+                       check=True, capture_output=True, timeout=60)
+        if subprocess.run(base + ["diff", "--cached", "--quiet"]).returncode == 0:
+            return  # nothing new staged
+        subprocess.run(base + ["commit", "-m", msg], check=True,
+                       capture_output=True, timeout=60)
+        subprocess.run(base + ["pull", "--rebase", "--autostash", "origin", "main"],
+                       check=True, capture_output=True, timeout=120)
+        subprocess.run(base + ["push", "origin", "main"], check=True,
+                       capture_output=True, timeout=120)
+    except Exception as e:
+        log(f"checkpoint push skipped (will retry): {e}")
+
+
 def main():
     if not os.environ.get("CLAUDE_CODE_OAUTH_TOKEN"):
         log("FAIL CLAUDE_CODE_OAUTH_TOKEN is not set - create one with "
@@ -176,6 +210,10 @@ def main():
                 extra = " OVERFLOW" if r.get("overflow") else ""
                 log(f"done: {label} -> {web or '?'}{extra}")
                 ok += 1
+                # persist this CV to the repo NOW, don't wait for the run to end
+                if web:
+                    write_manifest(done)
+                    git_checkpoint(f"cv: {label}")
             except Exception as e:
                 log(f"FAIL {label}: {e}")
                 entry = done.get(jid) or {}
@@ -187,12 +225,8 @@ def main():
     finally:
         started.terminate()
 
-    # manifest for the dashboard's CV button (id -> Pages path, or the old
-    # Mac path for CVs tuned before the move - the button handles both)
-    manifest = {k: {"path": e["path"], "label": e.get("label", ""),
-                    "at": e.get("at", "")}
-                for k, e in done.items() if e.get("path")}
-    (HERE / "data" / "cvs.json").write_text(json.dumps(manifest, indent=1))
+    write_manifest(done)  # final catch-all (facts-only runs, last checkpoint race)
+    git_checkpoint("cv: run wrap-up")
     log(f"run complete: {ok} CVs ready, {fail} failed, {len(jobs)} fresh openings")
     return 0 if fail == 0 else 1
 

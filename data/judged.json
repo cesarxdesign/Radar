@@ -7039,6 +7039,11 @@
    "bucket": "cut",
    "why": "4 days/week onsite, not remote",
    "at": "2026-08-30T12:18:11Z"
+  },
+  "f8875e90f11143d3": {
+   "bucket": "cut",
+   "why": "game economy/systems design, not product design",
+   "at": "2026-08-30T13:04:38Z"
   }
  }
 }

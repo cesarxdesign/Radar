@@ -2,7 +2,7 @@
  "generated_at": "2026-08-30T13:04:38Z",
  "run_id": "2026-08-30T13:04:38Z",
  "counts": {
-  "active": 126,
+  "active": 125,
   "new": 1
  },
  "sources": {
@@ -2461,8 +2461,8 @@
    "first_seen": "2026-08-30T13:04:38Z",
    "first_run": "2026-08-30T13:04:38Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "c53511967258"
   },
   {

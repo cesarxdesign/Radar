@@ -215,11 +215,12 @@
   "label": "Synthesia - Product Designer, AI-Native Products (Staff-Level / L6)"
  },
  "4bc94e999eb38673": {
-  "fails": 1,
+  "fails": 2,
   "label": "Synthesia - Product Designer (Principal-Level)"
  },
  "4665bd6c10b075f8": {
-  "fails": 1,
+  "at": "2026-08-30T21:15",
+  "path": "cvs/4665bd6c10b075f8/Cesar Garcia CV.pdf",
   "label": "Synthesia - Product Designer, Enterprise (Staff-level / L6)"
  },
  "2ecfd901e4894a81": {

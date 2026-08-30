@@ -240,22 +240,15 @@ function days(j) {
   const d = j.updated || j.posted;
   const t = new Date(d || 0).getTime();
   if (!d || isNaN(t)) return null;
-  const n = Math.max(0, Math.floor((Date.now() - t) / 864e5));
-  // No live posting is genuinely >1yr old. Such a date is an ATS req-creation /
-  // evergreen timestamp (Lever gives only createdAt), not a publish date -
-  // "1926 days" is false precision. Say we don't know rather than mislead.
-  if (n > 365) return null;
-  return n;
+  // show the best date we have, even a stale ATS createdAt - a real number
+  // sorts to the bottom the same way "?" would, and at least says something
+  return Math.max(0, Math.floor((Date.now() - t) / 864e5));
 }
 function daysCell(dd, j) {
-  const raw = j.updated || j.posted;
-  const tip = dd !== null ? ""
-    : raw ? "source dates this " + String(raw).slice(0, 10) + " — over a year old, likely a reused/evergreen posting; treated as undated"
-    : "publish date unknown — first seen by the radar " + (j.first_seen || "").slice(0, 10);
   return cell(dd === 1 ? "day" : "days",
     dd === null ? "?" : String(dd),
     dd === null ? "dim" : (dd === 0 ? "today" : ""),
-    tip);
+    dd === null ? "publish date unknown — first seen by the radar " + (j.first_seen || "").slice(0, 10) : "");
 }
 function bucketOf(j) {
   const v = state.verdicts[j.id];

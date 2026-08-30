@@ -85,21 +85,51 @@ JD:
 
 _diag = {"n": 0}
 
-def ask(prompt):
-    r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
-                       capture_output=True, text=True, timeout=300)
-    # --output-format json wraps the reply; pull the model's text then the JSON
-    text = r.stdout
+def _extract(text):
+    """Pull the verdict object out of a model reply, tolerating markdown
+    fences, prose, or a wrapping envelope. Returns dict or None."""
+    if not text:
+        return None
+    fence = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
+    if fence:
+        text = fence.group(1)
+    for m in re.finditer(r"\{[^{}]*\}", text, re.S):  # smallest balanced objects first
+        try:
+            v = json.loads(m.group(0))
+            if "role" in v or "place" in v:
+                return v
+        except Exception:
+            continue
+    m = re.search(r"\{.*\}", text, re.S)  # last resort: greedy
     try:
-        env = json.loads(r.stdout)
-        text = env.get("result") or env.get("text") or r.stdout
+        return json.loads(m.group(0)) if m else None
     except Exception:
-        pass
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m and _diag["n"] < 3:  # surface the real CLI error a few times
-        _diag["n"] += 1
-        print(f"  [diag] rc={r.returncode} stdout={r.stdout[:200]!r} stderr={r.stderr[:200]!r}")
-    return json.loads(m.group(0)) if m else None
+        return None
+
+def ask(prompt, tries=3):
+    """Judge one posting. Retries on a flaky/unparseable response so a single
+    bad reply never strands a good role as permanently pending."""
+    last = None
+    for attempt in range(tries):
+        r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
+                           capture_output=True, text=True, timeout=300)
+        text = r.stdout
+        try:
+            env = json.loads(r.stdout)
+            if env.get("is_error"):
+                last = ("api_error", env)
+                continue
+            text = env.get("result") or env.get("text") or r.stdout
+        except Exception:
+            pass
+        v = _extract(text)
+        if v and (v.get("role") or v.get("place")):
+            return v
+        last = ("unparseable", text[:200] if text else r.stderr[:200])
+        if _diag["n"] < 3:
+            _diag["n"] += 1
+            print(f"  [diag attempt {attempt+1}] rc={r.returncode} {last!r}")
+    return None
 
 
 def verdict_to_bucket(v):

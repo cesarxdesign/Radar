@@ -6984,6 +6984,61 @@
    "bucket": "pt",
    "why": "",
    "at": "2026-08-30T11:31:44Z"
+  },
+  "af749c49dd6f015b": {
+   "bucket": "cut",
+   "why": "AI creative/graphic-video-marketing role, not product design",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "f3f909ac7ea27390": {
+   "bucket": "cut",
+   "why": "marketing/brand design contractor role, non-EU location scope, sub-market pay",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "13bee4e14535b767": {
+   "bucket": "cut",
+   "why": "location list is non-European (Ukraine/Poland aside, mostly Philippines/Nigeria/Vietnam/Singapore, no PT/EU scope stated)",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "a7d27da1daaf8bac": {
+   "bucket": "cut",
+   "why": "contractor role scoped to Philippines/Indonesia/South Africa/Brazil/Mexico/Croatia, no Portugal or EU-wide scope",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "88e465734190289a": {
+   "bucket": "cut",
+   "why": "contractor role hiring from Philippines/Bucharest/Kyiv/Warsaw/Sofia/Lagos, no Portugal or general Europe/WW scope named",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "1adcf98e0b37326a": {
+   "bucket": "cut",
+   "why": "onsite locations listed are Manila/Bucharest/Kyiv/Warsaw/Sofia/Lagos, no Portugal or general Europe-remote scope",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "41f0d222bfb7b8ac": {
+   "bucket": "cut",
+   "why": "brand/marketing/AI creative design, not product/UX design",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "5ec9bba1f8b9d12d": {
+   "bucket": "cut",
+   "why": "not GMT+5/+7 restriction excludes Portugal timezone",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "bc98e0c1e9bd3c49": {
+   "bucket": "cut",
+   "why": "hybrid onsite Barcelona",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "4b2aaf970f8706e7": {
+   "bucket": "cut",
+   "why": "hybrid Middlesbrough or Lisbon; only Lisbon option is fine but listed as alternative to UK onsite, still Lisbon qualifies",
+   "at": "2026-08-30T12:18:11Z"
+  },
+  "9ee97337db42bca0": {
+   "bucket": "cut",
+   "why": "4 days/week onsite, not remote",
+   "at": "2026-08-30T12:18:11Z"
   }
  }
 }

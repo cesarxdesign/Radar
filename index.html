@@ -69,6 +69,9 @@ h1 { font-size: 22px; letter-spacing: -0.02em; }
 .newcount { background: var(--amber-bg); color: var(--amber); font: 700 12px/1 inherit;
             border-radius: 999px; padding: 6px 11px; white-space: nowrap; }
 .newcount:empty { display: none; }
+.pending { color: var(--mut); font: 600 12px/1 inherit; border: 1px solid var(--line);
+           border-radius: 999px; padding: 6px 11px; white-space: nowrap; }
+.pending:empty { display: none; }
 .tabs { display: flex; gap: 4px; margin: 18px 0 16px; border-bottom: 1px solid var(--line); }
 .tab {
   background: none; border: 0; color: var(--mut); font: 600 14px/1 inherit;
@@ -169,6 +172,7 @@ footer .bad { color: var(--danger); }
     <header>
       <h1>JobRadar</h1>
       <span class="stamp" id="stamp">loading…</span>
+      <span class="pending" id="pending" title="scraped but not yet read by the JD judge — held back until fully filtered"></span>
       <span class="newcount" id="newcount" title="new roles added on the last run (Open + Portugal + Unsure)"></span>
       <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
       <button class="gear" id="gear" title="Settings">⚙</button>
@@ -543,15 +547,22 @@ function render() {
   // bucket is the judge's authoritative call - location text alone misleads
   // (an EU-remote role can list Portugal among 20 hiring countries)
   const isPT = j => bucketOf(j) === "pt" && /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || "");
+  // INGESTION IS INGESTION: a role reaches the board only after it has passed
+  // the WHOLE filter, JD judge included. Scraped-but-unjudged roles are held
+  // back as "pending" - never shown half-filtered, whoever triggered the run.
+  const done = inbox.filter(j => j.judged || state.verdicts[j.id]);
+  const pending = inbox.filter(j => !j.judged && !state.verdicts[j.id]);
   const pools = {
-    open: inbox.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
-    portugal: inbox.filter(isPT),
-    unsure: inbox.filter(j => !isPT(j) && bucketOf(j) === "tiebreak"),
+    open: done.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
+    portugal: done.filter(isPT),
+    unsure: done.filter(j => !isPT(j) && bucketOf(j) === "tiebreak"),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded"),
   };
   for (const t in pools)
     document.getElementById("c-" + t).textContent = pools[t].length || "";
+  const pn = document.getElementById("pending");
+  if (pn) pn.textContent = pending.length ? pending.length + " pending judge" : "";
   // survivors of the last run: new, still active (judge cuts are inactive),
   // and by definition untriaged - i.e. exactly what landed in Open/Portugal/Unsure
   const fresh = act.filter(j => j.first_run === DATA.run_id).length;

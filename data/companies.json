@@ -1,6 +1,6 @@
 {
  "_discovery": {
-  "next": 0
+  "next": 2
  },
  "ashby": [
   {
@@ -2538,6 +2538,21 @@
    "company": "CloudTalk",
    "slug": "cloudtalk",
    "via": "nicola-post"
+  },
+  {
+   "added": "2026-08-30T11:31:44Z",
+   "slug": "humanintelligence",
+   "via": "ddg"
+  },
+  {
+   "added": "2026-08-30T11:31:44Z",
+   "slug": "zealthy",
+   "via": "ddg"
+  },
+  {
+   "added": "2026-08-30T11:31:44Z",
+   "slug": "keywords-intl1",
+   "via": "ddg"
   }
  ],
  "workday": [

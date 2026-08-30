@@ -135,6 +135,12 @@
   "checked": "2026-08-29T11:17:45Z",
   "kind": null
  },
+ "hunt:0c825fcab4333b9b": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://careers.sunotec-group.com/"
+ },
  "hunt:11462c77466b8960": {
   "checked": "2026-08-28T11:26:34Z",
   "kind": null,
@@ -146,6 +152,12 @@
   "kind": "careers",
   "stale": false,
   "url": "https://fullscript.com/careers"
+ },
+ "hunt:20d69e16292346fb": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://apply.workable.com/uptalent-dot-i-o/j/E6AEF953F0/"
  },
  "hunt:2c33b181d355d2b6": {
   "checked": "2026-08-30T09:12:03Z",
@@ -171,6 +183,12 @@
   "stale": false,
   "url": "https://www.pixelone.app/careers"
  },
+ "hunt:4999834a0de25100": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://www.mayflowercruisesandtours.com/careers/"
+ },
  "hunt:5204a6f5b2e81ba9": {
   "checked": "2026-08-28T11:26:34Z",
   "kind": "careers",
@@ -189,6 +207,24 @@
   "stale": true,
   "url": null
  },
+ "hunt:867dbef8c87fc4bc": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:8ed603c4645c0b4f": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:8f40814433e34361": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://www.walter.com/us/careers"
+ },
  "hunt:9689827771f8db2a": {
   "checked": "2026-08-30T09:12:03Z",
   "kind": null,
@@ -201,6 +237,48 @@
   "stale": false,
   "url": "https://jungvonmatt.jobs.personio.de/job/2760501?language=en"
  },
+ "hunt:a18dc30e4de09147": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:a5d448d1a9526192": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:ae79450bb0506d99": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:b0359c185286887b": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:b3a23f9a545dd781": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": null,
+  "stale": false,
+  "url": null
+ },
+ "hunt:caf0b09dab896695": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "careers",
+  "stale": false,
+  "url": "https://www.pressw.ai/careers"
+ },
+ "hunt:d49bae88e919f46c": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://apply.workable.com/uptalent-dot-i-o/j/6D7E26B440/"
+ },
  "hunt:d9fbe26427097acb": {
   "checked": "2026-08-30T09:12:03Z",
   "kind": null,
@@ -212,6 +290,18 @@
   "kind": null,
   "stale": false,
   "url": null
+ },
+ "hunt:e6eda6f6289c850b": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://apply.workable.com/pavago/j/A595045D5E"
+ },
+ "hunt:e855d9bfb0512039": {
+  "checked": "2026-08-30T11:31:44Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://apply.workable.com/uptalent-dot-i-o/j/119EBD12F1/"
  },
  "hunt:fb5eaddc8b57c919": {
   "checked": "2026-08-28T11:26:34Z",

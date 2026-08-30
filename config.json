@@ -1,6 +1,6 @@
 {
   "max_age_days": null,
-  "title_exclude_sure": "\\bproduct (manager|owner|marketing|analyst|operations|support|counsel)s?\\b",
+  "title_exclude_sure": "\\bproduct (manager|owner|marketing|analyst|operations|support|counsel)s?\\b|\\b(software|back.?end|front.?end|full.?stack|web|data|devops|platform|security|qa|test|ml|machine learning|ai|infrastructure|cloud|mobile|ios|android|systems?|hardware|firmware|electrical|mechanical|network|reliability|solutions?|sales|prompt|research|automation|integration|forward deployed) (engineer|developer)s?\\b|\\b(engineering|product) manager\\b|\\bproduct (engineer|lead|counsel|strategist|specialist|scientist)s?\\b|\\b(data scientist|program manager|account executive|recruiter|business analyst|instructional designer)\\b",
   "title_exclude_junior": "\\b(j[u\u00fa]nior|jr\\.?|jnr|intern|interns|internship|internships|graduate|grad|entry[ -]?level|trainee|working student|student intern|apprentice|apprenticeship|apprenti[e]?|early[ -]careers?|new grad|campus|co[ -]?op|placement year|industrial placement|year in industry|mid[ -]?level|midlevel|mid[ -]?weight|midweight|intermediate)\\b|\\bmiddle\\b(?!\\s*east)|\\bassociate\\b(?!\\s+(creative|design)\\s+director)|praktikum|praktikant|werkstudent|ausbildung|azubi|alternance|stagiaire|becari[oa]|est[a\u00e1]gio|estagi[a\u00e1]ri[oa]",
   "watchlist": {
     "greenhouse": [

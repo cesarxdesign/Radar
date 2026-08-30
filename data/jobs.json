@@ -2,7 +2,7 @@
  "generated_at": "2026-08-29T23:21:09Z",
  "run_id": "2026-08-29T23:21:09Z",
  "counts": {
-  "active": 171,
+  "active": 168,
   "new": 41
  },
  "sources": {
@@ -2685,7 +2685,7 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-29T23:21:09Z",
-   "active": true,
+   "active": false,
    "judged": false
   },
   {
@@ -2773,7 +2773,7 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-29T23:21:09Z",
-   "active": true,
+   "active": false,
    "judged": false
   },
   {
@@ -2839,7 +2839,7 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-29T23:21:09Z",
-   "active": true,
+   "active": false,
    "judged": false
   },
   {

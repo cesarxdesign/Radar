@@ -4384,6 +4384,21 @@
    "bucket": "cut",
    "why": "judge: non-European scope (Americas/US/APAC etc.)",
    "at": "2026-08-29T23:21:09Z"
+  },
+  "bcd1371f69836eb8": {
+   "bucket": "cut",
+   "why": "judge: not product design (engineer/PM title, no design signal)",
+   "at": "2026-08-29T23:21:09Z"
+  },
+  "ae0b472b4b78c145": {
+   "bucket": "cut",
+   "why": "judge: not product design (engineer/PM title, no design signal)",
+   "at": "2026-08-29T23:21:09Z"
+  },
+  "7c298ed63ed3bc0d": {
+   "bucket": "cut",
+   "why": "judge: not product design (engineer/PM title, no design signal)",
+   "at": "2026-08-29T23:21:09Z"
   }
  }
 }

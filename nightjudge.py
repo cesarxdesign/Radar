@@ -35,12 +35,39 @@ JDS_FILE = ROOT / "data" / "jds.json"
 JUDGED_FILE = ROOT / "data" / "judged.json"
 CAP = 120  # runaway guard; nightly delta is normally 10-40
 
-PROMPT = """You judge job postings for César, a senior product designer in Lisbon, Portugal.
+PROMPT = """You judge job postings for César, a senior product designer based in Lisbon, Portugal.
 Answer with ONE JSON object, nothing else: {{"role": "pd|not_pd|unsure", "place": "pt|eu|ww|cut|unsure", "why": "<short reason, only when not clearly ok>"}}
 
-ROLE = "pd" only if the job is product design of software/apps (UX/UI, flows, design systems, prototypes, usability; product-design leadership; design-code hybrids like Design Engineer). Marketing/brand/graphic/motion/print, physical/industrial/architecture/engineering, game content, PM or ops = "not_pd". Research-only or content/UX-writing = "unsure".
-PLACE: onsite/hybrid roles must be in Lisbon ("pt"); remote roles must allow Portugal - Europe/EMEA = "eu", worldwide/anywhere = "ww", Lisbon/Portugal = "pt". A European company saying remote counts for all Europe unless the JD demands a specific country, citizenship, or payroll location - then "cut". Specific non-Portugal scope (US-only, Germany-based, etc.) = "cut". Onsite/hybrid outside Lisbon = "cut". Can't tell = "unsure". Ignore timezone requirements completely.
-If the JD is written in a language other than English or Portuguese, place = "cut", why = "JD in <language>".
+ROLE
+"pd"  = product design of software / digital apps: UX/UI, user flows, design systems, prototypes, usability; leading product-design teams; design-code hybrids (Design Engineer, UX Engineer, UI Engineer).
+"not_pd" = marketing / brand / graphic / motion / print design; physical / industrial / architectural / hardware / mechanical / electrical design; game design or game content; software/backend/frontend/data engineering; product management, product ops, program/project management, sales, recruiting, legal.
+"unsure" = UX/design research only, or content design / UX writing (a different discipline - César decides case by case).
+
+PLACE (read the JD body, not just the location field)
+- Onsite or hybrid: only Lisbon (or greater-Lisbon Portugal) = "pt". Onsite/hybrid ANYWHERE ELSE = "cut".
+- Remote must allow someone living in Portugal:
+  - Portugal / Lisbon named = "pt".
+  - Europe / EMEA / EEA / "EU" / a EUROPEAN COUNTRY (Germany, France, Poland, UK, Spain, Netherlands, Ireland, etc.) = "eu". A European country in the location is FINE - César can work remotely from Portugal for a European company. Do NOT cut a Germany-remote or Poland-remote role just because it names that country.
+  - Worldwide / anywhere / global / fully remote with no region limit = "ww".
+- CUT the place only on explicit exclusion of Portugal:
+  - A NON-European scope: US-only, "Americas", North America, LATAM, APAC, Asia, Canada, Australia, India, etc. ("Remote - US", "Americas Remote") = "cut".
+  - The JD demands residence, citizenship, work authorization, or payroll IN a specific non-Portugal country ("must be based in Germany", "US citizen", "right to work in the UK required") = "cut". A European country merely LISTED as a hiring location is not this - only an explicit lock is.
+- Genuinely can't tell = "unsure".
+- IGNORE timezone / working-hours requirements entirely - never cut on those.
+- JD written in a language other than English or Portuguese: place = "cut", why = "JD in <language>".
+
+EXAMPLES (title | location | -> verdict)
+- Senior Product Designer | Remote - Europe            -> {{"role":"pd","place":"eu"}}
+- Product Designer | Germany (Remote)                  -> {{"role":"pd","place":"eu"}}   (European country remote = fine)
+- Staff Product Designer | Americas Remote             -> {{"role":"pd","place":"cut","why":"Americas-only scope"}}
+- Senior Product Designer | US Remote                  -> {{"role":"pd","place":"cut","why":"US-only"}}
+- Product Designer | Lisbon                            -> {{"role":"pd","place":"pt"}}
+- Product Designer | Berlin (onsite 3 days/week)       -> {{"role":"pd","place":"cut","why":"hybrid outside Lisbon"}}
+- Design Engineer | Remote - EMEA                      -> {{"role":"pd","place":"eu"}}   (design-code hybrid counts)
+- Staff Backend Engineer - Core Product | Europe       -> {{"role":"not_pd","place":"eu","why":"engineering, not design"}}
+- Brand Designer | Anywhere                            -> {{"role":"not_pd","place":"ww","why":"brand, not product design"}}
+- UX Researcher | Remote - Europe                      -> {{"role":"unsure","place":"eu","why":"research discipline"}}
+- Product Designer (German-speaking) | must reside in Germany -> {{"role":"pd","place":"cut","why":"Germany residence required"}}
 
 TITLE: {title}
 COMPANY: {company}

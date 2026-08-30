@@ -1,16 +1,7 @@
 {
  "at": "2026-08-30T14:44",
- "note": "open-tab batch CV run",
+ "note": "ONLY the roles with no CV on the Desktop",
  "ids": [
-  "9572b154445577dc",
-  "3b6c7bd078854d43",
-  "442629a2d2b3e6e1",
-  "afea5c4595fde947",
-  "020ee9de626418cf",
-  "d100a468b4cc8de8",
-  "039a5acc8a22b967",
-  "a9e30219b76fb5a2",
-  "63801fed6f35a64e",
   "e9354a8c65ff212a",
   "c80271494b15ec30",
   "cb48832126fdc412",
@@ -27,7 +18,6 @@
   "2ecfd901e4894a81",
   "1e179e9e3203a557",
   "4a0a612a614ff924",
-  "b907b6c05095e2f3",
   "fb0b08af63acaaeb",
   "9fc0a7fb7c514312",
   "6ea4390baef06596",
@@ -40,8 +30,6 @@
   "f722d4e31136103b",
   "596405aaa087c6c2",
   "f55d6e015082aaa7",
-  "28de0aa7d1cdad38",
-  "4eae1ec1f2954317",
   "f55797700e4ac22a",
   "d6d6cd92049399ab",
   "f2a9f1703f482230",
@@ -53,7 +41,6 @@
   "f917987db6450816",
   "b6650afcb5c635f1",
   "f44fc78821abdd81",
-  "4999834a0de25100",
   "26cf82c7a0e99243"
  ],
  "labels": {

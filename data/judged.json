@@ -4454,6 +4454,2536 @@
    "bucket": "cut",
    "why": "judge: not product design (non-design title, no design signal)",
    "at": "2026-08-30T08:42:48Z"
+  },
+  "45e9bdab2879ff5a": {
+   "bucket": "cut",
+   "why": "fashion/menswear design, not product design; also hybrid onsite Amsterdam",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "eabe80bb6867e02f": {
+   "bucket": "cut",
+   "why": "retail shop management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b5af827a25e00f5c": {
+   "bucket": "cut",
+   "why": "marketing graphic design, hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6a5ea06e236a81e3": {
+   "bucket": "cut",
+   "why": "Paris onsite/hybrid, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0801a3bfcb78d6cf": {
+   "bucket": "cut",
+   "why": "motion/3D marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9572b154445577dc": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d229d9a69030ed5f": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "926826de1c696fa2": {
+   "bucket": "cut",
+   "why": "retail sales role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ea196dd1280fb18f": {
+   "bucket": "cut",
+   "why": "onsite Utrecht, and role is UX design for biometric/govt system rather than clearly product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9f861d493c8f82b4": {
+   "bucket": "cut",
+   "why": "onsite Netherlands, outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "85bd089d9f9c4eb7": {
+   "bucket": "cut",
+   "why": "e-commerce/social visual design, hybrid Netherlands",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3b6c7bd078854d43": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3636ae4f21a93b9d": {
+   "bucket": "cut",
+   "why": "instructional/learning design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "442629a2d2b3e6e1": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "20fbcb9e6e7e8645": {
+   "bucket": "cut",
+   "why": "graphic design internship, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7527fe88ede3c9e9": {
+   "bucket": "cut",
+   "why": "brand/digital marketing design at LVMH, not product design; onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b9d1d19c560d410d": {
+   "bucket": "cut",
+   "why": "onsite/hybrid in Netherlands, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "afea5c4595fde947": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b558148f95293ee4": {
+   "bucket": "cut",
+   "why": "fashion apparel design, not product/software design; onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4d80b3fd453b7bce": {
+   "bucket": "cut",
+   "why": "digital/brand design generalist, not product design; onsite Netherlands",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c34564ae4c94f955": {
+   "bucket": "cut",
+   "why": "learning/L&D instructional design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "006b4a558b53e7ec": {
+   "bucket": "cut",
+   "why": "hybrid onsite UK, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "913c53aa972db1e5": {
+   "bucket": "cut",
+   "why": "product analytics management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "50f474045a71f452": {
+   "bucket": "cut",
+   "why": "product management leadership, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "020ee9de626418cf": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ada104f0e0a1c0d6": {
+   "bucket": "tiebreak",
+   "why": "UX/content writing discipline, hybrid UK office (not Lisbon) but remote days allowed",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8fcdba0c3d81faa5": {
+   "bucket": "cut",
+   "why": "developer advocacy/community role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "05dc2af567bab00a": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "42137aa329dbb0f5": {
+   "bucket": "cut",
+   "why": "Chief of Staff/program role, not product design; London hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "dfa28ae5b97423ab": {
+   "bucket": "cut",
+   "why": "product management leadership role, not design; also London hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "27a16ce579dbc379": {
+   "bucket": "cut",
+   "why": "motion/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "93f123a405afd497": {
+   "bucket": "cut",
+   "why": "compliance/legal role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d100a468b4cc8de8": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "039a5acc8a22b967": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c4ea858a7bd54fad": {
+   "bucket": "cut",
+   "why": "management role, onsite/hybrid UK, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "613b2bb6333f02f3": {
+   "bucket": "cut",
+   "why": "sales compensation, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7cef18de26697edc": {
+   "bucket": "cut",
+   "why": "backend engineering, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a9e30219b76fb5a2": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ebf770217a0b9878": {
+   "bucket": "cut",
+   "why": "hybrid outside Lisbon (Dublin, 3 days/week onsite)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a7347dcac7622259": {
+   "bucket": "cut",
+   "why": "hybrid onsite London, 3 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6f1562c5baee7300": {
+   "bucket": "cut",
+   "why": "brand design, not product design; also hybrid Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4d7588704589d464": {
+   "bucket": "cut",
+   "why": "data science management role, not product design; hybrid Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7a8e892a5f6f78ee": {
+   "bucket": "cut",
+   "why": "research ops role; hybrid Berlin, outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f5dc67cd124621f8": {
+   "bucket": "cut",
+   "why": "product management/growth leadership, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8fb9148505b4dd9c": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "00fdaca3db0da052": {
+   "bucket": "cut",
+   "why": "Head of Product (Lending) management role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5658964b79c7159e": {
+   "bucket": "cut",
+   "why": "hybrid onsite Berlin/Paris, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f88cdac160bdc6c1": {
+   "bucket": "cut",
+   "why": "software engineering role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d8cdc9ec3f5ba638": {
+   "bucket": "cut",
+   "why": "product management director role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2253cefe45eb140c": {
+   "bucket": "cut",
+   "why": "corporate development/M&A, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6848ee071c1869b8": {
+   "bucket": "cut",
+   "why": "Madrid office, not Lisbon/remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "95ac24d98f2dfedb": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d1da8ee393ae2d48": {
+   "bucket": "cut",
+   "why": "brand/web design, not product design; NY-prioritized onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e671f68d7090d391": {
+   "bucket": "cut",
+   "why": "hiring prioritized for New York/London onsite-ish, not Portugal remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "91d535082f9addfa": {
+   "bucket": "cut",
+   "why": "support/customer experience role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6c65b32e89b5d710": {
+   "bucket": "cut",
+   "why": "onsite Stockholm/London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "90abaa1dae6474bb": {
+   "bucket": "cut",
+   "why": "communications/PR role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0493a05100b66a84": {
+   "bucket": "cut",
+   "why": "support/customer experience role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a855a10be96f48a4": {
+   "bucket": "cut",
+   "why": "HR Business Partner role, not design; in-office Stockholm/London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "eda2beab6c4f954b": {
+   "bucket": "cut",
+   "why": "brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5c76e64fe83808cf": {
+   "bucket": "cut",
+   "why": "hybrid/onsite Copenhagen",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "63801fed6f35a64e": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "73620a8c62faf4ea": {
+   "bucket": "cut",
+   "why": "hybrid/onsite Copenhagen",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7acc62c87590999a": {
+   "bucket": "cut",
+   "why": "hybrid/onsite Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5f1de3eef360c621": {
+   "bucket": "cut",
+   "why": "electronics/hardware engineering, not product design; UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5ed3715b2dcdc3d9": {
+   "bucket": "cut",
+   "why": "brand/motion design, not product design; hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0d27ee324a7c5c38": {
+   "bucket": "cut",
+   "why": "branding/packaging design, not product design; hybrid in London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7e325793332f469f": {
+   "bucket": "cut",
+   "why": "brand/UI design agency role, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e8ffa4dd3a67e207": {
+   "bucket": "cut",
+   "why": "hybrid onsite in London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4dd29c68a3fc9b3a": {
+   "bucket": "cut",
+   "why": "hybrid/onsite London, requires UK residency",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6c500ec3ec956e1c": {
+   "bucket": "cut",
+   "why": "hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e8a73c205244b86b": {
+   "bucket": "cut",
+   "why": "German mandatory + Berlin hybrid/onsite implied",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c249c0130e55d75f": {
+   "bucket": "cut",
+   "why": "portfolio/product management leadership, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e1164960d7db0ea6": {
+   "bucket": "cut",
+   "why": "IRT project management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fa07a8c378e9dacf": {
+   "bucket": "cut",
+   "why": "clinical database design, not product design; UK-based role",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f9dd0400bb08b9b3": {
+   "bucket": "cut",
+   "why": "database administration engineering role, not design; US/UK location",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "86e6722cd21d0c5c": {
+   "bucket": "cut",
+   "why": "fully in-person office role in Vilnius, Lithuania",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2fd2130d76edc92b": {
+   "bucket": "cut",
+   "why": "brand/web design, not product design; Kyiv onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2067b686d65e88b7": {
+   "bucket": "cut",
+   "why": "project management, not design; onsite Kyiv",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e9354a8c65ff212a": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a320968dcd8555d2": {
+   "bucket": "tiebreak",
+   "why": "UX research role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "00c2765c1f71f28d": {
+   "bucket": "cut",
+   "why": "data architecture/engineering, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9f2094ee5d841a89": {
+   "bucket": "cut",
+   "why": "retail sales, not design; JD in Italian",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "90b4e73c097aee9b": {
+   "bucket": "cut",
+   "why": "retail sales, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "96e37cf7e6348265": {
+   "bucket": "cut",
+   "why": "retail assistant store manager, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8f0e74f5924711c0": {
+   "bucket": "cut",
+   "why": "warehouse/retail stock role, not design; JD in Italian, non-Lisbon Italy location",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "26f1760341a547d3": {
+   "bucket": "cut",
+   "why": "retail store management, not product design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0ee378ddff3f9421": {
+   "bucket": "cut",
+   "why": "procurement/buyer role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fbb4b63089a42786": {
+   "bucket": "cut",
+   "why": "retail sales, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e214d5efe7e3ba65": {
+   "bucket": "cut",
+   "why": "retail sales, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3b79d2b07467b39d": {
+   "bucket": "cut",
+   "why": "game UI engineering, not product design; onsite Poland",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e10a6d18ccacb3c5": {
+   "bucket": "cut",
+   "why": "game design, not product design; also hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c13fdbbbe15f24a3": {
+   "bucket": "cut",
+   "why": "game design, not product design; onsite Poland",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "de775e95ed5ac04c": {
+   "bucket": "cut",
+   "why": "game quest design, not product design; onsite Poland",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "211eac820a5fdda2": {
+   "bucket": "cut",
+   "why": "game level design, and Poland onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6e562cc0747c51aa": {
+   "bucket": "cut",
+   "why": "game UI design, not product/software design; also Poland onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "03963ca3dab5df28": {
+   "bucket": "cut",
+   "why": "game level design, not product design; Poland onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3a2528fb6a921a59": {
+   "bucket": "cut",
+   "why": "game UI/UX design, not software product design; hybrid/onsite Poland",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9bb38be7683d1a3c": {
+   "bucket": "cut",
+   "why": "product discovery/transformation consulting role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "28d913af7723d573": {
+   "bucket": "cut",
+   "why": "senior product/market strategy leadership, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1e50875b6e90edbe": {
+   "bucket": "cut",
+   "why": "senior product management/strategy leadership, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "53d615cc2d3a2f12": {
+   "bucket": "cut",
+   "why": "brand/graphic design, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "06fb6c3403e1bf67": {
+   "bucket": "cut",
+   "why": "hybrid in London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b7dc25392745f178": {
+   "bucket": "cut",
+   "why": "product management role, not design; hybrid Rome",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d09c4a4c3f5b8c70": {
+   "bucket": "cut",
+   "why": "product management role, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e40d5c3af45a28bf": {
+   "bucket": "cut",
+   "why": "mechanical/hardware engineering role, not software product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1f69aa49239277ee": {
+   "bucket": "cut",
+   "why": "HVAC/mechanical engineering role, not product design; UK onsite/hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f05d595e90c9b4d5": {
+   "bucket": "cut",
+   "why": "IC/semiconductor hardware design, not product design; onsite Germany",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "dab82501914dcc24": {
+   "bucket": "cut",
+   "why": "PLC/automation engineering, non-English JD, Hungary onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6c5be09ee2a26553": {
+   "bucket": "cut",
+   "why": "PCB/electrical hardware design engineering, not product design; Budapest onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f6ae7e96e2118bd5": {
+   "bucket": "cut",
+   "why": "fullstack engineering role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ae8c7330f42479d0": {
+   "bucket": "cut",
+   "why": "hybrid/onsite Hamburg, Germany",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f9c6b4ca3cf6a77e": {
+   "bucket": "cut",
+   "why": "customer service/operations management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "aa79b753ff3d02fc": {
+   "bucket": "cut",
+   "why": "graphic/brand/art direction, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9d4798de2f48d893": {
+   "bucket": "cut",
+   "why": "product strategy/marketing role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "adce5627a432ad60": {
+   "bucket": "cut",
+   "why": "fashion design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "51d71bc0c8c71b40": {
+   "bucket": "cut",
+   "why": "game design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a761fe85e0f7a5f9": {
+   "bucket": "cut",
+   "why": "compliance role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5b33a537e4cba8d1": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "65921f976d3d5b7a": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "74856d55d3d9953d": {
+   "bucket": "cut",
+   "why": "content design discipline; UK onsite/hybrid location",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ae3af52bf6b90726": {
+   "bucket": "cut",
+   "why": "compliance/risk role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "839f8340f9b95a7f": {
+   "bucket": "cut",
+   "why": "Android engineering role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d798f5bb02f3e1a1": {
+   "bucket": "cut",
+   "why": "compliance role, not design; also UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "489f635ec1a7c297": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f48963b66cbb1925": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f58d73bf71f64514": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid leadership role",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "da0d9478aa8ab2a8": {
+   "bucket": "tiebreak",
+   "why": "content/model design hybrid, not standard product UX/UI design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ec11abb262cb35f0": {
+   "bucket": "tiebreak",
+   "why": "content design discipline",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a48cfd457ed40103": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d75df854e6422609": {
+   "bucket": "cut",
+   "why": "product management role, not design; UK onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "16e331e1388a3fe9": {
+   "bucket": "cut",
+   "why": "onsite London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "bd7ce3bbb0ea2e00": {
+   "bucket": "cut",
+   "why": "compliance role, not design; UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8147b5040dc08214": {
+   "bucket": "cut",
+   "why": "product management leadership role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "920cc8a3a326c91a": {
+   "bucket": "cut",
+   "why": "London/Budapest onsite-hybrid, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7f4997d5dda9e1b2": {
+   "bucket": "cut",
+   "why": "data/analytics role, not product design; also UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b19cd4819574c2cf": {
+   "bucket": "cut",
+   "why": "product management director role, not design; London onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c0654205ca0ea946": {
+   "bucket": "cut",
+   "why": "student summer internship, general design/service design, JD in Norwegian, Oslo onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4177c5c577d4fee7": {
+   "bucket": "cut",
+   "why": "JD in Norwegian; onsite Norway",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9c26fb819c413688": {
+   "bucket": "cut",
+   "why": "BIM/structural engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e16a4521f9e45389": {
+   "bucket": "cut",
+   "why": "HVAC/mechanical engineering design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a2869e994c335893": {
+   "bucket": "cut",
+   "why": "process/mechanical engineering role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a85a1f5167683b04": {
+   "bucket": "cut",
+   "why": "civil/hydraulic engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4d9405a9bd8ac96e": {
+   "bucket": "cut",
+   "why": "structural/BIM engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "825cfe85f66ce99a": {
+   "bucket": "cut",
+   "why": "motion design for marketing/CRM, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b77045b235cdbf2e": {
+   "bucket": "cut",
+   "why": "motion/brand design, not product design; hybrid in London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f21d7a3494bda7f7": {
+   "bucket": "cut",
+   "why": "motion/brand design, not product design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "244962b15d5e1cb9": {
+   "bucket": "cut",
+   "why": "brand/creative agency leadership role, not product design; London hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5547b59f0862ba48": {
+   "bucket": "cut",
+   "why": "SEO/GEO/e-commerce marketing role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5a672805b9ee8a03": {
+   "bucket": "cut",
+   "why": "hospitality/architectural design manager, not product design; onsite/hybrid Madrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fcdcfa20cdcfc07d": {
+   "bucket": "cut",
+   "why": "content/communications role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c5b0b70e0553bca2": {
+   "bucket": "cut",
+   "why": "data product management role, not product design; onsite France",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "cc3e29aefd5c749d": {
+   "bucket": "cut",
+   "why": "electrical/hardware engineering, not product design; onsite Wisconsin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2b4fb509e71b877c": {
+   "bucket": "cut",
+   "why": "service design, not product design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "069705c3ed46c91b": {
+   "bucket": "cut",
+   "why": "UX research role; hybrid Manchester UK, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7736112e3e924f5d": {
+   "bucket": "cut",
+   "why": "HR/org design consulting, not product design; Bucharest onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a1798d97c87c49b6": {
+   "bucket": "cut",
+   "why": "ASIC hardware/electrical engineering, not product design; onsite Germany",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e0b51ba80ed7d06e": {
+   "bucket": "cut",
+   "why": "ASIC hardware engineering, not product design; onsite/hybrid in Germany",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8b544b6a5ab85d73": {
+   "bucket": "cut",
+   "why": "hardware/IC engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e862575639ebf8ef": {
+   "bucket": "cut",
+   "why": "hardware/IC engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4160723da8b42256": {
+   "bucket": "cut",
+   "why": "product management/advertising director role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c80271494b15ec30": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a324e2a491202d34": {
+   "bucket": "cut",
+   "why": "nuclear engineering CAD design, not product design; onsite Cardiff",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e84aa4b31744176f": {
+   "bucket": "cut",
+   "why": "data engineering, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8add0bdc8b35948e": {
+   "bucket": "cut",
+   "why": "mechanical/nuclear engineering design, not product design; UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "69ce7da309c517a2": {
+   "bucket": "cut",
+   "why": "electrical/nuclear engineering role, not product design; onsite UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "171b79b02dde5c57": {
+   "bucket": "cut",
+   "why": "mechanical/nuclear engineering design, not product design; also UK onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1d244f614ae81d7a": {
+   "bucket": "cut",
+   "why": "mechanical/tooling design, not product design; onsite Derby UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5654813844c50600": {
+   "bucket": "cut",
+   "why": "game level design, not product design; onsite Annecy France",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4746380d1622cee6": {
+   "bucket": "cut",
+   "why": "game level design engineering, onsite Annecy France",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "acb2964016763d88": {
+   "bucket": "cut",
+   "why": "game UI programming, not product design; onsite Sweden",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "80eeffe92040425b": {
+   "bucket": "cut",
+   "why": "game level/event design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "19fc9d1aded63ffc": {
+   "bucket": "cut",
+   "why": "game AI design, not product design; onsite Sweden",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "425d748276635fc6": {
+   "bucket": "cut",
+   "why": "game economy design, not product design; Paris onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "16e668667178b038": {
+   "bucket": "cut",
+   "why": "game design, not product design; onsite Montpellier",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7fd0d52a54921588": {
+   "bucket": "cut",
+   "why": "audio/voice design role, not product design; also hybrid Warsaw",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7c0252e49024240c": {
+   "bucket": "cut",
+   "why": "sound design for games, not product design; hybrid in Warsaw",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9426009d4673968d": {
+   "bucket": "cut",
+   "why": "UX Director spans research/analytics/ops not core product design; Warsaw onsite/hybrid relocation required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6465bac110f7c435": {
+   "bucket": "cut",
+   "why": "game/quest design, not product design; onsite Warsaw",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fe75606cf9b1f964": {
+   "bucket": "cut",
+   "why": "game level design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ad2cb786c5de64e3": {
+   "bucket": "cut",
+   "why": "game design, not product design; onsite Warsaw",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "be6c37c2f7a7c845": {
+   "bucket": "cut",
+   "why": "project/integration management role, not product design; Estonia onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7f1706b2b6131940": {
+   "bucket": "cut",
+   "why": "onsite Sofia, Bulgaria",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8b95cb8d702dcb22": {
+   "bucket": "cut",
+   "why": "fashion design, not product/software design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c6d0b8d3c057d2f2": {
+   "bucket": "cut",
+   "why": "graphic/presentation design, onsite Shirebrook UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ab332a93368ae9f1": {
+   "bucket": "cut",
+   "why": "creative production/project management role, not product design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8d2c2f701c25ab4b": {
+   "bucket": "cut",
+   "why": "electrical/PLC software engineering, not product design; hybrid in Netherlands",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7f5df149d183c52b": {
+   "bucket": "cut",
+   "why": "civil engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6e5902f9d760cfc1": {
+   "bucket": "cut",
+   "why": "electrical engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6fc33ad49bf2e9fa": {
+   "bucket": "cut",
+   "why": "electrical engineering, not design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f9dad4985cd4ad6a": {
+   "bucket": "cut",
+   "why": "civil/water infrastructure design management, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b1863335ab7eb4cf": {
+   "bucket": "cut",
+   "why": "rail infrastructure design management, not product/software design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2fc20c451011035b": {
+   "bucket": "cut",
+   "why": "civil/transportation engineering, not product design; also hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fd3ae71b64ef1dc6": {
+   "bucket": "cut",
+   "why": "telecom network technical architecture role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f7d6fea9d7106f80": {
+   "bucket": "cut",
+   "why": "service design (not clearly product UX/UI), and location is UK-only hybrid roles",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "322f625bcc677238": {
+   "bucket": "cut",
+   "why": "service design, not product design; UK hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2a2ffaf863163449": {
+   "bucket": "cut",
+   "why": "hybrid onsite Dublin, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "51854f83008abe92": {
+   "bucket": "cut",
+   "why": "content design discipline; UK-only locations, no Portugal/Europe remote option",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4385e26b2ce22a44": {
+   "bucket": "cut",
+   "why": "UK-only, SC clearance requires 5yr UK residency",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "311eab6c633b1e3f": {
+   "bucket": "cut",
+   "why": "sales, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f3996223b8243b06": {
+   "bucket": "cut",
+   "why": "marketing/brand+motion design, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f1ee0b067daedfec": {
+   "bucket": "cut",
+   "why": "Head of Product/commercial leadership, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "58990fa1a131da03": {
+   "bucket": "cut",
+   "why": "brand/marketing visual designer, hybrid Helsinki",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f12d684b66770e34": {
+   "bucket": "cut",
+   "why": "game UI art/Unity role, not product/software design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2d9cb6d19f9d69c2": {
+   "bucket": "cut",
+   "why": "game economy design, not product design; onsite Sweden only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "cd49d4eb47bab57a": {
+   "bucket": "cut",
+   "why": "game UX/art role, onsite Stockholm required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "739dee4e038cf849": {
+   "bucket": "cut",
+   "why": "game UX design; onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c0d89fbc337ddf9d": {
+   "bucket": "cut",
+   "why": "lighting/electrical design engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6372f19280ae57d7": {
+   "bucket": "cut",
+   "why": "game content/narrative design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "da23d33b9c9d7287": {
+   "bucket": "cut",
+   "why": "production leadership, not design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b141403ecde1ee1b": {
+   "bucket": "cut",
+   "why": "training/L&D role, not product design; London hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8f20694d64d2e738": {
+   "bucket": "cut",
+   "why": "game design leadership, not product design; onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ce12bd99f5799002": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "67d24732b0b8531a": {
+   "bucket": "cut",
+   "why": "hybrid onsite Stockholm, no relocation offered",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "35333cf9d9336e92": {
+   "bucket": "cut",
+   "why": "AI trainer/video production role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5287f367b42015f9": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "723b540ca562b93c": {
+   "bucket": "cut",
+   "why": "in-store retail advisor role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "91b391b808eea721": {
+   "bucket": "cut",
+   "why": "Head of Product (PM leadership), not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3123ddf0d9ae27a6": {
+   "bucket": "cut",
+   "why": "graphic/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "15216d9a1e2af37c": {
+   "bucket": "cut",
+   "why": "print production warehouse job, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "34ffcc3b1c3f412e": {
+   "bucket": "cut",
+   "why": "onsite Cyprus",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9e35be49a3c0fb38": {
+   "bucket": "cut",
+   "why": "legal counsel role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "cb48832126fdc412": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1f860d587c722671": {
+   "bucket": "cut",
+   "why": "generalist AI builder role, not product design; Finland-only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a7fb8f687c5d8cd5": {
+   "bucket": "cut",
+   "why": "onsite/hybrid in Prague, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d7ab73e192193191": {
+   "bucket": "cut",
+   "why": "Prague-based, no remote scope stated",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f347d21a70560f05": {
+   "bucket": "cut",
+   "why": "Prague, no remote-anywhere clause overriding it; Czech Republic-based hybrid/office role, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ed0ef339c6465197": {
+   "bucket": "cut",
+   "why": "sales role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d5234d43780fd3a0": {
+   "bucket": "cut",
+   "why": "creative/design director role in marketing/branding, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "28967f2f42e535f1": {
+   "bucket": "cut",
+   "why": "creative/brand design director, not product design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "64570c82222fa3c0": {
+   "bucket": "cut",
+   "why": "graphic/brand design, hybrid UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "51fbcf7be0e991e7": {
+   "bucket": "cut",
+   "why": "motion/video editing role, hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f68c3688c491a88c": {
+   "bucket": "cut",
+   "why": "motion design, not product design; also hybrid Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "be312dcd0b46456f": {
+   "bucket": "cut",
+   "why": "Hamburg onsite founding designer role",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "efb700d2b7c7b500": {
+   "bucket": "cut",
+   "why": "Head of Product leadership role, not product design; also onsite Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "de3b87077f76e2ec": {
+   "bucket": "cut",
+   "why": "hybrid onsite Helsinki 3 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6c6b05a138315157": {
+   "bucket": "cut",
+   "why": "data analyst role, not product design; onsite/hybrid in Helsinki",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "223450fad25aac69": {
+   "bucket": "cut",
+   "why": "software engineer role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "205d74b4a148e6ff": {
+   "bucket": "cut",
+   "why": "corporate brand identity design, hybrid Hamburg",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2c7be0435d698a02": {
+   "bucket": "cut",
+   "why": "packaging/brand design, not product design; hybrid onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7eab612391f24c41": {
+   "bucket": "cut",
+   "why": "industrial/3D design, not product design; hybrid in London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b9f528f8edcbb3b0": {
+   "bucket": "cut",
+   "why": "brand/graphic design agency role, hybrid in London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f9a98bb00030bc79": {
+   "bucket": "cut",
+   "why": "spatial/retail design, hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5c8a1bf251fbb5d9": {
+   "bucket": "cut",
+   "why": "motion design, hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "78a9b5bd38969bc8": {
+   "bucket": "cut",
+   "why": "performance/marketing creative design, not product design; hybrid Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2e08a756024523dd": {
+   "bucket": "cut",
+   "why": "game/mission design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0a09572028c3a5e2": {
+   "bucket": "cut",
+   "why": "game AI design, not product design; onsite UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "30db8c27df7210b1": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid, remote limited to UK only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1dcd34666d245a32": {
+   "bucket": "cut",
+   "why": "experiential/installation production role, not product design; London onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9ee4f5717ec37b05": {
+   "bucket": "cut",
+   "why": "graphic design, not product design; hybrid onsite outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a0bf574e7bdd8a47": {
+   "bucket": "cut",
+   "why": "hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a4911be2b22cbf0b": {
+   "bucket": "cut",
+   "why": "hybrid outside Lisbon (London, 3 days/week onsite)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ecc5211b9b533e82": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "aec9759f585db35a": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "baa06515d8cd1716": {
+   "bucket": "cut",
+   "why": "product/BA management leadership, not design; onsite Valencia",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8860f6c578a5c3b2": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b06954db8b521322": {
+   "bucket": "cut",
+   "why": "Berlin, German C1+ fluency required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ec3f0af52f0baec9": {
+   "bucket": "cut",
+   "why": "no remote, onsite Amsterdam only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0f892ba0971358a8": {
+   "bucket": "cut",
+   "why": "no remote applicants, onsite Amsterdam only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fdca580b8386f000": {
+   "bucket": "cut",
+   "why": "no remote, only relocation to their offices",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e48d365afb8b7424": {
+   "bucket": "cut",
+   "why": "brand design role, and no remote allowed (onsite only)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3ace2e2e87efeac8": {
+   "bucket": "cut",
+   "why": "brand/graphic design leadership, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "890bb43e16feae57": {
+   "bucket": "cut",
+   "why": "product management, not design; Zurich onsite outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b1a3334873caa6f5": {
+   "bucket": "cut",
+   "why": "apparel graphic design, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f60dadc8f1fb5877": {
+   "bucket": "cut",
+   "why": "footwear material design, not digital product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "212d7ce3d3926767": {
+   "bucket": "cut",
+   "why": "spatial/environmental brand design, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "43fc212ef5db28b4": {
+   "bucket": "cut",
+   "why": "computational/parametric design (footwear), not product/software design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e1faf973c6c214bd": {
+   "bucket": "cut",
+   "why": "distribution/supply chain network design, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d83e1312087959b2": {
+   "bucket": "cut",
+   "why": "footwear/industrial design, onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "185fa6e654d2bbbb": {
+   "bucket": "cut",
+   "why": "footwear color/apparel design, not digital product design; Zurich onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9c6573f0b5ec4c85": {
+   "bucket": "cut",
+   "why": "footwear/industrial design, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8c2ed993cb43213a": {
+   "bucket": "cut",
+   "why": "innovation/concept design role in Zurich, not product design and onsite outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1b41a9cfb2339261": {
+   "bucket": "cut",
+   "why": "quality/ops role, not product design; Zurich onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ef03dadd58e3e60c": {
+   "bucket": "cut",
+   "why": "retail campaign production, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "df66c1fcf704f005": {
+   "bucket": "cut",
+   "why": "no JD text, title/company suggest apparel merchandising design, likely not product design; Zurich onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9716af2a3cc3857f": {
+   "bucket": "cut",
+   "why": "retail visual merchandising design, not product design; onsite Zurich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "164f88205c06a7ae": {
+   "bucket": "cut",
+   "why": "hybrid Munich/Berlin only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "914f7491edc32191": {
+   "bucket": "tiebreak",
+   "why": "content design/UX writing, hybrid Berlin/Munich but remote allowed within Europe per team framing",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b5100747d22c62a8": {
+   "bucket": "cut",
+   "why": "hybrid onsite Berlin/Munich, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "bc1e611326f7d20e": {
+   "bucket": "cut",
+   "why": "medicinal chemistry leadership, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "13ed50040ddaea3c": {
+   "bucket": "cut",
+   "why": "brand/advertising design, not product design; UK onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "06453846627cefd1": {
+   "bucket": "cut",
+   "why": "AI support/product ops leadership, not product design; onsite Amsterdam",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "906f62c460700027": {
+   "bucket": "cut",
+   "why": "product analytics, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "924144f7bb535ec0": {
+   "bucket": "cut",
+   "why": "hardware/chip design engineering, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e86f8c8615872bd4": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6c26e494a41ef6a4": {
+   "bucket": "cut",
+   "why": "UK residence/right to work required, London onsite 3 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c2ea33e1b4240625": {
+   "bucket": "cut",
+   "why": "strategy/org design consulting, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "543ccc6ecc593589": {
+   "bucket": "cut",
+   "why": "data/telemetry analytics role for games, not product design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8fed0c9aa39a4d28": {
+   "bucket": "cut",
+   "why": "product management role, not design; also London onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "be46f967b4f604e2": {
+   "bucket": "cut",
+   "why": "production coordinator, not design; also onsite Edinburgh",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6fab432f4700d4a2": {
+   "bucket": "cut",
+   "why": "UI programmer role (software engineering), onsite Dundee",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "45fd52fcf6baa0d1": {
+   "bucket": "cut",
+   "why": "hybrid onsite London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "69c84f2e2b50d54f": {
+   "bucket": "cut",
+   "why": "motion graphics for broadcast/video, not product design; also onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fb1ed94eeed0450f": {
+   "bucket": "cut",
+   "why": "hybrid outside Lisbon (Helsinki)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "58b71ffdb0c15794": {
+   "bucket": "cut",
+   "why": "brand/graphic design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1c57d2fe0624f94c": {
+   "bucket": "cut",
+   "why": "Berlin office, no remote-EU mention",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ec8663d7c0b7188d": {
+   "bucket": "tiebreak",
+   "why": "content design/UX writing role",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d7f610cbc253294f": {
+   "bucket": "cut",
+   "why": "data centre engineering design management, not product design; UK onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5f701a2b690564fe": {
+   "bucket": "cut",
+   "why": "construction/data-centre design management, not product design; onsite Norway",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "60d7b3eeed87eb04": {
+   "bucket": "cut",
+   "why": "internal L&D/enablement design role, not product design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a9a2c4388d1271d1": {
+   "bucket": "cut",
+   "why": "UK-based, no Portugal/Europe remote scope indicated",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "64ca1048cbbad529": {
+   "bucket": "cut",
+   "why": "CMF/automotive design, not product design; Munich onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2c2c4bf72c212076": {
+   "bucket": "cut",
+   "why": "automotive detail/industrial design, not software product design; Munich onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "95a7d12d595a8a1e": {
+   "bucket": "cut",
+   "why": "automotive exterior design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "bc329464afa77f03": {
+   "bucket": "cut",
+   "why": "CMF/automotive design, not software product design; Munich hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fd5a621385c82ab9": {
+   "bucket": "cut",
+   "why": "automotive interior design, not product design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6a804dd388ce5b55": {
+   "bucket": "cut",
+   "why": "automotive perceived-quality/industrial design, not digital product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "799bb41b47319be6": {
+   "bucket": "cut",
+   "why": "CRM marketing role, hybrid UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1878e227a1f2f844": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4bc0ab16f60a58ad": {
+   "bucket": "cut",
+   "why": "consulting role, not design; onsite/hybrid Munich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "976c700ee8a5493e": {
+   "bucket": "cut",
+   "why": "management/technology consulting, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b88d8f674bafddb4": {
+   "bucket": "cut",
+   "why": "sales/consulting role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fd2549c04124a669": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ac2fa53c93c158a6": {
+   "bucket": "cut",
+   "why": "consulting role, not design; onsite Munich",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "cd369f404c1c7303": {
+   "bucket": "cut",
+   "why": "sales/consulting role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4d66f95e91858703": {
+   "bucket": "cut",
+   "why": "sales/consulting role, not design; also Germany-based",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ab54fbaf36512129": {
+   "bucket": "cut",
+   "why": "Barcelona onsite/hybrid, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "64d85c22932112a9": {
+   "bucket": "cut",
+   "why": "graphic/marketing design, not product design; London onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "64fe4bd32faceaae": {
+   "bucket": "cut",
+   "why": "based in France or UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "474d771c1600bda2": {
+   "bucket": "cut",
+   "why": "knitwear/fashion design, not product design; onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7f48ee5af47fcd35": {
+   "bucket": "cut",
+   "why": "physical leather goods design, onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "88195b2e432cc9b3": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3554ab7a47b11cc0": {
+   "bucket": "cut",
+   "why": "payments product leadership, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7ea86cbf02f7afa7": {
+   "bucket": "cut",
+   "why": "graphic/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "91f844914ec9fc79": {
+   "bucket": "tiebreak",
+   "why": "conversation/content design discipline, not core UX/UI product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b1c29c9b7631cd5b": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "45ab8e65718e11f5": {
+   "bucket": "cut",
+   "why": "game economy design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d07dc73427ceaa6e": {
+   "bucket": "cut",
+   "why": "game UI/UX design, not product design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2e662fabaf6367c5": {
+   "bucket": "cut",
+   "why": "London office, no remote mentioned",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7b27dca1093033d5": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "80f28fbc8f2f0144": {
+   "bucket": "cut",
+   "why": "Stockholm HQ, no remote scope stated",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "59e5a2f5820d624b": {
+   "bucket": "cut",
+   "why": "motion/brand design, onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c6171690465e6481": {
+   "bucket": "cut",
+   "why": "Stockholm onsite, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8720ebf77b14ad99": {
+   "bucket": "cut",
+   "why": "Product Manager role, not product design; onsite Stockholm HQ",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "40592de1c0e54062": {
+   "bucket": "cut",
+   "why": "brand/product marketing visual design, not product UX/UI design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "83e6e65380a4486f": {
+   "bucket": "cut",
+   "why": "web/brand design, not product design; onsite Stockholm HQ",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7de90d6784fdcda6": {
+   "bucket": "cut",
+   "why": "hybrid/onsite London office",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ac53325630993e0c": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2dd54c4322bc56ed": {
+   "bucket": "cut",
+   "why": "hybrid onsite Berlin 3 days/week, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "806078a7238a8a93": {
+   "bucket": "cut",
+   "why": "onsite/hybrid London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d49e34564cb801d2": {
+   "bucket": "cut",
+   "why": "onsite London, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "066398c3a81ac5ba": {
+   "bucket": "cut",
+   "why": "onsite 5 days/week in Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b297765efd60a9e5": {
+   "bucket": "cut",
+   "why": "onsite 5 days/week in Berlin",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7d2a672dc1e076f3": {
+   "bucket": "cut",
+   "why": "Berlin onsite 5 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3ed42c2067a19e18": {
+   "bucket": "cut",
+   "why": "onsite 5 days/week in Berlin, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f13b6c6b6a8f4973": {
+   "bucket": "cut",
+   "why": "office-first, 4 days/week in Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "25344694c207c888": {
+   "bucket": "cut",
+   "why": "in-person role, London office",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "37fd39fe84aafab8": {
+   "bucket": "cut",
+   "why": "in-person office Mon-Thu, London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e9f92d41a52eb67d": {
+   "bucket": "cut",
+   "why": "implementation/customer onboarding role, not product design; also in-person London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b36c954195c05dfe": {
+   "bucket": "cut",
+   "why": "voice/audio design, not product UX/UI",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a791f41b68a3fa8f": {
+   "bucket": "cut",
+   "why": "brand/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8063aed7a0a95f43": {
+   "bucket": "cut",
+   "why": "hybrid/onsite Berlin, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "adbff712d19cb1ac": {
+   "bucket": "cut",
+   "why": "Munich hybrid, in-office >4 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9dab5dae629466c7": {
+   "bucket": "cut",
+   "why": "growth/strategy role, not design; Munich onsite 4+ days",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1f104728ccc74f0d": {
+   "bucket": "cut",
+   "why": "in-office Munich >4 days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e5482eede1640ee2": {
+   "bucket": "cut",
+   "why": "Munich in-office 4+ days/week",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0ae4bd4bd571ad63": {
+   "bucket": "cut",
+   "why": "onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5d7133782732aee8": {
+   "bucket": "cut",
+   "why": "onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a34d6521a5d930c6": {
+   "bucket": "cut",
+   "why": "onsite Stockholm",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3f725203a5099dd3": {
+   "bucket": "cut",
+   "why": "manufacturing production management, not product design; onsite UK",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e23aa1d60808d836": {
+   "bucket": "cut",
+   "why": "manufacturing/production technician role, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "384d6c3e2c485791": {
+   "bucket": "cut",
+   "why": "regulatory compliance role, not design; also hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d29cb430919ea1dc": {
+   "bucket": "cut",
+   "why": "manufacturing operator role, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6fa67614b34cdb0c": {
+   "bucket": "cut",
+   "why": "data migration architecture role, not product design; hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "37b0427764202a8f": {
+   "bucket": "cut",
+   "why": "motion/AI creative design, not product design; also hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9f70a320cd3982b0": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7103c61586163690": {
+   "bucket": "cut",
+   "why": "electrical/instrumentation engineering, not product design; onsite Netherlands",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7b1ba1feabb46f58": {
+   "bucket": "cut",
+   "why": "IT/infrastructure engineering, not product design; onsite Rotterdam",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "12a783d53a264070": {
+   "bucket": "cut",
+   "why": "marketing/multimedia design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1b3e1ab41e4de16c": {
+   "bucket": "cut",
+   "why": "fashion/apparel design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "37834fb9c55341c2": {
+   "bucket": "cut",
+   "why": "B2B marketing/sales enablement design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1d9bf162c7692973": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d244857932f67009": {
+   "bucket": "cut",
+   "why": "marketing content design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1f6406edceda81a6": {
+   "bucket": "cut",
+   "why": "retail sales associate, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c23e9b924278f80d": {
+   "bucket": "cut",
+   "why": "hardware/embedded software engineering, not product design; onsite Netherlands",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e3eac232cc67823f": {
+   "bucket": "cut",
+   "why": "leather goods/mockup design, not product design; also Paris onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "dc6a98ed7da7e609": {
+   "bucket": "cut",
+   "why": "retail/architectural design internship, not product design; onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "62f03aee25b1adfd": {
+   "bucket": "cut",
+   "why": "hardware/electronics engineering, not product design; onsite Hungary",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "35fc9b5dbe39f1fc": {
+   "bucket": "tiebreak",
+   "why": "UX research discipline",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0225c2aca815b364": {
+   "bucket": "cut",
+   "why": "fullstack engineering, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "893c2428d90c61ad": {
+   "bucket": "cut",
+   "why": "onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ca9c4916f005e921": {
+   "bucket": "cut",
+   "why": "retail sales, not design; onsite Italy",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c783248661bada5d": {
+   "bucket": "cut",
+   "why": "product owner/PLM role, not product design; also Germany onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b104d92d73bb88a2": {
+   "bucket": "cut",
+   "why": "brand/design-system leadership role, onsite France (not Lisbon)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5c79ff36731a3798": {
+   "bucket": "cut",
+   "why": "hybrid/onsite outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "d2237a05b8cca1a0": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid, outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "93302d048fa67797": {
+   "bucket": "cut",
+   "why": "game level design internship in France, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "99a0de1ba0c88aef": {
+   "bucket": "cut",
+   "why": "Vilnius, Lithuania onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "561733972fc7d950": {
+   "bucket": "cut",
+   "why": "brand/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a5919575d22ba3f7": {
+   "bucket": "cut",
+   "why": "content design discipline; onsite Kaunas, Lithuania",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "09efb93d44d432ef": {
+   "bucket": "cut",
+   "why": "motion design, not product design; London onsite",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5e80fed5697a6883": {
+   "bucket": "cut",
+   "why": "AI conversation/prompt design, not product UX/UI; onsite France outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4579ad007a4569c7": {
+   "bucket": "tiebreak",
+   "why": "research discipline",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "330a9cba2f993cc1": {
+   "bucket": "cut",
+   "why": "onsite Neuilly-sur-Seine France, outside Lisbon; also mixes UX/UI with research focus",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "434c212dc7b3bc58": {
+   "bucket": "cut",
+   "why": "onsite Lille, France",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0be25ea642a2c335": {
+   "bucket": "cut",
+   "why": "onsite Paris",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8a3f4583f9812c2f": {
+   "bucket": "cut",
+   "why": "hybrid onsite in Berlin, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "45e98acbb0405bd9": {
+   "bucket": "cut",
+   "why": "sales/product adoption strategist, not design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "500a04f11525daf7": {
+   "bucket": "cut",
+   "why": "onsite/hybrid Cyprus, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "42f422b291575e35": {
+   "bucket": "cut",
+   "why": "Director of Product (PM leadership), not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "afa0d77d398151f6": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5e18974ce43e353f": {
+   "bucket": "cut",
+   "why": "brand/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0f817df8845d801c": {
+   "bucket": "cut",
+   "why": "experiential/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ac33c8f36faec665": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4bc94e999eb38673": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4665bd6c10b075f8": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b1c6a20930763a97": {
+   "bucket": "cut",
+   "why": "PM/leadership role, US-only",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8a92a76fa4de9487": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "09bdad71c02f308b": {
+   "bucket": "cut",
+   "why": "onsite London",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "dee27d5ed937e5d3": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "df23e418ad147021": {
+   "bucket": "cut",
+   "why": "onsite/hybrid role requires occasional travel to London, and location field is Poland (non-Portugal)",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e53fae0e2d514bcd": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a93daa5a8acfc6cc": {
+   "bucket": "cut",
+   "why": "Ukraine-only location, not European scope named",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ff6467e3a1390318": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a28d7da093a4c681": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a6a22d1ad88e9548": {
+   "bucket": "cut",
+   "why": "PST to BRT timezone-restricted remote, not Europe/Portugal compatible",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fea58b4a07512011": {
+   "bucket": "cut",
+   "why": "Americas-only scope",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "2220454f83f8c3b5": {
+   "bucket": "cut",
+   "why": "brand/creative director role, US timezone required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "238b20c98edb7753": {
+   "bucket": "cut",
+   "why": "UK-only remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0c514232e54d0533": {
+   "bucket": "cut",
+   "why": "London onsite/hybrid or Nigeria remote; no Portugal/Europe remote scope",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "730f8b1adfe9fcfb": {
+   "bucket": "cut",
+   "why": "India/Nigeria remote scope, no Europe",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7a1e12b29718d73c": {
+   "bucket": "cut",
+   "why": "executive leadership role, brand/marketing partnership focus, not hands-on product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e2c273aff6e906e7": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9e860e528405b8ef": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c581ff0b91f0c949": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6eb3975123808fe1": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ef3f306d37bfdd00": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "68be4cb729cd79d3": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9bb7c916d4b900db": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "44127e02e8c267a8": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "1cdef51f585e9e7b": {
+   "bucket": "cut",
+   "why": "design system/ops management, not hands-on product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b621ebe6c8545087": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8dbfda2258653322": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "39ce3d71fcea64ef": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6a07d3dee4011a16": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "693978614034b0ac": {
+   "bucket": "cut",
+   "why": "leadership/management role overseeing UX, not hands-on product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ae92ca6f9409bccb": {
+   "bucket": "cut",
+   "why": "Germany residence required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f959d27ea953c3af": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3550f1679a34d86c": {
+   "bucket": "cut",
+   "why": "graphic/motion/marketing design, not product design; requires Switzerland residence",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c647bde20daba6c7": {
+   "bucket": "cut",
+   "why": "brand/creative marketing role, UK onsite/based",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5cec9cdd20171ec8": {
+   "bucket": "cut",
+   "why": "graphic/motion/marketing design, hybrid outside Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0948a72d3cf5a963": {
+   "bucket": "cut",
+   "why": "brand/creative design, not product design; also Sweden residence required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "bd838e94cf448e35": {
+   "bucket": "cut",
+   "why": "Switzerland residence required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "81876d6020bea220": {
+   "bucket": "cut",
+   "why": "brand design, France residence required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "637fd6c75debe8b5": {
+   "bucket": "cut",
+   "why": "Sweden residence required",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "181d84ab2ce417d7": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "781ee2ac0b2c1bd4": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "c68247eb1d8a2f86": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "50d5f4aba64d46e7": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "0ac7d41a81a7c9e4": {
+   "bucket": "cut",
+   "why": "Palo Alto onsite/hybrid, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "78bb14aed4d8d8dc": {
+   "bucket": "cut",
+   "why": "UX research role; Palo Alto onsite, US-based",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7bae8fc94faa99f2": {
+   "bucket": "cut",
+   "why": "data center/MEP facility design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3a043789377203f4": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "9f8c98cd46b1560f": {
+   "bucket": "cut",
+   "why": "design research role, East Africa/GMT+0-4 based, not Lisbon",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fbc1dd612d7d314c": {
+   "bucket": "cut",
+   "why": "graphic/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "847e03f3ca6c7ee6": {
+   "bucket": "cut",
+   "why": "graphic/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b04050849748e47d": {
+   "bucket": "cut",
+   "why": "physical/print production graphic design, not software product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7f8fc61ea09244f5": {
+   "bucket": "cut",
+   "why": "graphic/social-media design VA gig, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "444300a0edd673d8": {
+   "bucket": "cut",
+   "why": "WordPress dev/design VA work, not software product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fb20d135f11ab1fb": {
+   "bucket": "cut",
+   "why": "graphic/brand design, hybrid in Malta",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "83f8520ae543fcda": {
+   "bucket": "cut",
+   "why": "graphic/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ae67d7e258162193": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a87c07d91874a2f4": {
+   "bucket": "cut",
+   "why": "graphic/print/brand design agency work, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "4c883a2a743561c7": {
+   "bucket": "cut",
+   "why": "brand/graphic design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "dc75d1ae9b458bf3": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "68d44203c0bf012d": {
+   "bucket": "cut",
+   "why": "performance ad graphic design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7b6322d84568172a": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "a06c78e66ce38f72": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "76e37af61e56fd16": {
+   "bucket": "cut",
+   "why": "content design/UX writing role; Americas-only remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "22f361e0072154f4": {
+   "bucket": "cut",
+   "why": "US-only remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "248167df6229910a": {
+   "bucket": "cut",
+   "why": "Americas-only scope",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "05b7eb627ba5c0e7": {
+   "bucket": "cut",
+   "why": "brand/motion design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "3168d564c3ad0633": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fd4f6739cc33a6a1": {
+   "bucket": "cut",
+   "why": "brand/web design role, not product design; US/Canada-only remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "fb5eaddc8b57c919": {
+   "bucket": "cut",
+   "why": "visual/brand design agency role, not product design; Canada-based remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "482159f62ed1b872": {
+   "bucket": "cut",
+   "why": "remote but PT/ET hours coverage implied, Canada-based preferred, no Europe mention",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8ed603c4645c0b4f": {
+   "bucket": "cut",
+   "why": "brand/ad/marketing creative, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "caf0b09dab896695": {
+   "bucket": "tiebreak",
+   "why": "AI consulting agency role heavy on research; consulting/client-work context, not clean in-house product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "e6eda6f6289c850b": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b3a23f9a545dd781": {
+   "bucket": "cut",
+   "why": "video animation production, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "ae79450bb0506d99": {
+   "bucket": "cut",
+   "why": "graphic/brand design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "867dbef8c87fc4bc": {
+   "bucket": "cut",
+   "why": "engineering/construction project management, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "8f40814433e34361": {
+   "bucket": "cut",
+   "why": "JD restricts to Brazil/Colombia/Argentina/Mexico remote",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6a49978c27dcb0f4": {
+   "bucket": "cut",
+   "why": "clinical trial solutions design, not product design; Costa Rica-based role",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b80c222d5cf55922": {
+   "bucket": "cut",
+   "why": "brand/creative direction role, not product design; Ecuador HQ, no PT/EU scope",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "6fde40f2305fd74d": {
+   "bucket": "cut",
+   "why": "creative/brand/agency design leadership, not software product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7c8c199a4f1a96c4": {
+   "bucket": "cut",
+   "why": "frontend/systems engineering role, US onsite/hybrid",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "b6e4ed87ece3d831": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "307f6605876e54e0": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "aa901be0cc985037": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "471d129097fa5781": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5ffa0ba9139dca8f": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "928c4747e90ce3b4": {
+   "bucket": "cut",
+   "why": "brand/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "26cf82c7a0e99243": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "afb2d6cf9576639d": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "5204a6f5b2e81ba9": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "74c44fcebaa771da": {
+   "bucket": "cut",
+   "why": "design management, but leadership/coaching role not hands-on product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "7ce9498a6d0bd642": {
+   "bucket": "cut",
+   "why": "brand/visual design leadership, not product/UX design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "75cd7b02053e4ba3": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "672a1d1b86736368": {
+   "bucket": "cut",
+   "why": "brand/marketing/web design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "04d1112669f07330": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "24d78a4ad38ebeb9": {
+   "bucket": "cut",
+   "why": "brand/marketing design, not product design",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "33e857d59bb70576": {
+   "bucket": "ww",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "f62eb5a97ddb4d3e": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "18768b72ac0595be": {
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
+  },
+  "43f97e85c25349ac": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-08-30T11:31:44Z"
   }
  }
 }

@@ -2,7 +2,7 @@
  "generated_at": "2026-08-30T11:31:44Z",
  "run_id": "2026-08-30T11:31:44Z",
  "counts": {
-  "active": 559,
+  "active": 128,
   "new": 0
  },
  "sources": {
@@ -2447,8 +2447,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "eabe80bb6867e02f",
@@ -2469,8 +2469,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b5af827a25e00f5c",
@@ -2491,8 +2491,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6a5ea06e236a81e3",
@@ -2513,8 +2513,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0801a3bfcb78d6cf",
@@ -2535,8 +2535,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9572b154445577dc",
@@ -2545,20 +2545,20 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-secfi-netherlands-74784",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-27",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "d229d9a69030ed5f",
@@ -2579,8 +2579,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "926826de1c696fa2",
@@ -2601,8 +2601,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ea196dd1280fb18f",
@@ -2623,8 +2623,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9f861d493c8f82b4",
@@ -2645,8 +2645,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "85bd089d9f9c4eb7",
@@ -2667,8 +2667,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3b6c7bd078854d43",
@@ -2677,20 +2677,20 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-advidi-netherlands-74947",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-24",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "3636ae4f21a93b9d",
@@ -2711,8 +2711,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "442629a2d2b3e6e1",
@@ -2721,20 +2721,20 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-mokacare-france-74956",
    "source": "designjobsworld",
    "location": "Paris, France",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-24",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Paris, France",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "20fbcb9e6e7e8645",
@@ -2755,8 +2755,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7527fe88ede3c9e9",
@@ -2777,8 +2777,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b9d1d19c560d410d",
@@ -2799,8 +2799,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "afea5c4595fde947",
@@ -2809,20 +2809,20 @@
    "url": "https://designjobs.world/jobs/ux-designer-geeksoftconsulting-netherlands-75015",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-24",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "b558148f95293ee4",
@@ -2843,8 +2843,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4d80b3fd453b7bce",
@@ -2865,8 +2865,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c34564ae4c94f955",
@@ -2887,8 +2887,8 @@
    "first_seen": "2026-08-30T09:12:03Z",
    "first_run": "2026-08-30T09:12:03Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "006b4a558b53e7ec",
@@ -2909,8 +2909,8 @@
    "first_seen": "2026-08-30T08:54:08Z",
    "first_run": "2026-08-30T08:54:08Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "913c53aa972db1e5",
@@ -2931,8 +2931,8 @@
    "first_seen": "2026-08-30T08:54:08Z",
    "first_run": "2026-08-30T08:54:08Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "50f474045a71f452",
@@ -2953,8 +2953,8 @@
    "first_seen": "2026-08-30T08:54:08Z",
    "first_run": "2026-08-30T08:54:08Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "020ee9de626418cf",
@@ -2963,20 +2963,20 @@
    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4907838101",
    "source": "greenhouse/jetbrains",
    "location": "Amsterdam, Netherlands; Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Paphos, Cyprus; Prague, Czech Republic; Warsaw, Poland; Yerevan, Armenia",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-07-09T05:36:06-04:00",
    "updated": "2026-08-20T12:59:01-04:00",
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands; Be…",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "ada104f0e0a1c0d6",
@@ -2985,13 +2985,13 @@
    "url": "https://jobs.ashbyhq.com/zilch/2ea37d02-cd4c-41d0-a232-efeb38e9f8cd",
    "source": "ashby/zilch",
    "location": "Zilch UK",
-   "bucket": "eu",
+   "bucket": "tiebreak",
    "salary": null,
    "posted": "2026-08-28T12:44:25.051+00:00",
    "updated": null,
    "xp": null,
    "derived_from": "ada104f0e0a1c0d6",
-   "market": "Europe",
+   "market": "Zilch UK",
    "direct": true,
    "frameable": false,
    "apply_url": "https://jobs.ashbyhq.com/zilch/2ea37d02-cd4c-41d0-a232-efeb38e9f8cd",
@@ -3000,7 +3000,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "UX/content writing discipline, hybrid UK office (not Lisbon) but remote days allowed"
   },
   {
    "id": "8fcdba0c3d81faa5",
@@ -3021,8 +3022,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "05dc2af567bab00a",
@@ -3043,8 +3044,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "42137aa329dbb0f5",
@@ -3065,8 +3066,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "dfa28ae5b97423ab",
@@ -3087,8 +3088,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "27a16ce579dbc379",
@@ -3109,8 +3110,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "93f123a405afd497",
@@ -3131,8 +3132,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d100a468b4cc8de8",
@@ -3141,20 +3142,20 @@
    "url": "https://stripe.com/jobs/search?gh_jid=7861422",
    "source": "greenhouse/stripe",
    "location": "Ireland",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-04-29T04:48:33-04:00",
    "updated": "2026-08-18T17:57:24-04:00",
    "xp": "6+y",
    "derived_from": null,
-   "market": "Ireland",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "039a5acc8a22b967",
@@ -3163,20 +3164,20 @@
    "url": "https://stripe.com/jobs/search?gh_jid=7954118",
    "source": "greenhouse/stripe",
    "location": "Ireland / United Kingdom",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-05-28T05:01:43-04:00",
    "updated": "2026-08-18T17:57:24-04:00",
    "xp": "8+y",
    "derived_from": null,
-   "market": "Ireland / United Kingdom",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "c4ea858a7bd54fad",
@@ -3197,8 +3198,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "613b2bb6333f02f3",
@@ -3219,8 +3220,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7cef18de26697edc",
@@ -3241,8 +3242,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a9e30219b76fb5a2",
@@ -3251,20 +3252,20 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8008405",
    "source": "greenhouse/stripe",
    "location": "Ireland / United Kingdom",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-06-30T04:40:33-04:00",
    "updated": "2026-08-18T17:57:24-04:00",
    "xp": "10+y",
    "derived_from": null,
-   "market": "Ireland / United Kingdom",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "ebf770217a0b9878",
@@ -3285,8 +3286,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a7347dcac7622259",
@@ -3307,8 +3308,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6f1562c5baee7300",
@@ -3329,8 +3330,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4d7588704589d464",
@@ -3351,8 +3352,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7a8e892a5f6f78ee",
@@ -3373,8 +3374,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f5dc67cd124621f8",
@@ -3395,8 +3396,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8fb9148505b4dd9c",
@@ -3417,8 +3418,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "00fdaca3db0da052",
@@ -3439,8 +3440,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5658964b79c7159e",
@@ -3461,8 +3462,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f88cdac160bdc6c1",
@@ -3483,8 +3484,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d8cdc9ec3f5ba638",
@@ -3505,8 +3506,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2253cefe45eb140c",
@@ -3527,8 +3528,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6848ee071c1869b8",
@@ -3549,8 +3550,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "95ac24d98f2dfedb",
@@ -3571,8 +3572,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d1da8ee393ae2d48",
@@ -3593,8 +3594,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e671f68d7090d391",
@@ -3615,8 +3616,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "91d535082f9addfa",
@@ -3637,8 +3638,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6c65b32e89b5d710",
@@ -3659,8 +3660,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "90abaa1dae6474bb",
@@ -3681,8 +3682,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0493a05100b66a84",
@@ -3703,8 +3704,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a855a10be96f48a4",
@@ -3725,8 +3726,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "eda2beab6c4f954b",
@@ -3747,8 +3748,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5c76e64fe83808cf",
@@ -3769,8 +3770,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "63801fed6f35a64e",
@@ -3779,20 +3780,20 @@
    "url": "https://jobs.ashbyhq.com/miro/efcd30b4-b3da-4d11-9f04-b2d9fde2b69f",
    "source": "ashby/miro",
    "location": "Copenhagen",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-06-16T09:45:05.998+00:00",
    "updated": null,
    "xp": "10+y",
    "derived_from": null,
-   "market": "Copenhagen",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "73620a8c62faf4ea",
@@ -3813,8 +3814,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7acc62c87590999a",
@@ -3835,8 +3836,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5f1de3eef360c621",
@@ -3857,8 +3858,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5ed3715b2dcdc3d9",
@@ -3879,8 +3880,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0d27ee324a7c5c38",
@@ -3901,8 +3902,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7e325793332f469f",
@@ -3923,8 +3924,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e8ffa4dd3a67e207",
@@ -3945,8 +3946,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4dd29c68a3fc9b3a",
@@ -3967,8 +3968,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6c500ec3ec956e1c",
@@ -3989,8 +3990,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e8a73c205244b86b",
@@ -4011,8 +4012,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c249c0130e55d75f",
@@ -4033,8 +4034,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e1164960d7db0ea6",
@@ -4055,8 +4056,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fa07a8c378e9dacf",
@@ -4077,8 +4078,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f9dd0400bb08b9b3",
@@ -4099,8 +4100,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "86e6722cd21d0c5c",
@@ -4121,8 +4122,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2fd2130d76edc92b",
@@ -4143,8 +4144,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2067b686d65e88b7",
@@ -4165,8 +4166,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e9354a8c65ff212a",
@@ -4175,20 +4176,20 @@
    "url": "https://jobs.smartrecruiters.com/Nexthink/744000143873019",
    "source": "smartrecruiters/Nexthink",
    "location": "Madrid, MD, Spain",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": "€65,000 – €75,000",
    "posted": "2026-08-17T15:37:03.499Z",
    "updated": null,
    "xp": "7+y",
    "derived_from": null,
-   "market": "Madrid, MD, Spain",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a320968dcd8555d2",
@@ -4210,7 +4211,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "UX research role, not product design"
   },
   {
    "id": "00c2765c1f71f28d",
@@ -4231,8 +4233,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9f2094ee5d841a89",
@@ -4253,8 +4255,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "90b4e73c097aee9b",
@@ -4275,8 +4277,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "96e37cf7e6348265",
@@ -4297,8 +4299,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8f0e74f5924711c0",
@@ -4319,8 +4321,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "26f1760341a547d3",
@@ -4341,8 +4343,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0ee378ddff3f9421",
@@ -4363,8 +4365,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fbb4b63089a42786",
@@ -4385,8 +4387,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e214d5efe7e3ba65",
@@ -4407,8 +4409,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3b79d2b07467b39d",
@@ -4429,8 +4431,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e10a6d18ccacb3c5",
@@ -4451,8 +4453,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c13fdbbbe15f24a3",
@@ -4473,8 +4475,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "de775e95ed5ac04c",
@@ -4495,8 +4497,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "211eac820a5fdda2",
@@ -4517,8 +4519,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6e562cc0747c51aa",
@@ -4539,8 +4541,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "03963ca3dab5df28",
@@ -4561,8 +4563,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3a2528fb6a921a59",
@@ -4583,8 +4585,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9bb38be7683d1a3c",
@@ -4605,8 +4607,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "28d913af7723d573",
@@ -4627,8 +4629,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1e50875b6e90edbe",
@@ -4649,8 +4651,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "53d615cc2d3a2f12",
@@ -4671,8 +4673,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "06fb6c3403e1bf67",
@@ -4693,8 +4695,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b7dc25392745f178",
@@ -4715,8 +4717,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d09c4a4c3f5b8c70",
@@ -4737,8 +4739,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e40d5c3af45a28bf",
@@ -4759,8 +4761,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1f69aa49239277ee",
@@ -4781,8 +4783,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f05d595e90c9b4d5",
@@ -4803,8 +4805,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "dab82501914dcc24",
@@ -4825,8 +4827,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6c5be09ee2a26553",
@@ -4847,8 +4849,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f6ae7e96e2118bd5",
@@ -4869,8 +4871,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ae8c7330f42479d0",
@@ -4891,8 +4893,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f9c6b4ca3cf6a77e",
@@ -4913,8 +4915,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "aa79b753ff3d02fc",
@@ -4935,8 +4937,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9d4798de2f48d893",
@@ -4957,8 +4959,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "adce5627a432ad60",
@@ -4979,8 +4981,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "51d71bc0c8c71b40",
@@ -5001,8 +5003,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a761fe85e0f7a5f9",
@@ -5023,8 +5025,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5b33a537e4cba8d1",
@@ -5045,8 +5047,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "65921f976d3d5b7a",
@@ -5067,8 +5069,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "74856d55d3d9953d",
@@ -5089,8 +5091,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ae3af52bf6b90726",
@@ -5111,8 +5113,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "839f8340f9b95a7f",
@@ -5133,8 +5135,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d798f5bb02f3e1a1",
@@ -5155,8 +5157,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "489f635ec1a7c297",
@@ -5177,8 +5179,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f48963b66cbb1925",
@@ -5199,8 +5201,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f58d73bf71f64514",
@@ -5221,8 +5223,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "da0d9478aa8ab2a8",
@@ -5244,7 +5246,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "content/model design hybrid, not standard product UX/UI design"
   },
   {
    "id": "ec11abb262cb35f0",
@@ -5266,7 +5269,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "content design discipline"
   },
   {
    "id": "a48cfd457ed40103",
@@ -5287,8 +5291,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d75df854e6422609",
@@ -5309,8 +5313,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "16e331e1388a3fe9",
@@ -5331,8 +5335,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "bd7ce3bbb0ea2e00",
@@ -5353,8 +5357,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8147b5040dc08214",
@@ -5375,8 +5379,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "920cc8a3a326c91a",
@@ -5397,8 +5401,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7f4997d5dda9e1b2",
@@ -5419,8 +5423,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b19cd4819574c2cf",
@@ -5441,8 +5445,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c0654205ca0ea946",
@@ -5463,8 +5467,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4177c5c577d4fee7",
@@ -5485,8 +5489,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9c26fb819c413688",
@@ -5507,8 +5511,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e16a4521f9e45389",
@@ -5529,8 +5533,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a2869e994c335893",
@@ -5551,8 +5555,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a85a1f5167683b04",
@@ -5573,8 +5577,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4d9405a9bd8ac96e",
@@ -5595,8 +5599,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "825cfe85f66ce99a",
@@ -5617,8 +5621,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b77045b235cdbf2e",
@@ -5639,8 +5643,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f21d7a3494bda7f7",
@@ -5661,8 +5665,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "244962b15d5e1cb9",
@@ -5683,8 +5687,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5547b59f0862ba48",
@@ -5705,8 +5709,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5a672805b9ee8a03",
@@ -5727,8 +5731,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fcdcfa20cdcfc07d",
@@ -5749,8 +5753,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c5b0b70e0553bca2",
@@ -5771,8 +5775,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "cc3e29aefd5c749d",
@@ -5793,8 +5797,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2b4fb509e71b877c",
@@ -5815,8 +5819,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "069705c3ed46c91b",
@@ -5837,8 +5841,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7736112e3e924f5d",
@@ -5859,8 +5863,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a1798d97c87c49b6",
@@ -5881,8 +5885,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e0b51ba80ed7d06e",
@@ -5903,8 +5907,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8b544b6a5ab85d73",
@@ -5925,8 +5929,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e862575639ebf8ef",
@@ -5947,8 +5951,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4160723da8b42256",
@@ -5969,8 +5973,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c80271494b15ec30",
@@ -5979,20 +5983,20 @@
    "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000145214989",
    "source": "smartrecruiters/DeliveryHero",
    "location": "Barcelona, , Spain",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-24T08:22:36.631Z",
    "updated": null,
    "xp": "8+y",
    "derived_from": null,
-   "market": "Barcelona, , Spain",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a324e2a491202d34",
@@ -6013,8 +6017,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e84aa4b31744176f",
@@ -6035,8 +6039,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8add0bdc8b35948e",
@@ -6057,8 +6061,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "69ce7da309c517a2",
@@ -6079,8 +6083,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "171b79b02dde5c57",
@@ -6101,8 +6105,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1d244f614ae81d7a",
@@ -6123,8 +6127,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5654813844c50600",
@@ -6145,8 +6149,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4746380d1622cee6",
@@ -6167,8 +6171,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "acb2964016763d88",
@@ -6189,8 +6193,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "80eeffe92040425b",
@@ -6211,8 +6215,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "19fc9d1aded63ffc",
@@ -6233,8 +6237,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "425d748276635fc6",
@@ -6255,8 +6259,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "16e668667178b038",
@@ -6277,8 +6281,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7fd0d52a54921588",
@@ -6299,8 +6303,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7c0252e49024240c",
@@ -6321,8 +6325,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9426009d4673968d",
@@ -6343,8 +6347,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6465bac110f7c435",
@@ -6365,8 +6369,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fe75606cf9b1f964",
@@ -6387,8 +6391,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ad2cb786c5de64e3",
@@ -6409,8 +6413,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "be6c37c2f7a7c845",
@@ -6431,8 +6435,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7f1706b2b6131940",
@@ -6453,8 +6457,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8b95cb8d702dcb22",
@@ -6475,8 +6479,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c6d0b8d3c057d2f2",
@@ -6497,8 +6501,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ab332a93368ae9f1",
@@ -6519,8 +6523,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8d2c2f701c25ab4b",
@@ -6541,8 +6545,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7f5df149d183c52b",
@@ -6563,8 +6567,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6e5902f9d760cfc1",
@@ -6585,8 +6589,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6fc33ad49bf2e9fa",
@@ -6607,8 +6611,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f9dad4985cd4ad6a",
@@ -6629,8 +6633,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b1863335ab7eb4cf",
@@ -6651,8 +6655,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2fc20c451011035b",
@@ -6673,8 +6677,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fd3ae71b64ef1dc6",
@@ -6695,8 +6699,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f7d6fea9d7106f80",
@@ -6717,8 +6721,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "322f625bcc677238",
@@ -6739,8 +6743,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2a2ffaf863163449",
@@ -6761,8 +6765,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "51854f83008abe92",
@@ -6783,8 +6787,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4385e26b2ce22a44",
@@ -6805,8 +6809,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "311eab6c633b1e3f",
@@ -6827,8 +6831,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f3996223b8243b06",
@@ -6849,8 +6853,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f1ee0b067daedfec",
@@ -6871,8 +6875,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "58990fa1a131da03",
@@ -6893,8 +6897,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f12d684b66770e34",
@@ -6915,8 +6919,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2d9cb6d19f9d69c2",
@@ -6937,8 +6941,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "cd49d4eb47bab57a",
@@ -6959,8 +6963,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "739dee4e038cf849",
@@ -6981,8 +6985,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c0d89fbc337ddf9d",
@@ -7003,8 +7007,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6372f19280ae57d7",
@@ -7025,8 +7029,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "da23d33b9c9d7287",
@@ -7047,8 +7051,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b141403ecde1ee1b",
@@ -7069,8 +7073,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8f20694d64d2e738",
@@ -7091,8 +7095,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ce12bd99f5799002",
@@ -7113,8 +7117,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "67d24732b0b8531a",
@@ -7135,8 +7139,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "35333cf9d9336e92",
@@ -7157,8 +7161,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5287f367b42015f9",
@@ -7179,8 +7183,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "bc98e0c1e9bd3c49",
@@ -7223,8 +7227,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "91b391b808eea721",
@@ -7245,8 +7249,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3123ddf0d9ae27a6",
@@ -7267,8 +7271,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "15216d9a1e2af37c",
@@ -7289,8 +7293,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "34ffcc3b1c3f412e",
@@ -7311,8 +7315,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9e35be49a3c0fb38",
@@ -7333,8 +7337,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "cb48832126fdc412",
@@ -7343,20 +7347,20 @@
    "url": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4806218101",
    "source": "greenhouse/jetbrains",
    "location": "Amsterdam, Netherlands; Belgrade, Serbia; Berlin, Germany; Limassol, Cyprus; Madrid, Spain; Munich, Germany; Warsaw, Poland",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-03-25T07:08:28-04:00",
    "updated": "2026-08-20T12:59:01-04:00",
    "xp": "5+y",
    "derived_from": null,
-   "market": "Amsterdam, Netherlands; Be…",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "1f860d587c722671",
@@ -7377,8 +7381,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a7fb8f687c5d8cd5",
@@ -7399,8 +7403,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d7ab73e192193191",
@@ -7421,8 +7425,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f347d21a70560f05",
@@ -7443,8 +7447,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ed0ef339c6465197",
@@ -7465,8 +7469,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d5234d43780fd3a0",
@@ -7487,8 +7491,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "28967f2f42e535f1",
@@ -7509,8 +7513,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "64570c82222fa3c0",
@@ -7531,8 +7535,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "51fbcf7be0e991e7",
@@ -7553,8 +7557,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f68c3688c491a88c",
@@ -7575,8 +7579,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "be312dcd0b46456f",
@@ -7597,8 +7601,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "efb700d2b7c7b500",
@@ -7619,8 +7623,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "de3b87077f76e2ec",
@@ -7641,8 +7645,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6c6b05a138315157",
@@ -7663,8 +7667,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "223450fad25aac69",
@@ -7685,8 +7689,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "205d74b4a148e6ff",
@@ -7707,8 +7711,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2c7be0435d698a02",
@@ -7729,8 +7733,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7eab612391f24c41",
@@ -7751,8 +7755,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b9f528f8edcbb3b0",
@@ -7773,8 +7777,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f9a98bb00030bc79",
@@ -7795,8 +7799,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5c8a1bf251fbb5d9",
@@ -7817,8 +7821,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "78a9b5bd38969bc8",
@@ -7839,8 +7843,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2e08a756024523dd",
@@ -7861,8 +7865,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0a09572028c3a5e2",
@@ -7883,8 +7887,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "30db8c27df7210b1",
@@ -7905,8 +7909,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1dcd34666d245a32",
@@ -7927,8 +7931,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9ee4f5717ec37b05",
@@ -7949,8 +7953,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a0bf574e7bdd8a47",
@@ -7971,8 +7975,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a4911be2b22cbf0b",
@@ -7993,8 +7997,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ecc5211b9b533e82",
@@ -8003,20 +8007,20 @@
    "url": "https://job-boards.greenhouse.io/newrelic/jobs/5396630008",
    "source": "greenhouse/newrelic",
    "location": "Barcelona, Spain",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-25T07:05:50-04:00",
    "updated": "2026-08-25T07:05:50-04:00",
    "xp": null,
    "derived_from": null,
-   "market": "Barcelona, Spain",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "aec9759f585db35a",
@@ -8025,20 +8029,20 @@
    "url": "https://job-boards.greenhouse.io/dkbcodefactory/jobs/7822637003",
    "source": "greenhouse/dkbcodefactory",
    "location": "Valencia, Spain",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-27T04:28:49-04:00",
    "updated": "2026-08-27T04:33:27-04:00",
    "xp": "4–6y",
    "derived_from": null,
-   "market": "Valencia, Spain",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "baa06515d8cd1716",
@@ -8059,8 +8063,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8860f6c578a5c3b2",
@@ -8081,8 +8085,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b06954db8b521322",
@@ -8103,8 +8107,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ec3f0af52f0baec9",
@@ -8125,8 +8129,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0f892ba0971358a8",
@@ -8147,8 +8151,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fdca580b8386f000",
@@ -8169,8 +8173,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e48d365afb8b7424",
@@ -8191,8 +8195,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3ace2e2e87efeac8",
@@ -8213,8 +8217,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "890bb43e16feae57",
@@ -8235,8 +8239,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b1a3334873caa6f5",
@@ -8257,8 +8261,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f60dadc8f1fb5877",
@@ -8279,8 +8283,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "212d7ce3d3926767",
@@ -8301,8 +8305,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "43fc212ef5db28b4",
@@ -8323,8 +8327,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e1faf973c6c214bd",
@@ -8345,8 +8349,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d83e1312087959b2",
@@ -8367,8 +8371,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "185fa6e654d2bbbb",
@@ -8389,8 +8393,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9c6573f0b5ec4c85",
@@ -8411,8 +8415,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8c2ed993cb43213a",
@@ -8433,8 +8437,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1b41a9cfb2339261",
@@ -8455,8 +8459,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ef03dadd58e3e60c",
@@ -8477,8 +8481,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "df66c1fcf704f005",
@@ -8499,8 +8503,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9716af2a3cc3857f",
@@ -8521,8 +8525,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "164f88205c06a7ae",
@@ -8543,8 +8547,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "914f7491edc32191",
@@ -8566,7 +8570,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "content design/UX writing, hybrid Berlin/Munich but remote allowed within Europe per team framing"
   },
   {
    "id": "b5100747d22c62a8",
@@ -8587,8 +8592,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "bc1e611326f7d20e",
@@ -8609,8 +8614,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "13ed50040ddaea3c",
@@ -8631,8 +8636,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "06453846627cefd1",
@@ -8653,8 +8658,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "906f62c460700027",
@@ -8675,8 +8680,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "924144f7bb535ec0",
@@ -8697,8 +8702,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e86f8c8615872bd4",
@@ -8719,8 +8724,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6c26e494a41ef6a4",
@@ -8741,8 +8746,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c2ea33e1b4240625",
@@ -8763,8 +8768,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "543ccc6ecc593589",
@@ -8785,8 +8790,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8fed0c9aa39a4d28",
@@ -8807,8 +8812,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "be46f967b4f604e2",
@@ -8829,8 +8834,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6fab432f4700d4a2",
@@ -8851,8 +8856,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "45fd52fcf6baa0d1",
@@ -8873,8 +8878,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "69c84f2e2b50d54f",
@@ -8895,8 +8900,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fb1ed94eeed0450f",
@@ -8917,8 +8922,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "58b71ffdb0c15794",
@@ -8939,8 +8944,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1c57d2fe0624f94c",
@@ -8961,8 +8966,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ec8663d7c0b7188d",
@@ -8984,7 +8989,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "content design/UX writing role"
   },
   {
    "id": "d7f610cbc253294f",
@@ -9005,8 +9011,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5f701a2b690564fe",
@@ -9027,8 +9033,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "60d7b3eeed87eb04",
@@ -9049,8 +9055,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a9a2c4388d1271d1",
@@ -9071,8 +9077,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "64ca1048cbbad529",
@@ -9093,8 +9099,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2c2c4bf72c212076",
@@ -9115,8 +9121,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "95a7d12d595a8a1e",
@@ -9137,8 +9143,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "bc329464afa77f03",
@@ -9159,8 +9165,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fd5a621385c82ab9",
@@ -9181,8 +9187,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6a804dd388ce5b55",
@@ -9203,8 +9209,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "799bb41b47319be6",
@@ -9225,8 +9231,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1878e227a1f2f844",
@@ -9235,20 +9241,20 @@
    "url": "https://job-boards.eu.greenhouse.io/raisin/jobs/4930460101",
    "source": "greenhouse/raisin",
    "location": "Berlin, Berlin, Germany",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-07-17T07:09:58-04:00",
    "updated": "2026-08-05T11:43:32-04:00",
    "xp": "5+y",
    "derived_from": null,
-   "market": "Berlin, Berlin, Germany",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "4bc0ab16f60a58ad",
@@ -9269,8 +9275,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "976c700ee8a5493e",
@@ -9291,8 +9297,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b88d8f674bafddb4",
@@ -9313,8 +9319,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fd2549c04124a669",
@@ -9323,20 +9329,20 @@
    "url": "https://job-boards.greenhouse.io/celonis/jobs/7799736003?gh_jid=7799736003",
    "source": "greenhouse/celonis",
    "location": "Madrid, Spain",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-07-23T13:46:19-04:00",
    "updated": "2026-08-25T12:13:20-04:00",
    "xp": null,
    "derived_from": null,
-   "market": "Madrid, Spain",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "ac2fa53c93c158a6",
@@ -9357,8 +9363,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "cd369f404c1c7303",
@@ -9379,8 +9385,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4d66f95e91858703",
@@ -9401,8 +9407,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ab54fbaf36512129",
@@ -9423,8 +9429,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "64d85c22932112a9",
@@ -9445,8 +9451,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "64fe4bd32faceaae",
@@ -9467,8 +9473,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "474d771c1600bda2",
@@ -9489,8 +9495,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7f48ee5af47fcd35",
@@ -9511,8 +9517,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "88195b2e432cc9b3",
@@ -9533,8 +9539,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3554ab7a47b11cc0",
@@ -9555,8 +9561,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7ea86cbf02f7afa7",
@@ -9577,8 +9583,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "91f844914ec9fc79",
@@ -9600,7 +9606,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "conversation/content design discipline, not core UX/UI product design"
   },
   {
    "id": "b1c29c9b7631cd5b",
@@ -9621,8 +9628,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "45ab8e65718e11f5",
@@ -9643,8 +9650,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d07dc73427ceaa6e",
@@ -9665,8 +9672,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2e662fabaf6367c5",
@@ -9687,8 +9694,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7b27dca1093033d5",
@@ -9709,8 +9716,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "80f28fbc8f2f0144",
@@ -9731,8 +9738,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "59e5a2f5820d624b",
@@ -9753,8 +9760,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c6171690465e6481",
@@ -9775,8 +9782,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8720ebf77b14ad99",
@@ -9797,8 +9804,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "40592de1c0e54062",
@@ -9819,8 +9826,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "83e6e65380a4486f",
@@ -9841,8 +9848,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7de90d6784fdcda6",
@@ -9863,8 +9870,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ac53325630993e0c",
@@ -9885,8 +9892,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2dd54c4322bc56ed",
@@ -9907,8 +9914,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "806078a7238a8a93",
@@ -9929,8 +9936,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d49e34564cb801d2",
@@ -9951,8 +9958,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "066398c3a81ac5ba",
@@ -9973,8 +9980,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b297765efd60a9e5",
@@ -9995,8 +10002,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7d2a672dc1e076f3",
@@ -10017,8 +10024,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3ed42c2067a19e18",
@@ -10039,8 +10046,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f13b6c6b6a8f4973",
@@ -10061,8 +10068,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "25344694c207c888",
@@ -10083,8 +10090,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "37fd39fe84aafab8",
@@ -10105,8 +10112,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e9f92d41a52eb67d",
@@ -10127,8 +10134,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b36c954195c05dfe",
@@ -10149,8 +10156,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a791f41b68a3fa8f",
@@ -10171,8 +10178,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8063aed7a0a95f43",
@@ -10193,8 +10200,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "adbff712d19cb1ac",
@@ -10215,8 +10222,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9dab5dae629466c7",
@@ -10237,8 +10244,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1f104728ccc74f0d",
@@ -10259,8 +10266,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e5482eede1640ee2",
@@ -10281,8 +10288,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0ae4bd4bd571ad63",
@@ -10303,8 +10310,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5d7133782732aee8",
@@ -10325,8 +10332,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a34d6521a5d930c6",
@@ -10347,8 +10354,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3f725203a5099dd3",
@@ -10369,8 +10376,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e23aa1d60808d836",
@@ -10391,8 +10398,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "384d6c3e2c485791",
@@ -10413,8 +10420,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d29cb430919ea1dc",
@@ -10435,8 +10442,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6fa67614b34cdb0c",
@@ -10457,8 +10464,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "37b0427764202a8f",
@@ -10479,8 +10486,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9f70a320cd3982b0",
@@ -10489,20 +10496,20 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-workwize-netherlands-67240",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-25",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "7103c61586163690",
@@ -10523,8 +10530,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7b1ba1feabb46f58",
@@ -10545,8 +10552,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "12a783d53a264070",
@@ -10567,8 +10574,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1b3e1ab41e4de16c",
@@ -10589,8 +10596,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "37834fb9c55341c2",
@@ -10611,8 +10618,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1d9bf162c7692973",
@@ -10621,20 +10628,20 @@
    "url": "https://designjobs.world/jobs/designer-trustinsoda-netherlands-73431",
    "source": "designjobsworld",
    "location": "Nijmegen, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-28",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Nijmegen, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "d244857932f67009",
@@ -10655,8 +10662,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "1f6406edceda81a6",
@@ -10677,8 +10684,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c23e9b924278f80d",
@@ -10699,8 +10706,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e3eac232cc67823f",
@@ -10721,8 +10728,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "dc6a98ed7da7e609",
@@ -10743,8 +10750,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "62f03aee25b1adfd",
@@ -10765,8 +10772,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "35fc9b5dbe39f1fc",
@@ -10788,7 +10795,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "UX research discipline"
   },
   {
    "id": "0225c2aca815b364",
@@ -10809,8 +10817,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "893c2428d90c61ad",
@@ -10831,8 +10839,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ca9c4916f005e921",
@@ -10853,8 +10861,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c783248661bada5d",
@@ -10875,8 +10883,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b104d92d73bb88a2",
@@ -10897,8 +10905,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5c79ff36731a3798",
@@ -10919,8 +10927,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "d2237a05b8cca1a0",
@@ -10941,8 +10949,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "93302d048fa67797",
@@ -10963,8 +10971,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "99a0de1ba0c88aef",
@@ -10985,8 +10993,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "561733972fc7d950",
@@ -11007,8 +11015,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "a5919575d22ba3f7",
@@ -11029,8 +11037,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "09efb93d44d432ef",
@@ -11051,8 +11059,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5e80fed5697a6883",
@@ -11073,8 +11081,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "4579ad007a4569c7",
@@ -11096,7 +11104,8 @@
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "research discipline"
   },
   {
    "id": "330a9cba2f993cc1",
@@ -11117,8 +11126,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "434c212dc7b3bc58",
@@ -11139,8 +11148,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0be25ea642a2c335",
@@ -11161,8 +11170,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8a3f4583f9812c2f",
@@ -11183,8 +11192,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "45e98acbb0405bd9",
@@ -11205,8 +11214,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "500a04f11525daf7",
@@ -11227,8 +11236,8 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8a7cc280469b0262",
@@ -11447,8 +11456,8 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "afa0d77d398151f6",
@@ -11470,7 +11479,7 @@
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "5e18974ce43e353f",
@@ -11491,8 +11500,8 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0f817df8845d801c",
@@ -11513,8 +11522,8 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ac33c8f36faec665",
@@ -11536,7 +11545,7 @@
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "4bc94e999eb38673",
@@ -11558,7 +11567,7 @@
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "4665bd6c10b075f8",
@@ -11580,7 +11589,7 @@
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "b1c6a20930763a97",
@@ -11601,8 +11610,8 @@
    "first_seen": "2026-08-29T23:21:09Z",
    "first_run": "2026-08-29T23:21:09Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c3c2e33f810ac235",
@@ -27237,7 +27246,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "09bdad71c02f308b",
@@ -27258,8 +27267,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "dee27d5ed937e5d3",
@@ -27281,7 +27290,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "df23e418ad147021",
@@ -27302,8 +27311,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e53fae0e2d514bcd",
@@ -27325,7 +27334,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a93daa5a8acfc6cc",
@@ -27346,8 +27355,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fb0b08af63acaaeb",
@@ -27401,20 +27410,20 @@
    "url": "https://join.com/companies/virtusan/16625979-product-designer-app",
    "source": "join/virtusan",
    "location": "Zürich, Switzerland, Worldwide",
-   "bucket": "ww",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-12T07:55:42.196Z",
    "updated": null,
    "xp": "6–7y",
    "derived_from": null,
-   "market": "Worldwide",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "9fc0a7fb7c514312",
@@ -27482,7 +27491,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a6a22d1ad88e9548",
@@ -27503,8 +27512,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fea58b4a07512011",
@@ -27525,8 +27534,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2220454f83f8c3b5",
@@ -27547,8 +27556,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "238b20c98edb7753",
@@ -27569,8 +27578,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0c514232e54d0533",
@@ -27591,8 +27600,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5ea387400725e5c9",
@@ -27635,8 +27644,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "30045ff6f8693be5",
@@ -27679,8 +27688,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "9ee97337db42bca0",
@@ -27733,20 +27742,20 @@
    "url": "https://careers.tether.io/o/senior-product-designer-wallets-100-remote-worldwide",
    "source": "recruitee/tether",
    "location": "Remote job",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": null,
    "posted": "2026-08-21 17:39:32 UTC",
    "updated": "2026-08-21 17:39:32 UTC",
    "xp": null,
    "derived_from": null,
-   "market": "Remote job",
+   "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "9f9af687285b0d90",
@@ -27858,7 +27867,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "9d9907d334f24b16",
@@ -27978,20 +27987,20 @@
    "url": "https://jobs.ashbyhq.com/circle/130695ad-687e-4c49-976f-eb46f9b45ac9",
    "source": "ashby/circle",
    "location": "Remote",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": "$140K – $170K • Offers Equity",
    "posted": "2026-08-26T14:51:39.802+00:00",
    "updated": null,
    "xp": "5–7y",
    "derived_from": null,
-   "market": "Remote",
+   "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "6eb3975123808fe1",
@@ -28000,20 +28009,20 @@
    "url": "https://jobs.ashbyhq.com/circle/c6fd95f5-d7f8-4297-be2d-e91d19052469",
    "source": "ashby/circle",
    "location": "Remote",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": "$140K – $170K • Offers Equity",
    "posted": "2026-08-26T14:55:59.223+00:00",
    "updated": null,
    "xp": "5+y",
    "derived_from": null,
-   "market": "Remote",
+   "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "ef3f306d37bfdd00",
@@ -28022,20 +28031,20 @@
    "url": "https://jobs.ashbyhq.com/duna/c8eb5931-2b93-461c-ae0f-0db449e51e6e",
    "source": "ashby/duna",
    "location": "Remote",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": null,
    "posted": "2026-07-07T19:58:38.566+00:00",
    "updated": null,
    "xp": "4–6y",
    "derived_from": null,
-   "market": "Remote",
+   "market": "Worldwide",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "212dd4c1cf370c14",
@@ -28079,7 +28088,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "1754d1d087271267",
@@ -28133,20 +28142,20 @@
    "url": "https://jobs.ashbyhq.com/pennylane/5b5fa189-654f-483f-8287-b812862264a2",
    "source": "ashby/pennylane",
    "location": "Paris, Portugal (remote), Germany (remote), Spain (remote), Ireland (remote), Berlin Office, United Kingdom (remote), Madrid",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-03-03T08:57:50.269+00:00",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "44127e02e8c267a8",
@@ -28155,20 +28164,20 @@
    "url": "https://jobs.ashbyhq.com/pennylane/d0918e54-49c5-42be-9e97-66b1186a4b66",
    "source": "ashby/pennylane",
    "location": "Paris, Portugal (remote), Germany (remote), Spain (remote), Ireland (remote), Berlin Office, United Kingdom (remote), Madrid",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-03-02T15:07:47.293+00:00",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "1cdef51f585e9e7b",
@@ -28189,8 +28198,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b019ecbe10cbd896",
@@ -28280,7 +28289,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "8dbfda2258653322",
@@ -28302,7 +28311,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "39ce3d71fcea64ef",
@@ -28324,7 +28333,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "ca630b1da9d7bfbb",
@@ -28412,7 +28421,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "693978614034b0ac",
@@ -28433,8 +28442,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "89884f8a2eeb5a04",
@@ -28544,8 +28553,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "f959d27ea953c3af",
@@ -28567,7 +28576,7 @@
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "3550f1679a34d86c",
@@ -28588,8 +28597,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "c647bde20daba6c7",
@@ -28610,8 +28619,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "5cec9cdd20171ec8",
@@ -28632,8 +28641,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "0948a72d3cf5a963",
@@ -28654,8 +28663,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "bd838e94cf448e35",
@@ -28676,8 +28685,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "81876d6020bea220",
@@ -28698,8 +28707,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "637fd6c75debe8b5",
@@ -28720,8 +28729,8 @@
    "first_seen": "2026-08-29T19:31:44Z",
    "first_run": "2026-08-29T19:31:44Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "381c6c40f833d434",
@@ -30028,7 +30037,7 @@
    "first_run": "2026-08-29T11:17:45Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "781ee2ac0b2c1bd4",
@@ -30050,7 +30059,7 @@
    "first_run": "2026-08-29T11:17:45Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a9c92a4b67f00aaf",
@@ -31621,20 +31630,20 @@
    "url": "https://codekeeper.applytojob.com/apply/6eRJzcjjF0/UIUX-Designer",
    "source": "jazzhr/codekeeper",
    "location": "Remote",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": null,
    "posted": "2026-08-18",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Remote",
+   "market": "Worldwide",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "fddd6bec46120403",
@@ -31709,20 +31718,20 @@
    "url": "https://careers.hostaway.com/o/staff-product-designer-design-systems-100-remote-emea",
    "source": "recruitee/hostaway",
    "location": "Remote job",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-07-28 13:36:38 UTC",
    "updated": "2026-08-24 10:21:00 UTC",
    "xp": null,
    "derived_from": null,
-   "market": "Remote job",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "0442a48b8bed3ff4",
@@ -31853,8 +31862,8 @@
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "78bb14aed4d8d8dc",
@@ -31875,8 +31884,8 @@
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7bae8fc94faa99f2",
@@ -31897,8 +31906,8 @@
    "first_seen": "2026-08-28T23:59:33Z",
    "first_run": "2026-08-28T23:59:33Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "3a043789377203f4",
@@ -31920,7 +31929,7 @@
    "first_run": "2026-08-28T23:59:33Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "4a49e92956e148bb",
@@ -32007,8 +32016,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fbc1dd612d7d314c",
@@ -32029,8 +32038,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2714089441d3b49b",
@@ -32095,8 +32104,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b04050849748e47d",
@@ -32117,8 +32126,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7f8fc61ea09244f5",
@@ -32139,8 +32148,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "444300a0edd673d8",
@@ -32161,8 +32170,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fb20d135f11ab1fb",
@@ -32183,8 +32192,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "83f8520ae543fcda",
@@ -32205,8 +32214,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "87445794064adbf4",
@@ -32272,7 +32281,7 @@
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a87c07d91874a2f4",
@@ -32293,8 +32302,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "23d6a9fce334dcf6",
@@ -32337,8 +32346,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e15517109d99214e",
@@ -32382,7 +32391,7 @@
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "f2a9f1703f482230",
@@ -32425,8 +32434,8 @@
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "e078201204b4e2e0",
@@ -32457,20 +32466,20 @@
    "url": "https://jobs.ashbyhq.com/paddle/e8297f02-7942-4772-a04d-3bdb61a1231d",
    "source": "ashby/paddle",
    "location": "UK, Portugal, Ireland",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-04T18:04:39.059+00:00",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "a06c78e66ce38f72",
@@ -32492,7 +32501,7 @@
    "first_run": "2026-08-28T23:18:18Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "9e1ab1a327e2d6b3",
@@ -32711,8 +32720,8 @@
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "22f361e0072154f4",
@@ -32733,8 +32742,8 @@
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "248167df6229910a",
@@ -32755,8 +32764,8 @@
    "first_seen": "2026-08-28T23:08:04Z",
    "first_run": "2026-08-28T23:08:04Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "2792f23ccb9703a5",
@@ -32978,8 +32987,8 @@
    "first_seen": "2026-08-28T22:55:06Z",
    "first_run": "2026-08-28T22:55:06Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "559e764d29cad2c2",
@@ -33103,7 +33112,7 @@
    "first_run": "2026-08-28T15:01:40Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "fd4f6739cc33a6a1",
@@ -33126,8 +33135,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "fb5eaddc8b57c919",
@@ -33150,8 +33159,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "482159f62ed1b872",
@@ -33174,8 +33183,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8ed603c4645c0b4f",
@@ -33198,8 +33207,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "caf0b09dab896695",
@@ -33208,13 +33217,13 @@
    "url": "https://weworkremotely.com/remote-jobs/pressw-ux-designer",
    "source": "weworkremotely",
    "location": "Anywhere in the World",
-   "bucket": "ww",
+   "bucket": "tiebreak",
    "salary": null,
    "posted": "Tue, 04 Aug 2026 20:13:58 +0000",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Worldwide",
+   "market": "Anywhere in the World",
    "apply_url": "https://www.pressw.ai/careers",
    "apply_kind": "careers",
    "direct": false,
@@ -33223,7 +33232,8 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true,
+   "why": "AI consulting agency role heavy on research; consulting/client-work context, not clean in-house product design"
   },
   {
    "id": "4999834a0de25100",
@@ -33283,7 +33293,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "b3a23f9a545dd781",
@@ -33306,8 +33316,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "ae79450bb0506d99",
@@ -33330,8 +33340,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "867dbef8c87fc4bc",
@@ -33354,8 +33364,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "8f40814433e34361",
@@ -33378,8 +33388,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6a49978c27dcb0f4",
@@ -33402,8 +33412,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b80c222d5cf55922",
@@ -33426,8 +33436,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "6fde40f2305fd74d",
@@ -33450,8 +33460,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7c8c199a4f1a96c4",
@@ -33472,8 +33482,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "b6e4ed87ece3d831",
@@ -33482,20 +33492,20 @@
    "url": "https://job-boards.greenhouse.io/mozilla/jobs/8092842",
    "source": "greenhouse/mozilla",
    "location": "Remote",
-   "bucket": "tiebreak",
+   "bucket": "ww",
    "salary": "$155,000 - $175,000",
    "posted": "2026-08-06T10:41:01-04:00",
    "updated": "2026-08-27T15:53:21-04:00",
    "xp": "10+y",
    "derived_from": null,
-   "market": "Remote",
+   "market": "Worldwide",
    "direct": true,
    "frameable": true,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "307f6605876e54e0",
@@ -33504,13 +33514,13 @@
    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7762220003",
    "source": "greenhouse/remotecom",
    "location": "EMEA",
-   "bucket": "eu",
+   "bucket": "ww",
    "salary": "$60,000 to $ 140,400",
    "posted": "2026-06-08T03:58:40-04:00",
    "updated": "2026-08-19T11:09:22-04:00",
    "xp": null,
    "derived_from": null,
-   "market": "EMEA",
+   "market": "Worldwide",
    "direct": true,
    "frameable": true,
    "apply_url": "https://www.notion.so/remotecom/Guidelines-on-using-AI-when-applying-for-a-job-at-Remote-11ccb4dadab4805f80a7c73b6567bd8f",
@@ -33519,7 +33529,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "aa901be0cc985037",
@@ -33528,13 +33538,13 @@
    "url": "https://jobs.ashbyhq.com/ashby/87b96eef-edc1-4de4-adb6-d460126d02f8",
    "source": "ashby/ashby",
    "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": "€154K – €250K • Offers Equity • Multiple Ranges",
    "posted": "2025-11-13T23:43:02.608+00:00",
    "updated": null,
    "xp": "2+y",
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "apply_url": "https://www.ashbyhq.com/blog/engineering/leveling-and-compensation",
@@ -33543,7 +33553,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "471d129097fa5781",
@@ -33567,7 +33577,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "5ffa0ba9139dca8f",
@@ -33582,7 +33592,7 @@
    "updated": "2026-08-27T07:51:18-04:00",
    "xp": "6+y",
    "derived_from": null,
-   "market": "Remote",
+   "market": "Europe",
    "direct": true,
    "frameable": true,
    "apply_url": "https://job-boards.greenhouse.io/fueledcareers/jobs/4038306008",
@@ -33591,7 +33601,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "928c4747e90ce3b4",
@@ -33614,8 +33624,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "26cf82c7a0e99243",
@@ -33639,7 +33649,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "afb2d6cf9576639d",
@@ -33663,7 +33673,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "5204a6f5b2e81ba9",
@@ -33687,7 +33697,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "74c44fcebaa771da",
@@ -33710,8 +33720,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "7ce9498a6d0bd642",
@@ -33734,8 +33744,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "75cd7b02053e4ba3",
@@ -33757,7 +33767,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "672a1d1b86736368",
@@ -33778,8 +33788,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "04d1112669f07330",
@@ -33801,7 +33811,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "24d78a4ad38ebeb9",
@@ -33822,8 +33832,8 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
-   "active": true,
-   "judged": false
+   "active": false,
+   "judged": true
   },
   {
    "id": "33e857d59bb70576",
@@ -33845,7 +33855,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "f62eb5a97ddb4d3e",
@@ -33854,20 +33864,20 @@
    "url": "https://jobs.ashbyhq.com/ashby/188cc71b-a625-4022-94dc-7c43fa1a8b06",
    "source": "ashby/ashby",
    "location": "Portugal, Spain, Italy, Switzerland, Croatia, Ireland, Stockholm, Romania, Barcelona, Berlin, Sweden, Estonia",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": "€60K – €145K • Offers Equity • Multiple Ranges",
    "posted": "2026-06-12T20:19:00.233+00:00",
    "updated": null,
    "xp": "2+y",
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "18768b72ac0595be",
@@ -33876,20 +33886,20 @@
    "url": "https://jobs.ashbyhq.com/oyster/53aa1176-ceb5-4518-a8f5-fd7a9f9ea26d",
    "source": "ashby/oyster",
    "location": "The Americas, Portugal, United Kingdom, Spain",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-06-26T16:32:25.973+00:00",
    "updated": null,
    "xp": "8+y",
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T11:31:44Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "43f97e85c25349ac",
@@ -33911,7 +33921,7 @@
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T08:54:08Z",
    "active": true,
-   "judged": false
+   "judged": true
   },
   {
    "id": "6b19e78d6eb4aafd",

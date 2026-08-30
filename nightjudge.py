@@ -24,16 +24,23 @@ Criteria (César, 2026-08-29):
          Anything in between -> unsure, with the failing criterion as why.
 """
 import json
+import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 JOBS_FILE = ROOT / "data" / "jobs.json"
 JDS_FILE = ROOT / "data" / "jds.json"
 JUDGED_FILE = ROOT / "data" / "judged.json"
-CAP = 120  # runaway guard; nightly delta is normally 10-40
+# No count cap. The real limit is wall-clock: judge until the time budget is
+# spent, saving progress as we go so a job timeout never loses work. The next
+# run continues where this one stopped. Budget leaves headroom under the
+# workflow's job timeout for the npm install and the final push.
+TIME_BUDGET_S = int(os.environ.get("JUDGE_BUDGET_S", "6600"))  # 110 min; loop ends when pending is drained
+SAVE_EVERY = 20  # flush judged.json to disk this often, so a crash keeps work
 
 PROMPT = """You judge job postings for César, a senior product designer based in Lisbon, Portugal.
 Answer with ONE JSON object, nothing else: {{"role": "pd|not_pd|unsure", "place": "pt|eu|ww|cut|unsure", "why": "<short reason, only when not clearly ok>"}}
@@ -102,9 +109,13 @@ def main():
     judged = json.loads(JUDGED_FILE.read_text()) if JUDGED_FILE.exists() else {"jobs": {}}
     pending = [j for j in data["jobs"]
                if j.get("active") and j["id"] not in judged["jobs"]]
-    print(f"pending: {len(pending)} (cap {CAP})")
+    print(f"pending: {len(pending)} | budget {TIME_BUDGET_S}s")
+    start = time.monotonic()
     done = 0
-    for j in pending[:CAP]:
+    for j in pending:
+        if time.monotonic() - start > TIME_BUDGET_S:
+            print(f"  time budget spent after {done}; {len(pending)-done} left for next run")
+            break
         jd = (jds.get(j["id"], {}).get("jd") or "")[:8000]
         try:
             v = ask(PROMPT.format(title=j["title"], company=j["company"],
@@ -120,6 +131,8 @@ def main():
         judged["jobs"][j["id"]] = {"bucket": out["bucket"], "why": out["why"],
                                    "at": data.get("run_id", "")}
         done += 1
+        if done % SAVE_EVERY == 0:
+            JUDGED_FILE.write_text(json.dumps(judged, indent=1, ensure_ascii=False))
     JUDGED_FILE.write_text(json.dumps(judged, indent=1, ensure_ascii=False))
 
     # patch jobs.json in place (same application the scraper does)

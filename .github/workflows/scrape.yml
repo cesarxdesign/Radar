@@ -28,7 +28,7 @@ jobs:
     # creation stays manual-only - this job never tunes anything)
     needs: scrape
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     concurrency:
       group: nightcv
       cancel-in-progress: false

@@ -4399,6 +4399,61 @@
    "bucket": "cut",
    "why": "judge: not product design (engineer/PM title, no design signal)",
    "at": "2026-08-29T23:21:09Z"
+  },
+  "ec82bd2b77a827fa": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "59faf46ad951c4c3": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "fc27d91c3005ca2a": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "65fe7b8ad13b7aa9": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "1896ca59c7d81210": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "ee7ac4c65da32f82": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "7b1176884a55f742": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "c3c2e33f810ac235": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "22637199ae1b7ddc": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "7a65ccda0de10608": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
+  },
+  "c2958eb0c4db626c": {
+   "bucket": "cut",
+   "why": "judge: not product design (non-design title, no design signal)",
+   "at": "2026-08-30T08:42:48Z"
   }
  }
 }

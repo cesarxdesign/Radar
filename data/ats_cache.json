@@ -436,5 +436,11 @@
  "wsp": {
   "checked": "2026-08-29T11:17:45Z",
   "kind": null
+ },
+ "zilch": {
+  "checked": "2026-08-30T08:42:48Z",
+  "kind": "ashby",
+  "slug": "zilch",
+  "via": "ada104f0e0a1c0d6"
  }
 }

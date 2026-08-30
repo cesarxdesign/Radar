@@ -87,9 +87,18 @@ def main():
         e = done.get(k)
         return bool(e) and (e.get("path") or e.get("fails", 0) >= 2)
 
-    todo = {k: v for k, v in jobs.items()
-            if not handled(k) and v.get("fresh") and not triage.get(k)
-            and v.get("bucket") != "tiebreak"}  # unsure roles get facts, never CVs
+    batch = None
+    if os.environ.get("NIGHTCV_BATCH"):
+        # one-shot: tune an explicit allowlist (the dashboard's open tab),
+        # not just fresh roles - see data/cvbatch.json
+        batch = read_json(HERE / "data" / "cvbatch.json", {}).get("ids") or []
+    if batch is not None:
+        todo = {k: jobs[k] for k in batch if k in jobs and not handled(k)}
+        log(f"batch mode: {len(batch)} in allowlist, {len(todo)} still to tune")
+    else:
+        todo = {k: v for k, v in jobs.items()
+                if not handled(k) and v.get("fresh") and not triage.get(k)
+                and v.get("bucket") != "tiebreak"}  # unsure roles get facts, never CVs
     to_parse = {k: v for k, v in jobs.items() if k not in facts}
     if not todo and not to_parse:
         log(f"nothing to do ({len(jobs)} active, all handled)")

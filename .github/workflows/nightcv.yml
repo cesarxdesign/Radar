@@ -3,6 +3,14 @@ name: night cv
 # re-chain to the scrape by restoring the workflow_run trigger.
 on:
   workflow_dispatch:
+    inputs:
+      batch:
+        description: "tune the data/cvbatch.json allowlist (open tab), not only fresh"
+        type: boolean
+        default: false
+      max:
+        description: "max CVs this run"
+        default: "60"
 permissions:
   contents: write
 concurrency:
@@ -23,6 +31,8 @@ jobs:
       - name: tune CVs on the subscription
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          NIGHTCV_BATCH: ${{ inputs.batch && '1' || '' }}
+          NIGHTCV_MAX: ${{ inputs.max }}
         run: python3 nightcv_cloud.py
       - name: push results
         run: |

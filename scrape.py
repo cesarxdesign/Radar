@@ -723,6 +723,20 @@ def src_teamtailor(host, company):
         out.append(job)
     return out
 
+_CHROME_RE = re.compile(r"(?is)<(script|style|head|nav|footer)\b[^>]*>.*?</\1>")
+
+def personio_page_jd(url):
+    """Personio's feed sometimes serves an empty <description> (Peratera: the
+    XML endpoint 404s and search.json omits the body). The JD is still on the
+    job page - fetch it, drop the chrome, keep the visible text. strip_html
+    alone leaves <style>/<script> inner text behind, so cut those blocks first."""
+    try:
+        html = fetch(url)
+    except Exception:
+        return ""
+    txt = re.sub(r"\s+", " ", strip_html(_CHROME_RE.sub(" ", html))).strip()
+    return txt if len(txt) >= 200 else ""
+
 def src_personio(host, company):
     try:
         xml = fetch(f"https://{host}/xml")
@@ -732,15 +746,21 @@ def src_personio(host, company):
         for j in fetch_json(f"https://{host}/search.json"):
             loc = ", ".join(dict.fromkeys(j.get("offices") or []))
             raw = j.get("description") or ""
+            url = f"https://{host}/job/{j.get('id')}"
+            desc = strip_html(raw)
+            if len(desc) < 200:  # feed gave no body - read the page itself
+                page = personio_page_jd(url)
+                if page:
+                    desc = raw = page
             out.append({
                 "source": f"personio/{host.split('.')[0]}",
                 "company": (j.get("subcompany") or "").strip() or company,
                 "title": (j.get("name") or "").strip(),
-                "url": f"https://{host}/job/{j.get('id')}",
+                "url": url,
                 "location": loc,
                 "remote": bool(re.search(r"remote", loc, re.I)) or None,
                 "salary": None, "posted": None,
-                "desc": strip_html(raw), "raw": raw,
+                "desc": desc, "raw": raw,
             })
         return out
     root = ET.fromstring(xml)
@@ -750,15 +770,21 @@ def src_personio(host, company):
         loc = ", ".join(dict.fromkeys(offices))
         raw = " ".join(jd.findtext("value") or "" for jd in pos.iter("jobDescription"))
         pid = (pos.findtext("id") or "").strip()
+        url = f"https://{host}/job/{pid}"
+        desc = strip_html(raw)
+        if len(desc) < 200:
+            page = personio_page_jd(url)
+            if page:
+                desc = raw = page
         out.append({
             "source": f"personio/{host.split('.')[0]}",
             "company": (pos.findtext("subcompany") or "").strip() or company,
             "title": (pos.findtext("name") or "").strip(),
-            "url": f"https://{host}/job/{pid}",
+            "url": url,
             "location": loc,
             "remote": bool(re.search(r"remote", loc, re.I)) or None,
             "salary": None, "posted": (pos.findtext("createdAt") or "").strip() or None,
-            "desc": strip_html(raw), "raw": raw,
+            "desc": desc, "raw": raw,
         })
     return out
 

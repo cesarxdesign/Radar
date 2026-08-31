@@ -565,7 +565,13 @@ function render() {
   // the role itself is still unsure - remote-from-Portugal stays in Open
   // bucket is the judge's authoritative call - location text alone misleads
   // (an EU-remote role can list Portugal among 20 hiring countries)
-  const isPT = j => bucketOf(j) === "pt" && /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || "");
+  // The judge now reports the work model it read out of the JD, so this is a
+  // fact rather than a guess. The old test - Portugal in the location string,
+  // "remote" absent - put n8n's remote-first roles in here because their
+  // 26-country hiring list happens to name Portugal and never says "remote".
+  const isPT = j => bucketOf(j) === "pt" && (j.work
+    ? (j.work === "onsite" || j.work === "hybrid")
+    : /portugal|lisbon|lisboa/i.test(j.location || "") && !/remote/i.test(j.location || ""));
   // INGESTION IS INGESTION: a role reaches the board only after it has passed
   // the WHOLE filter, JD judge included. Scraped-but-unjudged roles are held
   // back as "pending" - never shown half-filtered, whoever triggered the run.

@@ -13,32 +13,50 @@
   "1754d1d087271267": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA, choose where you live"
   },
   "28de0aa7d1cdad38": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "remote-first, no country lock"
   },
   "4eae1ec1f2954317": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "remote-first, no country lock"
   },
   "465b04ee45c023be": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "UK or Europe remote"
   },
   "7b992fb7bbf43429": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "based remotely in EMEA"
   },
   "9e1ab1a327e2d6b3": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe remote"
   },
   "a6c7823105df7d9b": {
    "bucket": "eu",
@@ -47,48 +65,75 @@
   },
   "b019ecbe10cbd896": {
    "bucket": "eu",
-   "why": "JD: remote from any European country, CET±2",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "anywhere in Europe within 2h of CET"
   },
   "b6650afcb5c635f1": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "based remotely in EMEA"
   },
   "f44fc78821abdd81": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "based remotely in EMEA"
   },
   "f917987db6450816": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "based remotely in EMEA"
   },
   "c862d06c892aff1b": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Remote EMEA"
   },
   "d6d6cd92049399ab": {
-   "bucket": "eu",
+   "bucket": "ww",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "remote-first, no offices"
   },
   "e078201204b4e2e0": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "fully remote, EMEA preferred"
   },
   "f2a9f1703f482230": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe or Ukraine"
   },
   "918d26a3fc4774af": {
    "bucket": "eu",
-   "why": "title says Europe (Remote); lever variant lists Poland",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe (stated in the title)"
   },
   "2792f23ccb9703a5": {
    "bucket": "pt",
@@ -118,12 +163,18 @@
   "f55797700e4ac22a": {
    "bucket": "pt",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Portugal or UK remote"
   },
   "4999834a0de25100": {
    "bucket": "ww",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "anywhere in the world"
   },
   "9fc0a7fb7c514312": {
    "bucket": "ww",
@@ -132,18 +183,27 @@
   },
   "eac0de7d2f2f0b12": {
    "bucket": "ww",
-   "why": "3-month founding contract, remote international",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "international"
   },
   "596405aaa087c6c2": {
    "bucket": "ww",
-   "why": "TryHackMe is 100% remote work-from-anywhere",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "fully remote"
   },
   "f722d4e31136103b": {
    "bucket": "ww",
-   "why": "100% remote, work from anywhere",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-08-29T19:32:46Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "100% remote, work from anywhere"
   },
   "6ea4390baef06596": {
    "bucket": "tiebreak",
@@ -3763,7 +3823,10 @@
   "1e179e9e3203a557": {
    "bucket": "ww",
    "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "at": "2026-08-29T22:39:58Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "remote/async, no region limit"
   },
   "4c428802fb575d97": {
    "bucket": "cut",
@@ -3811,9 +3874,12 @@
    "at": "2026-08-29T22:39:58Z"
   },
   "4a0a612a614ff924": {
-   "bucket": "eu",
+   "bucket": "pt",
    "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "at": "2026-08-29T22:39:58Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EU country list incl. Portugal"
   },
   "6d445e0573dccd68": {
    "bucket": "cut",
@@ -3821,9 +3887,12 @@
    "at": "2026-08-29T22:39:58Z"
   },
   "b907b6c05095e2f3": {
-   "bucket": "eu",
+   "bucket": "pt",
    "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "at": "2026-08-29T22:39:58Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EU country list incl. Portugal"
   },
   "3057aa811e750b50": {
    "bucket": "cut",
@@ -4511,9 +4580,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "3b6c7bd078854d43": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "unclear",
+   "scope": ""
   },
   "3636ae4f21a93b9d": {
    "bucket": "cut",
@@ -4616,14 +4688,20 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "d100a468b4cc8de8": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Ireland, no remote scope stated",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "onsite",
+   "scope": "Ireland office"
   },
   "039a5acc8a22b967": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite, no remote scope stated",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "onsite",
+   "scope": "Ireland or UK office"
   },
   "c4ea858a7bd54fad": {
    "bucket": "cut",
@@ -4641,9 +4719,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "a9e30219b76fb5a2": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite, no remote scope stated",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "onsite",
+   "scope": "Ireland or UK office"
   },
   "ebf770217a0b9878": {
    "bucket": "cut",
@@ -4761,9 +4842,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "63801fed6f35a64e": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Copenhagen; a WFH equipment allowance is a perk, not a hiring scope",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "onsite",
+   "scope": "Copenhagen office"
   },
   "73620a8c62faf4ea": {
    "bucket": "cut",
@@ -4851,9 +4935,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "e9354a8c65ff212a": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "hybrid Madrid (#LI-Hybrid, meal vouchers, relocation package)",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "hybrid",
+   "scope": "Madrid office"
   },
   "a320968dcd8555d2": {
    "bucket": "tiebreak",
@@ -5996,9 +6083,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "1878e227a1f2f844": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "Berlin office (subsidised commuter ticket, relocation support)",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "hybrid",
+   "scope": "Berlin office"
   },
   "4bc0ab16f60a58ad": {
    "bucket": "cut",
@@ -6016,9 +6106,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "fd2549c04124a669": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "hybrid Madrid; remote appears only in a benefits blurb",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "hybrid",
+   "scope": "Madrid office"
   },
   "ac2fa53c93c158a6": {
    "bucket": "cut",
@@ -6281,9 +6374,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "9f70a320cd3982b0": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "unclear",
+   "scope": ""
   },
   "7103c61586163690": {
    "bucket": "cut",
@@ -6458,7 +6554,10 @@
   "afa0d77d398151f6": {
    "bucket": "ww",
    "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Global Remote"
   },
   "5e18974ce43e353f": {
    "bucket": "cut",
@@ -6473,7 +6572,10 @@
   "ac33c8f36faec665": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe remote or London hybrid"
   },
   "4bc94e999eb38673": {
    "bucket": "eu",
@@ -6921,9 +7023,12 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "26cf82c7a0e99243": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Copenhagen; same posting as the Design Systems listing",
+   "at": "2026-08-30T11:31:44Z",
+   "pv": 2,
+   "work": "onsite",
+   "scope": "Copenhagen office"
   },
   "afb2d6cf9576639d": {
    "bucket": "eu",

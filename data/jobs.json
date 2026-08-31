@@ -2,7 +2,7 @@
  "generated_at": "2026-08-30T13:04:38Z",
  "run_id": "2026-08-30T13:04:38Z",
  "counts": {
-  "active": 117,
+  "active": 125,
   "new": 1
  },
  "sources": {
@@ -2891,13 +2891,13 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-advidi-netherlands-74947",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-24",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T09:12:03Z",
@@ -2905,9 +2905,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "7dc5ab125e3c",
-   "why": "no full JD captured - work model unverified",
-   "work": "unclear"
+   "jdhash": "7dc5ab125e3c"
   },
   {
    "id": "3636ae4f21a93b9d",
@@ -3375,10 +3373,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "b4f68c86fc71",
-   "work": "onsite"
+   "jdhash": "b4f68c86fc71"
   },
   {
    "id": "039a5acc8a22b967",
@@ -3399,10 +3396,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "f5b6febec23b",
-   "work": "onsite"
+   "jdhash": "f5b6febec23b"
   },
   {
    "id": "c4ea858a7bd54fad",
@@ -3489,10 +3485,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "e7ecb6bb0919",
-   "work": "onsite"
+   "jdhash": "e7ecb6bb0919"
   },
   {
    "id": "ebf770217a0b9878",
@@ -3997,10 +3992,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "6032ce348f2a",
-   "work": "onsite"
+   "jdhash": "6032ce348f2a"
   },
   {
    "id": "73620a8c62faf4ea",
@@ -4417,10 +4411,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "4cee69d7a8b7",
-   "work": "hybrid"
+   "jdhash": "4cee69d7a8b7"
   },
   {
    "id": "a320968dcd8555d2",
@@ -9271,10 +9264,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "513377259d06",
-   "work": "hybrid"
+   "jdhash": "513377259d06"
   },
   {
    "id": "ac2fa53c93c158a6",
@@ -9627,10 +9619,9 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "535bc98e0592",
-   "work": "hybrid"
+   "jdhash": "535bc98e0592"
   },
   {
    "id": "ab54fbaf36512129",
@@ -10741,13 +10732,13 @@
    "url": "https://designjobs.world/jobs/senior-product-designer-workwize-netherlands-67240",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "tiebreak",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-08-25",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Amsterdam, Netherlands",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
@@ -10755,9 +10746,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "e0d4d3a7f83f",
-   "why": "no full JD captured - work model unverified",
-   "work": "unclear"
+   "jdhash": "e0d4d3a7f83f"
   },
   {
    "id": "7103c61586163690",
@@ -11731,8 +11720,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "fe6c4952e529",
-   "work": "remote"
+   "jdhash": "fe6c4952e529"
   },
   {
    "id": "5e18974ce43e353f",
@@ -11799,8 +11787,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "033722ca3f4c",
-   "work": "remote"
+   "jdhash": "033722ca3f4c"
   },
   {
    "id": "4bc94e999eb38673",
@@ -16715,8 +16702,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "cdb3b116451a",
-   "work": "remote"
+   "jdhash": "cdb3b116451a"
   },
   {
    "id": "a9465f5857cbcf93",
@@ -16747,13 +16733,13 @@
    "url": "https://jobs.ashbyhq.com/n8n/fe05c209-8069-4a88-aeba-8da23488cd30",
    "source": "ashby/n8n",
    "location": "Germany, Bosnia, Norway, Estonia, Slovenia, Italy, Netherlands, Hungary, Portugal, France, Poland, Serbia, Austria, Finland, Montenegro, Slovakia, Ireland, Denmark, Belgium, Czech Republic, United Kingdom, Croatia, Spain, Greece, Ukraine, Sweden",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-04-03T17:23:00.611+00:00",
    "updated": null,
    "xp": "5+y",
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T22:39:58Z",
@@ -16761,8 +16747,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "3f6803369ccd",
-   "work": "remote"
+   "jdhash": "3f6803369ccd"
   },
   {
    "id": "b907b6c05095e2f3",
@@ -16771,13 +16756,13 @@
    "url": "https://jobs.ashbyhq.com/n8n/eee6e2dc-c565-4cef-adee-a054b59b1c28",
    "source": "ashby/n8n",
    "location": "Berlin Office, Romania, Estonia, Netherlands, Hungary, Portugal, France, Poland, Germany, Austria, Finland, London Office, Albania, Ireland, Bulgaria, Denmark, Belgium, United Kingdom, Spain, Sweden",
-   "bucket": "pt",
+   "bucket": "eu",
    "salary": "€125K – €271.9K • Offers Equity • Multiple Ranges",
    "posted": "2026-08-17T08:07:11.366+00:00",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Portugal",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T22:39:58Z",
@@ -16785,8 +16770,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "3670b43c1460",
-   "work": "remote"
+   "jdhash": "3670b43c1460"
   },
   {
    "id": "6c23e0c365f27129",
@@ -28171,8 +28155,8 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "2cc591f6e428",
-   "work": "remote"
+   "why": "title says Europe (Remote); lever variant lists Poland",
+   "jdhash": "2cc591f6e428"
   },
   {
    "id": "7a1e12b29718d73c",
@@ -28374,8 +28358,8 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "5e5e88048e19",
-   "work": "remote"
+   "why": "3-month founding contract, remote international",
+   "jdhash": "5e5e88048e19"
   },
   {
    "id": "ca630b1da9d7bfbb",
@@ -28420,8 +28404,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "2ee81ec80e74",
-   "work": "remote"
+   "jdhash": "2ee81ec80e74"
   },
   {
    "id": "f9f965582485b00e",
@@ -28489,8 +28472,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "eafe42874f88",
-   "work": "remote"
+   "jdhash": "eafe42874f88"
   },
   {
    "id": "de6aadaa37d39161",
@@ -28697,8 +28679,8 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "1ca6102bf0da",
-   "work": "remote"
+   "why": "JD: remote from any European country, CET±2",
+   "jdhash": "1ca6102bf0da"
   },
   {
    "id": "5193031a7b54dac0",
@@ -30254,8 +30236,8 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "dc1a3475106c",
-   "work": "remote"
+   "why": "100% remote, work from anywhere",
+   "jdhash": "dc1a3475106c"
   },
   {
    "id": "596405aaa087c6c2",
@@ -30278,8 +30260,8 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "19081ae5228a",
-   "work": "remote"
+   "why": "TryHackMe is 100% remote work-from-anywhere",
+   "jdhash": "19081ae5228a"
   },
   {
    "id": "b18fc63bba932e68",
@@ -31914,8 +31896,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "e5fd90f27be8",
-   "work": "remote"
+   "jdhash": "e5fd90f27be8"
   },
   {
    "id": "4eae1ec1f2954317",
@@ -31938,8 +31919,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "87eb816dc7f9",
-   "work": "remote"
+   "jdhash": "87eb816dc7f9"
   },
   {
    "id": "c68247eb1d8a2f86",
@@ -32362,8 +32342,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "c510c7b87a5e",
-   "work": "remote"
+   "jdhash": "c510c7b87a5e"
   },
   {
    "id": "fbc1dd612d7d314c",
@@ -32570,13 +32549,13 @@
    "url": "https://bunnynet.teamtailor.com/jobs/8105954-ux-product-design-lead",
    "source": "teamtailor/bunnynet.teamtailor.com",
    "location": "",
-   "bucket": "ww",
+   "bucket": "eu",
    "salary": null,
    "posted": "Wed, 22 Jul 2026 08:55:53 +0200",
    "updated": null,
    "xp": "7+y",
    "derived_from": null,
-   "market": "Worldwide",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-28T23:18:18Z",
@@ -32584,8 +32563,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "48fc39971fc8",
-   "work": "remote"
+   "jdhash": "48fc39971fc8"
   },
   {
    "id": "23d6a9fce334dcf6",
@@ -32743,8 +32721,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "5fbbf9a17bba",
-   "work": "remote"
+   "jdhash": "5fbbf9a17bba"
   },
   {
    "id": "68d44203c0bf012d",
@@ -32789,8 +32766,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "e2110102e4cd",
-   "work": "remote"
+   "jdhash": "e2110102e4cd"
   },
   {
    "id": "9e1ab1a327e2d6b3",
@@ -32813,8 +32789,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "bfb2fe46bcf9",
-   "work": "remote"
+   "jdhash": "bfb2fe46bcf9"
   },
   {
    "id": "a06c78e66ce38f72",
@@ -32860,8 +32835,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "eabd443d29b1",
-   "work": "remote"
+   "jdhash": "eabd443d29b1"
   },
   {
    "id": "7b6322d84568172a",
@@ -33220,8 +33194,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "cf8e097ffbb0",
-   "work": "remote"
+   "jdhash": "cf8e097ffbb0"
   },
   {
    "id": "f917987db6450816",
@@ -33244,8 +33217,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "666aa785d044",
-   "work": "remote"
+   "jdhash": "666aa785d044"
   },
   {
    "id": "b6650afcb5c635f1",
@@ -33268,8 +33240,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "c1f5a8050be4",
-   "work": "remote"
+   "jdhash": "c1f5a8050be4"
   },
   {
    "id": "f44fc78821abdd81",
@@ -33292,8 +33263,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "84002eb92f86",
-   "work": "remote"
+   "jdhash": "84002eb92f86"
   },
   {
    "id": "dfebb9269da51640",
@@ -33623,8 +33593,7 @@
    "last_seen": "2026-08-30T13:04:38Z",
    "active": true,
    "judged": true,
-   "jdhash": "0ae995a16c88",
-   "work": "remote"
+   "jdhash": "0ae995a16c88"
   },
   {
    "id": "e6eda6f6289c850b",
@@ -34099,10 +34068,9 @@
    "first_seen": "2026-08-28T10:22:12Z",
    "first_run": "2026-08-28T10:22:12Z",
    "last_seen": "2026-08-30T13:04:38Z",
-   "active": false,
+   "active": true,
    "judged": true,
-   "jdhash": "6032ce348f2a",
-   "work": "onsite"
+   "jdhash": "6032ce348f2a"
   },
   {
    "id": "afb2d6cf9576639d",

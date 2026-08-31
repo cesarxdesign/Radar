@@ -91,8 +91,7 @@ ROLE
 "not_pd" = marketing / brand / graphic / motion / print design; physical / industrial / architectural / hardware / mechanical / electrical design; game design or game content; software/backend/frontend/data engineering; product management, product ops, program/project management, sales, recruiting, legal.
 "unsure" = UX/design research only, or content design / UX writing (a different discipline - César decides case by case).
 
-WORK MODEL - decide this FIRST, from the WHOLE posting - title, location field and body - before you touch "place".
-The TITLE is part of the posting and a person reads it first. "Senior Product Designer, Europe (Remote)" states a remote hiring scope even when the location field says only "Poland", and it beats that field.
+WORK MODEL - decide this FIRST, from the body of the JD, before you touch "place".
 César lives in Lisbon and is not relocating. A job in another country only works if the company hires people who live somewhere else. So the question is never "which city is on the ad" - it is "does this posting offer to hire someone who does not live there".
 - "remote" = the posting states a REMOTE HIRING SCOPE: it says who it will hire and where they may live. "Remote - Europe", "fully remote across the EU", "you can be based anywhere in Europe", "remote (Portugal, Spain, Germany)", "distributed team, hire anywhere".
 - "hybrid" = expected in an office some days, or the ad pairs a city with hybrid/flexible working.
@@ -143,7 +142,6 @@ EXAMPLES (title | location | what the body says | -> verdict)
 - Senior Product Designer | Remote - Europe | "hire anywhere in Europe" -> {{"role":"pd","work":"remote","scope":"Europe","place":"eu"}}
 - Staff Product Designer | Germany, ... Portugal, France, Poland, Spain | remote, that country list -> {{"role":"pd","work":"remote","scope":"EU country list incl. Portugal","place":"pt"}}
 - Senior Product Designer | Remote - Germany, Austria, Switzerland | that list only -> {{"role":"pd","work":"remote","scope":"DACH only","place":"cut","why":"remote scope excludes Portugal (DE/AT/CH)"}}
-- Senior Product Designer - Credit & Cards, Europe (Remote) | Poland | body never repeats it -> {{"role":"pd","work":"remote","scope":"Europe","place":"eu"}}   (the title states the scope)
 - Design system designer | All France (remote) | remote but French contract implied -> {{"role":"pd","work":"remote","scope":"France only","place":"unsure","why":"remote but scoped to France only"}}
 - Senior Product Designer | Remote | body: "we work from our Berlin office 3 days a week" -> {{"role":"pd","work":"hybrid","scope":"listed remote, Berlin office 3 days","place":"unsure","why":"listed remote, body says Berlin hybrid"}}
 - Senior Product Designer | Remote | body: "you must be based in Berlin" -> {{"role":"pd","work":"hybrid","scope":"Berlin residence required","place":"cut","why":"Berlin residence required"}}

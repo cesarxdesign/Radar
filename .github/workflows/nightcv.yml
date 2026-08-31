@@ -9,8 +9,8 @@ on:
         type: boolean
         default: false
       max:
-        description: "max CVs this run"
-        default: "60"
+        description: "max CVs this run (quality pipeline: ~15-20 min per CV)"
+        default: "6"
 permissions:
   contents: write
 concurrency:
@@ -19,7 +19,7 @@ concurrency:
 jobs:
   tune:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4

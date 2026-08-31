@@ -198,7 +198,7 @@ def main():
                               "years_experience": j.get("xp") or "",
                               "remote": j.get("market") or "",
                               "country": j.get("location") or ""},
-                }, timeout=600)
+                }, timeout=3900)
                 src = r.get("path", "")
                 web = ""
                 if src and os.path.exists(src):

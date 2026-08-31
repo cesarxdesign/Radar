@@ -1,7 +1,7 @@
 name: nightly scrape
 on:
   schedule:
-    - cron: "30 4 * * *"   # 05:30 Lisbon (summer) / 04:30 (winter)
+    - cron: "7 23 * * *"   # 00:07 Lisbon (summer) / 23:07 (winter) — odd minute, GitHub delays :00/:30 crons for hours
   workflow_dispatch:
 jobs:
   scrape:

@@ -160,14 +160,18 @@ def classify(location_text, remote=None, restrictions=None, timezones=None):
     # Portugal but want 10pm shifts, that's his call to make, not the radar's.
     if loc:
         if ELSEWHERE_RE.search(loc):
-            # César's rule (2026-08-30): a named European place is PT-hireable
-            # (remote from anywhere in Europe); a named NON-European scope
+            # César's rule (2026-08-30, tightened 2026-08-31): a named European
+            # place is PT-hireable only when the posting itself says remote. A
+            # bare "Madrid, Spain" is a job in Madrid, so it must not reach Open
+            # on the strength of the country alone. A named NON-European scope
             # ("Americas Remote", "Remote - US", "APAC") is explicit negative
             # evidence and cuts. Citizenship/onsite nuance is the judge's job.
-            eu_place = EU_COUNTRY_RE.search(loc)
-            remote_ok = REMOTE_RE.search(loc) or remote is True
-            if eu_place:
-                return "eu" if remote_ok else "tiebreak"
+            #
+            # Only the location TEXT saying remote counts here. The per-source
+            # `remote` flag is an aggregator's checkbox - on some boards it just
+            # means "hybrid allowed", so it earns Unsure, never Open.
+            if EU_COUNTRY_RE.search(loc):
+                return "eu" if REMOTE_RE.search(loc) else "tiebreak"
             return None  # non-European scope, remote or not
         return "tiebreak"  # a place or scope we can't read - surface it
     # No location info at all.
@@ -455,7 +459,18 @@ def src_designjobsworld():
                 pass
         if not ld or not ld.get("title"):
             continue
+        # The apply target is authoritative in the JSON-LD; the regex over the
+        # HTML only ever found the ATS boards it knows and missed everything
+        # else, which left url pointing at the aggregator's own summary page.
+        # Reading potentialAction first means an ATS link reaches
+        # fetch_original (and so gets us the real JD), and a LinkedIn or
+        # unfetchable target at least becomes the button César clicks.
+        pa = ld.get("potentialAction") or {}
+        tgt = ((pa.get("target") or {}) if isinstance(pa, dict) else {})
+        apply_to = tgt.get("urlTemplate") if isinstance(tgt, dict) else None
         m = DJW_ATS_RE.search(h)
+        if m:
+            apply_to = m.group(0)
         locs = ld.get("jobLocation") or []
         if isinstance(locs, dict):
             locs = [locs]
@@ -473,7 +488,7 @@ def src_designjobsworld():
         out.append({
             "source": "designjobsworld",
             "company": (ld.get("hiringOrganization") or {}).get("name") or "?",
-            "title": ld.get("title"), "url": (m.group(0) if m else u),
+            "title": ld.get("title"), "url": apply_to or u,
             "location": loc,
             "remote": bool(re.search(r"remote|anywhere|telecommute",
                                      f"{loc} {ld.get('jobLocationType') or ''}", re.I)) or None,

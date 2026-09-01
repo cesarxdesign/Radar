@@ -1,7 +1,10 @@
 name: nightly scrape
 on:
-  schedule:
-    - cron: "7 23 * * *"   # 00:07 Lisbon (summer) / 23:07 (winter) — odd minute, GitHub delays :00/:30 crons for hours
+  # Nightly is OFF. The pipeline is being split into pool / judge / results and
+  # a half-modular nightly writes results nobody can trust. Restore the cron
+  # once the split lands and the judge is a pipe with one input and one output.
+  #   schedule:
+  #     - cron: "7 23 * * *"   # 00:07 Lisbon (summer) / 23:07 (winter)
   workflow_dispatch:
 jobs:
   scrape:

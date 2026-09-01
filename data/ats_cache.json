@@ -21,6 +21,12 @@
   "slug": "amplitude",
   "via": "025d323abedac505"
  },
+ "anaplan": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "greenhouse",
+  "slug": "anaplan",
+  "via": "866166725116d9aa"
+ },
  "blackbird interactive": {
   "checked": "2026-08-29T11:17:45Z",
   "kind": "lever",
@@ -68,6 +74,12 @@
   "kind": "greenhouse",
   "slug": "dispatch",
   "via": "a7a59729f8424427"
+ },
+ "duck duck go": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "ashby",
+  "slug": "duck-duck-go",
+  "via": "c9c8f4371db185d1"
  },
  "ehvert engineering a salas o brien company": {
   "checked": "2026-08-28T10:55:55Z",
@@ -120,6 +132,12 @@
  "garden3d": {
   "checked": "2026-08-28T10:55:55Z",
   "kind": null
+ },
+ "gismart": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "ashby",
+  "slug": "gismart",
+  "via": "ac7c9461257b3380"
  },
  "hanson professional services": {
   "checked": "2026-08-29T22:11:38Z",
@@ -255,6 +273,12 @@
   "stale": false,
   "url": null
  },
+ "hunt:aa67048419101e69": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://job-boards.greenhouse.io/oliver/jobs/7966045"
+ },
  "hunt:ae79450bb0506d99": {
   "checked": "2026-08-30T11:31:44Z",
   "kind": null,
@@ -339,6 +363,12 @@
   "stale": false,
   "url": "https://www.wsp.com/en-us/careers/job-opportunities"
  },
+ "hunt:f3aa26be5742bde1": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "direct",
+  "stale": false,
+  "url": "https://jobs.lever.co/hypersonica-prod/fa8a4dde-4170-4dab-bd04-d2564e8abb25"
+ },
  "hunt:fb5eaddc8b57c919": {
   "checked": "2026-08-28T11:26:34Z",
   "kind": "careers",
@@ -350,6 +380,11 @@
   "kind": "direct",
   "stale": false,
   "url": "https://job-boards.greenhouse.io/webflow/jobs/8096142"
+ },
+ "hypersonica": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "lever",
+  "slug": "hypersonica-prod"
  },
  "iisd": {
   "checked": "2026-08-28T10:55:55Z",
@@ -476,6 +511,11 @@
   "kind": "greenhouse",
   "slug": "okx",
   "via": "36a1785fcd1bdb5f"
+ },
+ "oliver agency": {
+  "checked": "2026-09-01T01:47:39Z",
+  "kind": "greenhouse",
+  "slug": "oliver"
  },
  "ondeckglobal": {
   "checked": "2026-08-28T15:01:40Z",

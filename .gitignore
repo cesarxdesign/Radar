@@ -10,3 +10,5 @@ data/applied_email.json
 runradar.log
 tcv/
 cv_out/
+cvs/
+data/state.json

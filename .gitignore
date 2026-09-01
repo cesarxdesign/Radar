@@ -12,3 +12,5 @@ tcv/
 cv_out/
 cvs/
 data/state.json
+tcv_cron.log
+data/hunt_cache.json

@@ -14,3 +14,6 @@ cvs/
 data/state.json
 tcv_cron.log
 data/hunt_cache.json
+data/cvs.json
+data/cvdone.json
+data/cvbatch.json

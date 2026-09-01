@@ -13,32 +13,46 @@
   "1754d1d087271267": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA"
   },
   "28de0aa7d1cdad38": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "bucket": "cut",
+   "why": "hybrid The Hague, remote is a perk not a hiring scope",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "4eae1ec1f2954317": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "bucket": "cut",
+   "why": "remote-first is a culture claim; central office The Hague, no stated remote hiring scope",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "465b04ee45c023be": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "UK/Europe remote or Tokyo hybrid"
   },
   "7b992fb7bbf43429": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA region"
   },
   "9e1ab1a327e2d6b3": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe"
   },
   "a6c7823105df7d9b": {
    "bucket": "eu",
@@ -47,48 +61,75 @@
   },
   "b019ecbe10cbd896": {
    "bucket": "eu",
-   "why": "JD: remote from any European country, CET±2",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Design system designer, Europe within 2hrs CET"
   },
   "b6650afcb5c635f1": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA"
   },
   "f44fc78821abdd81": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA region"
   },
   "f917987db6450816": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA design systems designer"
   },
   "c862d06c892aff1b": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "EMEA, EU timezones"
   },
   "d6d6cd92049399ab": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "UX/product design lead, developer tools"
   },
   "e078201204b4e2e0": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "product design, prioritizing EMEA candidates"
   },
   "f2a9f1703f482230": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe or Ukraine, B2C SaaS growth design"
   },
   "918d26a3fc4774af": {
    "bucket": "eu",
-   "why": "title says Europe (Remote); lever variant lists Poland",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Credit & Cards product design, Europe"
   },
   "2792f23ccb9703a5": {
    "bucket": "pt",
@@ -123,7 +164,10 @@
   "4999834a0de25100": {
    "bucket": "ww",
    "why": "",
-   "at": "2026-08-29T19:32:46Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "worldwide"
   },
   "9fc0a7fb7c514312": {
    "bucket": "ww",
@@ -132,18 +176,25 @@
   },
   "eac0de7d2f2f0b12": {
    "bucket": "ww",
-   "why": "3-month founding contract, remote international",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "founding product designer, AI agent platform"
   },
   "596405aaa087c6c2": {
-   "bucket": "ww",
-   "why": "TryHackMe is 100% remote work-from-anywhere",
-   "at": "2026-08-29T19:32:46Z"
+   "bucket": "eu",
+   "why": "",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "growth product designer, consumer app"
   },
   "f722d4e31136103b": {
-   "bucket": "ww",
-   "why": "100% remote, work from anywhere",
-   "at": "2026-08-29T19:32:46Z"
+   "bucket": "cut",
+   "why": "onsite/remote UK, no Portugal scope",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "6ea4390baef06596": {
    "bucket": "tiebreak",
@@ -182,8 +233,9 @@
   },
   "cc2da5874ee2cbff": {
    "bucket": "tiebreak",
-   "why": "judge: researcher discipline, EMEA remote — in or out is your call",
-   "at": "2026-08-29T19:32:46Z"
+   "why": "research discipline, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "9f9af687285b0d90": {
    "bucket": "tiebreak",
@@ -3761,9 +3813,10 @@
    "at": "2026-08-29T22:39:58Z"
   },
   "1e179e9e3203a557": {
-   "bucket": "ww",
-   "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "bucket": "cut",
+   "why": "front-end design engineer for marketing site, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "4c428802fb575d97": {
    "bucket": "cut",
@@ -3811,9 +3864,12 @@
    "at": "2026-08-29T22:39:58Z"
   },
   "4a0a612a614ff924": {
-   "bucket": "eu",
+   "bucket": "pt",
    "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Product Designer, multiple product teams"
   },
   "6d445e0573dccd68": {
    "bucket": "cut",
@@ -3821,9 +3877,12 @@
    "at": "2026-08-29T22:39:58Z"
   },
   "b907b6c05095e2f3": {
-   "bucket": "eu",
+   "bucket": "pt",
    "why": "",
-   "at": "2026-08-29T22:39:58Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Head of Design, ~14 designers, incl. Portugal"
   },
   "3057aa811e750b50": {
    "bucket": "cut",
@@ -4616,14 +4675,16 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "d100a468b4cc8de8": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Ireland, no remote scope stated",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "039a5acc8a22b967": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Ireland/UK, no remote scope stated",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "c4ea858a7bd54fad": {
    "bucket": "cut",
@@ -4641,9 +4702,10 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "a9e30219b76fb5a2": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Ireland/UK, no remote scope stated",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "ebf770217a0b9878": {
    "bucket": "cut",
@@ -4761,9 +4823,10 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "63801fed6f35a64e": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "onsite Copenhagen, no remote scope stated",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "73620a8c62faf4ea": {
    "bucket": "cut",
@@ -4851,9 +4914,10 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "e9354a8c65ff212a": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "hybrid Madrid, remote is a perk not a hiring scope",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "a320968dcd8555d2": {
    "bucket": "tiebreak",
@@ -6016,9 +6080,10 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "fd2549c04124a669": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "cut",
+   "why": "hybrid Madrid, remote is a perk not a hiring scope",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "ac2fa53c93c158a6": {
    "bucket": "cut",
@@ -6281,9 +6346,10 @@
    "at": "2026-08-30T11:31:44Z"
   },
   "9f70a320cd3982b0": {
-   "bucket": "eu",
-   "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   },
   "7103c61586163690": {
    "bucket": "cut",
@@ -6458,7 +6524,10 @@
   "afa0d77d398151f6": {
    "bucket": "ww",
    "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "global remote, core product team"
   },
   "5e18974ce43e353f": {
    "bucket": "cut",
@@ -6473,7 +6542,10 @@
   "ac33c8f36faec665": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "Europe remote or London hybrid"
   },
   "4bc94e999eb38673": {
    "bucket": "eu",
@@ -6923,7 +6995,10 @@
   "26cf82c7a0e99243": {
    "bucket": "eu",
    "why": "",
-   "at": "2026-08-30T11:31:44Z"
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "design system staff role, DK/UK/Europe"
   },
   "afb2d6cf9576639d": {
    "bucket": "eu",
@@ -7044,6 +7119,272 @@
    "bucket": "cut",
    "why": "game economy/systems design, not product design",
    "at": "2026-08-30T13:04:38Z"
+  },
+  "c9c8f4371db185d1": {
+   "bucket": "pt",
+   "why": "",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2,
+   "work": "remote",
+   "scope": "wide EU/global country list incl. Portugal"
+  },
+  "1d0288c80bd9d68c": {
+   "bucket": "cut",
+   "why": "marketing/brand design, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "ac7c9461257b3380": {
+   "bucket": "cut",
+   "why": "creative production/marketing management, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "f3aa26be5742bde1": {
+   "bucket": "cut",
+   "why": "industrial/mechanical engineering, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "aa67048419101e69": {
+   "bucket": "cut",
+   "why": "social/motion design, not product design; hybrid London",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "866166725116d9aa": {
+   "bucket": "cut",
+   "why": "security engineering management, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "91602d64a4e9d4be": {
+   "bucket": "cut",
+   "why": "hybrid Zurich; also research-ops discipline",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "13e2aac9b658fbac": {
+   "bucket": "cut",
+   "why": "unsure discipline (content design), hybrid London/Stockholm office",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "2f1d2677b97ecfca": {
+   "bucket": "cut",
+   "why": "not product design; hybrid Belgrade",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "a478f074687840b4": {
+   "bucket": "cut",
+   "why": "onsite Paris, no remote scope stated",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "e517d523772c202c": {
+   "bucket": "cut",
+   "why": "civil infrastructure design, not product design; onsite Luleå/Piteå Sweden",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "c8cea5bf8fb903fb": {
+   "bucket": "cut",
+   "why": "engineering, not design; hybrid Poland",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "b2da427ba23d1574": {
+   "bucket": "cut",
+   "why": "engineering (piping/plant), not product design; onsite Piteå",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "361a2c4e92ab3f79": {
+   "bucket": "cut",
+   "why": "contract management, not design; onsite Bucharest",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "6a3f632c613381c2": {
+   "bucket": "cut",
+   "why": "hydraulic engineering, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "2789b62bc9099495": {
+   "bucket": "cut",
+   "why": "game design, not product design; onsite Montpellier",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "4135e0168ffe9b5b": {
+   "bucket": "cut",
+   "why": "fashion design, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "49a5067a697265c1": {
+   "bucket": "cut",
+   "why": "product planning/merchandising, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "39095c4e0a0004f2": {
+   "bucket": "cut",
+   "why": "retail customer advisor role, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "3a366935bc026980": {
+   "bucket": "cut",
+   "why": "product management, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "a12e53b35af04c90": {
+   "bucket": "cut",
+   "why": "QA engineering, not design; onsite Ho Chi Minh City",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "c387e67432e864f9": {
+   "bucket": "cut",
+   "why": "customer service, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "423c50791ce193d1": {
+   "bucket": "cut",
+   "why": "finance role, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "46477ef782019c77": {
+   "bucket": "cut",
+   "why": "TPM/construction, not product design; US-based",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "cc4433f8a4397b50": {
+   "bucket": "cut",
+   "why": "TPM/construction role, not design; US-based",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "f8f05cf99a0451e6": {
+   "bucket": "cut",
+   "why": "brand/motion design, not product design; onsite Berlin",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "7fa3c3499be47257": {
+   "bucket": "cut",
+   "why": "network engineering, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "a7579baa88a8f7b2": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "586aac887e0e7c7d": {
+   "bucket": "cut",
+   "why": "not a design role",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "c6857c696a3cfd68": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "198cf1337ac91859": {
+   "bucket": "cut",
+   "why": "retail customer service, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "752d1e61fa5a7006": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "b4c9cc3760a4a387": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "abc312301f6a2554": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "b3fe985b4c44d9d8": {
+   "bucket": "cut",
+   "why": "AI/IT solution engineering, not product design; hybrid Munich",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "4262b5d0b659d6e0": {
+   "bucket": "cut",
+   "why": "footwear/fashion design, not product design; onsite Paris",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "009b6268ad2c1c63": {
+   "bucket": "cut",
+   "why": "not product design (AI/creative production role), onsite Berlin",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "2d253c54c8f0b9aa": {
+   "bucket": "cut",
+   "why": "onsite Berlin, mixes mobile engineering with design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "c08a5eecdb6f80bc": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured - work model unverified",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "60f13f5c52785a79": {
+   "bucket": "cut",
+   "why": "hospitality management, not design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "59e5bcca20bc81c4": {
+   "bucket": "tiebreak",
+   "why": "no full JD captured",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "7ec6a3392ed3c651": {
+   "bucket": "cut",
+   "why": "software engineering, not product design; onsite Mijdrecht",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "0c86cfc8911dc1ac": {
+   "bucket": "cut",
+   "why": "graphic/brand design, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
+  },
+  "1a5c2a29fe636c28": {
+   "bucket": "cut",
+   "why": "game content/narrative design, not product design",
+   "at": "2026-09-01T01:47:39Z",
+   "pv": 2
   }
  }
 }

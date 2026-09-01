@@ -2,7 +2,7 @@
  "generated_at": "2026-09-01T01:47:39Z",
  "run_id": "2026-09-01T01:47:39Z",
  "counts": {
-  "active": 161,
+  "active": 115,
   "new": 44
  },
  "sources": {
@@ -2466,7 +2466,7 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
+   "judged": true,
    "jdhash": "7d8e2d11fa86"
   },
   {
@@ -2490,8 +2490,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "9c2e36e1cb2f"
   },
   {
@@ -2515,8 +2515,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "692175ec13f7"
   },
   {
@@ -2540,8 +2540,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "95ae40c302ca"
   },
   {
@@ -2565,8 +2565,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "ad1150e6d7dc"
   },
   {
@@ -2590,8 +2590,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "347b448b5f60"
   },
   {
@@ -2613,8 +2613,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "85f20df4c89c"
   },
   {
@@ -2636,8 +2636,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "71a5e8748ec7"
   },
   {
@@ -2659,8 +2659,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "f973af120afb"
   },
   {
@@ -2682,8 +2682,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "d46e2110dd81"
   },
   {
@@ -2705,8 +2705,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "f31a93dd934c"
   },
   {
@@ -2728,8 +2728,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "30ec461f1dab"
   },
   {
@@ -2751,8 +2751,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "0da4f36dd4c8"
   },
   {
@@ -2774,8 +2774,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "fe9e6f3bd10d"
   },
   {
@@ -2797,8 +2797,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "5b59afffd0dc"
   },
   {
@@ -2820,8 +2820,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "5fae3d5b6946"
   },
   {
@@ -2843,8 +2843,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "3624b9899a58"
   },
   {
@@ -2866,8 +2866,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "9eb7b985e5a1"
   },
   {
@@ -2889,8 +2889,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "d37461498253"
   },
   {
@@ -2912,8 +2912,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "cda98e36df14"
   },
   {
@@ -2935,8 +2935,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "da16722c9862"
   },
   {
@@ -2958,8 +2958,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "2224018a5562"
   },
   {
@@ -2981,8 +2981,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "5ed7d37fad69"
   },
   {
@@ -3004,8 +3004,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "319c51145b7e"
   },
   {
@@ -3027,8 +3027,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "b98e96ad1918"
   },
   {
@@ -3050,8 +3050,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "6940cc8772e2"
   },
   {
@@ -3073,8 +3073,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "ad0fa66f6835"
   },
   {
@@ -3097,8 +3097,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "5bceedf31a18"
+   "judged": true,
+   "jdhash": "5bceedf31a18",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "586aac887e0e7c7d",
@@ -3119,8 +3120,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "edd1050c2831"
   },
   {
@@ -3143,8 +3144,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "27399c5c0a27"
+   "judged": true,
+   "jdhash": "27399c5c0a27",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "198cf1337ac91859",
@@ -3165,8 +3167,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "625b17f770f1"
   },
   {
@@ -3189,8 +3191,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "ab8a3d2017a0"
+   "judged": true,
+   "jdhash": "ab8a3d2017a0",
+   "why": "no full JD captured"
   },
   {
    "id": "b4c9cc3760a4a387",
@@ -3212,8 +3215,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "20964ff80068"
+   "judged": true,
+   "jdhash": "20964ff80068",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "abc312301f6a2554",
@@ -3235,8 +3239,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "ecf4fa85e09f"
+   "judged": true,
+   "jdhash": "ecf4fa85e09f",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "b3fe985b4c44d9d8",
@@ -3257,8 +3262,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "b6aee5d42976"
   },
   {
@@ -3280,8 +3285,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "f1d5179684ca"
   },
   {
@@ -3303,8 +3308,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "1c8281d51496"
   },
   {
@@ -3326,8 +3331,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "490da02b3e31"
   },
   {
@@ -3350,8 +3355,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "acf8ccb68bae"
+   "judged": true,
+   "jdhash": "acf8ccb68bae",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "60f13f5c52785a79",
@@ -3372,8 +3378,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "1ab4abebfb3a"
   },
   {
@@ -3396,8 +3402,9 @@
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
-   "judged": false,
-   "jdhash": "a0d9df35bef2"
+   "judged": true,
+   "jdhash": "a0d9df35bef2",
+   "why": "no full JD captured"
   },
   {
    "id": "7ec6a3392ed3c651",
@@ -3418,8 +3425,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "d4d81db694b0"
   },
   {
@@ -3441,8 +3448,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "eb712075e07c"
   },
   {
@@ -3464,8 +3471,8 @@
    "first_seen": "2026-09-01T01:47:39Z",
    "first_run": "2026-09-01T01:47:39Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
-   "judged": false,
+   "active": false,
+   "judged": true,
    "jdhash": "249c750dd23d"
   },
   {
@@ -4373,7 +4380,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "b4f68c86fc71"
   },
@@ -4396,7 +4403,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "f5b6febec23b"
   },
@@ -4485,7 +4492,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "e7ecb6bb0919"
   },
@@ -4970,7 +4977,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "6032ce348f2a"
   },
@@ -5543,7 +5550,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "4cee69d7a8b7"
   },
@@ -10331,7 +10338,7 @@
    "first_seen": "2026-08-30T08:42:48Z",
    "first_run": "2026-08-30T08:42:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "513377259d06"
   },
@@ -11556,13 +11563,13 @@
    "url": "https://www.linkedin.com/jobs/view/4401372527",
    "source": "designjobsworld",
    "location": "Amsterdam, Netherlands",
-   "bucket": "eu",
+   "bucket": "tiebreak",
    "salary": null,
    "posted": "2026-08-25",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Europe",
+   "market": "Amsterdam, Netherlands",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-30T08:42:48Z",
@@ -11570,7 +11577,8 @@
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
    "judged": true,
-   "jdhash": "e0d4d3a7f83f"
+   "jdhash": "e0d4d3a7f83f",
+   "why": "no full JD captured - work model unverified"
   },
   {
    "id": "7103c61586163690",
@@ -17727,7 +17735,7 @@
    "first_seen": "2026-08-29T22:39:58Z",
    "first_run": "2026-08-29T22:39:58Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "cdb3b116451a"
   },
@@ -17760,13 +17768,13 @@
    "url": "https://jobs.ashbyhq.com/n8n/fe05c209-8069-4a88-aeba-8da23488cd30",
    "source": "ashby/n8n",
    "location": "Germany, Bosnia, Norway, Estonia, Slovenia, Italy, Netherlands, Hungary, Portugal, France, Poland, Serbia, Austria, Finland, Montenegro, Slovakia, Ireland, Denmark, Belgium, Czech Republic, United Kingdom, Croatia, Spain, Greece, Ukraine, Sweden",
-   "bucket": "eu",
+   "bucket": "pt",
    "salary": null,
    "posted": "2026-04-03T17:23:00.611+00:00",
    "updated": null,
    "xp": "5+y",
    "derived_from": null,
-   "market": "Europe",
+   "market": "Portugal",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T22:39:58Z",
@@ -17783,13 +17791,13 @@
    "url": "https://jobs.ashbyhq.com/n8n/eee6e2dc-c565-4cef-adee-a054b59b1c28",
    "source": "ashby/n8n",
    "location": "Berlin Office, Romania, Estonia, Netherlands, Hungary, Portugal, France, Poland, Germany, Austria, Finland, London Office, Albania, Ireland, Bulgaria, Denmark, Belgium, United Kingdom, Spain, Sweden",
-   "bucket": "eu",
+   "bucket": "pt",
    "salary": "€125K – €271.9K • Offers Equity • Multiple Ranges",
    "posted": "2026-08-17T08:07:11.366+00:00",
    "updated": null,
    "xp": null,
    "derived_from": null,
-   "market": "Europe",
+   "market": "Portugal",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T22:39:58Z",
@@ -31240,7 +31248,7 @@
    "first_seen": "2026-08-29T11:17:45Z",
    "first_run": "2026-08-29T11:17:45Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "why": "100% remote, work from anywhere",
    "jdhash": "dc1a3475106c"
@@ -31252,13 +31260,13 @@
    "url": "https://careers.tryhackme.com/jobs/7977321-growth-product-designer",
    "source": "teamtailor/careers.tryhackme.com",
    "location": "United Kingdom, GB, London, Remote",
-   "bucket": "ww",
+   "bucket": "eu",
    "salary": null,
    "posted": "2026-06-26T10:46:26+01:00",
    "updated": null,
    "xp": "2+y",
    "derived_from": null,
-   "market": "Worldwide",
+   "market": "Europe",
    "direct": true,
    "frameable": false,
    "first_seen": "2026-08-29T11:17:45Z",
@@ -32922,7 +32930,7 @@
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "e5fd90f27be8"
   },
@@ -32945,7 +32953,7 @@
    "first_seen": "2026-08-29T00:06:48Z",
    "first_run": "2026-08-29T00:06:48Z",
    "last_seen": "2026-09-01T01:47:39Z",
-   "active": true,
+   "active": false,
    "judged": true,
    "jdhash": "87eb816dc7f9"
   },
@@ -34198,7 +34206,7 @@
    "last_seen": "2026-09-01T01:47:39Z",
    "active": true,
    "judged": true,
-   "why": "judge: researcher discipline, EMEA remote — in or out is your call",
+   "why": "research discipline, not product design",
    "jdhash": "52d6bf18961e"
   },
   {

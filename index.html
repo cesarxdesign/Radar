@@ -176,22 +176,16 @@ footer .bad { color: var(--danger); }
       <span class="pending" id="pending" title="scraped but not yet read by the JD judge — held back until fully filtered"></span>
       <span class="newcount" id="newcount" title="new roles added on the last run (Open + Portugal + Unsure)"></span>
       <button class="scrape" id="scrape" title="full local run when TCV is up, cloud scrape otherwise">↻ Run now</button>
-      <button class="gear" id="gear" title="Settings">⚙</button>
+
     </header>
     <nav class="tabs">
       <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
       <button class="tab" data-tab="portugal">Portugal<span class="n" id="c-portugal"></span></button>
       <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
+      <button class="tab" data-tab="cut" title="Roles the judge removed, newest first, with the reason. Here so a wrong cut is visible instead of silent.">Cut<span class="n" id="c-cut"></span></button>
       <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
       <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
     </nav>
-  </div>
-  <div class="settings" id="settings">
-    <p><strong>GitHub token</strong> — enables the Scrape now button. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Create a fine-grained token</a>:
-    repository access <em>only cesarxdesign/Radar</em>, permissions <em>Contents: read&nbsp;+&nbsp;write</em> and
-    <em>Actions: read&nbsp;+&nbsp;write</em>. It never leaves this browser.</p>
-    <input type="password" id="tok" placeholder="github_pat_…" autocomplete="off">
-    <button id="savetok">Save</button><span class="sync" id="syncmsg"></span>
   </div>
   <main id="listcol"><div id="sections"></div></main>
   <footer id="foot"></footer>
@@ -211,7 +205,7 @@ footer .bad { color: var(--danger); }
 "use strict";
 const REPO = "cesarxdesign/Radar";
 const LS = "jobradar-v2";
-let state = { jobs: {}, verdicts: {}, editsig: {}, emails: {}, token: "" };
+let state = { jobs: {}, verdicts: {}, editsig: {}, emails: {} };
 try {
   const v2 = JSON.parse(localStorage.getItem(LS));
   if (v2) state = Object.assign(state, v2);
@@ -225,6 +219,7 @@ try {
 } catch (e) {}
 function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
 
+const CUT_SHOWN = 60;  // enough to spot-check a bad rule, not a wall of history
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
 let DATA = null, FACTS = {}, JDS = null, CVS = {}, tab = "open";
 let SEL = null, PV = null;
@@ -282,7 +277,7 @@ function propagateVariants() {
     const v = byKey[variantKey(j)];
     if (v) { state.jobs[j.id] = v; changed = true; }
   }
-  if (changed) { save(); scheduleState(); }
+  if (changed) { save(); }
 }
 function unsureReason(j) {
   if (j.why) return j.why;  // the judge pass names the failing criterion
@@ -297,38 +292,6 @@ function toast(msg, ms) {
   t.textContent = msg; t.classList.add("show");
   clearTimeout(t._tm); t._tm = setTimeout(() => t.classList.remove("show"), ms || 2600);
 }
-
-// ---------- verdict sync (optional, needs token) ----------
-function b64(s) { return btoa(unescape(encodeURIComponent(s))); }
-let REPO_STATE = null, stTimer = null;
-function scheduleState() { clearTimeout(stTimer); stTimer = setTimeout(pushState, 2000); }
-async function pushState() {
-  if (!state.token) return;
-  const payload = JSON.stringify({ updated: new Date().toISOString(), jobs: state.jobs, verdicts: state.verdicts, editsig: state.editsig }, null, 1);
-  if (REPO_STATE !== null) {
-    const prev = JSON.parse(REPO_STATE);
-    if (JSON.stringify(prev.jobs || {}) === JSON.stringify(state.jobs) &&
-        JSON.stringify(prev.verdicts || {}) === JSON.stringify(state.verdicts) &&
-        JSON.stringify(prev.editsig || {}) === JSON.stringify(state.editsig)) return;
-  }
-  const url = "https://api.github.com/repos/" + REPO + "/contents/data/state.json";
-  try {
-    let sha;
-    const r = await fetch(url, { headers: ghHeaders() });
-    if (r.ok) sha = (await r.json()).sha;
-    else if (r.status !== 404) throw new Error("GET " + r.status);
-    const body = { message: "triage state from dashboard", content: b64(payload) };
-    if (sha) body.sha = sha;
-    const put = await fetch(url, { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
-    if (!put.ok) throw new Error("PUT " + put.status);
-    REPO_STATE = payload;
-    setSyncMsg("triage synced " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }));
-  } catch (e) { setSyncMsg("triage sync failed: " + e.message); }
-}
-function ghHeaders() {
-  return { "Authorization": "Bearer " + state.token, "Accept": "application/vnd.github+json" };
-}
-function setSyncMsg(m) { document.getElementById("syncmsg").textContent = m; }
 
 // ---------- scrape now ----------
 function pollUpdate(btn, minutes) {
@@ -356,23 +319,8 @@ async function scrapeNow() {
     pollUpdate(btn, 45);
     return;
   } catch (e) {}
-  if (!state.token) {
-    btn.disabled = false; btn.textContent = "↻ Run now";
-    document.getElementById("settings").classList.add("open");
-    toast("TCV isn’t running here — cloud scrape needs the GitHub token");
-    return;
-  }
-  try {
-    const r = await fetch("https://api.github.com/repos/" + REPO + "/actions/workflows/scrape.yml/dispatches", {
-      method: "POST", headers: ghHeaders(), body: JSON.stringify({ ref: "main" })
-    });
-    if (r.status !== 204) throw new Error("HTTP " + r.status);
-    toast("Cloud scrape started — takes ~2 min, page will refresh itself");
-    pollUpdate(btn, 8);
-  } catch (e) {
-    btn.disabled = false; btn.textContent = "↻ Run now";
-    toast("Couldn’t start the run: " + e.message);
-  }
+  btn.disabled = false; btn.textContent = "↻ Run now";
+  toast("TCV isn’t running here — start it on the Mac to run the pipeline.");
 }
 
 // ---------- cards ----------
@@ -432,7 +380,9 @@ function renderPreview() {
   orig.style.marginLeft = cv ? "" : "auto";
   srcBtn.style.marginLeft = (cv || j.apply_url) ? "" : "auto";
   const body = document.getElementById("pv-body");
-  const why = bucketOf(j) === "tiebreak"
+  const why = opts.cut
+    ? '<div class="unsure-why">Cut because ' + esc(j.why || "no reason recorded") + "</div>"
+    : bucketOf(j) === "tiebreak"
     ? '<div class="unsure-why">Unsure because ' + esc(unsureReason(j)) + "</div>" : "";
   if (j.frameable) {
     body.innerHTML = why + '<iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox" src="' + esc(target) + '"></iframe>';
@@ -519,7 +469,9 @@ function card(j, opts) {
       "</div>" +
     "</div>" +
     '<div class="jacts">' + (
-      opts.done
+      opts.cut
+        ? '<button class="m2o">judge got it wrong — move to open</button>'
+        : opts.done
         ? '<button class="restore">restore</button>'
         : opts.unsure
         ? '<button class="m2o">move to open</button><button class="discard">discard</button>'
@@ -527,14 +479,14 @@ function card(j, opts) {
           '<button class="discard">discard</button>'
     ) + "</div>";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
-  on(".applied", () => { state.jobs[j.id] = "applied"; delete state.editsig[j.id]; save(); scheduleState(); render(); });
+  on(".applied", () => { state.jobs[j.id] = "applied"; delete state.editsig[j.id]; save(); render(); });
   // stamp the JD signature at discard time; a later edit trips isReopened()
-  on(".discard", () => { state.jobs[j.id] = "discarded"; state.editsig[j.id] = editSig(j); save(); scheduleState(); render(); });
-  on(".m2o", () => { delete state.jobs[j.id]; delete state.editsig[j.id]; state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); scheduleState(); render(); });
+  on(".discard", () => { state.jobs[j.id] = "discarded"; state.editsig[j.id] = editSig(j); save(); render(); });
+  on(".m2o", () => { delete state.jobs[j.id]; delete state.editsig[j.id]; state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); render(); });
   on(".restore", () => {
     const k = variantKey(j);
     DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) { delete state.jobs[x.id]; delete state.editsig[x.id]; } });
-    save(); scheduleState(); render();
+    save(); render();
   });
   return el;
 }
@@ -577,11 +529,17 @@ function render() {
     open: done.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
     portugal: done.filter(isPT),
     unsure: done.filter(j => !isPT(j) && bucketOf(j) === "tiebreak").concat(reopened).sort(byDays),
+    // The judge removes roles silently, so a wrong cut used to be unrecoverable
+    // and unnoticeable. Newest CUT_SHOWN, with the reason and a way back.
+    cut: DATA.jobs.filter(j => j.cut && !state.jobs[j.id] && !state.verdicts[j.id])
+                  .sort(byDays).slice(0, CUT_SHOWN),
     applied: act.filter(j => state.jobs[j.id] === "applied"),
     discarded: act.filter(j => state.jobs[j.id] === "discarded" && !isReopened(j)),
   };
   for (const t in pools)
     document.getElementById("c-" + t).textContent = pools[t].length || "";
+  const cutAll = DATA.jobs.filter(j => j.cut && !state.jobs[j.id] && !state.verdicts[j.id]).length;
+  if (cutAll > CUT_SHOWN) document.getElementById("c-cut").textContent = CUT_SHOWN + "/" + cutAll;
   const pn = document.getElementById("pending");
   if (pn) pn.textContent = pending.length ? pending.length + " pending judge" : "";
   // survivors of the last run: new, still active (judge cuts are inactive),
@@ -594,11 +552,13 @@ function render() {
   if (!visible.length) {
     const EMPTY = { open: "No open roles match.", applied: "Nothing applied yet.",
                     discarded: "Nothing discarded.", unsure: "Nothing unsure.",
-                    portugal: "No onsite/hybrid roles in Portugal right now." };
+                    portugal: "No onsite/hybrid roles in Portugal right now.",
+                    cut: "The judge has not cut anything." };
     root.innerHTML = '<div class="empty">' + EMPTY[tab] + "</div>";
   } else {
     const done = tab === "applied" || tab === "discarded";
-    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done, unsure: tab === "unsure" });
+    const opts = j => ({ isNew: j.first_run === DATA.run_id, done: done,
+                         unsure: tab === "unsure", cut: tab === "cut" });
     // company grouping - sticky AND anchored per run: a group keeps the list
     // position and header of its newest role AT FORMATION (frozen by id), even
     // after that role is applied/discarded, so the group never jumps while you
@@ -669,28 +629,6 @@ document.querySelectorAll(".tab").forEach(b => b.onclick = () => {
   render();
 });
 document.getElementById("scrape").onclick = scrapeNow;
-document.getElementById("gear").onclick = () => document.getElementById("settings").classList.toggle("open");
-document.getElementById("savetok").onclick = () => {
-  state.token = document.getElementById("tok").value.trim();
-  save(); setSyncMsg(state.token ? "token saved" : "token cleared");
-};
-if (state.token) document.getElementById("tok").value = state.token;
-
-fetch("data/state.json?t=" + Date.now()).then(r => r.ok ? r.text() : null).then(t => {
-  REPO_STATE = t;
-  if (t) {
-    try {
-      const rd = JSON.parse(t);
-      const repo = rd.jobs || {}, rv = rd.verdicts || {}, res = rd.editsig || {};
-      let changed = false;
-      for (const id in repo) if (!(id in state.jobs)) { state.jobs[id] = repo[id]; changed = true; }
-      for (const id in rv) if (!(id in state.verdicts)) { state.verdicts[id] = rv[id]; changed = true; }
-      for (const id in res) if (!(id in state.editsig)) { state.editsig[id] = res[id]; changed = true; }
-      if (changed) { save(); if (DATA) render(); }
-    } catch (e) {}
-  }
-  scheduleState();
-}).catch(() => {});
 fetch("data/facts.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).then(f => {
   FACTS = f || {}; if (DATA) render();
 }).catch(() => {});

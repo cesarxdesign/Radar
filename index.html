@@ -182,20 +182,6 @@ footer .bad { color: var(--danger); }
       <button class="tab on" data-tab="open">Open<span class="n" id="c-open"></span></button>
       <button class="tab" data-tab="portugal">Portugal<span class="n" id="c-portugal"></span></button>
       <button class="tab" data-tab="unsure">Unsure<span class="n" id="c-unsure"></span></button>
-      <button class="tab" data-tab="cut" title="Roles the judge removed, newest first, with the reason. Here so a wrong cut is visible instead of silent.">Cut<span class="n" id="c-cut"></span></button>
-      <button class="tab" data-tab="applied">Applied<span class="n" id="c-applied"></span></button>
-      <button class="tab" data-tab="discarded">Discarded<span class="n" id="c-discarded"></span></button>
-    </nav>
-  </div>
-  <main id="listcol"><div id="sections"></div></main>
-  <footer id="foot"></footer>
-  </div>
-  <aside id="preview">
-    <div class="pvhead">
-      <b id="pv-title">—</b><span class="co" id="pv-co"></span>
-      <a id="pv-cv" href="#" style="display:none">CV 📄</a>
-      <a id="pv-orig" href="#" target="_blank" rel="noopener" style="display:none">Original ↗</a>
-      <a id="pv-src" href="#" target="_blank" rel="noopener" style="display:none">Source ↗</a>
     </div>
     <div class="pvbody" id="pv-body"><div class="brief"><span class="empty">Select a role on the left.</span></div></div>
   </aside>
@@ -205,19 +191,11 @@ footer .bad { color: var(--danger); }
 "use strict";
 const REPO = "cesarxdesign/Radar";
 const LS = "jobradar-v2";
-let state = { jobs: {}, verdicts: {}, editsig: {}, emails: {} };
-try {
-  const v2 = JSON.parse(localStorage.getItem(LS));
-  if (v2) state = Object.assign(state, v2);
-  else {
-    const v1 = JSON.parse(localStorage.getItem("jobradar-state")) || {};
-    for (const id in v1) {
-      if (v1[id] === "applied") state.jobs[id] = "applied";
-      if (v1[id] === "hidden") state.jobs[id] = "discarded";
-    }
-  }
-} catch (e) {}
-function save() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
+// Public board: no triage. state stays empty so nothing can render from it,
+// and nothing is ever written. Decisions live only on the Mac.
+const state = Object.freeze({ jobs: Object.freeze({}), verdicts: Object.freeze({}),
+                             editsig: Object.freeze({}), emails: Object.freeze({}) });
+function save() {}
 
 const CUT_SHOWN = 60;  // enough to spot-check a bad rule, not a wall of history
 const BUCKET = { pt: "Portugal / Lisbon", eu: "Remote · Europe", ww: "Remote · Worldwide", ok: "OK’d by you", tiebreak: "Unsure" };
@@ -268,15 +246,6 @@ function isReopened(j) {
 }
 function propagateVariants() {
   // a verdict on one posting variant covers its twins - ZOE/Air Apps style
-  const byKey = {};
-  for (const j of DATA.jobs)
-    if (j.active && state.jobs[j.id]) byKey[variantKey(j)] = state.jobs[j.id];
-  let changed = false;
-  for (const j of DATA.jobs) {
-    if (!j.active || state.jobs[j.id]) continue;
-    const v = byKey[variantKey(j)];
-    if (v) { state.jobs[j.id] = v; changed = true; }
-  }
   if (changed) { save(); }
 }
 function unsureReason(j) {
@@ -468,26 +437,8 @@ function card(j, opts) {
         cell("via", esc(j.source.split("/")[0]) + (j.apply_url ? (j.apply_kind === "careers" ? " → careers" : " → direct") : ""), "dim") +
       "</div>" +
     "</div>" +
-    '<div class="jacts">' + (
-      opts.cut
-        ? '<button class="m2o">judge got it wrong — move to open</button>'
-        : opts.done
-        ? '<button class="restore">restore</button>'
-        : opts.unsure
-        ? '<button class="m2o">move to open</button><button class="discard">discard</button>'
-        : '<button class="applied">applied</button>' +
-          '<button class="discard">discard</button>'
-    ) + "</div>";
+    "";
   const on = (cls, fn) => { const b2 = el.querySelector(cls); if (b2) b2.onclick = fn; };
-  on(".applied", () => { state.jobs[j.id] = "applied"; delete state.editsig[j.id]; save(); render(); });
-  // stamp the JD signature at discard time; a later edit trips isReopened()
-  on(".discard", () => { state.jobs[j.id] = "discarded"; state.editsig[j.id] = editSig(j); save(); render(); });
-  on(".m2o", () => { delete state.jobs[j.id]; delete state.editsig[j.id]; state.verdicts[j.id] = { v: "y", via: "unsure" }; save(); render(); });
-  on(".restore", () => {
-    const k = variantKey(j);
-    DATA.jobs.forEach(x => { if (x.active && variantKey(x) === k) { delete state.jobs[x.id]; delete state.editsig[x.id]; } });
-    save(); render();
-  });
   return el;
 }
 
@@ -529,17 +480,9 @@ function render() {
     open: done.filter(j => !isPT(j) && bucketOf(j) !== "tiebreak"),
     portugal: done.filter(isPT),
     unsure: done.filter(j => !isPT(j) && bucketOf(j) === "tiebreak").concat(reopened).sort(byDays),
-    // The judge removes roles silently, so a wrong cut used to be unrecoverable
-    // and unnoticeable. Newest CUT_SHOWN, with the reason and a way back.
-    cut: DATA.jobs.filter(j => j.cut && !state.jobs[j.id] && !state.verdicts[j.id])
-                  .sort(byDays).slice(0, CUT_SHOWN),
-    applied: act.filter(j => state.jobs[j.id] === "applied"),
-    discarded: act.filter(j => state.jobs[j.id] === "discarded" && !isReopened(j)),
   };
   for (const t in pools)
     document.getElementById("c-" + t).textContent = pools[t].length || "";
-  const cutAll = DATA.jobs.filter(j => j.cut && !state.jobs[j.id] && !state.verdicts[j.id]).length;
-  if (cutAll > CUT_SHOWN) document.getElementById("c-cut").textContent = CUT_SHOWN + "/" + cutAll;
   const pn = document.getElementById("pending");
   if (pn) pn.textContent = pending.length ? pending.length + " pending judge" : "";
   // survivors of the last run: new, still active (judge cuts are inactive),

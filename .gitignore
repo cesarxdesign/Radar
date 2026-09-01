@@ -17,3 +17,5 @@ data/hunt_cache.json
 data/cvs.json
 data/cvdone.json
 data/cvbatch.json
+private.html
+history.json
